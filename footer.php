@@ -1,7 +1,7 @@
             </div><!-- /#contents -->
             <!-- Footer -->             
             <div id="footer">
-                <div class="footer-image col-md-6 col-sm-12">
+                <div class="footer-image col-lg-6 col-md-6 col-sm-6 col-xs-12">
                     <a href="<?php echo esc_url( home_url( '/' ) ); ?>">
                     <img src="<?php bloginfo('template_directory'); ?>/images/icon.png"> </a>
                 </div>
