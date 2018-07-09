@@ -444,7 +444,7 @@ figure.frame {
     background-position: 0% 50%;
   }
 }
-@media screen and (max-width: 991px) { 
+@media screen and (max-width: 768px) { 
   #header img{
     max-width:300px;
     max-height:100%;
