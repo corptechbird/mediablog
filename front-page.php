@@ -19,7 +19,9 @@
                                 </div>
                             </div>
                         </a>
-                        <?php
+                         
+                    <?php endwhile;    // 繰り返し処理終了 ?>
+                    <?php
     $big = 9999999999;
     $arg = array(
         'base' => str_replace( $big, '%#%', esc_url( get_pagenum_link( $big ) ) ),
@@ -27,8 +29,7 @@
         'total'   => $wp_query->max_num_pages
     );
     echo paginate_links($arg);
-?> 
-                    <?php endwhile;    // 繰り返し処理終了 ?>
+?>
                 <?php else :    // 投稿がない場合 ?>
                     <div class="notfound">
                         <h3>ページが見つかりません</h3>
