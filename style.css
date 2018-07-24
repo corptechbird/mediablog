@@ -411,26 +411,38 @@ figure.frame {
 .notfound {
   padding: 20px;
 }
-.s{
+.s {
   border: 1px solid #D6D6D6;
   margin: 0 0 0 10px;
-  height: 24px;
-  width: 180px;
+  height: 28px;
+  width: 300px;
 }
-.searchsubmit{
-  border: 1px solid #999;
-  background: #999;
-  padding: 6px 20px;
+.searchsubmit {
+  border: 1px solid #87ccc7;
+  background: #87ccc7;
+  padding: 3px 14px;
   color: #FFFFFF;
   font-size: 0.9em;
 }
-#searchform div{
-  margin-left:10px;
+.pagenation {
+  text-align: center;
+  color: gray;
+  font-size: 0.9em;
 }
-.postform{
-  width:180px;
-  height:24px;
-  margin:3px 0;
+.pagenation:hover {
+  width: 100%;
+}
+.pagenation a:link {
+  text-decoration: none;
+  color:#87ccc7;
+}
+.pagenation a:visited {
+  text-decoration: none;
+  color:#87ccc7;
+}
+.pagenation a:hover {
+  text-decoration: none;
+  color:#87ccc7;
 }
 @-webkit-keyframes bg-gradient {
   0% {

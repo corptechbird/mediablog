@@ -21,15 +21,17 @@
                         </a>
                          
                     <?php endwhile;    // 繰り返し処理終了 ?>
+                    <span class="pagenation">
                     <?php
-    $big = 9999999999;
-    $arg = array(
-        'base' => str_replace( $big, '%#%', esc_url( get_pagenum_link( $big ) ) ),
-        'current' => max( 1, get_query_var('paged') ),
-        'total'   => $wp_query->max_num_pages
-    );
-    echo paginate_links($arg);
-?>
+                        $big = 9999999999;
+                        $arg = array(
+                            'base' => str_replace( $big, '%#%', esc_url( get_pagenum_link( $big ) ) ),
+                            'current' => max( 1, get_query_var('paged') ),
+                            'total'   => $wp_query->max_num_pages
+                        );
+                        echo paginate_links($arg);
+                    ?>
+                    </span>
                 <?php else :    // 投稿がない場合 ?>
                     <div class="notfound">
                         <h3>ページが見つかりません</h3>
