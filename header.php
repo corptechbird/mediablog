@@ -33,6 +33,7 @@
                     <span class="navi"><a href="<?php echo esc_url( home_url( '/' ) ); ?>"><i class="glyphicon glyphicon-home" aria-hidden="true"></i> Home</a></span>
                     <span class="navi"><a href="<?php echo esc_url( home_url( '/' ) ); ?>/pickup">Pick up</a></span>
                     <span class="navi"><a href="<?php echo esc_url( home_url( '/' ) ); ?>/ranking">Ranking</a></span>
+                    <?php get_search_form(); ?>
                 </div>
             </div>
             <!-- /#header -->

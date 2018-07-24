@@ -1,3 +1,8 @@
+<?php
+/*
+Template Name: Pick up
+*/
+?>
 <?php get_header(); ?>
 <!-- Contents -->             
     <div id="contents">

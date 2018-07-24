@@ -1,3 +1,8 @@
+<?php
+/*
+Template Name: Ranking
+*/
+?>
 <?php get_header(); ?>
 <style type="text/css">
     div.mywpp li {
