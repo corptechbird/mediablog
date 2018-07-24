@@ -14,8 +14,7 @@
                                 <div class="text-content">
                                     <p class="caption"><?php the_title(); ?></p>
                                     <div class="content-meta">
-                                        <span class="date">
-                                        <span class="glyphicon glyphicon-time" aria-hidden="true"></span> <?php the_time('Y.n.j H:m'); ?></span>
+                                        <span class="date"><span class="glyphicon glyphicon-time" aria-hidden="true"></span> <?php the_time('Y.n.j H:m'); ?></span>
                                     </div>
                                 </div>
                             </div>
