@@ -24,13 +24,18 @@
 <body>
     <script>
         var click_count = 0;    // クリック数の初期化
- 
- // １回目押されたときはメニュー表示、２回目押されたときは非表示としているだけのJavaScript
         function menu_click(){
             if( click_count % 2 == 0 ){
                 $('#menu').css('display','block');
+                $('#menu li').css('display','block');
+                $('#menu').css('background-color','rgba(0,0,0,0.9)');
+                $('#menu').css('padding','20px');
+                $('#menu ul li').css('text-align','center');
+                $('#menu').css('width','100%');
+                document.getElementById("btn").innerHTML='<a href="javascript:menu_click();"><i class="fas fa-times"></i></a>';
             }else{
                 $('#menu').css('display','none');
+                document.getElementById("btn").innerHTML='<a href="javascript:menu_click();"><i class="fas fa-bars"></i></a>';
             }
             click_count++;
         }
@@ -41,15 +46,13 @@
             <div id="header">
                 <a href="<?php echo esc_url( home_url( '/' ) ); ?>">
                 <img src="<?php bloginfo('template_directory'); ?>/images/icon.png"> </a>
-                <span id="navi">
-                <span id="btn"><a href="javascript:menu_click();">MENU</a></span>
+                <span id="btn"><a href="javascript:menu_click();"><i class="fas fa-bars"></i></a></span>
                 <span id="menu">
                     <ul>
-                        <li class="navi"><?php get_search_form(); ?></li>
+                        <li class="naviv"><?php get_search_form(); ?></li>
                         <li class="navi"><a href="<?php echo esc_url( home_url( '/' ) ); ?>"><i class="fas fa-home" aria-hidden="true"></i> Home</a></li>
                         <li class="navi"><a href="<?php echo esc_url( home_url( '/' ) ); ?>/pickup">Pick up</a></li>
                         <li class="navi"><a href="<?php echo esc_url( home_url( '/' ) ); ?>/ranking">Ranking</a></li>
-                        <li class="close"><a href="javascript:menu_click();">×</a></li>
                     </ul>
                 </span><!-- #menu -->
             </div><!-- /#header -->

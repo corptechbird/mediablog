@@ -15,6 +15,7 @@ Template Name: Company
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.1/fullpage.min.css">
     <!-- Favicon, Thumbnail image -->
     <link rel="icon" type="image/x-icon" sizes="16x16" href="<?php bloginfo('template_directory'); ?>/images/favicon-16.ico">
     <link rel="icon" type="image/x-icon" sizes="32x32" href="<?php bloginfo('template_directory'); ?>/images/favicon-32.ico">
@@ -24,6 +25,9 @@ Template Name: Company
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.1/fullpage.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.1/vendors/easings.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.1/vendors/scrolloverflow.min.js"></script>
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-45959800-8"></script>
 </head>
 <body>
@@ -62,17 +66,22 @@ Template Name: Company
             <!-- /#header -->
             <style type="text/css">
                 div.mywpp li {
-                display: inline-block;
-                vertical-align: top;
-                width: 9em;
-                margin-right: 5px;
-                font-size: 13px;
-                line-height: 1em;
+                    display: inline-block;
+                    vertical-align: top;
+                    width: 9em;
+                    margin-right: 5px;
+                    font-size: 13px;
+                    line-height: 1em;
                 }
             </style>
 <!-- Contents -->             
             <div id="contents">
-                
+                <div id="fullpage">  
+                    <div class="section">Some section</div>  
+                    <div class="section">Some section</div>  
+                    <div class="section">Some section</div>  
+                    <div class="section">Some section</div>  
+                </div>  
             </div><!-- /#contents -->
             <!-- Footer -->             
             <div id="footer">
