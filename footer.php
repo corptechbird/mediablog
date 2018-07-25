@@ -1,20 +1,20 @@
             </div><!-- /#contents -->
             <!-- Footer -->             
             <div id="footer">
-                <div class="footer-image col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                <div>
                     <a href="<?php echo esc_url( home_url( '/' ) ); ?>">
                     <img src="<?php bloginfo('template_directory'); ?>/images/icon.png"> </a>
                 </div>
-                <div class="footer-text">
-                    <p class="footer-category">Category</p>
+                <div class="text">
+                    <p class="category">Category</p>
                     <ul><?php wp_list_categories('title_li=&sort_column=name&hide_empty=1&hierarchical=1&style=list'); ?></ul>
                 </div>
-                <div class="footer-copy">
+                <div class="copy">
                     &copy; <?php echo date('Y'); ?> <?php bloginfo('name'); ?> All rights reserved.
                 </div>
             </div><!-- /#footer -->
         </div><!-- /#wrapper -->
-    </div><!-- /#page --> 
+    </div><!-- /#pageTop --> 
 <?php wp_footer(); ?>
 <script>
         window.dataLayer = window.dataLayer || [];

@@ -7,7 +7,7 @@
         if(!is_front_page()&&!is_home()&&!is_admin()){
             // ホーム（必ず表示）
             $str.= '<div id="breadcrumb" class="cf"><span">';
-            $str.= '<a href="'. home_url() .'" itemprop="url"><span itemprop="title"><i class="glyphicon glyphicon-home" aria-hidden="true"></i> Home</span></a> &gt; </span>';
+            $str.= '<a href="'. home_url() .'" itemprop="url"><span itemprop="title"><i class="fas fa-home" aria-hidden="true"></i> Home</span></a> &gt; </span>';
      
             // 以下条件分岐
             // カテゴリー
@@ -44,7 +44,7 @@
                         $str.='<span"><a href="'. get_category_link($ancestor).'" itemprop="url"><span itemprop="title">'. get_cat_name($ancestor). '</span></a> &gt; </span>';
                     }
                 }
-                $str.='<span"><a href="'. get_category_link($cat -> term_id). '" itemprop="url"><span itemprop="title">'. $cat-> cat_name . '</span></a> &gt; </span>';
+                $str.='<span"><a href="'. get_category_link($cat -> term_id). '" itemprop="url"><span itemprop="title">'. $cat-> cat_name . '</span></a> </span>';
                 $title = get_the_title();
      
             // 以下カスタム投稿
@@ -79,7 +79,7 @@
             } else {
      
             }
-            $str.='<span>'. $title .'</span>';
+            // $str.='<span>'. $title .'</span>';
             $str.='</div>';
         }
         echo $str;
