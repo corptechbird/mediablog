@@ -36,6 +36,20 @@
             }else{
                 $('#menu').css('display','none');
                 document.getElementById("btn").innerHTML='<a href="javascript:menu_click();"><i class="fas fa-bars"></i></a>';
+
+//                 var $win = $(window);
+
+// $win.on('load resize', function() {
+//   var windowWidth = $win.width();
+
+//   if (windowWidth > 1024) {
+//     // PCの処理
+//   } else if (windowWidth > 768) {
+//     // TABの処理
+//   } else {
+//     // SPの処理
+//   }
+// });
             }
             click_count++;
         }

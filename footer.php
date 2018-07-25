@@ -16,6 +16,7 @@
         </div><!-- /#wrapper -->
     </div><!-- /#pageTop --> 
 <?php wp_footer(); ?>
+<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5b58a0fda9fc44fd"></script>
 <script>
         window.dataLayer = window.dataLayer || [];
         function gtag(){dataLayer.push(arguments);}
