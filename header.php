@@ -32,10 +32,10 @@
                 $('#menu').css('padding','20px');
                 $('#menu ul li').css('text-align','center');
                 $('#menu').css('width','100%');
-                document.getElementById("btn").innerHTML='<a href="javascript:menu_click();"><i class="fas fa-times"></i></a>';
+                document.getElementById("btn").innerHTML='<a href="javascript:menu_click();"><i class="fas fa-times fa-lg"></i></a>';
             }else{
                 $('#menu').css('display','none');
-                document.getElementById("btn").innerHTML='<a href="javascript:menu_click();"><i class="fas fa-bars"></i></a>';
+                document.getElementById("btn").innerHTML='<a href="javascript:menu_click();"><i class="fas fa-bars fa-lg"></i></a>';
 
 //                 var $win = $(window);
 
@@ -60,7 +60,7 @@
             <div id="header">
                 <a href="<?php echo esc_url( home_url( '/' ) ); ?>">
                 <img src="<?php bloginfo('template_directory'); ?>/images/icon.png"> </a>
-                <span id="btn"><a href="javascript:menu_click();"><i class="fas fa-bars"></i></a></span>
+                <span id="btn"><a href="javascript:menu_click();"><i class="fas fa-bars fa-lg"></i></a></span>
                 <span id="menu">
                     <ul>
                         <li class="naviv"><?php get_search_form(); ?></li>
