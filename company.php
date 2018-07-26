@@ -113,7 +113,7 @@ Template Name: Company
                     プログラミング教育
                     <div id="contact">
                         <p>CONTACT</p>
-                    <!-- [contact-form-7 id="248" title="コンタクトフォーム 1"] -->
+                        <?php echo do_shortcode('[contact-form-7 id="248" title="コンタクトフォーム 1"]'); ?>
                     </div>
                 </div>  
             </div><!-- /#contents -->
@@ -121,7 +121,7 @@ Template Name: Company
             <div id="footer">
                 <div>
                     <a href="<?php echo esc_url( home_url( '/' ) ); ?>">
-                    <img src="<?php bloginfo('template_directory'); ?>/images/icon.png"> </a>
+                    <img src="<?php bloginfo('template_directory'); ?>/images/company.png"> </a>
                 </div>
                 <div class="text">
                     <p class="category">Category</p>
