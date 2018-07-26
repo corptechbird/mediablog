@@ -91,6 +91,9 @@ html, body {
   font-size: 1.2em;
   color:#505050;
 }
+.cards {
+  text-align: center;
+}
 .sns {
   text-align: center;
   width:100%;

@@ -3,6 +3,7 @@
     <div id="contents">
         <div class="post">
             <?php if ( have_posts() ) :    // もし投稿があるなら ?>
+                <div class="cards">
                 <?php while ( have_posts() ) : the_post();    // 繰り返し処理（ループ）開始 ?>
                     <a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>">  
                         <div class="l-card">
@@ -19,13 +20,16 @@
                         </div>
                     </a>
                 <?php endwhile;    // 繰り返し処理終了 ?>
+            </div>
                 <p class="pagenation">
                     <?php
                         $big = 9999999999;
                         $arg = array(
                             'base' => str_replace( $big, '%#%', esc_url( get_pagenum_link( $big ) ) ),
                             'current' => max( 1, get_query_var('paged') ),
-                            'total'   => $wp_query->max_num_pages
+                            'total'   => $wp_query->max_num_pages,
+                            'prev_text' => '« Previous',
+                            'next_text' => 'Next »'
                         );
                         echo paginate_links($arg);
                     ?>
@@ -38,6 +42,9 @@
                     <?php 
                         query_posts('showposts=20');
                         if (have_posts()) : 
+                            ?>
+                            <div class="cards">
+                            <?php 
                             while (have_posts()) : 
                             the_post();
                             ?>
@@ -58,6 +65,9 @@
                             </a> 
                             <?php
                             endwhile;
+                            ?>
+                            </div>
+                            <?php 
                         endif;
                     ?>
                 </div>
