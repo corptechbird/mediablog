@@ -7,10 +7,12 @@
             <?php while ( have_posts() ) : the_post();    // 繰り返し処理（ループ）開始 ?>
                 <p class="title"><?php the_title(); ?></p>
                 <span class="time"><i class="far fa-clock" aria-hidden="true"></i> <?php the_time('Y.n.j H:m'); ?></span>
-                <div class="addthis_inline_share_toolbox sns"></div>
+                <span class="sns"><div class="addthis_inline_share_toolbox sns"></div></span>
                 <figure class="frame"><?php the_post_thumbnail(); ?></figure>
             <?php the_content(); ?>
-            <div class="addthis_inline_share_toolbox sns"></div>
+            <span class="sns">
+            <div class="addthis_inline_share_toolbox"></div>
+            </span>
             <div class="afterpost">
             <div><i class="fas fa-bookmark" aria-hidden="true"></i> 他の人はこちらの記事も読んでいます</div>
                 <?php
