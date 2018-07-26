@@ -3,6 +3,7 @@
     <div id="contents">
         <div class="post">
             <?php if ( have_posts() ) :    // もし投稿があるなら ?>
+                <div class="newentry">New Entries</div>
                 <div class="cards">
                 <?php while ( have_posts() ) : the_post();    // 繰り返し処理（ループ）開始 ?>
                     <a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>">  

@@ -2,8 +2,8 @@
 <html lang="ja">
 <head>
     <meta charset="UTF-8">
-    <title>TECHBIRD - 海外ITトレンド情報をさきどり</title>
-    <meta name="description" content="海外ITトレンド情報をさきどり">
+    <title>TECHBIRD - 海外ITトレンドをさきどり</title>
+    <meta name="description" content="海外ITトレンドをさきどり">
     <meta name="keywords" content="海外, IT, トレンド, 情報, さきどり, Fintech, 人工知能, AI, AR, VR, 武田勝輝">
 <!-- External files -->
     <link rel="stylesheet" href=" <?php echo get_bloginfo('stylesheet_url') ?>">
