@@ -91,8 +91,12 @@ html, body {
   font-size: 1.2em;
   color:#505050;
 }
+.sns {
+  text-align: center;
+}
 .title {
   font-size: 1.6em;
+  color: rgba(198, 185, 111, 1)
 }
 .naviv {
   position: relative;
