@@ -8,10 +8,10 @@
                 <p class="title"><?php the_title(); ?></p>
                 <div class="tag"><?php the_tags('<ul><li>','</li><li>','</li></ul>'); ?></div>
                 <span class="time"><i class="far fa-clock" aria-hidden="true"></i> <?php the_time('Y.n.j H:m'); ?></span>
-                <div class="sns"><div class="addthis_inline_share_toolbox sns"></div></div>
+                <div class="addthis_inline_share_toolbox"></div>
                 <figure class="frame"><?php the_post_thumbnail(); ?></figure>
             <?php the_content(); ?>
-            <div class="sns"><div class="addthis_inline_share_toolbox"></div></div>
+            <div class="addthis_inline_share_toolbox"></div>
             <div class="afterpost">
             <?php if( has_category() ) {
                 $cats = get_the_category();

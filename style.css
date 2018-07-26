@@ -107,9 +107,9 @@ html, body {
 .cards {
   text-align: center;
 }
-.sns {
-  text-align: center;
-  width:100%;
+.at-share-btn-elements {
+    float: none;
+    text-align: center;
 }
 .title {
   font-size: 1.6em;
@@ -136,7 +136,7 @@ figure.frame {
   padding: 20px;
   max-width: 620px;
   height: auto;
-  margin: 0px 0px 50px 0px;
+  margin: 30px 0px 50px 0px;
 }
 .emphasis {
   background:linear-gradient(transparent 70%, #87ccc7 0%);
@@ -407,9 +407,11 @@ figure.frame {
   position: fixed;
   bottom: 20px;
   right: 20px;
+  z-index: 999;
 }
 #pageTop i {
-  padding-top: 8px
+  padding-top: 8px;
+  z-index: 999;
 }
 #pageTop a {
   display: block;
@@ -426,6 +428,7 @@ figure.frame {
 #pageTop a:hover {
   text-decoration: none;
   opacity: 0.7;
+  z-index: 999;
 }
 .notfound {
   padding: 20px;
