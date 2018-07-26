@@ -6,13 +6,12 @@
             <?php if ( have_posts() ) :    // もし投稿があるなら ?>
             <?php while ( have_posts() ) : the_post();    // 繰り返し処理（ループ）開始 ?>
                 <p class="title"><?php the_title(); ?></p>
+                <div class="tag"><?php the_tags('<ul><li>','</li><li>','</li></ul>'); ?></div>
                 <span class="time"><i class="far fa-clock" aria-hidden="true"></i> <?php the_time('Y.n.j H:m'); ?></span>
-                <span class="sns"><div class="addthis_inline_share_toolbox sns"></div></span>
+                <div class="sns"><div class="addthis_inline_share_toolbox sns"></div></div>
                 <figure class="frame"><?php the_post_thumbnail(); ?></figure>
             <?php the_content(); ?>
-            <span class="sns">
-            <div class="addthis_inline_share_toolbox"></div>
-            </span>
+            <div class="sns"><div class="addthis_inline_share_toolbox"></div></div>
             <div class="afterpost">
             <div><i class="fas fa-bookmark" aria-hidden="true"></i> 他の人はこちらの記事も読んでいます</div>
                 <?php

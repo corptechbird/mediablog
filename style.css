@@ -93,6 +93,7 @@ html, body {
 }
 .sns {
   text-align: center;
+  width:100%;
 }
 .title {
   font-size: 1.6em;
@@ -513,6 +514,70 @@ figure.frame {
 #menu {
   display: none;
   float: left;
+}
+.tag ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.tag ul li {
+  display: inline-block;
+  margin: 0 0 .3em 1em;
+  padding: 0;
+}
+.tag ul li a {
+  position: relative;
+  display: inline-block;
+  height: 30px;
+  line-height: 30px;
+  padding: 0 1em;
+  background-color: #87ccc7;
+  border-radius: 0 3px 3px 0;
+  color: #fff;
+  font-size: 13px;
+  text-decoration: none;
+  -webkit-transition: .2s;
+  transition: .2s;
+}
+.tag ul li a::before {
+  position: absolute;
+  top: 0;
+  left: -15px;
+  content: '';
+  width: 0;
+  height: 0;
+  border-color: transparent #87ccc7 transparent transparent;
+  border-style: solid;
+  border-width: 15px 15px 15px 0;
+  -webkit-transition: .2s;
+  transition: .2s;
+}
+.tag ul li a::after {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  z-index: 2;
+  display: block;
+  content: '';
+  width: 6px;
+  height: 6px;
+  margin-top: -3px;
+  background-color: #fff;
+  border-radius: 100%;
+}
+.tag ul li span {
+  display: block;
+  max-width: 100px;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+.tag ul li a:hover {
+  background-color: gray;
+  color: #fff;
+}
+.tag ul li a:hover::before {
+  border-right-color: gray;
 }
 @media screen and (min-width: 1000px) {
   #btn {
