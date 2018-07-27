@@ -595,8 +595,32 @@ figure.frame {
 .tag ul li a:hover::before {
   border-right-color: gray;
 }
+
+#bbtn {
+  display: block;
+  float: left;
+  padding: 15px 5px 15px 15px;
+}
+#bbtn a:link {
+  text-decoration: none;
+  color: rgba(45, 12, 175, 1);
+}
+#bbtn a:visited {
+  text-decoration: none;
+  color: rgba(45, 12, 175, 1);
+}
+#bbtn a:hover{
+  text-decoration: none;
+  color: rgba(45, 12, 175, 1);
+}
+
+
 @media screen and (min-width: 1000px) {
   #btn {
+    display: none;
+    float: right;
+  }
+  #bbtn {
     display: none;
     float: right;
   }
@@ -605,4 +629,98 @@ figure.frame {
       top: 10px;
       float: right;
   }
+}
+.fade-in {
+  transition: opacity 0.4s;
+  -moz-transition: opacity 0.4s;
+  -webkit-transition: opacity 0.4s;
+  -o-transition: opacity 0.4s;
+}
+#frame-contents {
+  margin-top: 50px;
+  text-align: center;
+}
+#frame-contents h4 {
+  text-align: center;
+  padding-top: 50px;
+  color: rgba(0, 129, 237, 1);
+}
+#frame-contents div {
+  margin-top : -50px;
+  padding-top : 50px;
+}
+.phrase-form {
+  max-width: 620px;
+  text-align: left;
+  margin:auto;
+  border-bottom: solid 1px #f5f5f5;
+}
+.phrase-form h5 {
+  color: #505050;
+}
+.phrase-form span {
+  display: table-cell;
+  vertical-align: middle;
+  height: 480px;
+  padding-bottom: 80px;
+  color: gray;
+}
+#mission, #business {
+  background-color: rgba(251, 251, 251, 1);
+}
+#mission {
+  background-image : url(images/mission.png);
+  background-repeat : no-repeat;
+  background-position : center center;  
+  background-size:cover;
+}
+#mission h4{
+  color: white;
+}
+#mission span{
+  color: white;
+}
+#mission h5{
+  color: white;
+}
+
+
+
+
+
+
+
+.bnavi {
+  color: rgba(45, 12, 175, 1);
+  font-size: 18px;
+  margin: 0 18px;
+  position: relative;
+  display: inline-block;
+  top: 10px;
+}
+.bnavi:before {
+  position: absolute;
+  top: 1.3em;
+  left: 0;
+  content: "";
+  display: inline-block;
+  width: 0;
+  height: 3px;
+  background: rgba(45, 12, 175, 1);
+  transition: 0.5s;
+}
+.bnavi:hover:before {
+  width: 100%;
+}
+.bnavi a:link {
+  text-decoration: none;
+  color:rgba(45, 12, 175, 1);
+}
+.bnavi a:visited {
+  text-decoration: none;
+  color:rgba(45, 12, 175, 1);
+}
+.bnavi a:hover {
+  text-decoration: none;
+  color:rgba(45, 12, 175, 1);
 }
