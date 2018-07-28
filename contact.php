@@ -19,7 +19,7 @@ Template Name: Contact
         <div class="single">
             <div class="newentry">CONTACT</div>
                 <div class="cards">
-                    <?php echo do_shortcode('[contact-form-7 id="40" title="bizmedia"]'); ?>
+                    <?php echo do_shortcode('[contact-form-7 id="256" title="contact"]'); ?>
                 </div>
             </div>
         </div>

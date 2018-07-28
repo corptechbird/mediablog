@@ -149,7 +149,7 @@ Template Name: Company
                 
                 <div id="contact" class="fade-in">
                     <h4>CONTACT</h4>
-                        <?php echo do_shortcode('[contact-form-7 id="40" title="bizmedia"]'); ?>
+                        <?php echo do_shortcode('[contact-form-7 id="256" title="contact"]'); ?>
                 </div>
             </div><!-- /#contents -->
             <!-- Footer -->             
