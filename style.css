@@ -653,7 +653,6 @@ figure.frame {
   max-width: 620px;
   text-align: left;
   margin:auto;
-  border-bottom: solid 1px #f5f5f5;
 }
 .phrase-form h5 {
   color: #505050;
@@ -664,6 +663,9 @@ figure.frame {
   height: 480px;
   padding-bottom: 80px;
   color: gray;
+}
+#contact {
+  padding: 20px;
 }
 #mission, #business {
   background-color: rgba(251, 251, 251, 1);
@@ -724,3 +726,20 @@ figure.frame {
   text-decoration: none;
   color:rgba(45, 12, 175, 1);
 }
+
+input.wpcf7-form-control.wpcf7-submit {
+  display: inline-block;
+  padding: 0.3em 1em;
+  text-decoration: none;
+  color: #67c5ff;
+  border: solid 2px #67c5ff;
+  border-radius: 3px;
+  transition: .4s;
+  width: 200px;
+}
+
+input.wpcf7-form-control.wpcf7-submit:hover {
+  background: #67c5ff;
+  color: white;
+}
+

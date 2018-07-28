@@ -143,17 +143,13 @@ Template Name: Company
                         bizMediaでは、①モバイル/Webアプリ開発、②メディア運営、③プログラミング教育の3つの事業を軸に活動しています。</br>
                         ①モバイル/Webアプリ開発では、AIやAR/VRを組み込んだ業務アプリや2D/3Dゲームアプリをメインで開発しています。</br>
                         ②メディア運営では、<a href="http://techbird.site" target="_blank">TECHBIRD</a>というメディアにて海外ITトレンドを発信しています。</br>
-                        ③プログラミング教育では、Swift, JavaScript, PHP, Java, Pythonを中心に教えています。
+                        ③プログラミング教育では、Swift, JavaScript, PHP, Java, Pythonを中心に教えています。</span>
                     </div>
                 </div>
                 
                 <div id="contact" class="fade-in">
                     <h4>CONTACT</h4>
-                    <div class="phrase-form">
-                    <span>
-                    <?php echo do_shortcode('[contact-form-7 id="248" title="コンタクトフォーム 1"]'); ?>
-            </span>
-                    </div>
+                        <?php echo do_shortcode('[contact-form-7 id="40" title="bizmedia"]'); ?>
                 </div>
             </div><!-- /#contents -->
             <!-- Footer -->             

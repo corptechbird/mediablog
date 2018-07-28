@@ -8,6 +8,8 @@
                 <div class="text">
                     <p class="category">Category</p>
                     <ul><?php wp_list_categories('title_li=&sort_column=name&hide_empty=1&hierarchical=1&style=list'); ?></ul>
+                    <ul><li><a href="<?php echo esc_url( home_url( '/' ) ); ?>/bizmedia">運営会社</a></li>
+                    <li><a href="<?php echo esc_url( home_url( '/' ) ); ?>/contact">お問い合わせ</a></li></ul>
                 </div>
                 <div class="copy">
                     &copy; <?php echo date('Y'); ?> <?php bloginfo('name'); ?> All rights reserved.
