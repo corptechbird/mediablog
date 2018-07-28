@@ -72,7 +72,7 @@
                         $('#menu').css({
                             "display":"none",
                             "float":"right",
-                            "width":"639px",
+                            "width":"auto",
                             "padding":"0"
                         });
                         // TABの処理

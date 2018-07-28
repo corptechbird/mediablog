@@ -106,7 +106,7 @@ Template Name: Company
                         $('#menu').css({
                             "display":"none",
                             "float":"right",
-                            "width":"495px",
+                            "width":"auto",
                             "padding":"0"
                         });
                         // TABの処理
@@ -179,7 +179,7 @@ Template Name: Company
                 
                 <div id="contact" class="fade-in">
                     <h4>CONTACT</h4>
-                        <?php echo do_shortcode('[contact-form-7 id="256" title="contact"]'); ?>
+                        <?php echo do_shortcode('[contact-form-7 id="257" title="contact"]'); ?>
                 </div>
             </div><!-- /#contents -->
             <!-- Footer -->             
