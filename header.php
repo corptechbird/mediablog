@@ -26,30 +26,60 @@
         var click_count = 0;    // クリック数の初期化
         function menu_click(){
             if( click_count % 2 == 0 ){
-                $('#menu').css('display','block');
+                $('#menu').css({
+                    "display":"block",
+                    "background-color":"rgba(0,0,0,0.9)",
+                    "padding":"20px",
+                    "width":"100%"
+                });
                 $('#menu li').css('display','block');
-                $('#menu').css('background-color','rgba(0,0,0,0.9)');
-                $('#menu').css('padding','20px');
                 $('#menu ul li').css('text-align','center');
-                $('#menu').css('width','100%');
                 document.getElementById("btn").innerHTML='<a href="javascript:menu_click();"><i class="fas fa-times fa-lg"></i></a>';
             }else{
                 $('#menu').css('display','none');
                 document.getElementById("btn").innerHTML='<a href="javascript:menu_click();"><i class="fas fa-bars fa-lg"></i></a>';
 
-//                 var $win = $(window);
-
-// $win.on('load resize', function() {
-//   var windowWidth = $win.width();
-
-//   if (windowWidth > 1024) {
-//     // PCの処理
-//   } else if (windowWidth > 768) {
-//     // TABの処理
-//   } else {
-//     // SPの処理
-//   }
-// });
+                var $win = $(window);
+                $win.on('load resize', function() {
+                    var windowWidth = $win.width();
+                    if (windowWidth >= 1000) {
+                        // PCの処理
+                        $('#btn').css({
+                            "display":"none",
+                            "float":"right"
+                        });
+                        $('#bbtn').css({
+                            "display":"none",
+                            "float":"right"
+                        });
+                        $('#menu').css({
+                            "display":"inline",
+                            "float":"right",
+                            "background-color":"white"
+                        });
+                        $('#menu li').css('display','inline-block');
+                    } else if (windowWidth < 1000) {
+                        $('#btn').css({
+                            "display":"block",
+                            "float":"left",
+                            "padding":"15px"
+                        });
+                        $('#bbtn').css({
+                            "display":"block",
+                            "float":"left",
+                            "padding":"15px"
+                        });
+                        $('#menu').css({
+                            "display":"none",
+                            "float":"right",
+                            "width":"639px",
+                            "padding":"0"
+                        });
+                        // TABの処理
+                    } else {
+                        // SPの処理
+                    }
+                });
             }
             click_count++;
         }
