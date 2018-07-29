@@ -14,7 +14,7 @@
                         <div class="text-content">
                             <p class="caption"><?php the_title(); ?></p>
                             <div class="content-meta">
-                                <span class="date"><span class="glyphicon glyphicon-time" aria-hidden="true"></span> <?php the_time('Y.n.j H:m'); ?></span>
+                            <span class="date"><i class="far fa-clock" aria-hidden="true"></i> <?php the_date(); ?> <?php the_time(); ?></span>
                             </div>
                         </div>
                     </div>
@@ -24,7 +24,7 @@
             <div class="notfound">
                 <h3>ページが見つかりません</h3>
                 <p>申し訳ありません。お探しのページは見つかりませんでした。</p>
-                <div class="notfound-navi"><a href="<?php echo esc_url( home_url( '/' ) ); ?>"><i class="glyphicon glyphicon-home" aria-hidden="true"></i> Home へ戻る</a></div>
+                <div class="notfound-navi"><a href="<?php echo esc_url( home_url( '/' ) ); ?>"><i class="fas fa-home" aria-hidden="true"></i> Home へ戻る</a></div>
                 <?php 
                     query_posts('showposts=20');
                     if (have_posts()) : 
@@ -40,8 +40,7 @@
                                 <div class="text-content">
                                     <p class="caption"><?php the_title(); ?></p>
                                     <div class="content-meta">
-                                        <span class="date">
-                                        <span class="glyphicon glyphicon-time" aria-hidden="true"></span> <?php the_time('Y.n.j H:m'); ?></span>
+                                        <span class="date"><i class="far fa-clock" aria-hidden="true"></i> <?php the_date(); ?> <?php the_time(); ?></span>
                                     </div>
                                 </div>
                             </div>

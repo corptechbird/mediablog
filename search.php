@@ -5,8 +5,11 @@
     $total_results = $wp_query->found_posts;
     $search_query = get_search_query();
 ?>
- 
-<h1><?php echo $search_query; ?>の検索結果<span>（<?php echo $total_results; ?>件）</span></h1>
+<div id="contents">
+        <div class="post">
+ <div class="newentry">
+<?php echo $search_query; ?>の検索結果<span>（<?php echo $total_results; ?>件）</span>
+</div>
  
 <?php
     if( $total_results >0 ):
@@ -22,7 +25,7 @@
                         <div class="text-content">
                             <p class="caption"><?php the_title(); ?></p>
                             <div class="content-meta">
-                                <span class="date"><span class="glyphicon glyphicon-time" aria-hidden="true"></span> <?php the_time('Y.n.j H:m'); ?></span>
+                                <span class="date"><i class="far fa-clock" aria-hidden="true"></i> <?php the_date(); ?> <?php the_time(); ?></span>
                             </div>
                         </div>
                     </div>
@@ -32,7 +35,7 @@
     else: ?>
  
         <?php echo $search_query; ?> に一致する情報は見つかりませんでした。
-        <div class="notfound-navi"><a href="<?php echo esc_url( home_url( '/' ) ); ?>"><i class="glyphicon glyphicon-home" aria-hidden="true"></i> Home へ戻る</a></div>
+        <div class="notfound-navi"><a href="<?php echo esc_url( home_url( '/' ) ); ?>"><i class="fas fa-home" aria-hidden="true"></i> Home へ戻る</a></div>
     <?php 
         query_posts('showposts=20');
         if (have_posts()) : 
@@ -48,8 +51,7 @@
                     <div class="text-content">
                         <p class="caption"><?php the_title(); ?></p>
                         <div class="content-meta">
-                            <span class="date">
-                            <span class="glyphicon glyphicon-time" aria-hidden="true"></span> <?php the_time('Y.n.j H:m'); ?></span>
+                        <span class="date"><i class="far fa-clock" aria-hidden="true"></i> <?php the_date(); ?> <?php the_time(); ?></span>
                         </div>
                     </div>
                 </div>
@@ -59,6 +61,9 @@
         endif;
     ?>
     <?php endif;    // 条件分岐終了 ?>
+    <div class="newentry"></div>
+    </div>
+    </div>
         </div>
     </div><!-- /#main -->
 <?php get_footer(); ?>

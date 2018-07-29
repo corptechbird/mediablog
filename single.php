@@ -7,7 +7,7 @@
             <?php while ( have_posts() ) : the_post();    // 繰り返し処理（ループ）開始 ?>
                 <p class="title"><?php the_title(); ?></p>
                 <div class="tag"><?php the_tags('<ul><li>','</li><li>','</li></ul>'); ?></div>
-                <span class="time"><i class="far fa-clock" aria-hidden="true"></i> <?php the_time(); ?></span>
+                <span class="time"><i class="far fa-clock" aria-hidden="true"></i> <?php the_date(); ?> <?php the_time(); ?></span>
                 <figure class="frame"><?php the_post_thumbnail(); ?></figure>
             <?php the_content(); ?>
             <div class="afterpost">
@@ -40,8 +40,7 @@
                         <div class="text-content">
                             <p class="caption"><?php the_title(); ?></p>
                             <div class="content-meta">
-                                <span class="date">
-                                <i class="far fa-clock" aria-hidden="true"></i> <?php the_time('Y.n.j H:m'); ?></span>
+                                <span class="date"><i class="far fa-clock" aria-hidden="true"></i> <?php the_date(); ?> <?php the_time(); ?></span>
                             </div>
                         </div>
                     </div>
