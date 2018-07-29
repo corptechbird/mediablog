@@ -2,17 +2,24 @@
 <!-- Contents -->
 <?php
     global $wp_query;
-    $total_results = $wp_query->found_posts;
+    $args = array( 'post_type' => 'post' );
+    $total_results = new WP_Query( $args );
+    // $total_results = $wp_query($args)->found_posts;
     $search_query = get_search_query();
 ?>
 <div id="contents">
         <div class="post">
  <div class="newentry">
-<?php echo $search_query; ?>の検索結果<span>（<?php echo $total_results; ?>件）</span>
+ <?php if ($search_query == "") { //アイキャッチ画像を設定している場合?>
+    All Articles
+    <?php
+    } else {?>
+        <?php echo $search_query; ?>の検索結果<span>（<?php echo $total_results; ?>件）</span>
+    <?php } ?>
 </div>
  
 <?php
-    if( $total_results >0 ):
+    if( $total_results > 0 ):
         if(have_posts()):
             while(have_posts()): the_post();
 ?>
