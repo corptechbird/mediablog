@@ -383,6 +383,7 @@ figure.frame {
   font-size: 16px;
   font-weight: lighter;
   columns: #505050;;
+  min-height: 72px;
 }
 .content-meta {
   overflow: hidden;
