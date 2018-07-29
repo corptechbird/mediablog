@@ -73,6 +73,7 @@
                     ?>
                 </div>
             <?php endif;    // 条件分岐終了 ?>
+            <div class="newentry"></div>
         </div>
     </div><!-- /#main -->
 <?php get_footer(); ?>
