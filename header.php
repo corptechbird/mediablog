@@ -23,6 +23,11 @@
 </head>
 <body>
     <script>
+
+        var addthis_config = addthis_config||{};
+        addthis_config.data_track_addressbar = false;
+        addthis_config.data_track_clickback = false;
+
         var click_count = 0;    // クリック数の初期化
         function menu_click(){
             if( click_count % 2 == 0 ){
