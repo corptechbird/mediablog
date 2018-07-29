@@ -8,10 +8,8 @@
                 <p class="title"><?php the_title(); ?></p>
                 <div class="tag"><?php the_tags('<ul><li>','</li><li>','</li></ul>'); ?></div>
                 <span class="time"><i class="far fa-clock" aria-hidden="true"></i> <?php the_time('Y.n.j H:m'); ?></span>
-                <div class="addthis_inline_share_toolbox"></div>
                 <figure class="frame"><?php the_post_thumbnail(); ?></figure>
             <?php the_content(); ?>
-            <div class="addthis_inline_share_toolbox"></div>
             <div class="afterpost">
             <?php if( has_category() ) {
                 $cats = get_the_category();
@@ -33,7 +31,7 @@
             <div class="cards">
                 <?php foreach($myposts as $post):
                 setup_postdata($post); ?>
-                <a href="<?php the_permalink(); ?>"  target="_blank" title="<?php the_title_attribute(); ?>">  
+                <a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>">  
                     <div class="l-card">
                         <div class="l-thumbnail">
                             <figure class="thumbnail-wrapper"><?php the_post_thumbnail(array(360, 360)); ?></figure>
