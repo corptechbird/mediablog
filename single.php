@@ -1,5 +1,8 @@
 <?php get_header(); ?>
 <!-- Contents -->             
+<?php echo do_shortcode('[add-toany]'); ?>
+
+
     <div id="contents">
         <div class="post">
             <?php if(function_exists("the_breadcrumb")){the_breadcrumb();} ?>
