@@ -34,7 +34,13 @@
                             <a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>">  
                                 <div class="l-card">
                                     <div class="l-thumbnail">
-                                        <figure class="thumbnail-wrapper"><?php the_post_thumbnail(array(360, 360)); ?></figure>
+                                    <figure class="thumbnail-wrapper">
+                                    <?php if (has_post_thumbnail()) { //アイキャッチ画像を設定している場合
+                                        the_post_thumbnail(array(360, 360));
+                                        } else { //アイキャッチ画像を設定していない場合 ?>
+                                        <img src="<?php echo get_bloginfo('template_directory'); ?>/images/eyecatch.png" alt="アイキャッチ画像" width="360" height="240" />
+                                    <?php } ?>
+                                    </figure>
                                         <span class="more-text">Read More</span>
                                     </div>
                                     <div class="text-content">
