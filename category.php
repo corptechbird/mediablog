@@ -2,6 +2,7 @@
 <!-- Contents -->             
     <div id="contents">
         <div class="post">
+        <div class="newentry"><?php $cat_info = get_category( $cat ); ?><?php echo esc_html( $cat_info->name ); ?></div>
             <?php if ( have_posts() ) :    // もし投稿があるなら ?>
                 <?php while ( have_posts() ) : the_post();    // 繰り返し処理（ループ）開始 ?>
                     <a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>">  

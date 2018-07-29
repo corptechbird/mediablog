@@ -7,8 +7,8 @@ Template Name: Company
 <html lang="ja">
 <head>
     <meta charset="UTF-8">
-    <title>bizMedia - 最新ITを身近に</title>
-    <meta name="description" content="最新ITを身近に">
+    <title>bizMedia - 最新ITで社会に貢献</title>
+    <meta name="description" content="最新ITで社会に貢献">
     <meta name="keywords" content="海外, IT, トレンド, 情報, さきどり, Fintech, 人工知能, AI, AR, VR, 武田勝輝">
 <!-- External files -->
     <link rel="stylesheet" href=" <?php echo get_bloginfo('stylesheet_url') ?>">

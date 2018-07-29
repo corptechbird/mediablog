@@ -8,8 +8,10 @@
                 <p class="title"><?php the_title(); ?></p>
                 <div class="tag"><?php the_tags('<ul><li>','</li><li>','</li></ul>'); ?></div>
                 <span class="time"><i class="far fa-clock" aria-hidden="true"></i> <?php the_time('Y.n.j H:m'); ?></span>
+                <?php echo do_shortcode('[addtoany]'); ?>
                 <figure class="frame"><?php the_post_thumbnail(); ?></figure>
             <?php the_content(); ?>
+            <?php echo do_shortcode('[addtoany]'); ?>
             <div class="afterpost">
             <?php if( has_category() ) {
                 $cats = get_the_category();
