@@ -1,9 +1,10 @@
 <?php get_header(); ?>
 <!-- Contents -->
 <?php
-    $args = array( 'post_type' => 'post' );
-    $total_results = new WP_Query( $args );
-    // $total_results = $wp_query($args)->found_posts;
+    // $args = array( 'post_type' => array( 'page' ));
+    // $total_results = new WP_Query( $args );
+    global $wp_query;
+    $total_results = $wp_query->found_posts;
     $search_query = get_search_query();
 ?>
 <div id="contents">
@@ -13,13 +14,13 @@
     All Articles
     <?php
     } else {?>
-        Result of <?php echo $search_query; ?><span>（<?php echo $total_results; ?> results）</span>
+        <?php echo $total_results; ?> Results of <?php echo $search_query; ?>
     <?php } ?>
 </div>
  
 <?php
-    if( $total_results > 0 ):
-        if($total_results->have_posts()):
+    if( $total_results >0 ):
+        if(have_posts()):
             while(have_posts()): the_post();
 ?>
                 <a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>">  
