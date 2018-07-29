@@ -16,15 +16,16 @@ Template Name: Ranking
 </style>
 <!-- Contents -->             
     <div id="contents">
-        <div class="single">
+        <div class="post">
             <div class="newentry"></div>
-                <div>
-                    <table style="border-collapse:collapse;width:100%;"><tr>
-                    <th style="padding:0px">Weekly Popular Ranking TOP 10</th>
-                    </tr><tr>
-                    <td style="padding:0px"><?php wpp_get_mostpopular('limit=10&range="weekly"&post_type="post"&thumbnail_width=30&thumbnail_height=30&stats_views=0'); ?></td>
-                    </tr></table>
-                </div>
+            <div>
+                <table style="border-collapse:collapse;width:100%;"><tr>
+                <th style="padding:0px">Weekly Popular Ranking TOP 10</th>
+                </tr><tr>
+                <td style="padding:0px"><?php wpp_get_mostpopular('limit=10&range="weekly"&post_type="post"&thumbnail_width=30&thumbnail_height=30&stats_views=0'); ?></td>
+                </tr></table>
+            </div>
+            <div class="newentry"></div>
         </div>
     </div><!-- /#main -->
 <?php get_footer(); ?>

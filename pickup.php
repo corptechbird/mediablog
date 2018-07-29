@@ -6,7 +6,7 @@ Template Name: Pick up
 <?php get_header(); ?>
 <!-- Contents -->             
     <div id="contents">
-        <div class="single">
+        <div class="post">
             <div class="newentry"></div>
                 <?php
                 $temp = $wp_query;
