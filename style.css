@@ -49,7 +49,7 @@ html, body {
   height:auto;
   text-align: left;
   color:#505050;
-  display: inline-block;
+  /* display: inline-block; */
   padding: 10px;
 }
 #footer div.text ul {
@@ -57,7 +57,7 @@ html, body {
   padding-left: 0;
 }
 #footer div.text ul li{
-  display: inline;
+  /* display: inline; */
   margin-right: 20px;
 }
 #footer div.text a:link {
@@ -99,7 +99,7 @@ html, body {
 .newentry:after {
   position: absolute;
   content: " ";
-  display: block;
+  /* display: block; */
   border-bottom: solid 3px #ffc778;
   bottom: -3px;
   width: 30%;
@@ -119,7 +119,7 @@ figure.frame {
   text-align: center;
 }
 .frame img {
-  display: inline-block;
+  /* display: inline-block; */
   box-shadow: 0px 0px 20px -5px rgba(0, 0, 0, 0.8);
   border-radius: 10px;
   max-width: 620px;
@@ -130,7 +130,7 @@ figure.frame {
   text-align: center;
 }
 .abstract {
-  display: inline-block;
+  /* display: inline-block; */
   background-color: rgba(240, 240, 240, 1);
   color: rgba(102, 102, 102, 1);
   padding: 20px;
@@ -159,7 +159,7 @@ figure.frame {
   font-size:0.8em;
 }
 .headline {
-  display: inline-block;
+  /* display: inline-block; */
   position: relative;
   padding: 15px 20px;
   font-size: 18px;/*フォントサイズ*/
@@ -179,7 +179,7 @@ figure.frame {
 }
 .naviv {
   position: relative;
-  display: inline-block;
+  /* display: inline-block; */
   top: 10px;
 }
 .navi {
@@ -187,7 +187,7 @@ figure.frame {
   font-size: 18px;
   margin: 0 18px;
   position: relative;
-  display: inline-block;
+  /* display: inline-block; */
   top: 10px;
 }
 .navi:before {
@@ -195,7 +195,7 @@ figure.frame {
   top: 1.3em;
   left: 0;
   content: "";
-  display: inline-block;
+  /* display: inline-block; */
   width: 0;
   height: 3px;
   background: #87ccc7;
@@ -248,7 +248,7 @@ figure.frame {
   color:#87ccc7;
 }
 .ribbon_box {    
-  display: block;
+  /* display: block; */
   position: relative;
   margin: 0 auto;
   padding: 20px 0;
@@ -257,7 +257,7 @@ figure.frame {
   z-index: 100;
 }
 .ribbon17 {
-  display: inline-block;
+  /* display: inline-block; */
   position: absolute;
   left: 0;
   top: 5px;
@@ -308,7 +308,7 @@ figure.frame {
   border-radius: 10px;
   background: #fff;
   box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.1), 0 8px 20px rgba(0, 0, 0, 0.1);
-  display: inline-block;
+  /* display: inline-block; */
   color:#505050;
   text-align: left;
 }
@@ -340,7 +340,7 @@ figure.frame {
   left: 50%;
   transform: translate(-50%, -80%);
   opacity: 0;
-  display: inline-block;
+  /* display: inline-block; */
   padding: 6px 12px 8px;
   border: 2px solid #fff;
   color: #fff;
@@ -348,14 +348,14 @@ figure.frame {
   letter-spacing: 1px;
 }
 .thumbnail-wrapper {
-  display: block;
+  /* display: block; */
   margin: 0;
   padding: 0;
 }
 .thumbnail-wrapper:after {
   content: "";
   transition: 0.5s;
-  display: block;
+  /* display: block; */
   width: 100%;
   height: 100%;
   position: absolute;
@@ -367,7 +367,7 @@ figure.frame {
 }
 .thumbnail-wrapper img {
   transition: 0.5s;
-  display: block;
+  /* display: block; */
   max-width: 100%;
 }
 .text-content {
@@ -404,7 +404,7 @@ figure.frame {
   font-size: 16px;
 } */
 #pageTop {
-  display: none;
+  /* display: none; */
   position: fixed;
   bottom: 20px;
   right: 20px;
@@ -415,7 +415,7 @@ figure.frame {
   z-index: 999;
 }
 #pageTop a {
-  display: block;
+  /* display: block; */
   z-index: 999;
   border-radius: 30px;
   width: 35px;
@@ -524,12 +524,12 @@ figure.frame {
   color: #87ccc7;
 }
 #btn {
-  display: block;
+  /* display: block; */
   float: left;
   padding: 15px 5px 15px 15px;
 }
 #menu {
-  display: none;
+  /* display: none; */
   float: left;
 }
 .tag ul {
@@ -538,13 +538,13 @@ figure.frame {
   list-style: none;
 }
 .tag ul li {
-  display: inline-block;
+  /* display: inline-block; */
   margin: 0 0 .3em 1em;
   padding: 0;
 }
 .tag ul li a {
   position: relative;
-  display: inline-block;
+  /* display: inline-block; */
   height: 30px;
   line-height: 30px;
   padding: 0 1em;
@@ -574,7 +574,7 @@ figure.frame {
   top: 50%;
   left: 0;
   z-index: 2;
-  display: block;
+  /* display: block; */
   content: '';
   width: 6px;
   height: 6px;
@@ -583,7 +583,7 @@ figure.frame {
   border-radius: 100%;
 }
 .tag ul li span {
-  display: block;
+  /* display: block; */
   max-width: 100px;
   white-space: nowrap;
   text-overflow: ellipsis;
@@ -597,7 +597,7 @@ figure.frame {
   border-right-color: gray;
 }
 #bbtn {
-  display: block;
+  /* display: block; */
   float: left;
   padding: 15px 5px 15px 15px;
 }
@@ -615,15 +615,15 @@ figure.frame {
 }
 @media screen and (min-width: 1000px) {
   #btn {
-    display: none;
+    /* display: none; */
     float: right;
   }
   #bbtn {
-    display: none;
+    /* display: none; */
     float: right;
   }
   #menu {
-      display: block;
+      /* display: block; */
       top: 10px;
       float: right;
   }
@@ -656,7 +656,7 @@ figure.frame {
   color: #505050;
 }
 .phrase-form span {
-  display: table-cell;
+  /* display: table-cell; */
   vertical-align: middle;
   height: 480px;
   padding-bottom: 80px;
@@ -688,7 +688,7 @@ figure.frame {
   font-size: 18px;
   margin: 0 18px;
   position: relative;
-  display: inline-block;
+  /* display: inline-block; */
   top: 10px;
 }
 .bnavi:before {
@@ -696,7 +696,7 @@ figure.frame {
   top: 1.3em;
   left: 0;
   content: "";
-  display: inline-block;
+  /* display: inline-block; */
   width: 0;
   height: 3px;
   background: rgba(45, 12, 175, 1);
@@ -718,7 +718,7 @@ figure.frame {
   color:rgba(45, 12, 175, 1);
 }
 input.wpcf7-form-control.wpcf7-submit {
-  display: inline-block;
+  /* display: inline-block; */
   padding: 0.3em 1em;
   text-decoration: none;
   color: #67c5ff;
