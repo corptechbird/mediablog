@@ -1,7 +1,6 @@
 <?php get_header(); ?>
 <!-- Contents -->
 <?php
-    global $wp_query;
     $args = array( 'post_type' => 'post' );
     $total_results = new WP_Query( $args );
     // $total_results = $wp_query($args)->found_posts;
@@ -14,13 +13,13 @@
     All Articles
     <?php
     } else {?>
-        <?php echo $search_query; ?>の検索結果<span>（<?php echo $total_results; ?>件）</span>
+        Result of <?php echo $search_query; ?><span>（<?php echo $total_results; ?> results）</span>
     <?php } ?>
 </div>
  
 <?php
     if( $total_results > 0 ):
-        if(have_posts()):
+        if($total_results->have_posts()):
             while(have_posts()): the_post();
 ?>
                 <a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>">  
