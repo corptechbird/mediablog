@@ -382,7 +382,7 @@ figure.frame {
   margin: 0 0 12px 0;
   font-size: 16px;
   font-weight: lighter;
-  columns: #505050;;
+  columns: #505050;
   min-height: 72px;
 }
 .content-meta {
@@ -394,7 +394,7 @@ figure.frame {
   float: left;
   color: #aaa;
 }
-.content-meta .like {
+/* .content-meta .like {
   display: inline-block;
   float: right;
   color: #4cc48e;
@@ -402,7 +402,7 @@ figure.frame {
 .content-meta .like .material-icons {
   vertical-align: middle;
   font-size: 16px;
-}
+} */
 #pageTop {
   display: none;
   position: fixed;
@@ -596,7 +596,6 @@ figure.frame {
 .tag ul li a:hover::before {
   border-right-color: gray;
 }
-
 #bbtn {
   display: block;
   float: left;
@@ -614,8 +613,6 @@ figure.frame {
   text-decoration: none;
   color: rgba(45, 12, 175, 1);
 }
-
-
 @media screen and (min-width: 1000px) {
   #btn {
     display: none;
@@ -686,13 +683,6 @@ figure.frame {
 #mission h5{
   color: white;
 }
-
-
-
-
-
-
-
 .bnavi {
   color: rgba(45, 12, 175, 1);
   font-size: 18px;
@@ -727,7 +717,6 @@ figure.frame {
   text-decoration: none;
   color:rgba(45, 12, 175, 1);
 }
-
 input.wpcf7-form-control.wpcf7-submit {
   display: inline-block;
   padding: 0.3em 1em;
@@ -738,9 +727,7 @@ input.wpcf7-form-control.wpcf7-submit {
   transition: .4s;
   width: 200px;
 }
-
 input.wpcf7-form-control.wpcf7-submit:hover {
   background: #67c5ff;
   color: white;
 }
-
