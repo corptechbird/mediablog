@@ -115,7 +115,7 @@ html, body {
   font-size: 1.6em;
   color: rgba(198, 185, 111, 1);
 }
-figure.frame {
+.frame {
   text-align: center;
 }
 .frame img {
@@ -139,7 +139,8 @@ figure.frame {
   margin: 30px 0px 50px 0px;
 }
 .emphasis {
-  background:linear-gradient(transparent 70%, #87ccc7 0%);
+  /* background:linear-gradient(transparent 70%, #87ccc7 0%); */
+  border-bottom: solid 2px #87ccc7;
 }
 .ads {
   border-top: solid 2px #f5f5f5;
