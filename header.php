@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title><?php if(is_home()): //トップページ ?><?php bloginfo('name'); ?> - <?php bloginfo('description'); ?>
-    <?php elseif(is_page()): //固定ページ ?><?php wp_title(''); ?> ｜ <?php bloginfo('name'); ?> - <?php bloginfo('description'); ?>
+    <?php elseif(is_page()): //固定ページ ?><?php wp_title(''); ?> ｜ <?php bloginfo('name'); ?>
     <?php elseif(is_single()): //シングルページ ?><?php wp_title(''); ?> ｜ <?php bloginfo('name'); ?> - <?php bloginfo('description'); ?>
     <?php elseif(is_category()): //カテゴリ一覧ページ ?><?php single_cat_title() ?> ｜ <?php bloginfo('name'); ?> - <?php bloginfo('description'); ?>
     <?php elseif(is_month()): //月別ページ ?><?php the_time("Y年m月") ?>の記事一覧 ｜ <?php bloginfo('name'); ?> - <?php bloginfo('description'); ?>
