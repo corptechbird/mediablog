@@ -1,3 +1,5 @@
+                <?php get_sidebar(''); ?>
+                <div id="end"></div>
             </div><!-- /#contents -->
             <!-- Footer -->             
             <div id="footer">

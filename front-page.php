@@ -88,6 +88,4 @@
             <div class="newentry"></div>
         </div>
     </div><!-- /#main -->
-    <?php get_sidebar(''); ?>
-    <div id="end"></div>
 <?php get_footer(); ?>
