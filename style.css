@@ -119,7 +119,6 @@ html, body {
   color: #505050;
 }
 #primary ul div ul li a:hover{
-  text-decoration: none;
   color: gray;
 }
 #end{
