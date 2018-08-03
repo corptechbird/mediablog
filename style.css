@@ -13,6 +13,9 @@ html, body {
   width:100%;
   height:100%;
 }
+#wrapper {
+  background-color: #f5f5f5;
+}
 #header {
   background-color: white;
   position: fixed;
@@ -81,6 +84,38 @@ html, body {
   background-color: #f5f5f5;
   padding: 1.2em;
   margin-top: 50px;
+  float:left;
+  width: 70%;
+}
+#primary {
+  margin-top: 50px;
+  float:right;
+  width: 30%;
+  background-color: #f5f5f5;
+}
+#primary ul {
+  margin: 1.2em 1.2em 1.2em 0;
+  background-color: white;
+  padding: 10px;
+}
+#end{
+  height: 5px;
+  clear: both;
+}
+@media screen and (max-width: 1000px) {
+  #contents {
+    width: 100%;
+  }
+
+  #primary {
+    width: 100%;
+    margin-top: 0px;
+    padding: 0 1.2em 1.2em 1.2em;
+  }
+
+  #primary ul {
+    margin: 0;
+  }
 }
 .post {
   text-align: left;
