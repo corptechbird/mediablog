@@ -8,6 +8,8 @@ Template Name: Pick up
     <div id="contents">
         <div class="post">
             <div class="newentry"></div>
+            <div class="cards">
+                    <div class="cards-inside">
                 <?php
                 $temp = $wp_query;
                 $wp_query = null;
@@ -32,6 +34,8 @@ Template Name: Pick up
                         </div>
                     </a> 
                 <?php endwhile; ?>
+                </div>
+                        </div>
                 <?php $wp_query = null; $wp_query = $temp; ?>
                 <div class="newentry"></div>
         </div>

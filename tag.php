@@ -4,6 +4,8 @@
         <div class="post">
         <div class="newentry"><?php $tag = get_queried_object(); ?><?php echo $tag->slug ?></div>
             <?php if ( have_posts() ) :    // もし投稿があるなら ?>
+                <div class="cards">
+                    <div class="cards-inside">
                 <?php while ( have_posts() ) : the_post();    // 繰り返し処理（ループ）開始 ?>
                     <a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>">  
                         <div class="l-card">
@@ -20,11 +22,15 @@
                         </div>
                     </a> 
                 <?php endwhile;    // 繰り返し処理終了 ?>
+                </div>
+                        </div>
             <?php else :    // 投稿がない場合 ?>
                 <div class="notfound">
                     <h3>ページが見つかりません</h3>
                     <p>申し訳ありません。お探しのページは見つかりませんでした。</p>
                     <div class="notfound-navi"><a href="<?php echo esc_url( home_url( '/' ) ); ?>"><i class="fas fa-home" aria-hidden="true"></i> Home へ戻る</a></div>
+                    <div class="cards">
+                    <div class="cards-inside">
                     <?php 
                         query_posts('showposts=20');
                         if (have_posts()) : 
@@ -55,8 +61,11 @@
                             endwhile;
                         endif;
                     ?>
+                    </div>
+                    </div>
                 </div>
             <?php endif;    // 条件分岐終了 ?>
+            <div class="newentry"></div>
         </div>
     </div><!-- /#main -->
 <?php get_footer(); ?>

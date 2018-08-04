@@ -298,7 +298,7 @@ html, body {
   color:#87ccc7;
 }
 #breadcrumb a:hover {
-  color:#87ccc7;
+  color: gray;
 }
 .notfound-navi{
   color: #87ccc7;
@@ -310,7 +310,7 @@ html, body {
   color:#87ccc7;
 }
 .notfound-navi a:hover {
-  color:#87ccc7;
+  color: gray;
 }
 .ribbon_box {    
   display: block;

@@ -29,6 +29,7 @@
             if( $myposts ): ?>
                 <div><i class="fas fa-bookmark" aria-hidden="true"></i> 他の人はこちらの記事も読んでいます</div>
                 <div class="cards">
+                <div class="cards-inside">
                     <?php foreach($myposts as $post):
                     setup_postdata($post); ?>
                     <a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>">  
@@ -52,6 +53,7 @@
                         </div>
                     </a>
                     <?php endforeach; ?>
+                    </div>
                 </div>
                 <?php wp_reset_postdata();
             endif; ?>

@@ -48,6 +48,8 @@
                 <h3>ページが見つかりません</h3>
                 <p>申し訳ありません。お探しのページは見つかりませんでした。</p>
                 <div class="notfound-navi"><a href="<?php echo esc_url( home_url( '/' ) ); ?>"><i class="fas fa-home" aria-hidden="true"></i> Home へ戻る</a></div>
+                <div class="cards">
+                    <div class="cards-inside">
                 <?php 
                     query_posts('showposts=20');
                     if (have_posts()) : 
@@ -85,6 +87,8 @@
                         <?php 
                     endif;
                 ?>
+                    </div>
+                </div>
             </div>
             <?php endif;    // 条件分岐終了 ?>
             <div class="newentry"></div>
