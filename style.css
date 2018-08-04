@@ -47,6 +47,7 @@ html, body {
   max-width:320px;
   max-height:100%;
   margin: auto;
+  float: left;
 }
 #footer img:hover{
   opacity: 0.7;
@@ -143,6 +144,11 @@ html, body {
   }
   #primary ul {
     margin: 0;
+  }
+}
+@media screen and (max-width: 1000px) {
+  #header {
+    text-align: center;
   }
 }
 .screen-reader-text{
@@ -512,6 +518,9 @@ html, body {
   #contents {
     padding-left: 0;
     padding-right: 0;
+  }
+  .frame img {
+    width: 100%;
   }
 }
 #pageTop {
