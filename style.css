@@ -76,7 +76,8 @@ html, body {
   color:#505050;
 }
 #footer div.text a:hover {
-  color:#505050;
+  text-decoration: none;
+  color: rgba(80, 80, 80, 0.7);
 }
 #footer div.copy {
   color: gray;
@@ -123,7 +124,8 @@ html, body {
   color: #505050;
 }
 #primary ul div ul li a:hover{
-  color: gray;
+  text-decoration: none;
+  color: rgba(80, 80, 80, 0.7);
 }
 #end{
   height: 5px;
