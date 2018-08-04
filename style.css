@@ -150,6 +150,9 @@ html, body {
   #header {
     text-align: center;
   }
+  #header img{
+    padding-right: 20px;
+  }
 }
 .screen-reader-text{
   display: none;
