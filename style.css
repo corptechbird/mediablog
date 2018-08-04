@@ -200,6 +200,14 @@ html, body {
 .frame a img:hover{
   opacity: 0.7;
 }
+
+.frame a{
+  color:rgba(135, 204, 199, 1.0);
+}
+.frame a:hover{
+  text-decoration: none;
+  color:rgba(135, 204, 199, 0.7);
+}
 .abstract-frame {
   text-align: center;
 }
