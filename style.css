@@ -64,15 +64,12 @@ html, body {
   margin-right: 20px;
 }
 #footer div.text a:link {
-  text-decoration: none;
   color:#505050;
 }
 #footer div.text a:visited {
-  text-decoration: none;
   color:#505050;
 }
 #footer div.text a:hover {
-  text-decoration: none;
   color:#505050;
 }
 #footer div.copy {
@@ -165,8 +162,13 @@ html, body {
   width: 30%;
 }
 .cards {
-  text-align: left;
+  text-align: center;
   padding: auto;
+}
+.cards-inside{
+  width:730px;
+  text-align: left;
+  margin: auto;
 }
 .at-share-btn-elements {
     float: none;
@@ -290,30 +292,24 @@ html, body {
   padding: 0 0 10px 0;
 }
 #breadcrumb a:link {
-  text-decoration: none;
   color:#87ccc7;
 }
 #breadcrumb a:visited {
-  text-decoration: none;
   color:#87ccc7;
 }
 #breadcrumb a:hover {
-  text-decoration: none;
   color:#87ccc7;
 }
 .notfound-navi{
   color: #87ccc7;
 }
 .notfound-navi a:link {
-  text-decoration: none;
   color:#87ccc7;
 }
 .notfound-navi a:visited {
-  text-decoration: none;
   color:#87ccc7;
 }
 .notfound-navi a:hover {
-  text-decoration: none;
   color:#87ccc7;
 }
 .ribbon_box {    
@@ -372,7 +368,7 @@ html, body {
   overflow: hidden;
   width: 320px;
   padding: 0;
-  margin: 24px;
+  margin: 20px;
   border: 1px solid #ddd;
   border-radius: 10px;
   background: #fff;
@@ -474,6 +470,10 @@ html, body {
 } */
 @media screen and (max-width: 800px) {
   .cards {
+    text-align: center;
+  }
+  .cards-inside{
+    width:100%;
     text-align: center;
   }
 }
