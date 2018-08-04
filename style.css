@@ -32,6 +32,9 @@ html, body {
   height: 50px;  
   padding: 2px;
 }
+#header img:hover{
+  opacity: 0.7;
+}
 #footer {
   text-align: center;
   padding: 25px;
@@ -43,6 +46,9 @@ html, body {
   max-width:320px;
   max-height:100%;
   margin: auto;
+}
+#footer img:hover{
+  opacity: 0.7;
 }
 #footer div.category {
   color:grey;
@@ -189,6 +195,9 @@ html, body {
   height: auto;
   margin: 20px 0px 20px 0px;
 }
+.frame a img:hover{
+  opacity: 0.7;
+}
 .abstract-frame {
   text-align: center;
 }
@@ -210,7 +219,7 @@ html, body {
 }
 .emphasis a:hover {
   text-decoration: none;
-  color: gray;
+  color:rgba(135, 204, 199, 0.7);
 }
 .ads {
   border-top: solid 2px #f5f5f5;
@@ -298,7 +307,8 @@ html, body {
   color:#87ccc7;
 }
 #breadcrumb a:hover {
-  color: gray;
+  text-decoration: none;
+  color:rgba(135, 204, 199, 0.7);
 }
 .notfound-navi{
   color: #87ccc7;
@@ -310,7 +320,8 @@ html, body {
   color:#87ccc7;
 }
 .notfound-navi a:hover {
-  color: gray;
+  text-decoration: none;
+  color:rgba(135, 204, 199, 0.7);
 }
 .ribbon_box {    
   display: block;
@@ -541,16 +552,14 @@ html, body {
   width: 100%;
 }
 .pagenation a:link {
-  text-decoration: none;
   color:#87ccc7;
 }
 .pagenation a:visited {
-  text-decoration: none;
   color:#87ccc7;
 }
 .pagenation a:hover {
   text-decoration: none;
-  color:#87ccc7;
+  color:rgba(135, 204, 199, 0.7);
 }
 @-webkit-keyframes bg-gradient {
   0% {
@@ -663,12 +672,12 @@ html, body {
   text-overflow: ellipsis;
   overflow: hidden;
 }
-.tag ul li a:hover {
-  background-color: gray;
+.tag ul li a:hover {  
+  background-color: rgba(135, 204, 199, 0.7);
   color: #fff;
 }
 .tag ul li a:hover::before {
-  border-right-color: gray;
+  border-right-color: rgba(135, 204, 199, 0.7);
 }
 #bbtn {
   display: block;
