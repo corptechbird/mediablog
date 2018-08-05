@@ -9,7 +9,8 @@
                 <div class="tag"><?php the_tags('<ul><li>','</li><li>','</li></ul>'); ?></div>
                 <span class="time"><i class="far fa-clock" aria-hidden="true"></i> <?php the_date(); ?> <?php the_time(); ?></span>
                 <figure class="frame"><?php the_post_thumbnail(); ?></figure>
-            <?php the_content(); ?>
+                <?php wp_link_pages('before=<p id="postpage">&after=</p>&pagelink=<span>%</span>'); ?>
+                <?php the_content(); ?>
             <?php wp_link_pages('before=<p id="postpage">&after=</p>&pagelink=<span>%</span>'); ?>
             <div class="afterpost">
             <?php if( has_category() ) {
