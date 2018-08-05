@@ -266,7 +266,7 @@ html, body {
   color: white;
   background: rgba(0, 182, 214, 1);/*リボンの色*/
   /* background: #a6d3c8; */
-  margin: 10px 0px 20px 0px;
+  margin: 10px 0px 25px 0px;
   width: 100%;
 }
 .headline:before {
