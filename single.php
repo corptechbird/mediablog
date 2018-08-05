@@ -10,6 +10,7 @@
                 <span class="time"><i class="far fa-clock" aria-hidden="true"></i> <?php the_date(); ?> <?php the_time(); ?></span>
                 <figure class="frame"><?php the_post_thumbnail(); ?></figure>
             <?php the_content(); ?>
+            <?php wp_link_pages(); ?>
             <div class="afterpost">
             <?php if( has_category() ) {
                 $cats = get_the_category();
