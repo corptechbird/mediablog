@@ -10,9 +10,7 @@
                 <span class="time"><i class="far fa-clock" aria-hidden="true"></i> <?php the_date(); ?> <?php the_time(); ?></span>
                 <figure class="frame"><?php the_post_thumbnail(); ?></figure>
             <?php the_content(); ?>
-            <div class="abstract-frame">
-            <?php wp_link_pages(); ?>
-            </div>
+            <?php wp_link_pages('before=<p id="postpage">&after=</p>&pagelink=<span>%</span>'); ?>
             <div class="afterpost">
             <?php if( has_category() ) {
                 $cats = get_the_category();
