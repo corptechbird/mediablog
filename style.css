@@ -47,7 +47,6 @@ html, body {
   max-width:320px;
   max-height:100%;
   margin: auto;
-  float: left;
 }
 #footer img:hover{
   opacity: 0.7;
