@@ -21,7 +21,7 @@ Template Name: Contact
             <div class="cards">
                 <?php echo do_shortcode('[contact-form-7 id="257" title="contact"]'); ?>
             </div>
-            <div class="newentry">CONTACT</div>
+            <div class="newentry"></div>
             </div>
         </div>
     </div><!-- /#main -->
