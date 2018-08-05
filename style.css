@@ -228,6 +228,7 @@ html, body {
   max-width: 620px;
   height: auto;
   margin: 30px 0px 50px 0px;
+  text-align: left;
 }
 .emphasis {
   /* background:linear-gradient(transparent 70%, #87ccc7 0%); */
