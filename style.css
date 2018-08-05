@@ -166,6 +166,13 @@ html, body {
   font-size: 1.2em;
   color:#505050;
 }
+.post a {
+  color:rgba(135, 204, 199, 1);
+}
+.post a:hover {
+  text-decoration: none;
+  color:rgba(135, 204, 199, 0.7);
+}
 .newentry {
   border-bottom: solid 3px skyblue;
   position: relative;
