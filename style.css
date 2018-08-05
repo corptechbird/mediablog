@@ -210,7 +210,6 @@ html, body {
 .frame a img:hover{
   opacity: 0.7;
 }
-
 .frame a{
   color:rgba(135, 204, 199, 1.0);
 }
@@ -264,7 +263,8 @@ html, body {
   padding: 15px 20px;
   font-size: 18px;/*フォントサイズ*/
   color: white;
-  background: #a6d3c8;/*リボンの色*/
+  background: rgba(0, 182, 214, 1);/*リボンの色*/
+  /* background: #a6d3c8; */
   margin: 50px 0px 50px 0px;
   width: 100%;
 }
@@ -275,7 +275,8 @@ html, body {
   left: 0;
   border: none;
   border-bottom: solid 15px transparent;
-  border-right: solid 20px #87ccc7;/*折り返し部分*/
+  border-right: solid 20px rgba(0, 182, 214, 0.7);/*折り返し部分*/
+  /* border-right: solid 20px #87ccc7; */
 }
 .naviv {
   position: relative;
