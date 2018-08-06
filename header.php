@@ -11,6 +11,8 @@
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remodal/1.1.1/remodal-default-theme.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remodal/1.1.1/remodal.min.css">
     <!-- Favicon, Thumbnail image -->
     <link rel="icon" type="image/x-icon" sizes="16x16" href="<?php bloginfo('template_directory'); ?>/images/favicon-16.ico">
     <link rel="icon" type="image/x-icon" sizes="32x32" href="<?php bloginfo('template_directory'); ?>/images/favicon-32.ico">
@@ -20,6 +22,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/remodal/1.1.1/remodal.min.js"></script>
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-45959800-8"></script>
 </head>
 <body onCopy="return false;">
@@ -92,11 +95,20 @@
     </script>
     <div id="pageTop"><a href="#"><i class="fa fa-chevron-up"></i></a></div>
         <div id="wrapper">
+        <div class="remodal" data-remodal-id="modal" data-remodal-options="hashTracking:false">
+            <button data-remodal-action="close" class="remodal-close"></button>
+                <?php get_search_form(); ?>
+                <ul>
+                    <li class="navir"><a href="<?php echo esc_url( home_url( '/' ) ); ?>"><i class="fas fa-home" aria-hidden="true"></i> Home</a></li>
+                    <li class="navir"><a href="<?php echo esc_url( home_url( '/' ) ); ?>/pickup">Pick up</a></li>
+                    <li class="navir"><a href="<?php echo esc_url( home_url( '/' ) ); ?>/ranking">Ranking</a></li>
+                </ul>
+            </div>
             <!-- Header -->       
             <div id="header">
                 <a href="<?php echo esc_url( home_url( '/' ) ); ?>">
                 <img src="<?php bloginfo('template_directory'); ?>/images/icon.png"> </a>
-                <span id="btn"><a href="javascript:menu_click();"><i class="fas fa-bars fa-lg"></i></a></span>
+                <span id="btn"><a data-remodal-target="modal" href="javascript:menu_click();"><i class="fas fa-bars fa-lg"></i></a></span>
                 <span id="menu">
                     <ul>
                         <li class="naviv"><?php get_search_form(); ?></li>

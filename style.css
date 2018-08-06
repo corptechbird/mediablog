@@ -928,3 +928,49 @@ input.wpcf7-form-control.wpcf7-submit:hover {
   background: #67c5ff;
   color: white;
 }
+.remodal.remodal-is-initialized {
+  background-color: black;
+}
+.remodal {
+  background-color: black;
+}
+.remodal ul {
+  list-style:none;
+}
+.navir {
+  color: #87ccc7;
+  font-size: 18px;
+  margin: 0 18px;
+  position: relative;
+  display: block;
+  top: 10px;
+}
+.navir:before {
+  position: absolute;
+  top: 1.3em;
+  left: 0;
+  content: "";
+  display: inline-block;
+  width: 0;
+  height: 3px;
+  background: #87ccc7;
+  transition: 0.5s;
+}
+.navir:hover:before {
+  width: 100%;
+}
+.navir a:link {
+  text-decoration: none;
+  color:#87ccc7;
+}
+.navir a:visited {
+  text-decoration: none;
+  color:#87ccc7;
+}
+.navir a:hover {
+  text-decoration: none;
+  color:#87ccc7;
+}
+.remodal .s {
+  width: 80%;
+}
