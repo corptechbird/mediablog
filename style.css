@@ -105,9 +105,11 @@ html, body {
   padding: 10px;
 }
 #primary ul h3{
-  color: #87ccc7;
+  background-color: rgba(0, 182, 214, 1);
+  border-radius: 5px;
+  color: white;
   font-size: 1.2em;
-  padding: 0;
+  padding: 10px;
   margin: 0;
 }
 #primary ul div {
