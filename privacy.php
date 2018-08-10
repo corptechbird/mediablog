@@ -18,7 +18,11 @@ Template Name: Privacy
     <div id="contents">
         <div class="post">
             <div class="newentry">Privacy Policy</div>
-                <?php the_content(); ?>
+                <div class="page">
+                    <?php if(have_posts()): while(have_posts()): the_post(); ?>
+                        <?php the_content(); ?>
+                    <?php endwhile; endif; ?>
+                </div>
             <div class="newentry"></div>
             </div>
         </div>
