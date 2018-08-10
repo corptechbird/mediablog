@@ -974,3 +974,8 @@ input.wpcf7-form-control.wpcf7-submit:hover {
 .remodal .s {
   width: 80%;
 }
+#recent-posts-2 ul li a {
+  padding-top:10px;
+  padding-bottom:10px;
+  color: yellow;
+}
