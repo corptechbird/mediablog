@@ -65,6 +65,7 @@ html, body {
 }
 #footer div.text ul {
   list-style:none;
+  padding-left: 0;
 }
 #footer div.text ul li{
   display: inline;
