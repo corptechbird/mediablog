@@ -1,7 +1,7 @@
 <?php get_header(); ?>
 <!-- Contents -->             
     <div id="contents">
-        <div class="post">
+        <div class="page">
             <?php if(function_exists("the_breadcrumb")){the_breadcrumb();} ?>
             <?php if ( have_posts() ) :    // もし投稿があるなら ?>
             <?php while ( have_posts() ) : the_post();    // 繰り返し処理（ループ）開始 ?>
