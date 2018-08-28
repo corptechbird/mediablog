@@ -149,13 +149,18 @@ html, body {
   #primary ul {
     margin: 0;
   }
-}
-@media screen and (max-width: 1000px) {
   #header {
     text-align: center;
   }
   #header img{
     padding-right: 20px;
+  }
+  .text-content .title {
+    margin: 0;
+    font-size: 16px;
+  }
+  .post-main p {
+    margin: 0;
   }
 }
 .screen-reader-text{
@@ -178,7 +183,7 @@ html, body {
   color:rgba(135, 204, 199, 0.7);
 }
 .post-main p {
-  margin:  0 40px;
+  margin: 0 40px;
 }
 .newentry {
   border-bottom: solid 3px skyblue;
