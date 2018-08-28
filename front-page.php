@@ -75,7 +75,7 @@
                                     <p class="caption"><?php the_title(); ?></p>
                                     <div class="content-meta">
                                         <span class="date">
-                                        <span class="far fa-clock" aria-hidden="true"></span> <?php the_date(); ?> <?php the_time(); ?></span>
+                                        <span class="far fa-clock" aria-hidden="true"></span> <?php the_time('Y.m.d') ?> <?php the_time(); ?></span>
                                     </div>
                                 </div>
                             </div>
