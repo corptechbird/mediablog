@@ -616,6 +616,9 @@ a.next.page-numbers:hover{
     margin: 0 0 20px 0;
     font-size: 1.3em;
   }
+  .post {
+    font-size: 1.1em;
+  }
   .post-main p {
     margin: 0;
   }
