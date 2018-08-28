@@ -177,6 +177,10 @@ html, body {
   text-decoration: none;
   color:rgba(135, 204, 199, 0.7);
 }
+.post p {
+  margin: 10px;
+  padding: 10px;
+}
 .newentry {
   border-bottom: solid 3px skyblue;
   position: relative;
