@@ -17,14 +17,29 @@ Template Name: Ranking
 <!-- Contents -->             
     <div id="contents">
         <div class="post">
-            <div class="newentry"></div>
-            <div>
-                <table style="border-collapse:collapse;width:100%;"><tr>
-                <th style="padding:0px">Weekly Popular Ranking TOP 10</th>
-                </tr><tr>
-                <td style="padding:0px"><?php wpp_get_mostpopular('limit=10&range="weekly"&post_type="post"&thumbnail_width=30&thumbnail_height=30&stats_views=0'); ?></td>
-                </tr></table>
+            <div class="newentry">Weekly Popular Ranking</div>
+            <?php
+            // views post metaで記事のPV情報を取得する
+            setPostViews(get_the_ID());
+
+            // ループ開始
+            query_posts('meta_key=post_views_count&orderby=meta_value_num&posts_per_page=5&order=DESC'); while(have_posts()) : the_post(); ?>
+
+            <!-- サムネイルの表示 -->
+            <div class="col-sm-4 col-xs-4">
+                <a href="<?php echo get_permalink(); ?>">
+                    <?php if ( has_post_thumbnail() ) { the_post_thumbnail( 'post-thumbnail'); } ?>
+                </a>
             </div>
+
+            <!-- タイトルの表示 -->
+            <div class="col-sm-8 col-xs-8">
+                <p>
+                    <a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>"><?php the_title(); ?></a>
+                </p>
+            </div>
+
+            <?php endwhile; ?>
             <div class="newentry"></div>
         </div>
     </div><!-- /#main -->
