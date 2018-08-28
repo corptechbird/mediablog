@@ -155,13 +155,6 @@ html, body {
   #header img{
     padding-right: 20px;
   }
-  .title {
-    margin: 0;
-    font-size: 16px;
-  }
-  .post-main p {
-    margin: 0;
-  }
 }
 .screen-reader-text{
   display: none;
@@ -618,6 +611,13 @@ a.next.page-numbers:hover{
   }
   .frame img {
     width: 100%;
+  }
+  .title {
+    margin: 0;
+    font-size: 1.3em;
+  }
+  .post-main p {
+    margin: 0;
   }
 }
 #pageTop {
