@@ -23,7 +23,9 @@ Template Name: Ranking
             setPostViews(get_the_ID());
             $ranking = 1;
             // ループ開始
+            
             query_posts('meta_key=post_views_count&orderby=meta_value_num&posts_per_page=10&order=ASC'); while(have_posts()) : the_post(); ?>
+            <div class="rankingCard">
             <?php if($ranking < 4){ ?>
             <div class="rankingTop">
             <?php echo $ranking; ?>
@@ -55,7 +57,7 @@ Template Name: Ranking
                                 </div>
                             </div>
                         </a> 
-
+                </div>
             <?php $ranking += 1; ?>
             <?php endwhile; ?>
             <div class="newentry"></div>

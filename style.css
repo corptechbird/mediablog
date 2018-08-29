@@ -998,9 +998,36 @@ input.wpcf7-form-control.wpcf7-submit:hover {
 .rankingTop {
   font-size: 1.8em;
   color: rgba(198, 185, 111, 1);
-  margin: 0 30px -20px 30px;
+  margin: 0 0 -20px 10px;
+  border-bottom: solid 3px rgba(198, 185, 111, 1);
+  position: relative;
+  margin: 1px;
+  width: 320px;
+}
+.rankingTop:after {
+  position: absolute;
+  content: " ";
+  display: block;
+  border-bottom: solid 3px #ffc778;
+  bottom: -3px;
+  width: 30%;
 }
 .ranking {
   font-size: 1.6em;
-  margin: 0 30px -20px 30px;
+  margin: 0 0 -20px 10px;
+  border-bottom: solid 3px rgba(198, 185, 111, 1);
+  position: relative;
+  margin: 1px;
+  width: 320px;
+}
+.ranking:after {
+  position: absolute;
+  content: " ";
+  display: block;
+  border-bottom: solid 3px skyblue;
+  bottom: -3px;
+  width: 30%;
+}
+.rankingCard {
+  padding: 10px;
 }
