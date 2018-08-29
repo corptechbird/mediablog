@@ -1001,7 +1001,7 @@ input.wpcf7-form-control.wpcf7-submit:hover {
   margin: 0 0 -20px 10px;
   border-bottom: solid 3px rgba(198, 185, 111, 1);
   position: relative;
-  margin: 1px;
+  margin: 0 20px;
   width: 320px;
 }
 .rankingTop:after {
@@ -1017,7 +1017,7 @@ input.wpcf7-form-control.wpcf7-submit:hover {
   margin: 0 0 -20px 10px;
   border-bottom: solid 3px rgba(198, 185, 111, 1);
   position: relative;
-  margin: 1px;
+  margin: 0 20px;
   width: 320px;
 }
 .ranking:after {
