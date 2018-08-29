@@ -659,9 +659,11 @@ a.next.page-numbers:hover{
   }
   .rankingTop {
     margin: 0;
+    width: 100%;
   }
   .ranking {
     margin: 0;
+    width: 100%;
   }
 }
 #pageTop {
