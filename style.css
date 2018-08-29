@@ -169,11 +169,11 @@ html, body {
   color:#505050;
 }
 .post a {
-  color:rgba(135, 204, 199, 1);
+  color:rgba(0, 182, 214, 1);
 }
 .post a:hover {
   text-decoration: none;
-  color:rgba(135, 204, 199, 0.7);
+  color:rgba(0, 182, 214, 0.7);
 }
 .post-main p {
   margin: 0 40px;
@@ -992,6 +992,15 @@ input.wpcf7-form-control.wpcf7-submit:hover {
   padding: 10px;
   font-size: 0.9em;
 }
-.insta-center{
+.insta-center {
   margin:0 auto;max-width: 380px;
+}
+.rankingTop {
+  font-size: 1.8em;
+  color: rgba(198, 185, 111, 1);
+  margin: 0 30px -20px 30px;
+}
+.ranking {
+  font-size: 1.6em;
+  margin: 0 30px -20px 30px;
 }
