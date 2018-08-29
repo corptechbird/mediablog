@@ -225,11 +225,11 @@ html, body {
   opacity: 0.7;
 }
 .frame a{
-  color:rgba(135, 204, 199, 1.0);
+  color:rgba(0, 182, 214, 1);
 }
 .frame a:hover{
   text-decoration: none;
-  color:rgba(135, 204, 199, 0.7);
+  color:rgba(0, 182, 214, 0.7);
 }
 .abstract-frame {
   text-align: center;
