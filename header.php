@@ -25,13 +25,12 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/remodal/1.1.1/remodal.min.js"></script>
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-45959800-8"></script>
     <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-    <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-<script>
-  (adsbygoogle = window.adsbygoogle || []).push({
-    google_ad_client: "ca-pub-2330122305834701",
-    enable_page_level_ads: true
-  });
-</script>
+    <script>
+    (adsbygoogle = window.adsbygoogle || []).push({
+        google_ad_client: "ca-pub-2330122305834701",
+        enable_page_level_ads: true
+    });
+    </script>
 </head>
 <body onCopy="return false;">
     <script>
