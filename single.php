@@ -11,7 +11,6 @@
                     <span class="time"><i class="far fa-clock" aria-hidden="true"></i> <?php the_date(); ?> <?php the_time(); ?></span>
                     <figure class="frame"><?php the_post_thumbnail(); ?></figure>
                     <?php wp_link_pages('before=<p id="postpage">&after=</p>&pagelink=<span>%</span>'); ?>
-                    <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
                     <ins class="adsbygoogle"
                         style="display:block"
                         data-ad-client="ca-pub-2330122305834701"
@@ -19,8 +18,9 @@
                         data-ad-format="auto"
                         data-full-width-responsive="true"></ins>
                     <script>
+                    (adsbygoogle = window.adsbygoogle || []).push({});
+                    </script>
                     <?php the_content(); ?>
-                    <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
                     <ins class="adsbygoogle"
                         style="display:block"
                         data-ad-client="ca-pub-2330122305834701"
@@ -28,6 +28,8 @@
                         data-ad-format="auto"
                         data-full-width-responsive="true"></ins>
                     <script>
+                    (adsbygoogle = window.adsbygoogle || []).push({});
+                    </script>
                 <?php wp_link_pages('before=<p id="postpage">&after=</p>&pagelink=<span>%</span>'); ?>
             </div>
             <div class="afterpost">
@@ -83,7 +85,6 @@
             <?php endif;    // 条件分岐終了 ?>
         </div>
     </div>
-    <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
     <ins class="adsbygoogle"
         style="display:block"
         data-ad-client="ca-pub-2330122305834701"
@@ -91,4 +92,6 @@
         data-ad-format="auto"
         data-full-width-responsive="true"></ins>
     <script>
+    (adsbygoogle = window.adsbygoogle || []).push({});
+    </script>
 <?php get_footer(); ?>
