@@ -93,11 +93,9 @@
             <?php endif;    // 条件分岐終了 ?>
             <div class="newentry"></div>
             <ins class="adsbygoogle"
-                style="display:block"
+                style="display:inline-block;width:336px;height:280px"
                 data-ad-client="ca-pub-2330122305834701"
-                data-ad-slot="5167212108"
-                data-ad-format="auto"
-                data-full-width-responsive="true"></ins>
+                data-ad-slot="4283281946"></ins>
             <script>
             (adsbygoogle = window.adsbygoogle || []).push({});
             </script>
