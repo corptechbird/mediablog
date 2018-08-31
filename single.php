@@ -10,20 +10,24 @@
                     <div class="tag"><?php the_tags('<ul><li>','</li><li>','</li></ul>'); ?></div>
                     <span class="time"><i class="far fa-clock" aria-hidden="true"></i> <?php the_date(); ?> <?php the_time(); ?></span>
                     <figure class="frame"><?php the_post_thumbnail(); ?></figure>
-                    <ins class="adsbygoogle"
-                    style="display:block"
-                    data-ad-client="ca-pub-2330122305834701"
-                    data-ad-slot="5167212108"
-                    data-ad-format="auto"
-                    data-full-width-responsive="true"></ins>
                     <?php wp_link_pages('before=<p id="postpage">&after=</p>&pagelink=<span>%</span>'); ?>
-                    <?php the_content(); ?>
+                    <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
                     <ins class="adsbygoogle"
-                    style="display:block"
-                    data-ad-client="ca-pub-2330122305834701"
-                    data-ad-slot="5167212108"
-                    data-ad-format="auto"
-                    data-full-width-responsive="true"></ins>
+                        style="display:block"
+                        data-ad-client="ca-pub-2330122305834701"
+                        data-ad-slot="5167212108"
+                        data-ad-format="auto"
+                        data-full-width-responsive="true"></ins>
+                    <script>
+                    <?php the_content(); ?>
+                    <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+                    <ins class="adsbygoogle"
+                        style="display:block"
+                        data-ad-client="ca-pub-2330122305834701"
+                        data-ad-slot="5167212108"
+                        data-ad-format="auto"
+                        data-full-width-responsive="true"></ins>
+                    <script>
                 <?php wp_link_pages('before=<p id="postpage">&after=</p>&pagelink=<span>%</span>'); ?>
             </div>
             <div class="afterpost">
@@ -78,11 +82,13 @@
             <?php else :    // 投稿がない場合 ?>
             <?php endif;    // 条件分岐終了 ?>
         </div>
-    </div><!-- /#main -->
+    </div>
+    <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
     <ins class="adsbygoogle"
-    style="display:block"
-    data-ad-client="ca-pub-2330122305834701"
-    data-ad-slot="5167212108"
-    data-ad-format="auto"
-    data-full-width-responsive="true"></ins>
+        style="display:block"
+        data-ad-client="ca-pub-2330122305834701"
+        data-ad-slot="5167212108"
+        data-ad-format="auto"
+        data-full-width-responsive="true"></ins>
+    <script>
 <?php get_footer(); ?>
