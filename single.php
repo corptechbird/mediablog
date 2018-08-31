@@ -10,10 +10,30 @@
                     <div class="tag"><?php the_tags('<ul><li>','</li><li>','</li></ul>'); ?></div>
                     <span class="time"><i class="far fa-clock" aria-hidden="true"></i> <?php the_date(); ?> <?php the_time(); ?></span>
                     <figure class="frame"><?php the_post_thumbnail(); ?></figure>
+                    <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+                    <!-- main -->
+                    <ins class="adsbygoogle"
+                        style="display:block"
+                        data-ad-client="ca-pub-2330122305834701"
+                        data-ad-slot="5167212108"
+                        data-ad-format="auto"
+                        data-full-width-responsive="true"></ins>
+                    <script>
+                    (adsbygoogle = window.adsbygoogle || []).push({});
+                    </script>
                     <?php wp_link_pages('before=<p id="postpage">&after=</p>&pagelink=<span>%</span>'); ?>
                     <?php the_content(); ?>
                 <?php wp_link_pages('before=<p id="postpage">&after=</p>&pagelink=<span>%</span>'); ?>
             </div>
+            <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+            <!-- main -->
+            <ins class="adsbygoogle"
+                style="display:block"
+                data-ad-client="ca-pub-2330122305834701"
+                data-ad-slot="5167212108"
+                data-ad-format="auto"
+                data-full-width-responsive="true"></ins>
+            <script>
             <div class="afterpost">
             <?php if( has_category() ) {
                 $cats = get_the_category();
@@ -66,5 +86,14 @@
             <?php else :    // 投稿がない場合 ?>
             <?php endif;    // 条件分岐終了 ?>
         </div>
+        <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+                    <!-- main -->
+                    <ins class="adsbygoogle"
+                        style="display:block"
+                        data-ad-client="ca-pub-2330122305834701"
+                        data-ad-slot="5167212108"
+                        data-ad-format="auto"
+                        data-full-width-responsive="true"></ins>
+                    <script>
     </div><!-- /#main -->
 <?php get_footer(); ?>

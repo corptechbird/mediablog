@@ -92,6 +92,15 @@
             </div>
             <?php endif;    // 条件分岐終了 ?>
             <div class="newentry"></div>
+            <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+            <!-- main -->
+            <ins class="adsbygoogle"
+                style="display:block"
+                data-ad-client="ca-pub-2330122305834701"
+                data-ad-slot="5167212108"
+                data-ad-format="auto"
+                data-full-width-responsive="true"></ins>
+            <script>
         </div>
     </div><!-- /#main -->
 <?php get_footer(); ?>
