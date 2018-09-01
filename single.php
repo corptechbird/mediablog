@@ -12,7 +12,6 @@
                     <figure class="frame"><?php the_post_thumbnail(); ?></figure>
                     <?php wp_link_pages('before=<p id="postpage">&after=</p>&pagelink=<span>%</span>'); ?>
                     <table cellspacing="15">
-                    <table>
                     <tr>
                     <td><ins class="adsbygoogle"
                                 style="display:inline-block;width:336px;height:280px"
