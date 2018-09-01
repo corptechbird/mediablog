@@ -1041,8 +1041,3 @@ input.wpcf7-form-control.wpcf7-submit:hover {
 }
 .adleft {float:left; width:336px;margin: 10px;}
 .adright {float:left; width:336px;margin: 10px;}
-.ads {
-  content:"";
-  display:block;
-  clear:both;
-}
