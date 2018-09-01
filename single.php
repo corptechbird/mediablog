@@ -11,26 +11,25 @@
                     <span class="time"><i class="far fa-clock" aria-hidden="true"></i> <?php the_date(); ?> <?php the_time(); ?></span>
                     <figure class="frame"><?php the_post_thumbnail(); ?></figure>
                     <?php wp_link_pages('before=<p id="postpage">&after=</p>&pagelink=<span>%</span>'); ?>
-                    <div class="ads" style="margin-bottom:20px;">
-                        <div class="adleft">
-                            <ins class="adsbygoogle"
-                                style="display:inline-block;width:336px;height:280px"
-                                data-ad-client="ca-pub-2330122305834701"
-                                data-ad-slot="4283281946"></ins>
-                            <script>
-                            (adsbygoogle = window.adsbygoogle || []).push({});
-                            </script>
-                        </div>
-                        <div class="adright">
-                            <ins class="adsbygoogle"
+                    <table cellspacing="15">
+                    <table>
+                    <tr>
+                    <td><ins class="adsbygoogle"
                                 style="display:inline-block;width:336px;height:280px"
                                 data-ad-client="ca-pub-2330122305834701"
                                 data-ad-slot="5240483851"></ins>
                             <script>
                             (adsbygoogle = window.adsbygoogle || []).push({});
-                            </script>
-                        </div>
-                    </div>
+                            </script></td>
+                    <td><ins class="adsbygoogle"
+                                style="display:inline-block;width:336px;height:280px"
+                                data-ad-client="ca-pub-2330122305834701"
+                                data-ad-slot="5240483851"></ins>
+                            <script>
+                            (adsbygoogle = window.adsbygoogle || []).push({});
+                            </script></td>
+                    </tr>
+                    </table>
                     <?php the_content(); ?>
                     <div class="ads" style="margin-bottom:20px;">
                         <div class="adleft">
