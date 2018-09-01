@@ -1041,5 +1041,5 @@ input.wpcf7-form-control.wpcf7-submit:hover {
 }
 .adleft {float:left; width:336px;margin: 10px;}
 .adright {float:left; width:336px;margin: 10px;}
-.clear {color: clear; display:none; clear:both;}
-.clear hr {color: clear; display:none;}
+.clear {clear:both;}
+.clear hr {color: transparent; display:none; height: 0px;}
