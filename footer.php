@@ -21,7 +21,6 @@
                     (adsbygoogle = window.adsbygoogle || []).push({});
                     </script>
                 </div>
-                <hr class="clear">
             </div>
             <div id="footer">
                 <div>
