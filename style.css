@@ -1042,4 +1042,4 @@ input.wpcf7-form-control.wpcf7-submit:hover {
 .adleft {float:left; width:336px;margin: 10px;}
 .adright {float:left; width:336px;margin: 10px;}
 .clear {clear:both;}
-hr.clear {color: transparent; display:none; height: 0px;border:none;}
+.clear hr {color: transparent; display:none; height: 0px;border:none;}
