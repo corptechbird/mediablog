@@ -111,7 +111,7 @@
                     (adsbygoogle = window.adsbygoogle || []).push({});
                     </script>
                 </div>
-                <div class="clear"></div>
+                <hr class="clear">
             </div>
         </div>
     </div>
