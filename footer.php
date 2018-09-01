@@ -3,26 +3,26 @@
             </div><!-- /#contents -->
             <!-- Footer -->             
             <div class="ads" style="margin-bottom:20px;">
-                        <div class="adleft">
-                            <ins class="adsbygoogle"
-                                style="display:inline-block;width:336px;height:280px"
-                                data-ad-client="ca-pub-2330122305834701"
-                                data-ad-slot="4283281946"></ins>
-                            <script>
-                            (adsbygoogle = window.adsbygoogle || []).push({});
-                            </script>
-                        </div>
-                        <div class="adright">
-                            <ins class="adsbygoogle"
-                                style="display:inline-block;width:336px;height:280px"
-                                data-ad-client="ca-pub-2330122305834701"
-                                data-ad-slot="5240483851"></ins>
-                            <script>
-                            (adsbygoogle = window.adsbygoogle || []).push({});
-                            </script>
-                        </div>
-                        <hr class="clear">
-                    </div>
+                <div class="adleft">
+                    <ins class="adsbygoogle"
+                        style="display:inline-block;width:336px;height:280px"
+                        data-ad-client="ca-pub-2330122305834701"
+                        data-ad-slot="4283281946"></ins>
+                    <script>
+                    (adsbygoogle = window.adsbygoogle || []).push({});
+                    </script>
+                </div>
+                <div class="adright">
+                    <ins class="adsbygoogle"
+                        style="display:inline-block;width:336px;height:280px"
+                        data-ad-client="ca-pub-2330122305834701"
+                        data-ad-slot="5240483851"></ins>
+                    <script>
+                    (adsbygoogle = window.adsbygoogle || []).push({});
+                    </script>
+                </div>
+                <hr class="clear">
+            </div>
             <div id="footer">
                 <div>
                     <a href="<?php echo esc_url( home_url( '/' ) ); ?>">

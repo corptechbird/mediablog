@@ -1034,6 +1034,7 @@ input.wpcf7-form-control.wpcf7-submit:hover {
 .ads {
   border-top: solid 2px #f5f5f5;
   padding:0px !important;
+  padding-top: 50px;
   margin: 10px 0px 10px 0px;
   text-align: center;
 }
