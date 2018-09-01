@@ -30,7 +30,7 @@
                             (adsbygoogle = window.adsbygoogle || []).push({});
                             </script>
                         </div>
-                        <hr class="clear">
+                        <div class="clear"></div>
                     </div>
                     <?php the_content(); ?>
                     <div class="ads" style="margin-bottom:20px;">
@@ -52,7 +52,7 @@
                             (adsbygoogle = window.adsbygoogle || []).push({});
                             </script>
                         </div>
-                        <hr class="clear">
+                        <div class="clear"></div>
                     </div>
                 <?php wp_link_pages('before=<p id="postpage">&after=</p>&pagelink=<span>%</span>'); ?>
             </div>
