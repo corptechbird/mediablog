@@ -95,7 +95,7 @@
                         <?php $array = array("swift", "python", "javascript", "ruby");
                         foreach($array as $value){ //fruitsの先頭から１つずつ$fruitに代入する
                             ?>
-                            <a href="<?php echo get_bloginfo('template_directory'); ?>/<?php echo $value; ?>" title="逆引き<?php echo $value; ?>">  
+                            <a href="<?php echo esc_url( home_url( '/' ) ); ?>/<?php echo $value; ?>" title="逆引き<?php echo $value; ?>">  
                                 <div class="l-card">
                                     <div class="l-thumbnail">
                                         <figure class="thumbnail-wrapper">
@@ -104,7 +104,7 @@
                                         <span class="more-text">Read More</span>
                                     </div>
                                     <div class="text-content">
-                                        <p class="caption"><?php echo $value; ?></p>
+                                    <p class="caption"><?php echo $value; ?>でやりたいことからプログラムを逆引きできるドキュメントです。対象者は初心者から上級者までです。使用用途に応じて幅広くお使いいただけます。</p>
                                     </div>
                                 </div>
                             </a>

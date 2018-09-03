@@ -6,7 +6,7 @@
                 <div class="newentry"></div>
                 <div class="cards">
                     <div class="cards-inside">
-                        <?php $array = array("swift", "python", "javascript", "ruby");
+                        <?php $array = array("Swift", "Python", "JavaScript", "Ruby");
                         foreach($array as $value){ //fruitsの先頭から１つずつ$fruitに代入する
                             ?>
                             <a href="<?php echo esc_url( home_url( '/' ) ); ?>/<?php echo $value; ?>" title="逆引き<?php echo $value; ?>">  
@@ -18,7 +18,7 @@
                                         <span class="more-text">Read More</span>
                                     </div>
                                     <div class="text-content">
-                                        <p class="caption"><?php echo $value; ?></p>
+                                        <p class="caption"><?php echo $value; ?>でやりたいことからプログラムを逆引きできるドキュメントです。対象者は初心者から上級者までです。使用用途に応じて幅広くお使いいただけます。</p>
                                     </div>
                                 </div>
                             </a>
