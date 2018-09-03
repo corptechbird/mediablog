@@ -108,11 +108,6 @@
         <div class="remodal" data-remodal-id="modal" data-remodal-options="hashTracking:false">
             <button data-remodal-action="close" class="remodal-close"></button>
                 <?php get_search_form(); ?>
-                <ul>
-                    <li class="navir"><a href="<?php echo esc_url( home_url( '/' ) ); ?>"><i class="fas fa-home" aria-hidden="true"></i> Home</a></li>
-                    <li class="navir"><a href="<?php echo esc_url( home_url( '/' ) ); ?>/pickup">Pick up</a></li>
-                    <li class="navir"><a href="<?php echo esc_url( home_url( '/' ) ); ?>/ranking">Ranking</a></li>
-                </ul>
             </div>
             <!-- Header -->       
             <div id="header">
@@ -122,9 +117,6 @@
                 <span id="menu">
                     <ul>
                         <li class="naviv"><?php get_search_form(); ?></li>
-                        <li class="navi"><a href="<?php echo esc_url( home_url( '/' ) ); ?>"><i class="fas fa-home" aria-hidden="true"></i> Home</a></li>
-                        <li class="navi"><a href="<?php echo esc_url( home_url( '/' ) ); ?>/pickup">Pick up</a></li>
-                        <li class="navi"><a href="<?php echo esc_url( home_url( '/' ) ); ?>/ranking">Ranking</a></li>
                     </ul>
                 </span><!-- #menu -->
             </div><!-- /#header -->

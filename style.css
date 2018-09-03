@@ -770,6 +770,7 @@ a.next.page-numbers:hover{
 #menu {
   display: none;
   float: left;
+  margin-right: 10px;
 }
 .tag ul {
   margin: 0;
