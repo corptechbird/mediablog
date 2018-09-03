@@ -123,14 +123,13 @@ html, body {
   list-style: none;
 }
 #primary ul div ul li{
-  padding: 0;
+  padding: 10px;
   margin: 0;
 }
 #primary ul div ul li a{
   color: #505050;
 }
 #primary ul div ul li a:hover{
-  text-decoration: none;
   color: rgba(80, 80, 80, 0.7);
 }
 #end{
