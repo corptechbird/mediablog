@@ -9,7 +9,6 @@
                     <p class="title"><?php the_title(); ?></p>
                     <div class="tag"><?php the_tags('<ul><li>','</li><li>','</li></ul>'); ?></div>
                     <?php wp_link_pages('before=<p id="postpage">&after=</p>&pagelink=<span>%</span>'); ?>
-                    <p>Python3</p>
                     <div class="ads" style="margin-bottom:20px;">
                         <div class="adleft">
                             <ins class="adsbygoogle"
