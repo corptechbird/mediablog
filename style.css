@@ -178,6 +178,7 @@ html, body {
   }
   #primary {
     width: 100%;
+    min-width: 320px;
     margin-top: 0px;
     padding: 0 1.2em 1.2em 1.2em;
   }
@@ -191,6 +192,7 @@ html, body {
     padding-right: 20px;
   }
 }
+
 .screen-reader-text{
   display: none;
 }
@@ -602,7 +604,6 @@ a.next.page-numbers:hover{
   font-size: 16px;
   font-weight: lighter;
   columns: #505050;
-  min-height: 72px;
 }
 .content-meta {
   overflow: hidden;
@@ -639,6 +640,7 @@ a.next.page-numbers:hover{
   }
   .frame img {
     width: 100%;
+    max-width: 320px;
   }
   .title {
     margin: 0 0 20px 0;
@@ -1042,3 +1044,10 @@ input.wpcf7-form-control.wpcf7-submit:hover {
 .adright {float:left; width:336px;margin: 10px;}
 .clear {clear:both;}
 .clear hr {color: transparent; display:none; height: 0px;border:none;}
+.hljs{
+  font-size:0.9em;
+  margin: 0 20px;
+  box-shadow: 0px 0px 20px -5px rgba(0, 0, 0, 0.8);
+  border-radius: 10px;
+  height: auto;
+}
