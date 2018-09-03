@@ -3,16 +3,18 @@
         <div class="post">
             <div class="newentry"></div>
             <?php if ( have_posts() ) : ?>
-                <?php while ( have_posts() ) : the_post(); ?>
+            <div class="cards">
+                <div class="cards-inside">
+                    <?php while ( have_posts() ) : the_post(); ?>
                     <a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>">  
                         <div class="l-card">
                             <div class="l-thumbnail">
                                 <figure class="thumbnail-wrapper">
-                                    <?php if (has_post_thumbnail()) {
-                                        the_post_thumbnail(array(360, 360));
-                                        } else { ?>
-                                        <img src="<?php echo get_bloginfo('template_directory'); ?>/images/eyecatch.png" alt="アイキャッチ画像" width="360" height="240" />
-                                    <?php } ?>
+                                <?php if (has_post_thumbnail()) {
+                                    the_post_thumbnail(array(360, 360));
+                                    } else { ?>
+                                    <img src="<?php echo get_bloginfo('template_directory'); ?>/images/eyecatch.png" alt="アイキャッチ画像" width="360" height="240" />
+                                <?php } ?>
                                 </figure>
                                 <span class="more-text">Read More</span>
                             </div>
@@ -21,7 +23,22 @@
                             </div>
                         </div>
                     </a> 
-                <?php endwhile; ?>
+                    <?php endwhile; ?>
+                </div>
+            </div>
+            <p class="pagenation">
+            <?php
+                $big = 9999999999;
+                $arg = array(
+                    'base' => str_replace( $big, '%#%', esc_url( get_pagenum_link( $big ) ) ),
+                    'current' => max( 1, get_query_var('paged') ),
+                    'total'   => $wp_query->max_num_pages,
+                    'prev_text' => '«',
+                    'next_text' => '»'
+                );
+                echo paginate_links($arg);
+            ?>
+            </p>
             <?php else : ?>
                 <div class="notfound">
                     <h3>ページが見つかりません</h3>

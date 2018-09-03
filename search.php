@@ -15,28 +15,45 @@
             <?php } ?>
             </div>
             <?php if( $total_results > 0 ):
-                if(have_posts()):
-                    while(have_posts()): the_post();
-                    ?>
-                    <a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>">  
-                        <div class="l-card">
-                            <div class="l-thumbnail">
-                                <figure class="thumbnail-wrapper">
-                                    <?php if (has_post_thumbnail()) { //アイキャッチ画像を設定している場合
-                                        the_post_thumbnail(array(360, 360));
-                                        } else { //アイキャッチ画像を設定していない場合 ?>
-                                        <img src="<?php echo get_bloginfo('template_directory'); ?>/images/eyecatch.png" alt="アイキャッチ画像" width="360" height="240" />
-                                    <?php } ?>
-                                </figure>
-                                <span class="more-text">Read More</span>
+                if(have_posts()): ?>
+                <div class="cards">
+                    <div class="cards-inside">
+                        <?php while(have_posts()): the_post();
+                        ?>
+                        <a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>">  
+                            <div class="l-card">
+                                <div class="l-thumbnail">
+                                    <figure class="thumbnail-wrapper">
+                                        <?php if (has_post_thumbnail()) { //アイキャッチ画像を設定している場合
+                                            the_post_thumbnail(array(360, 360));
+                                            } else { //アイキャッチ画像を設定していない場合 ?>
+                                            <img src="<?php echo get_bloginfo('template_directory'); ?>/images/eyecatch.png" alt="アイキャッチ画像" width="360" height="240" />
+                                        <?php } ?>
+                                    </figure>
+                                    <span class="more-text">Read More</span>
+                                </div>
+                                <div class="text-content">
+                                    <p class="caption"><?php the_title(); ?></p>
+                                </div>
                             </div>
-                            <div class="text-content">
-                                <p class="caption"><?php the_title(); ?></p>
-                            </div>
+                        </a> 
+                        <?php endwhile; ?>
                         </div>
-                    </a> 
-                    <?php endwhile; 
-                endif; 
+                    </div>
+                    <p class="pagenation">
+                    <?php
+                        $big = 9999999999;
+                        $arg = array(
+                            'base' => str_replace( $big, '%#%', esc_url( get_pagenum_link( $big ) ) ),
+                            'current' => max( 1, get_query_var('paged') ),
+                            'total'   => $wp_query->max_num_pages,
+                            'prev_text' => '«',
+                            'next_text' => '»'
+                        );
+                        echo paginate_links($arg);
+                    ?>
+                    </p>
+                <?php endif; 
             else: ?>
             <div class="notfound">
                 <p>申し訳ありません。お探しのページは見つかりませんでした。</p>
