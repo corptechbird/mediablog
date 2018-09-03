@@ -18,7 +18,18 @@
                                         <span class="more-text">Read More</span>
                                     </div>
                                     <div class="text-content">
-                                        <p class="caption"><?php echo $value; ?>でやりたいことからプログラムを逆引きできるドキュメントです。対象者は初心者から上級者までです。使用用途に応じて幅広くお使いいただけます。</p>
+                                        <?php 
+                                            if ($value == 'python') {
+                                                $value = "Python";
+                                            } elseif ($value == 'swift') {
+                                                $value = "Swift";
+                                            } elseif ($value == 'javascript') {
+                                                $value = "JavaScript";
+                                            } elseif ($value == 'ruby') {
+                                                $value = "Ruby";
+                                            }
+                                        ?>
+                                        <p class="caption"><?php echo $value; ?>で実現したいことからプログラムを逆引きできるドキュメントです。初心者から上級者まで、使用用途に応じて幅広くお使いいただけます。</p>
                                     </div>
                                 </div>
                             </a>
