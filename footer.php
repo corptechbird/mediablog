@@ -38,9 +38,9 @@
                 <div class="copy">
                     &copy; <?php echo date('Y'); ?> <?php bloginfo('name'); ?> All rights reserved.
                 </div>
-            </div><!-- /#footer -->
-        </div><!-- /#wrapper -->
-    </div><!-- /#pageTop --> 
+            </div>
+        </div>
+    </div>
 <?php wp_footer(); ?>
 <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5b58a0fda9fc44fd"></script>
 <script>
@@ -55,14 +55,11 @@
             //◇ボタンの表示設定
             $(window).scroll(function(){
             if($(this).scrollTop()>100){
-                //---- 画面を100pxスクロールしたら、ボタンを表示する
                 topBtn.fadeIn();
             }else{
-                //---- 画面が100pxより上なら、ボタンを表示しない
                 topBtn.fadeOut();
             } 
             });
-            // ◇ボタンをクリックしたら、スクロールして上に戻る
             topBtn.click(function(){
                 $('body,html').animate({
                 scrollTop: 0},500);
