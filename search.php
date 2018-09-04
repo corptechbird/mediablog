@@ -27,7 +27,7 @@
                                         <?php if (has_post_thumbnail()) { //アイキャッチ画像を設定している場合
                                             the_post_thumbnail(array(360, 360));
                                             } else { //アイキャッチ画像を設定していない場合 ?>
-                                            <img src="<?php echo get_bloginfo('template_directory'); ?>/images/eyecatch.png" alt="アイキャッチ画像" width="360" height="240" />
+                                            <img src="<?php echo get_bloginfo('template_directory'); ?>/images/<?php echo get_post_type(); ?>.png" alt="アイキャッチ画像" width="360" height="240" />
                                         <?php } ?>
                                     </figure>
                                     <span class="more-text">Read More</span>
