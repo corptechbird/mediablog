@@ -132,6 +132,17 @@ html, body {
 #primary ul div ul li a:visited {
   color: rgba(80, 80, 80, 0.7);
 }
+.post ul {
+  margin: 0 1.2em 1.2em 0;
+  padding: 10px;
+  list-style: none;
+}
+.post ul li a {
+  color: #505050;
+}
+.post ul li a:visited {
+  color: gray;
+}
 #end {
   height: 5px;
   clear: both;
@@ -207,7 +218,6 @@ html, body {
   color:rgba(0, 182, 214, 1);
 }
 .post a:hover {
-  text-decoration: none;
   color:rgba(0, 182, 214, 0.7);
 }
 .post-main p {

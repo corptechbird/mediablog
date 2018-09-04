@@ -35,7 +35,7 @@
     });
     </script>
 </head>
-<body onCopy="return false;">
+<body>
     <script>
 
         var addthis_config = addthis_config||{};
