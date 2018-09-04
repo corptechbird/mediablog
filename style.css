@@ -141,6 +141,9 @@ html, body {
   border-bottom:1px solid lightgray;
   padding: 5px;
 }
+.post ul li:first-child {
+  border-top:1px solid lightgray;
+}
 .post ul li a {
   color: #505050;
 }
