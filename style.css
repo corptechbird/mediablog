@@ -105,7 +105,7 @@ html, body {
   background-color: white;
   padding: 10px;
 }
-#primary ul h3{
+#primary ul h3 {
   background-color: rgba(0, 182, 214, 1);
   border-radius: 5px;
   color: white;
@@ -117,26 +117,25 @@ html, body {
 #primary ul div {
   padding: 10px 0 0 0;
 }
-#primary ul div ul{
+#primary ul div ul {
   padding: 0;
   margin: 0;
   list-style: none;
 }
-#primary ul div ul li{
+#primary ul div ul li {
   padding: 5px;
   margin: 0;
 }
-#primary ul div ul li a{
+#primary ul div ul li a {
   color: #505050;
 }
-#primary ul div ul li a:hover{
+#primary ul div ul li a:visited {
   color: rgba(80, 80, 80, 0.7);
 }
-#end{
+#end {
   height: 5px;
   clear: both;
 }
-
 .rankingTop {
   font-size: 1.8em;
   color: rgba(198, 185, 111, 1);
