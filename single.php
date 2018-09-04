@@ -70,7 +70,7 @@
             <ul>
                 <?php $args = array(
                     'numberposts' => -1,                //表示（取得）する記事の数
-                    'post_type' => 'python'    //投稿タイプの指定
+                    'post_type' => $post_type    //投稿タイプの指定
                 );
                 $posts = get_posts( $args );
                 if( $posts ) : foreach( $posts as $post) : setup_postdata( $post ); ?>
