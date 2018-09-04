@@ -1067,3 +1067,6 @@ input.wpcf7-form-control.wpcf7-submit:hover {
   border-radius: 10px;
   height: auto;
 }
+.codecaption {
+  margin: 1.0em 0 0 1.0em; 
+}
