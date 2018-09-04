@@ -139,6 +139,7 @@ html, body {
 }
 .post ul li {
   border-bottom:1px solid lightgray;
+  padding: 5px;
 }
 .post ul li a {
   color: #505050;
