@@ -133,8 +133,8 @@ html, body {
   color: rgba(80, 80, 80, 0.7);
 }
 .post ul {
-  margin: 0 0 1.0em 0;
-  padding: 0;
+  margin: 0 1.0em 1.0em 1.0em;
+  padding: 0 10px 10px 10px;
   list-style: none;
 }
 .post ul li {
@@ -142,7 +142,7 @@ html, body {
   padding: 5px;
 }
 .post ul li:first-child {
-  padding-top: -15px;
+  padding: 0 5px 5px 5px;
 }
 .post ul li a {
   color: #505050;
