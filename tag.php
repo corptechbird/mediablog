@@ -10,11 +10,13 @@
                         <div class="l-card">
                             <div class="l-thumbnail">
                                 <figure class="thumbnail-wrapper">
-                                <?php if (has_post_thumbnail()) {
-                                    the_post_thumbnail(array(360, 360));
-                                    } else { ?>
-                                    <img src="<?php echo get_bloginfo('template_directory'); ?>/images/eyecatch.png" alt="アイキャッチ画像" width="360" height="240" />
-                                <?php } ?>
+                                    <?php if (has_post_thumbnail()) {
+                                            the_post_thumbnail(array(360, 360));
+                                        } elseif (get_post_type() == 'python' | 'javascript' | 'ruby' | 'swift') { ?>
+                                            <img src="<?php echo get_bloginfo('template_directory'); ?>/images/<?php echo get_post_type(); ?>.png" alt="<?php echo get_post_type(); ?>画像" width="360" height="240" />
+                                        <?php } else { ?>
+                                            <img src="<?php echo get_bloginfo('template_directory'); ?>/images/eyecatch.png" alt="アイキャッチ画像" width="360" height="240" />
+                                    <?php } ?>
                                 </figure>
                                 <span class="more-text">Read More</span>
                             </div>
@@ -22,7 +24,7 @@
                                 <p class="caption"><?php the_title(); ?></p>
                             </div>
                         </div>
-                    </a> 
+                    </a>  
                     <?php endwhile; ?>
                 </div>
             </div>
