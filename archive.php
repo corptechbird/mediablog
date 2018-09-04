@@ -13,9 +13,9 @@
                                     <?php if (has_post_thumbnail()) {
                                             the_post_thumbnail(array(360, 220));
                                         } elseif (get_post_type() == 'python' || get_post_type() == 'javascript' || get_post_type() == 'ruby' || get_post_type() == 'swift') { ?>
-                                            <img src="<?php echo get_bloginfo('template_directory'); ?>/images/<?php echo get_post_type(); ?>.png" alt="<?php echo get_post_type(); ?>画像" width="360" height="240" />
+                                            <img src="<?php echo get_bloginfo('template_directory'); ?>/images/<?php echo get_post_type(); ?>.png" alt="<?php echo get_post_type(); ?>画像" width="360" height="220" />
                                         <?php } else { ?>
-                                            <img src="<?php echo get_bloginfo('template_directory'); ?>/images/eyecatch.png" alt="アイキャッチ画像" width="360" height="240" />
+                                            <img src="<?php echo get_bloginfo('template_directory'); ?>/images/eyecatch.png" alt="アイキャッチ画像" width="360" height="220" />
                                     <?php } ?>
                                 </figure>
                                 <span class="more-text">Read More</span>
