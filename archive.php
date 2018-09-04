@@ -6,23 +6,25 @@
             <div class="cards">
                 <div class="cards-inside">
                     <?php while ( have_posts() ) : the_post(); ?>
-                        <a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>">  
-                            <div class="l-card">
-                                <div class="l-thumbnail">
-                                    <figure class="thumbnail-wrapper">
+                    <a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>">  
+                        <div class="l-card">
+                            <div class="l-thumbnail">
+                                <figure class="thumbnail-wrapper">
                                     <?php if (has_post_thumbnail()) {
-                                        the_post_thumbnail(array(360, 360));
-                                        } else { ?>
-                                        <img src="<?php echo get_bloginfo('template_directory'); ?>/images/eyecatch.png" alt="アイキャッチ画像" width="360" height="240" />
+                                            the_post_thumbnail(array(360, 240));
+                                        } elseif (get_post_type() == 'python' || get_post_type() == 'javascript' || get_post_type() == 'ruby' || get_post_type() == 'swift') { ?>
+                                            <img src="<?php echo get_bloginfo('template_directory'); ?>/images/<?php echo get_post_type(); ?>.png" alt="<?php echo get_post_type(); ?>画像" width="360" height="240" />
+                                        <?php } else { ?>
+                                            <img src="<?php echo get_bloginfo('template_directory'); ?>/images/eyecatch.png" alt="アイキャッチ画像" width="360" height="240" />
                                     <?php } ?>
-                                    </figure>
-                                    <span class="more-text">Read More</span>
-                                </div>
-                                <div class="text-content">
-                                    <p class="caption"><?php the_title(); ?></p>
-                                </div>
+                                </figure>
+                                <span class="more-text">Read More</span>
                             </div>
-                        </a>
+                            <div class="text-content">
+                                <p class="caption"><?php the_title(); ?></p>
+                            </div>
+                        </div>
+                    </a>
                     <?php endwhile; ?>
                 </div>
             </div>
