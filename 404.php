@@ -49,7 +49,7 @@
             <div class="newentry"></div>
             <div class="cards">
                 <div class="cards-inside">
-                    <?php $array = array("swift", "python", "javascript", "ruby");
+                    <?php $array = array("swift", "python", "go", "scala", "android", "kotlin", "flutter", "unity");
                         foreach($array as $value){
                         ?>
                         <a href="<?php echo esc_url( home_url( '/' ) ); ?>/<?php echo $value; ?>" title="逆引き<?php echo $value; ?>">  
@@ -64,12 +64,20 @@
                                     <?php 
                                         if ($value == 'python') {
                                             $value = "Python";
+                                        } elseif ($value == 'flutter') {
+                                            $value = "Flutter";
+                                        } elseif ($value == 'go') {
+                                            $value = "Go";
                                         } elseif ($value == 'swift') {
                                             $value = "Swift";
-                                        } elseif ($value == 'javascript') {
-                                            $value = "JavaScript";
-                                        } elseif ($value == 'ruby') {
-                                            $value = "Ruby";
+                                        } elseif ($value == 'kotlin') {
+                                            $value = "Kotlin";
+                                        } elseif ($value == 'android') {
+                                            $value = "Android";
+                                        } elseif ($value == 'scala') {
+                                            $value = "Scala";
+                                        } elseif ($value == 'unity') {
+                                            $value = "Unity";
                                         }
                                     ?>
                                     <p class="caption"><?php echo $value; ?>で実現したいことからプログラムを逆引きできるドキュメントです。初心者から上級者まで、使用用途に応じて幅広くお使いいただけます。</p>

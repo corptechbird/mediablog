@@ -26,7 +26,7 @@
                                     <figure class="thumbnail-wrapper">
                                         <?php if (has_post_thumbnail()) {
                                                 the_post_thumbnail(array(360, 220));
-                                            } elseif (get_post_type() == 'python' || get_post_type() == 'javascript' || get_post_type() == 'ruby' || get_post_type() == 'swift') { ?>
+                                            } elseif (get_post_type() == 'python' || get_post_type() == 'flutter' || get_post_type() == 'go' || get_post_type() == 'swift' || get_post_type() == 'kotlin' || get_post_type() == 'android' || get_post_type() == 'scala' || get_post_type() == 'unity') { ?>
                                                 <img src="<?php echo get_bloginfo('template_directory'); ?>/images/<?php echo get_post_type(); ?>.png" alt="<?php echo get_post_type(); ?>画像" width="360" height="220" />
                                             <?php } else { ?>
                                                 <img src="<?php echo get_bloginfo('template_directory'); ?>/images/eyecatch.png" alt="アイキャッチ画像" width="360" height="220" />
@@ -66,7 +66,7 @@
             <div class="newentry"></div>
             <div class="cards">
                 <div class="cards-inside">
-                    <?php $array = array("swift", "python", "javascript", "ruby");
+                    <?php $array = array("swift", "python", "go", "scala", "android", "kotlin", "flutter", "unity");
                         foreach($array as $value){
                         ?>
                         <a href="<?php echo esc_url( home_url( '/' ) ); ?>/<?php echo $value; ?>" title="逆引き<?php echo $value; ?>">  
@@ -81,12 +81,20 @@
                                     <?php 
                                         if ($value == 'python') {
                                             $value = "Python";
+                                        } elseif ($value == 'flutter') {
+                                            $value = "Flutter";
+                                        } elseif ($value == 'go') {
+                                            $value = "Go";
                                         } elseif ($value == 'swift') {
                                             $value = "Swift";
-                                        } elseif ($value == 'javascript') {
-                                            $value = "JavaScript";
-                                        } elseif ($value == 'ruby') {
-                                            $value = "Ruby";
+                                        } elseif ($value == 'kotlin') {
+                                            $value = "Kotlin";
+                                        } elseif ($value == 'android') {
+                                            $value = "Android";
+                                        } elseif ($value == 'scala') {
+                                            $value = "Scala";
+                                        } elseif ($value == 'unity') {
+                                            $value = "Unity";
                                         }
                                     ?>
                                     <p class="caption"><?php echo $value; ?>でできることからプログラムを逆引きできるドキュメントです。実行結果の画像を添付していますし、プログラムは動作確認済みなのでコピペでもすぐ動きます。</p>

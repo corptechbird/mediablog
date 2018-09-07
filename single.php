@@ -9,15 +9,33 @@
                 $post_name = ""; 
                 if ($post_type == 'python') {
                     $post_name = "Python";
+                } elseif ($post_type == 'flutter') {
+                    $post_name = "Flutter";
+                } elseif ($post_type == 'go') {
+                    $post_name = "Go";
                 } elseif ($post_type == 'swift') {
                     $post_name = "Swift";
-                } elseif ($post_type == 'javascript') {
-                    $post_name = "JavaScript";
-                } elseif ($post_type == 'ruby') {
-                    $post_name = "Ruby";
+                } elseif ($post_type == 'kotlin') {
+                    $post_name = "Kotlin";
+                } elseif ($post_type == 'android') {
+                    $post_name = "Android";
+                } elseif ($post_type == 'scala') {
+                    $post_name = "Scala";
+                } elseif ($post_type == 'unity') {
+                    $post_name = "Unity";
                 }
                 ?>
-                <figure class="frame"><a href="<?php echo esc_url( home_url( '/' ) ); ?>/<?php echo $post_type ?>/"><img src="<?php echo get_bloginfo('template_directory'); ?>/images/<?php echo $post_type ?>.png" alt="<?php echo $post_type ?>画像" width="360"></a></figure>
+                <figure class="frame">
+                    <a href="<?php echo esc_url( home_url( '/' ) ); ?>/<?php echo $post_type ?>/">
+                    <?php if (has_post_thumbnail()) {
+                            the_post_thumbnail(array(360, 220));
+                        } elseif (get_post_type() == 'python' || get_post_type() == 'flutter' || get_post_type() == 'go' || get_post_type() == 'swift' || get_post_type() == 'kotlin' || get_post_type() == 'android' || get_post_type() == 'scala' || get_post_type() == 'unity') { ?>
+                            <img src="<?php echo get_bloginfo('template_directory'); ?>/images/<?php echo $post_type; ?>.png" alt="<?php echo $post_name; ?>画像" width="360" />
+                        <?php } else { ?>
+                            <img src="<?php echo get_bloginfo('template_directory'); ?>/images/eyecatch.png" alt="アイキャッチ画像" width="360" />
+                    <?php } ?>
+                    </a>
+                </figure>
                 <p class="title"><?php the_title(); ?></p>
                 <div class="tag"><?php the_tags('<ul><li>','</li><li>','</li></ul>'); ?></div>
                 <?php wp_link_pages('before=<p id="postpage">&after=</p>&pagelink=<span>%</span>'); ?>
@@ -86,7 +104,7 @@
             <div class="afterpost">
                 <div class="cards">
                     <div class="cards-inside">
-                        <?php $array = array("swift", "python", "javascript", "ruby");
+                        <?php $array = array("swift", "python", "go", "scala", "android", "kotlin", "flutter", "unity");
                         foreach($array as $value){
                         ?>
                         <a href="<?php echo esc_url( home_url( '/' ) ); ?>/<?php echo $value; ?>" title="逆引き<?php echo $value; ?>">  
@@ -101,12 +119,20 @@
                                     <?php 
                                         if ($value == 'python') {
                                             $value = "Python";
+                                        } elseif ($value == 'flutter') {
+                                            $value = "Flutter";
+                                        } elseif ($value == 'go') {
+                                            $value = "Go";
                                         } elseif ($value == 'swift') {
                                             $value = "Swift";
-                                        } elseif ($value == 'javascript') {
-                                            $value = "JavaScript";
-                                        } elseif ($value == 'ruby') {
-                                            $value = "Ruby";
+                                        } elseif ($value == 'kotlin') {
+                                            $value = "Kotlin";
+                                        } elseif ($value == 'android') {
+                                            $value = "Android";
+                                        } elseif ($value == 'scala') {
+                                            $value = "Scala";
+                                        } elseif ($value == 'unity') {
+                                            $value = "Unity";
                                         }
                                     ?>
                                     <p class="caption"><?php echo $value; ?>でできることからプログラムを逆引きできるドキュメントです。実行結果の画像を添付していますし、プログラムは動作確認済みなのでコピペでもすぐ動きます。</p>

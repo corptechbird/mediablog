@@ -6,7 +6,7 @@
             <div class="newentry"></div>
             <div class="cards">
                 <div class="cards-inside">
-                    <?php $array = array("swift", "python", "javascript", "ruby");
+                    <?php $array = array("swift", "python", "go", "scala", "android", "kotlin", "flutter", "unity");
                     foreach($array as $value){ //fruitsの先頭から１つずつ$fruitに代入する
                         ?>
                         <a href="<?php echo esc_url( home_url( '/' ) ); ?>/<?php echo $value; ?>" title="逆引き<?php echo $value; ?>">  
@@ -21,12 +21,20 @@
                                     <?php 
                                         if ($value == 'python') {
                                             $value = "Python";
+                                        } elseif ($value == 'flutter') {
+                                            $value = "Flutter";
+                                        } elseif ($value == 'go') {
+                                            $value = "Go";
                                         } elseif ($value == 'swift') {
                                             $value = "Swift";
-                                        } elseif ($value == 'javascript') {
-                                            $value = "JavaScript";
-                                        } elseif ($value == 'ruby') {
-                                            $value = "Ruby";
+                                        } elseif ($value == 'kotlin') {
+                                            $value = "Kotlin";
+                                        } elseif ($value == 'android') {
+                                            $value = "Android";
+                                        } elseif ($value == 'scala') {
+                                            $value = "Scala";
+                                        } elseif ($value == 'unity') {
+                                            $value = "Unity";
                                         }
                                     ?>
                                     <p class="caption"><?php echo $value; ?>でできることからプログラムを逆引きできるドキュメントです。実行結果の画像を添付していますし、プログラムは動作確認済みなのでコピペでもすぐ動きます。</p>
