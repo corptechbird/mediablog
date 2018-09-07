@@ -5,12 +5,20 @@
         $slug_name = basename(get_permalink());
         if ($slug_name == 'python') {
             $post_name = "Python";
+        } elseif ($slug_name == 'flutter') {
+            $slug_name = "Flutter";
+        } elseif ($slug_name == 'go') {
+            $post_name = "Go";
         } elseif ($slug_name == 'swift') {
             $post_name = "Swift";
-        } elseif ($slug_name == 'javascript') {
-            $post_name = "JavaScript";
-        } elseif ($slug_name == 'ruby') {
-            $post_name = "Ruby";
+        } elseif ($slug_name == 'kotlin') {
+            $post_name = "Kotlin";
+        } elseif ($slug_name == 'android') {
+            $post_name = "Android";
+        } elseif ($slug_name == 'scala') {
+            $post_name = "Scala";
+        } elseif ($slug_name == 'unity') {
+            $post_name = "Unity";
         }
         ?>
             <div class="newentry">『逆引き<?php echo $post_name; ?>』記事一覧</div>     
@@ -91,7 +99,7 @@
             <div class="afterpost">
                 <div class="cards">
                     <div class="cards-inside">
-                    <?php $array = array("swift", "python", "javascript", "ruby");
+                    <?php $array = array("swift", "python", "go", "scala", "android", "kotlin", "flutter", "unity");
                     foreach($array as $value){ //fruitsの先頭から１つずつ$fruitに代入する
                         ?>
                         <a href="<?php echo esc_url( home_url( '/' ) ); ?>/<?php echo $value; ?>" title="逆引き<?php echo $value; ?>">  
@@ -106,12 +114,20 @@
                                     <?php 
                                         if ($value == 'python') {
                                             $value = "Python";
+                                        } elseif ($value == 'flutter') {
+                                            $value = "Flutter";
+                                        } elseif ($value == 'go') {
+                                            $value = "Go";
                                         } elseif ($value == 'swift') {
                                             $value = "Swift";
-                                        } elseif ($value == 'javascript') {
-                                            $value = "JavaScript";
-                                        } elseif ($value == 'ruby') {
-                                            $value = "Ruby";
+                                        } elseif ($value == 'kotlin') {
+                                            $value = "Kotlin";
+                                        } elseif ($value == 'android') {
+                                            $value = "Android";
+                                        } elseif ($value == 'scala') {
+                                            $value = "Scala";
+                                        } elseif ($value == 'unity') {
+                                            $value = "Unity";
                                         }
                                     ?>
                                     <p class="caption"><?php echo $value; ?>でできることからプログラムを逆引きできるドキュメントです。実行結果の画像を添付していますし、プログラムは動作確認済みなのでコピペでもすぐ動きます。</p>
