@@ -26,10 +26,10 @@
             $post_name = "Unity";
         }
         if($post_type == 'python' || $post_type == 'flutter' || $post_type == 'go' || $post_type == 'swift' || $post_type == 'kotlin' || $post_type == 'android' || $post_type == 'scala' || $post_type == 'unity'){ ?>
-            <meta name="keywords" content="武田勝輝, 逆引き<?php $post_name ?>, 逆引き, 独学, 入門, <?php $post_name ?>">
+        <meta name="keywords" content="武田勝輝, 逆引き<?php echo $post_name; ?>, 逆引き, 独学, 入門, <?php echo $post_name; ?>">
         <?php
             } else { ?>
-            <meta name="keywords" content="武田勝輝, 逆引き, 独学, 入門, プログラミング">
+         <meta name="keywords" content="武田勝輝, 逆引き, 独学, 入門, プログラミング">
         <?php
             }
         ?>
