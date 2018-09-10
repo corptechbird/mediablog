@@ -6,7 +6,7 @@
         if ($slug_name == 'python') {
             $post_name = "Python";
         } elseif ($slug_name == 'flutter') {
-            $slug_name = "Flutter";
+            $post_name = "Flutter";
         } elseif ($slug_name == 'go') {
             $post_name = "Go";
         } elseif ($slug_name == 'swift') {
