@@ -264,7 +264,6 @@ html, body {
 }
 .frame {
   text-align: center;
-  padding: 20px;
 }
 .frame img {
   display: inline-block;
@@ -273,6 +272,7 @@ html, body {
   max-width: 620px;
   height: auto;
   margin: 20px 0px 20px 0px;
+  padding: 20px;
 }
 .frame a img:hover{
   opacity: 0.7;
