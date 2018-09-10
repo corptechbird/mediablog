@@ -264,6 +264,7 @@ html, body {
 }
 .frame {
   text-align: center;
+  padding: 20px;
 }
 .frame img {
   display: inline-block;
