@@ -6,7 +6,7 @@
             <div class="newentry"></div>
             <div class="cards">
                 <div class="cards-inside">
-                    <a href="http://techbird:8080/tools" title="CSV Visualizer">  
+                    <a href="http://techbird.site:8080/tools" title="CSV Visualizer">  
                         <div class="l-card">
                             <div class="l-thumbnail">
                                 <figure class="thumbnail-wrapper">
