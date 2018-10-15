@@ -6,6 +6,19 @@
             <div class="newentry"></div>
             <div class="cards">
                 <div class="cards-inside">
+                    <a href="http://techbird:8080/tools" title="CSV Visualizer">  
+                        <div class="l-card">
+                            <div class="l-thumbnail">
+                                <figure class="thumbnail-wrapper">
+                                    <img src="<?php echo get_bloginfo('template_directory'); ?>/images/csvvisualizer.png" alt="アイキャッチ画像" width="360" height="220" />
+                                </figure>
+                                <span class="more-text">Read More</span>
+                            </div>
+                            <div class="text-content">
+                                <p class="caption">人気急上昇中！データサイエンスに必要な基礎俯瞰処理をワンクリックで実現するツールです。CSVのレコード数が要素別に一目でわかるようになります。</p>
+                            </div>
+                        </div>
+                    </a>
                     <?php $array = array("swift", "python", "go", "scala", "android", "kotlin", "flutter", "unity");
                     foreach($array as $value){ //fruitsの先頭から１つずつ$fruitに代入する
                         ?>
