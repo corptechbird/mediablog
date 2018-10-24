@@ -3,22 +3,14 @@
         <div class="post">
         <?php $post_name = ""; 
         $slug_name = basename(get_permalink());
-        if ($slug_name == 'python') {
-            $post_name = "Python";
-        } elseif ($slug_name == 'flutter') {
-            $slug_name = "Flutter";
-        } elseif ($slug_name == 'go') {
-            $post_name = "Go";
-        } elseif ($slug_name == 'swift') {
-            $post_name = "Swift";
-        } elseif ($slug_name == 'kotlin') {
-            $post_name = "Kotlin";
-        } elseif ($slug_name == 'android') {
-            $post_name = "Android";
-        } elseif ($slug_name == 'scala') {
-            $post_name = "Scala";
-        } elseif ($slug_name == 'unity') {
-            $post_name = "Unity";
+        if ($value == 'python') {
+            $value = "Python";
+        } elseif ($value == 'swift') {
+            $value = "Swift";
+        } elseif ($value == 'kotlin') {
+            $value = "Kotlin";
+        } elseif ($value == 'android') {
+            $value = "Android";
         }
         ?>
             <div class="newentry">『逆引き<?php echo $post_name; ?>』記事一覧</div>     
@@ -43,7 +35,7 @@
                             <div class="l-card">
                                 <div class="l-thumbnail">
                                     <figure class="thumbnail-wrapper">
-                                        <img src="<?php echo get_bloginfo('template_directory'); ?>/images/<?php echo $slug_name; ?>.png" alt="アイキャッチ画像" width="360" height="220" />
+                                        <img src="<?php echo get_bloginfo('template_directory'); ?>/images/<?php echo $slug_name; ?>.png" alt="Eye Catch Image" width="360" height="220" />
                                     </figure>
                                     <span class="more-text">Read More</span>
                                 </div>
@@ -52,7 +44,7 @@
                                 </div>
                             </div>
                         </a>
-                    <?php endwhile;    // 繰り返し処理終了 ?>
+                    <?php endwhile; ?>
                 </div>
             </div>
             <p class="pagenation">
@@ -68,12 +60,12 @@
                     echo paginate_links($arg);
                 ?>
             </p>
-            <?php else :    // 投稿がない場合 ?>
+            <?php else : ?>
             <div class="notfound">
-                <h3>ページが見つかりません</h3>
-                <p>申し訳ありません。お探しのページは見つかりませんでした。</p>
+                <h3>Page Not Found</h3>
+                <p>Sorry. The page you were looking for could not be found.</p>
             </div>
-            <?php endif;    // 条件分岐終了 ?>
+            <?php endif; ?>
             <div class="newentry"></div>
             <div class="ads" style="margin-bottom:20px;">
                 <div class="adleft">
@@ -99,14 +91,14 @@
             <div class="afterpost">
                 <div class="cards">
                     <div class="cards-inside">
-                    <?php $array = array("swift", "python", "go", "scala", "android", "kotlin", "flutter", "unity");
-                    foreach($array as $value){ //fruitsの先頭から１つずつ$fruitに代入する
+                    <?php $array = array("swift", "python", "android", "kotlin");
+                    foreach($array as $value){ 
                         ?>
-                        <a href="<?php echo esc_url( home_url( '/' ) ); ?>/<?php echo $value; ?>" title="逆引き<?php echo $value; ?>">  
+                        <a href="<?php echo esc_url( home_url( '/' ) ); ?>/<?php echo $value; ?>" title="<?php echo $value; ?> Dictionary">  
                             <div class="l-card">
                                 <div class="l-thumbnail">
                                     <figure class="thumbnail-wrapper">
-                                        <img src="<?php echo get_bloginfo('template_directory'); ?>/images/<?php echo $value; ?>.png" alt="アイキャッチ画像" width="360" height="220" />
+                                        <img src="<?php echo get_bloginfo('template_directory'); ?>/images/<?php echo $value; ?>.png" alt="Eye Catch Image" width="360" height="220" />
                                     </figure>
                                     <span class="more-text">Read More</span>
                                 </div>
@@ -114,23 +106,15 @@
                                     <?php 
                                         if ($value == 'python') {
                                             $value = "Python";
-                                        } elseif ($value == 'flutter') {
-                                            $value = "Flutter";
-                                        } elseif ($value == 'go') {
-                                            $value = "Go";
                                         } elseif ($value == 'swift') {
                                             $value = "Swift";
                                         } elseif ($value == 'kotlin') {
                                             $value = "Kotlin";
                                         } elseif ($value == 'android') {
                                             $value = "Android";
-                                        } elseif ($value == 'scala') {
-                                            $value = "Scala";
-                                        } elseif ($value == 'unity') {
-                                            $value = "Unity";
                                         }
                                     ?>
-                                    <p class="caption"><?php echo $value; ?>でできることからプログラムを逆引きできるドキュメントです。実行結果の画像を添付していますし、プログラムは動作確認済みなのでコピペでもすぐ動きます。</p>
+                                    <p class="caption">This document shows the program of <?php echo $value; ?>, images and videos of the execution results at a glance. This is suitable for beginners to use as reference.</p>
                                 </div>
                             </div>
                         </a>

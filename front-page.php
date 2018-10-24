@@ -5,11 +5,11 @@
             <div class="newentry"></div>
             <div class="cards">
                 <div class="cards-inside">
-                    <a href="http://techbird.site:8080/tools" title="CSV Visualizer">  
+                    <a href="http://techbird.site:8080/tools" title="Data Science Automator">  
                         <div class="l-card">
                             <div class="l-thumbnail">
                                 <figure class="thumbnail-wrapper">
-                                    <img src="<?php echo get_bloginfo('template_directory'); ?>/images/datascience.png" alt="Eyecatch Image" width="360" height="220" />
+                                    <img src="<?php echo get_bloginfo('template_directory'); ?>/images/datascience.png" alt="Eye Catch Image" width="360" height="220" />
                                 </figure>
                                 <span class="more-text">Read More</span>
                             </div>
