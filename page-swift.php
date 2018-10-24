@@ -16,23 +16,23 @@
             <?php
             $wp_query = new WP_Query();
             $param = array(
-                'posts_per_page' => '-1', //表示件数を''に入力。-1なら全件表示になります
-                'post_type' => $slug_name, //カスタム投稿タイプのスラグ（名称）を入れる
-                'post_status' => 'publish', //取得する記事の状態。publishなら一般公開のもののみ
-                'orderby' => 'ID', //ID順に並び替えをする
-                'order' => 'ASC' //IDの大きい順（新しい記事順）に上から表示する
+                'posts_per_page' => '-1', 
+                'post_type' => $slug_name, 
+                'post_status' => 'publish', 
+                'orderby' => 'ID', 
+                'order' => 'ASC' 
             );
             $wp_query->query($param);
             if($wp_query->have_posts()): while($wp_query->have_posts()) : $wp_query->the_post();
             ?>
             <?php endwhile; endif; ?>
-            <?php if ( have_posts() ) :    // もし投稿があるなら ?>
+            <?php if ( have_posts() ) : ?>
                 <figure class="frame">
                     <a href="<?php echo esc_url( home_url( '/' ) ); ?>/<?php echo $post_type ?>/">
                     <?php if (has_post_thumbnail()) {
                             the_post_thumbnail(array(360, 220));
                         } elseif (get_post_type() == 'python' || get_post_type() == 'swift' || get_post_type() == 'kotlin' || get_post_type() == 'android') { ?>
-                            <img src="<?php echo get_bloginfo('template_directory'); ?>/images/<?php echo $post_type; ?>.png" alt="<?php echo $post_name; ?> Image" width="360" />
+                            <img src="<?php echo get_bloginfo('template_directory'); ?>/images/swift.png" alt="Swift Image" width="360" />
                         <?php } else { ?>
                             <img src="<?php echo get_bloginfo('template_directory'); ?>/images/eyecatch.png" alt="Eye Catch Image" width="360" />
                     <?php } ?>
@@ -46,23 +46,7 @@
                     </li>
                     <?php endwhile; ?>     
                         </ul>
-            <ul>
-                <?php $args = array(
-                    'numberposts' => -1,
-                    'post_type' => $post_type
-                );
-                $posts = get_posts( $args );
-                if( $posts ) : foreach( $posts as $post) : setup_postdata( $post ); ?>
-                    <li>
-                        <a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
-                    </li>
-                <?php endforeach; ?>
-                <?php else : ?>
-                    <li><p>No Article</p></li>
-                <?php endif;
-                wp_reset_postdata(); ?>
-            </ul>
-            <div class="cards">
+            <!-- <div class="cards">
                 <div class="cards-inside">
                     <?php while ( have_posts() ) : the_post();    // 繰り返し処理（ループ）開始 ?>
                         <a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>">  
@@ -80,7 +64,7 @@
                         </a>
                     <?php endwhile; ?>
                 </div>
-            </div>
+            </div> -->
             <p class="pagenation">
                 <?php
                     $big = 9999999999;
