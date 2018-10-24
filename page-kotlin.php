@@ -13,7 +13,7 @@
             $post_name = "Android";
         }
         ?>
-            <div class="newentry">『<?php echo $post_name; ?> Dictionary』Article List</div>     
+            <div class="newentry">『<?php echo $value; ?> Dictionary』Article List</div>     
             <?php
             $wp_query = new WP_Query();
             $param = array(
@@ -103,18 +103,7 @@
                                     <span class="more-text">Read More</span>
                                 </div>
                                 <div class="text-content">
-                                    <?php 
-                                        if ($value == 'python') {
-                                            $value = "Python";
-                                        } elseif ($value == 'swift') {
-                                            $value = "Swift";
-                                        } elseif ($value == 'kotlin') {
-                                            $value = "Kotlin";
-                                        } elseif ($value == 'android') {
-                                            $value = "Android";
-                                        }
-                                    ?>
-                                    <p class="caption">This document shows the program of <?php echo $value; ?>, images and videos of the execution results at a glance. This is suitable for beginners to use as reference.</p>
+                                    <p class="caption">This document shows the program of <?php echo $post_name; ?>, images and videos of the execution results at a glance. This is suitable for beginners to use as reference.</p>
                                 </div>
                             </div>
                         </a>

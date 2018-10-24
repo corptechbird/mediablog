@@ -5,8 +5,7 @@
             <?php if ( have_posts() ) : ?>
             <?php while ( have_posts() ) : the_post(); ?>
             <?php
-                $post_type = get_post_type();
-                $post_name = ""; 
+                $slug_name = basename(get_permalink());
                 if ($slug_name == 'python') {
                     $post_name = "Python";
                 } elseif ($slug_name == 'swift') {
@@ -87,18 +86,7 @@
                                     <span class="more-text">Read More</span>
                                 </div>
                                 <div class="text-content">
-                                    <?php 
-                                        if ($slug_name == 'python') {
-                                            $post_name = "Python";
-                                        } elseif ($slug_name == 'swift') {
-                                            $post_name = "Swift";
-                                        } elseif ($slug_name == 'kotlin') {
-                                            $post_name = "Kotlin";
-                                        } elseif ($slug_name == 'android') {
-                                            $post_name = "Android";
-                                        }
-                                    ?>
-                                    <p class="caption">This document shows the program of <?php echo $value; ?>, images and videos of the execution results at a glance. This is suitable for beginners to use as reference.</p>
+                                    <p class="caption">This document shows the program of <?php echo $post_name; ?>, images and videos of the execution results at a glance. This is suitable for beginners to use as reference.</p>
                                 </div>
                             </div>
                         </a>
