@@ -4,26 +4,27 @@
             <div class="post-main">
             <?php if ( have_posts() ) : ?>
             <?php while ( have_posts() ) : the_post(); ?>
-            <?php $post_name = ""; 
-                $slug_name = basename(get_permalink());
-                if ($slug_name == 'python') {
+            <?php
+                $post_type = get_post_type();
+                $post_name = ""; 
+                if ($post_type == 'python') {
                     $post_name = "Python";
-                } elseif ($slug_name == 'swift') {
+                } elseif ($post_type == 'swift') {
                     $post_name = "Swift";
-                } elseif ($slug_name == 'kotlin') {
+                } elseif ($post_type == 'kotlin') {
                     $post_name = "Kotlin";
-                } elseif ($slug_name == 'android') {
+                } elseif ($post_type == 'android') {
                     $post_name = "Android";
                 }
-            ?>
+                ?>
                 <figure class="frame">
                     <a href="<?php echo esc_url( home_url( '/' ) ); ?>/<?php echo $post_type ?>/">
                     <?php if (has_post_thumbnail()) {
                             the_post_thumbnail(array(360, 220));
                         } elseif (get_post_type() == 'python' || get_post_type() == 'flutter' || get_post_type() == 'go' || get_post_type() == 'swift' || get_post_type() == 'kotlin' || get_post_type() == 'android' || get_post_type() == 'scala' || get_post_type() == 'unity') { ?>
-                            <img src="<?php echo get_bloginfo('template_directory'); ?>/images/<?php echo $post_type; ?>.png" alt="<?php echo $post_name; ?>画像" width="360" />
+                            <img src="<?php echo get_bloginfo('template_directory'); ?>/images/<?php echo $post_type; ?>.png" alt="<?php echo $post_name; ?> Image" width="360" />
                         <?php } else { ?>
-                            <img src="<?php echo get_bloginfo('template_directory'); ?>/images/eyecatch.png" alt="アイキャッチ画像" width="360" />
+                            <img src="<?php echo get_bloginfo('template_directory'); ?>/images/eyecatch.png" alt="Eye Catch Image" width="360" />
                     <?php } ?>
                     </a>
                 </figure>
@@ -77,7 +78,7 @@
                         <?php $array = array("swift", "python", "android", "kotlin");
                         foreach($array as $value){
                         ?>
-                        <a href="<?php echo esc_url( home_url( '/' ) ); ?>/<?php echo $value; ?>" title="<?php echo $value; ?> Dictionary">  
+                        <a href="<?php echo esc_url( home_url( '/' ) ); ?>/<?php echo $value; ?>" title="逆引き<?php echo $value; ?>">  
                             <div class="l-card">
                                 <div class="l-thumbnail">
                                     <figure class="thumbnail-wrapper">
