@@ -13,7 +13,7 @@
             $value = "Android";
         }
         ?>
-            <div class="newentry">『逆引き<?php echo $post_name; ?>』記事一覧</div>     
+            <div class="newentry">『<?php echo $post_name; ?> Dictionary』Article List</div>     
             <?php
             $wp_query = new WP_Query();
             $param = array(
