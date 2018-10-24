@@ -27,25 +27,25 @@
             ?>
             <?php endwhile; endif; ?>
             <?php if ( have_posts() ) : ?>
-                <figure class="frame">
-                    <a href="<?php echo esc_url( home_url( '/' ) ); ?>/<?php echo $post_type ?>/">
-                    <?php if (has_post_thumbnail()) {
-                            the_post_thumbnail(array(360, 220));
-                        } elseif (get_post_type() == 'python' || get_post_type() == 'swift' || get_post_type() == 'kotlin' || get_post_type() == 'android') { ?>
-                            <img src="<?php echo get_bloginfo('template_directory'); ?>/images/swift.png" alt="Swift Image" width="360" />
-                        <?php } else { ?>
-                            <img src="<?php echo get_bloginfo('template_directory'); ?>/images/eyecatch.png" alt="Eye Catch Image" width="360" />
-                    <?php } ?>
-                    </a>
-                </figure>
-                <div class="newentry">『<?php echo $post_name; ?> Dictionary』Article List</div>
-                <ul>
-                <?php while ( have_posts() ) : the_post();    // 繰り返し処理（ループ）開始 ?>
-                <li>
-                        <a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>"><?php the_title(); ?></a>
-                    </li>
-                    <?php endwhile; ?>     
-                        </ul>
+            <figure class="frame">
+                <a href="<?php echo esc_url( home_url( '/' ) ); ?>/<?php echo $post_type ?>/">
+                <?php if (has_post_thumbnail()) {
+                        the_post_thumbnail(array(360, 220));
+                    } elseif (get_post_type() == 'python' || get_post_type() == 'swift' || get_post_type() == 'kotlin' || get_post_type() == 'android') { ?>
+                        <img src="<?php echo get_bloginfo('template_directory'); ?>/images/swift.png" alt="Swift Image" width="360" />
+                    <?php } else { ?>
+                        <img src="<?php echo get_bloginfo('template_directory'); ?>/images/eyecatch.png" alt="Eye Catch Image" width="360" />
+                <?php } ?>
+                </a>
+            </figure>
+            <div class="newentry">『<?php echo $post_name; ?> Dictionary』Article List</div>
+            <ul>
+            <?php while ( have_posts() ) : the_post();    // 繰り返し処理（ループ）開始 ?>
+            <li>
+                <a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>"><?php the_title(); ?></a>
+            </li>
+            <?php endwhile; ?>     
+            </ul>
             <!-- <div class="cards">
                 <div class="cards-inside">
                     <?php while ( have_posts() ) : the_post();    // 繰り返し処理（ループ）開始 ?>
