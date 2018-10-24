@@ -17,11 +17,11 @@
         } elseif ($post_type == 'android') {
             $post_name = "Android";
         }
-        if($post_type == 'python' || $post_type == 'go' || $post_type == 'swift' || $post_type == 'kotlin' || $post_type == 'android' ){ ?>
-        <meta name="keywords" content="<?php echo $post_name; ?>, Programming, Tutorial, Download, Beginner, Entrance, Study">
+        if($post_type == 'python' || $post_type == 'swift' || $post_type == 'kotlin' || $post_type == 'android' ){ ?>
+        <meta name="keywords" content="<?php echo $post_name; ?>, Programming, Coding, Sample, Example, Tutorial, Download, Beginner, Entrance, Study">
         <?php
             } else { ?>
-         <meta name="keywords" content="Programming, Tutorial, Download, Beginner, Entrance, Study">
+         <meta name="keywords" content="Programming, Coding, Sample, Example, Tutorial, Download, Beginner, Entrance, Study">
         <?php
             }
         ?>

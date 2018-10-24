@@ -28,6 +28,23 @@
             ?>
             <?php endwhile; endif; ?>
             <?php if ( have_posts() ) :    // もし投稿があるなら ?>
+                <div class="newentry">『<?php echo $post_name; ?> Dictionary』Article List</div>     
+            <ul>
+                <?php $args = array(
+                    'numberposts' => -1,
+                    'post_type' => $post_type
+                );
+                $posts = get_posts( $args );
+                if( $posts ) : foreach( $posts as $post) : setup_postdata( $post ); ?>
+                    <li>
+                        <a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
+                    </li>
+                <?php endforeach; ?>
+                <?php else : ?>
+                    <li><p>No Article</p></li>
+                <?php endif;
+                wp_reset_postdata(); ?>
+            </ul>
             <div class="cards">
                 <div class="cards-inside">
                     <?php while ( have_posts() ) : the_post();    // 繰り返し処理（ループ）開始 ?>

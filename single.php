@@ -21,7 +21,7 @@
                     <a href="<?php echo esc_url( home_url( '/' ) ); ?>/<?php echo $post_type ?>/">
                     <?php if (has_post_thumbnail()) {
                             the_post_thumbnail(array(360, 220));
-                        } elseif (get_post_type() == 'python' || get_post_type() == 'flutter' || get_post_type() == 'go' || get_post_type() == 'swift' || get_post_type() == 'kotlin' || get_post_type() == 'android' || get_post_type() == 'scala' || get_post_type() == 'unity') { ?>
+                        } elseif (get_post_type() == 'python' || get_post_type() == 'swift' || get_post_type() == 'kotlin' || get_post_type() == 'android') { ?>
                             <img src="<?php echo get_bloginfo('template_directory'); ?>/images/<?php echo $post_type; ?>.png" alt="<?php echo $post_name; ?> Image" width="360" />
                         <?php } else { ?>
                             <img src="<?php echo get_bloginfo('template_directory'); ?>/images/eyecatch.png" alt="Eye Catch Image" width="360" />
@@ -58,8 +58,8 @@
             <div class="newentry">『<?php echo $post_name; ?> Dictionary』Article List</div>     
             <ul>
                 <?php $args = array(
-                    'numberposts' => -1,                //表示（取得）する記事の数
-                    'post_type' => $post_type    //投稿タイプの指定
+                    'numberposts' => -1,
+                    'post_type' => $post_type
                 );
                 $posts = get_posts( $args );
                 if( $posts ) : foreach( $posts as $post) : setup_postdata( $post ); ?>
@@ -67,10 +67,10 @@
                         <a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
                     </li>
                 <?php endforeach; ?>
-                <?php else : //記事が無い場合 ?>
+                <?php else : ?>
                     <li><p>No Article</p></li>
                 <?php endif;
-                wp_reset_postdata(); //クエリのリセット ?>
+                wp_reset_postdata(); ?>
             </ul>
             <div class="afterpost">
                 <div class="cards">
@@ -78,7 +78,7 @@
                         <?php $array = array("swift", "python", "android", "kotlin");
                         foreach($array as $value){
                         ?>
-                        <a href="<?php echo esc_url( home_url( '/' ) ); ?>/<?php echo $value; ?>" title="逆引き<?php echo $value; ?>">  
+                        <a href="<?php echo esc_url( home_url( '/' ) ); ?>/<?php echo $value; ?>" title="<?php echo $value; ?> Dictionary">  
                             <div class="l-card">
                                 <div class="l-thumbnail">
                                     <figure class="thumbnail-wrapper">
