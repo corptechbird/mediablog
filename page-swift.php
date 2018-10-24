@@ -2,18 +2,18 @@
     <div id="contents">
         <div class="post">
         <?php $post_name = ""; 
-        $slug_name = basename(get_permalink());
-        if ($slug_name == 'python') {
-            $post_name = "Python";
-        } elseif ($slug_name == 'swift') {
-            $post_name = "Swift";
-        } elseif ($slug_name == 'kotlin') {
-            $post_name = "Kotlin";
-        } elseif ($slug_name == 'android') {
-            $post_name = "Android";
-        }
+            $slug_name = basename(get_permalink());
+            if ($slug_name == 'python') {
+                $post_name = "Python";
+            } elseif ($slug_name == 'swift') {
+                $post_name = "Swift";
+            } elseif ($slug_name == 'kotlin') {
+                $post_name = "Kotlin";
+            } elseif ($slug_name == 'android') {
+                $post_name = "Android";
+            }
         ?>
-            <div class="newentry">『<?php echo $value; ?> Dictionary』Article List</div>     
+            <div class="newentry">『<?php echo $post_name; ?> Dictionary』Article List</div>     
             <?php
             $wp_query = new WP_Query();
             $param = array(

@@ -4,7 +4,7 @@
             <div class="post-main">
             <?php if ( have_posts() ) : ?>
             <?php while ( have_posts() ) : the_post(); ?>
-            <?php
+            <?php $post_name = ""; 
                 $slug_name = basename(get_permalink());
                 if ($slug_name == 'python') {
                     $post_name = "Python";
@@ -15,7 +15,7 @@
                 } elseif ($slug_name == 'android') {
                     $post_name = "Android";
                 }
-                ?>
+            ?>
                 <figure class="frame">
                     <a href="<?php echo esc_url( home_url( '/' ) ); ?>/<?php echo $post_type ?>/">
                     <?php if (has_post_thumbnail()) {
