@@ -2,7 +2,7 @@
     <div id="contents">
         <div class="post">        
             <?php if ( have_posts() ) : ?>
-            <div class="newentry"><p class="title">Service List</p></div>
+            <div class="newentry"><p class="front-title">Service List</p></div>
             <div class="cards">
                 <div class="cards-inside">
                     <a href="http://techbird.site:8080/tools" title="Data Science Automator">  
