@@ -38,7 +38,7 @@
                 <?php } ?>
                 </a>
             </figure>
-            <div class="newentry">『<?php echo $post_name; ?> Dictionary』Article List</div>
+            <div class="newentry"><p class="front-title">『<?php echo $post_name; ?> Dictionary』Article List</p></div>
             <ul>
             <?php while ( have_posts() ) : the_post();    // 繰り返し処理（ループ）開始 ?>
             <li>
