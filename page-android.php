@@ -13,7 +13,6 @@
                 $post_name = "Android";
             }
         ?>
-            <div class="newentry">『<?php echo $post_name; ?> Dictionary』Article List</div>     
             <?php
             $wp_query = new WP_Query();
             $param = array(
