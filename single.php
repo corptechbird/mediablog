@@ -55,7 +55,7 @@
                 </div>
                 <?php wp_link_pages('before=<p id="postpage">&after=</p>&pagelink=<span>%</span>'); ?>
             </div>
-            <div class="newentry">『<?php echo $post_name; ?> Dictionary』Article List</div>     
+            <div class="newentry"><p class="front-title">『<?php echo $post_name; ?> Dictionary』Article List</p></div>     
             <ul>
                 <?php $args = array(
                     'numberposts' => -1,
