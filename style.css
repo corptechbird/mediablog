@@ -264,7 +264,10 @@ html, body {
   margin-bottom: 20px;
 }
 .front-title {
-  margin-bottom: 0px;
+  font-size: 1.6em;
+  color: rgba(198, 185, 111, 1);
+  margin: 0px;
+  padding: 0px;
 }
 .result-frame {
   text-align: center;
