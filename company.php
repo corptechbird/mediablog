@@ -174,7 +174,7 @@ and we aim to solve problems and problems of daily life and society. bizMedia's 
                     <h4>BUSINESS</h4>
                     <div class="phrase-form">
                         <span><h5>3 key businesses</h5>
-In bizMedia, we are working around three projects: ① mobile / Web application development, ③ media management, and (3) programming education.</br>
+In bizMedia, we are working around three projects: ① mobile / Web application development, ② media management, and ③ programming education.</br>
 ① In mobile / web application development, we mainly develop business applications incorporating AI and AR / VR and 2D / 3D game applications.</br>
 ② In media management, we provide effective references about programming languages on <a href="http://techbird.site" target="_blank"> TECHBIRD </a>.</br>
 ③ In programming education, we mainly teach Swift, JavaScript, PHP, Java, Python.</span>
@@ -201,8 +201,7 @@ In bizMedia, we are working around three projects: ① mobile / Web application 
         window.dataLayer = window.dataLayer || [];
         function gtag(){dataLayer.push(arguments);}
         gtag('js', new Date());
-
-        gtag('config', 'UA-45959800-8');
+        gtag('config', 'UA-125050500-1');
         $(function(){
             var topBtn=$('#pageTop');
             topBtn.hide();
