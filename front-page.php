@@ -9,7 +9,7 @@
                         <div class="l-card">
                             <div class="l-thumbnail">
                                 <figure class="thumbnail-wrapper">
-                                    <img src="<?php echo get_bloginfo('template_directory'); ?>/images/datascience.png" alt="Eye Catch Image" width="360" height="220" />
+                                    <img src="<?php echo get_bloginfo('template_directory'); ?>/images/automator.png" alt="Eye Catch Image" width="360" height="220" />
                                 </figure>
                                 <span class="more-text">Read More</span>
                             </div>
@@ -18,7 +18,7 @@
                             </div>
                         </div>
                     </a>
-                    <?php $array = array("swift", "python", "android", "kotlin");
+                    <?php $array = array("datascience", "python", "swift", "android", "kotlin");
                     foreach($array as $value){
                         ?>
                         <a href="<?php echo esc_url( home_url( '/' ) ); ?>/<?php echo $value; ?>" title="<?php echo $value; ?> Dictionary">  
@@ -31,15 +31,17 @@
                                 </div>
                                 <div class="text-content">
                                     <?php 
-                                        if ($value == 'python') {
+                                        if ($value == 'datascience') {
+                                            $value = "Data Science";
+                                        } elseif ($value == 'python') {
                                             $value = "Python";
                                         } elseif ($value == 'swift') {
                                             $value = "Swift";
-                                        } elseif ($value == 'kotlin') {
-                                            $value = "Kotlin";
                                         } elseif ($value == 'android') {
                                             $value = "Android";
-                                        }
+                                        } elseif ($value == 'kotlin') {
+                                            $value = "Kotlin";
+                                        } 
                                     ?>
                                     <p class="caption">This document shows the program of <?php echo $value; ?>, images and videos of the execution results at a glance. This is suitable for beginners to use as reference.</p>
                                 </div>

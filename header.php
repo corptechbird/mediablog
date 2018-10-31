@@ -16,12 +16,14 @@
             $post_name = "Kotlin";
         } elseif ($post_type == 'android') {
             $post_name = "Android";
+        } elseif ($post_type == 'datascience') {
+            $post_name = "Data Science";
         }
-        if($post_type == 'python' || $post_type == 'swift' || $post_type == 'kotlin' || $post_type == 'android' ){ ?>
-        <meta name="keywords" content="<?php echo $post_name; ?>, Programming, Coding, Sample, Example, Tutorial, Download, Beginner, Entrance, Study">
+        if($post_type == 'python' || $post_type == 'swift' || $post_type == 'kotlin' || $post_type == 'android' || $post_type == 'datascience' ){ ?>
+        <meta name="keywords" content="<?php echo $post_name; ?>, Reference, Programming, Coding, Sample, Example, Tutorial, Download, Beginner, Entrance, Study">
         <?php
             } else { ?>
-         <meta name="keywords" content="Programming, Coding, Sample, Example, Tutorial, Download, Beginner, Entrance, Study">
+         <meta name="keywords" content="Reference, Programming, Coding, Sample, Example, Tutorial, Download, Beginner, Entrance, Study">
         <?php
             }
         ?>

@@ -7,21 +7,23 @@
             <?php
                 $post_type = get_post_type();
                 $post_name = ""; 
-                if ($post_type == 'python') {
+                if ($post_type == 'datascience') {
+                    $post_name = "Data Science";
+                } elseif ($post_type == 'python') {
                     $post_name = "Python";
                 } elseif ($post_type == 'swift') {
                     $post_name = "Swift";
-                } elseif ($post_type == 'kotlin') {
-                    $post_name = "Kotlin";
                 } elseif ($post_type == 'android') {
                     $post_name = "Android";
+                } elseif ($post_type == 'kotlin') {
+                    $post_name = "Kotlin";
                 }
                 ?>
                 <figure class="frame">
                     <a href="<?php echo esc_url( home_url( '/' ) ); ?>/<?php echo $post_type ?>/">
                     <?php if (has_post_thumbnail()) {
                             the_post_thumbnail(array(360, 220));
-                        } elseif (get_post_type() == 'python' || get_post_type() == 'swift' || get_post_type() == 'kotlin' || get_post_type() == 'android') { ?>
+                        } elseif (get_post_type() == 'datascience' || get_post_type() == 'python' || get_post_type() == 'swift' || get_post_type() == 'android' || get_post_type() == 'kotlin') { ?>
                             <img src="<?php echo get_bloginfo('template_directory'); ?>/images/<?php echo $post_type; ?>.png" alt="<?php echo $post_name; ?> Image" width="360" />
                         <?php } else { ?>
                             <img src="<?php echo get_bloginfo('template_directory'); ?>/images/eyecatch.png" alt="Eye Catch Image" width="360" />
@@ -55,7 +57,7 @@
                 </div>
                 <?php wp_link_pages('before=<p id="postpage">&after=</p>&pagelink=<span>%</span>'); ?>
             </div>
-            <div class="newentry"><p class="front-title">『<?php echo $post_name; ?> Dictionary』Article List</p></div>     
+            <div class="newentry"><p class="front-title">『<?php echo $post_name; ?> Reference』Article List</p></div>     
             <ul>
                 <?php $args = array(
                     'numberposts' => -1,
@@ -75,7 +77,7 @@
             <div class="afterpost">
                 <div class="cards">
                     <div class="cards-inside">
-                        <?php $array = array("swift", "python", "android", "kotlin");
+                        <?php $array = array("datascience", "python", "swift", "android", "kotlin");
                         foreach($array as $value){
                         ?>
                         <a href="<?php echo esc_url( home_url( '/' ) ); ?>/<?php echo $value; ?>" title="<?php echo $value; ?> Dictionary">  
