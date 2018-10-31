@@ -155,29 +155,29 @@ Template Name: Company
                     <h4>MISSION</h4>
                     <div class="phrase-form">
                         <span><h5>Contribute to society through IT</h5>
-                        We have mission to create solutions to improve problems of daily living.
-                        In various projects that develop based on the technical strength cultivated through years of research and development,
-                        we will provide products that are truly needed while treating users feedback.</span>
+We have mission to create solutions to improve problems of daily living.
+In various projects that develop based on the technical strength cultivated through years of research and development,
+we will provide products that are truly needed while treating users feedback.</span>
                     </div>
                 </div>
                 <div id="vision" class="fade-in">
                     <h4>VISION</h4>
                     <div class="phrase-form">
                         <span><h5>Provide a platform that can utilize state-of-the-art IT</h5>
-                        By using the latest IT you can create a new world you have never had before.
-                        We will focus on the world and conduct cutting-edge R&D and solution development,
-                        We will provide environments and platforms that people can easily utilize its results,
-                        and we aim to solve problems and problems of daily life and society. bizMedia's mind is there.</span>
+By using the latest IT you can create a new world you have never had before.
+We will focus on the world and conduct cutting-edge R&D and solution development,
+We will provide environments and platforms that people can easily utilize its results,
+and we aim to solve problems and problems of daily life and society. bizMedia's mind is there.</span>
                     </div>
                 </div>
                 <div id="business" class="fade-in">
                     <h4>BUSINESS</h4>
                     <div class="phrase-form">
                         <span><h5>3 key businesses</h5>
-                        In bizMedia, we are working around three projects: ① mobile / Web application development, ③ media management, and (3) programming education.</br>
-                        ① In mobile / web application development, we mainly develop business applications incorporating AI and AR / VR and 2D / 3D game applications.</br>
-                        ② In media management, we provide effective references about programming languages on <a href="http://techbird.site" target="_blank"> TECHBIRD </a>.</br>
-                        ③ In programming education, we mainly teach Swift, JavaScript, PHP, Java, Python.</span>
+In bizMedia, we are working around three projects: ① mobile / Web application development, ③ media management, and (3) programming education.</br>
+① In mobile / web application development, we mainly develop business applications incorporating AI and AR / VR and 2D / 3D game applications.</br>
+② In media management, we provide effective references about programming languages on <a href="http://techbird.site" target="_blank"> TECHBIRD </a>.</br>
+③ In programming education, we mainly teach Swift, JavaScript, PHP, Java, Python.</span>
                     </div>
                 </div>
                 
