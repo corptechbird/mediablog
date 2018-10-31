@@ -41,46 +41,52 @@
             </p>
             <?php else : ?>
                 <div class="notfound">
-                    <h3>ページが見つかりません</h3>
-                    <p>申し訳ありません。お探しのページは見つかりませんでした。</p>
+                    <h3>Page Not Found</h3>
+                    <p>Sorry. The page you were looking for could not be found.</p>
                     <div class="notfound-navi"><a href="<?php echo esc_url( home_url( '/' ) ); ?>"><i class="fas fa-home" aria-hidden="true"></i> Home へ戻る</a></div>
                 </div>
             <?php endif; ?>
             <div class="newentry"></div>
             <div class="cards">
                 <div class="cards-inside">
-                    <?php $array = array("swift", "python", "go", "scala", "android", "kotlin", "flutter", "unity");
-                        foreach($array as $value){
+                    <a href="http://techbird.site:8080/tools" title="Data Science Automator">  
+                        <div class="l-card">
+                            <div class="l-thumbnail">
+                                <figure class="thumbnail-wrapper">
+                                    <img src="<?php echo get_bloginfo('template_directory'); ?>/images/automator.png" alt="Eye Catch Image" width="360" height="220" />
+                                </figure>
+                                <span class="more-text">Read More</span>
+                            </div>
+                            <div class="text-content">
+                                <p class="caption">This tool realizes the basic overhead processing necessary for data science with one click. You will be able to confirm the number of CSV records for each element at a glance.</p>
+                            </div>
+                        </div>
+                    </a>
+                    <?php $array = array("datascience", "python", "swift", "android", "kotlin");
+                    foreach($array as $value){
+                        $value_name = ""; 
+                        if ($value == 'datascience') {
+                            $value_name = "Data Science";
+                        } elseif ($value == 'python') {
+                            $value_name = "Python";
+                        } elseif ($value == 'swift') {
+                            $value_name = "Swift";
+                        } elseif ($value == 'android') {
+                            $value_name = "Android";
+                        } elseif ($value == 'kotlin') {
+                            $value_name = "Kotlin";
+                        }
                         ?>
-                        <a href="<?php echo esc_url( home_url( '/' ) ); ?>/<?php echo $value; ?>" title="逆引き<?php echo $value; ?>">  
+                        <a href="<?php echo esc_url( home_url( '/' ) ); ?>/<?php echo $value; ?>" title="<?php echo $value; ?> Dictionary">  
                             <div class="l-card">
                                 <div class="l-thumbnail">
                                     <figure class="thumbnail-wrapper">
-                                        <img src="<?php echo get_bloginfo('template_directory'); ?>/images/<?php echo $value; ?>.png" alt="アイキャッチ画像" width="360" height="220" />
+                                        <img src="<?php echo get_bloginfo('template_directory'); ?>/images/<?php echo $value; ?>.png" alt="Eye Catch Image" width="360" height="220" />
                                     </figure>
                                     <span class="more-text">Read More</span>
                                 </div>
                                 <div class="text-content">
-                                    <?php 
-                                        if ($value == 'python') {
-                                            $value = "Python";
-                                        } elseif ($value == 'flutter') {
-                                            $value = "Flutter";
-                                        } elseif ($value == 'go') {
-                                            $value = "Go";
-                                        } elseif ($value == 'swift') {
-                                            $value = "Swift";
-                                        } elseif ($value == 'kotlin') {
-                                            $value = "Kotlin";
-                                        } elseif ($value == 'android') {
-                                            $value = "Android";
-                                        } elseif ($value == 'scala') {
-                                            $value = "Scala";
-                                        } elseif ($value == 'unity') {
-                                            $value = "Unity";
-                                        }
-                                    ?>
-                                    <p class="caption"><?php echo $value; ?>で実現したいことからプログラムを逆引きできるドキュメントです。初心者から上級者まで、使用用途に応じて幅広くお使いいただけます。</p>
+                                    <p class="caption">This document shows the program of <?php echo $value_name; ?>, images and videos of the execution results at a glance. This is suitable for beginners to use as reference.</p>
                                 </div>
                             </div>
                         </a>

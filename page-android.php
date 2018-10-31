@@ -92,49 +92,49 @@
             <div class="afterpost">
                 <div class="cards">
                     <div class="cards-inside">
-                    <a href="http://techbird.site:8080/tools" title="Data Science Automator">  
-                        <div class="l-card">
-                            <div class="l-thumbnail">
-                                <figure class="thumbnail-wrapper">
-                                    <img src="<?php echo get_bloginfo('template_directory'); ?>/images/automator.png" alt="Eye Catch Image" width="360" height="220" />
-                                </figure>
-                                <span class="more-text">Read More</span>
-                            </div>
-                            <div class="text-content">
-                                <p class="caption">This tool realizes the basic overhead processing necessary for data science with one click. You will be able to confirm the number of CSV records for each element at a glance.</p>
-                            </div>
-                        </div>
-                    </a>
-                    <?php $array = array("datascience", "python", "swift", "android", "kotlin");
-                    foreach($array as $value){
-                        $value_name = ""; 
-                        if ($value == 'datascience') {
-                            $value_name = "Data Science";
-                        } elseif ($value == 'python') {
-                            $value_name = "Python";
-                        } elseif ($value == 'swift') {
-                            $value_name = "Swift";
-                        } elseif ($value == 'android') {
-                            $value_name = "Android";
-                        } elseif ($value == 'kotlin') {
-                            $value_name = "Kotlin";
-                        }
-                        ?>
-                        <a href="<?php echo esc_url( home_url( '/' ) ); ?>/<?php echo $value; ?>" title="<?php echo $value; ?> Dictionary">  
+                        <a href="http://techbird.site:8080/tools" title="Data Science Automator">  
                             <div class="l-card">
                                 <div class="l-thumbnail">
                                     <figure class="thumbnail-wrapper">
-                                        <img src="<?php echo get_bloginfo('template_directory'); ?>/images/<?php echo $value; ?>.png" alt="Eye Catch Image" width="360" height="220" />
+                                        <img src="<?php echo get_bloginfo('template_directory'); ?>/images/automator.png" alt="Eye Catch Image" width="360" height="220" />
                                     </figure>
                                     <span class="more-text">Read More</span>
                                 </div>
                                 <div class="text-content">
-                                    <p class="caption">This document shows the program of <?php echo $value_name; ?>, images and videos of the execution results at a glance. This is suitable for beginners to use as reference.</p>
+                                    <p class="caption">This tool realizes the basic overhead processing necessary for data science with one click. You will be able to confirm the number of CSV records for each element at a glance.</p>
                                 </div>
                             </div>
                         </a>
-                        <?php
-                    } ?>
+                        <?php $array = array("datascience", "python", "swift", "android", "kotlin");
+                        foreach($array as $value){
+                            $value_name = ""; 
+                            if ($value == 'datascience') {
+                                $value_name = "Data Science";
+                            } elseif ($value == 'python') {
+                                $value_name = "Python";
+                            } elseif ($value == 'swift') {
+                                $value_name = "Swift";
+                            } elseif ($value == 'android') {
+                                $value_name = "Android";
+                            } elseif ($value == 'kotlin') {
+                                $value_name = "Kotlin";
+                            }
+                            ?>
+                            <a href="<?php echo esc_url( home_url( '/' ) ); ?>/<?php echo $value; ?>" title="<?php echo $value; ?> Dictionary">  
+                                <div class="l-card">
+                                    <div class="l-thumbnail">
+                                        <figure class="thumbnail-wrapper">
+                                            <img src="<?php echo get_bloginfo('template_directory'); ?>/images/<?php echo $value; ?>.png" alt="Eye Catch Image" width="360" height="220" />
+                                        </figure>
+                                        <span class="more-text">Read More</span>
+                                    </div>
+                                    <div class="text-content">
+                                        <p class="caption">This document shows the program of <?php echo $value_name; ?>, images and videos of the execution results at a glance. This is suitable for beginners to use as reference.</p>
+                                    </div>
+                                </div>
+                            </a>
+                            <?php
+                        } ?>
                     </div>
                 </div>
                 <?php wp_reset_postdata(); ?>
