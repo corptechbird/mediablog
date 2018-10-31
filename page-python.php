@@ -3,20 +3,22 @@
         <div class="post">
         <?php $post_name = ""; 
             $slug_name = basename(get_permalink());
-            if ($slug_name == 'python') {
+            if ($slug_name == 'datascience') {
+                $post_name = "Data Science";
+            } elseif ($slug_name == 'python') {
                 $post_name = "Python";
             } elseif ($slug_name == 'swift') {
                 $post_name = "Swift";
-            } elseif ($slug_name == 'kotlin') {
-                $post_name = "Kotlin";
             } elseif ($slug_name == 'android') {
                 $post_name = "Android";
+            } elseif ($slug_name == 'kotlin') {
+                $post_name = "Kotlin";
             }
         ?>
             <?php
             $wp_query = new WP_Query();
             $param = array(
-                'posts_per_page' => '-1',
+                'posts_per_page' => '-1', 
                 'post_type' => $slug_name, 
                 'post_status' => 'publish', 
                 'orderby' => 'ID', 
@@ -31,14 +33,14 @@
                 <a href="<?php echo esc_url( home_url( '/' ) ); ?>/<?php echo $post_type ?>/">
                 <?php if (has_post_thumbnail()) {
                         the_post_thumbnail(array(360, 220));
-                    } elseif (get_post_type() == 'python' || get_post_type() == 'swift' || get_post_type() == 'kotlin' || get_post_type() == 'android') { ?>
-                        <img src="<?php echo get_bloginfo('template_directory'); ?>/images/python.png" alt="Python Image" width="360" />
+                    } elseif (get_post_type() == 'datascience' || get_post_type() == 'python' || get_post_type() == 'swift' || get_post_type() == 'android' || get_post_type() == 'kotlin') { ?>
+                        <img src="<?php echo get_bloginfo('template_directory'); ?>/images/<?php echo $slug_name; ?>.png" alt="<?php echo $slug_name; ?> Image" width="360" />
                     <?php } else { ?>
                         <img src="<?php echo get_bloginfo('template_directory'); ?>/images/eyecatch.png" alt="Eye Catch Image" width="360" />
                 <?php } ?>
                 </a>
             </figure>
-            <div class="newentry"><p class="front-title">『<?php echo $post_name; ?> Dictionary』Article List</p></div>
+            <div class="newentry"><p class="front-title">『<?php echo $post_name; ?> Reference』Article List</p></div>
             <ul>
             <?php while ( have_posts() ) : the_post(); ?>
             <li>
@@ -90,8 +92,20 @@
             <div class="afterpost">
                 <div class="cards">
                     <div class="cards-inside">
-                    <?php $array = array("swift", "python", "android", "kotlin");
+                    <?php $array = array("datascience", "python", "swift", "android", "kotlin");
                     foreach($array as $value){
+                        $value_name = ""; 
+                        if ($value == 'datascience') {
+                            $value_name = "Data Science";
+                        } elseif ($value == 'python') {
+                            $value_name = "Python";
+                        } elseif ($value == 'swift') {
+                            $value_name = "Swift";
+                        } elseif ($value == 'android') {
+                            $value_name = "Android";
+                        } elseif ($value == 'kotlin') {
+                            $value_name = "Kotlin";
+                        }
                         ?>
                         <a href="<?php echo esc_url( home_url( '/' ) ); ?>/<?php echo $value; ?>" title="<?php echo $value; ?> Dictionary">  
                             <div class="l-card">
@@ -102,7 +116,7 @@
                                     <span class="more-text">Read More</span>
                                 </div>
                                 <div class="text-content">
-                                    <p class="caption">This document shows the program of <?php echo $post_name; ?>, images and videos of the execution results at a glance. This is suitable for beginners to use as reference.</p>
+                                    <p class="caption">This document shows the program of <?php echo $value_name; ?>, images and videos of the execution results at a glance. This is suitable for beginners to use as reference.</p>
                                 </div>
                             </div>
                         </a>

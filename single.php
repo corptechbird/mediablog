@@ -79,6 +79,18 @@
                     <div class="cards-inside">
                         <?php $array = array("datascience", "python", "swift", "android", "kotlin");
                         foreach($array as $value){
+                            $value_name = ""; 
+                            if ($value == 'datascience') {
+                                $value_name = "Data Science";
+                            } elseif ($value == 'python') {
+                                $value_name = "Python";
+                            } elseif ($value == 'swift') {
+                                $value_name = "Swift";
+                            } elseif ($value == 'android') {
+                                $value_name = "Android";
+                            } elseif ($value == 'kotlin') {
+                                $value_name = "Kotlin";
+                            }
                         ?>
                         <a href="<?php echo esc_url( home_url( '/' ) ); ?>/<?php echo $value; ?>" title="<?php echo $value; ?> Dictionary">  
                             <div class="l-card">
@@ -89,7 +101,7 @@
                                     <span class="more-text">Read More</span>
                                 </div>
                                 <div class="text-content">
-                                    <p class="caption">This document shows the program of <?php echo $post_name; ?>, images and videos of the execution results at a glance. This is suitable for beginners to use as reference.</p>
+                                    <p class="caption">This document shows the program of <?php echo $value_name; ?>, images and videos of the execution results at a glance. This is suitable for beginners to use as reference.</p>
                                 </div>
                             </div>
                         </a>
