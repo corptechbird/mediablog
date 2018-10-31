@@ -7,9 +7,9 @@ Template Name: Company
 <html lang="ja">
 <head>
     <meta charset="UTF-8">
-    <title>bizMedia - 最新ITで社会に貢献</title>
-    <meta name="description" content="最新ITで社会に貢献">
-    <meta name="keywords" content="海外, IT, トレンド, 情報, さきどり, Fintech, 人工知能, AI, AR, VR, 武田勝輝">
+    <title>bizMedia - Contribute to society by the latest IT</title>
+    <meta name="description" content="Contribute to society by the latest IT">
+    <meta name="keywords" content="Reference, Programming, Coding, Sample, Example, Tutorial, Download, Beginner, Entrance, Study">
 <!-- External files -->
     <link rel="stylesheet" href=" <?php echo get_bloginfo('stylesheet_url') ?>">
     <!-- Latest compiled and minified CSS -->
@@ -154,31 +154,30 @@ Template Name: Company
                 <div id="mission" class="fade-in">
                     <h4>MISSION</h4>
                     <div class="phrase-form">
-                        <span><h5>ITを通じて社会に貢献する</h5>
-                        日々進化していくITを手を動かしながら検証し、
-                        毎日の生活の問題・課題を改善するソリューションを自ら作りだすことがミッションです。
-                        長年の研究開発で培った技術力を軸に展開する様々な事業で、
-                        ユーザーからのフィードバックを大切にしながら本当に必要とされるプロダクトを提供していきます。</span>
+                        <span><h5>Contribute to society through IT</h5>
+                        We have mission to create solutions to improve problems of daily living.
+                        In various projects that develop based on the technical strength cultivated through years of research and development,
+                        we will provide products that are truly needed while treating users feedback.</span>
                     </div>
                 </div>
                 <div id="vision" class="fade-in">
                     <h4>VISION</h4>
                     <div class="phrase-form">
-                        <span><h5>最先端のITを活用できるプラットフォームを提供する</h5>
-                        最新のITを使うことにより今までになかった新しい世界を創ることができます。
-                        我々は世界に目を向けながら最先端のITの研究開発・ソリューション開発を実施し、
-                        その成果を人々が容易に活用できる環境・プラットフォームを提供していきます。
-                        そして、日常生活や社会の問題・課題解決を目指します。bizMediaの思いはそこにあります。</span>
+                        <span><h5>Provide a platform that can utilize state-of-the-art IT</h5>
+                        By using the latest IT you can create a new world you have never had before.
+                        We will focus on the world and conduct cutting-edge R&D and solution development,
+                        We will provide environments and platforms that people can easily utilize its results,
+                        and we aim to solve problems and problems of daily life and society. bizMedia's mind is there.</span>
                     </div>
                 </div>
                 <div id="business" class="fade-in">
                     <h4>BUSINESS</h4>
                     <div class="phrase-form">
-                        <span><h5>3つの重点事業</h5>
-                        bizMediaでは、①モバイル/Webアプリ開発、②メディア運営、③プログラミング教育の3つの事業を軸に活動しています。</br>
-                        ①モバイル/Webアプリ開発では、AIやAR/VRを組み込んだ業務アプリや2D/3Dゲームアプリをメインで開発しています。</br>
-                        ②メディア運営では、<a href="http://techbird.site" target="_blank">TECHBIRD</a>というメディアにて海外ITトレンドを発信しています。</br>
-                        ③プログラミング教育では、Swift, JavaScript, PHP, Java, Pythonを中心に教えています。</span>
+                        <span><h5>3 key businesses</h5>
+                        In bizMedia, we are working around three projects: ① mobile / Web application development, ③ media management, and (3) programming education.</br>
+                        ① In mobile / web application development, we mainly develop business applications incorporating AI and AR / VR and 2D / 3D game applications.</br>
+                        ② In media management, we provide effective references about programming languages on <a href="http://techbird.site" target="_blank"> TECHBIRD </a>.</br>
+                        ③ In programming education, we mainly teach Swift, JavaScript, PHP, Java, Python.</span>
                     </div>
                 </div>
                 
