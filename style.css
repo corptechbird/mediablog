@@ -677,13 +677,15 @@ a.next.page-numbers:hover{
 .post-main .table-contents h2 {
   text-align: center;
   padding: 0.5em;
+  margin: 0;
+  border: none;
   background: rgba(220, 87, 0, 1);
   color: white;
-  font-size: 0.6em; 
+  font-size: 1.0em; 
 }
 
 .post-main .table-contents h2 i {
-  font-size: 0.4em; 
+  font-size: 0.8em; 
 }
 
 .post-main .table-contents a {
@@ -692,10 +694,17 @@ a.next.page-numbers:hover{
 
 .post-main .table-contents a:visited {
   color: rgba(84, 84, 84, 0.7);
+  text-decoration: none;
 }
 
 .post-main .table-contents a:hover {
   color: rgba(84, 84, 84, 0.7);
+  text-decoration: none;
+}
+
+.post-main .table-contents ul {
+  border: none;
+  margin: 0;
 }
 
 .post-main .table-contents li {
