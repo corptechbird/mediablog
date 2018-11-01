@@ -78,11 +78,11 @@
             $('a').click(function() {
                 var speed = 400;
                 var href= $(this).attr("href");
+                console.log(href);
                 var target = $(href == "#" || href == "" ? 'html' : href);
                 var headerHeight = 52; //固定ヘッダーの高さ
                 var position = target.offset().top - headerHeight; //ターゲットの座標からヘッダの高さ分引く
                 $('body,html').animate({scrollTop:position}, speed, 'swing');
-                console.log('動いてるで');
                 return false;
             });
         }); 
