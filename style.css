@@ -1162,7 +1162,6 @@ input.wpcf7-form-control.wpcf7-submit:hover {
 
 .post-main .table-contents li {
   border: none;
-  padding-bottom: 0;
-  padding-top: 0;
   background: rgba(255, 251, 244, 1);
+  padding: 10px;
 }
