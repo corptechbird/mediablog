@@ -671,7 +671,8 @@ a.next.page-numbers:hover{
 .post-main .table-contents {
   width: 100%;
   margin: 0.5em;
-  border: solid 1px rgba(220, 87, 0, 1);
+  margin-right: 0.5em;
+  border: solid 2px rgba(255, 138, 109, 1);
 }
 
 .post-main .table-contents h2 {
@@ -679,7 +680,7 @@ a.next.page-numbers:hover{
   padding: 0.5em;
   margin: 0;
   border: none;
-  background: rgba(220, 87, 0, 1);
+  background: rgba(255, 138, 109, 1);
   color: white;
   font-size: 1.0em; 
 }
@@ -702,13 +703,20 @@ a.next.page-numbers:hover{
   text-decoration: none;
 }
 
+.post-main .table-contents div {
+  padding: 1.0em;
+}
+
 .post-main .table-contents ul {
   border: none;
+  padding: 0;
   margin: 0;
+  background: rgba(255, 251, 244, 1);
 }
 
 .post-main .table-contents li {
   border: none;
+  background: rgba(255, 251, 244, 1);
 }
 /* .content-meta .like {
   display: inline-block;
