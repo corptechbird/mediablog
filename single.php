@@ -1,4 +1,18 @@
-<?php get_header(); ?>           
+<?php get_header(); ?>
+    <script>
+        $(function(){
+            $('').click(function() {
+                var speed = 4100;
+                var href= $(this).attr("href");
+                var target = $(href == "#" || href == "" ? 'html' : href);
+                var headerHeight = 100; //固定ヘッダーの高さ
+                var position = target.offset().top - headerHeight; //ターゲットの座標からヘッダの高さ分引く
+                $('body,html').animate({scrollTop:position}, speed, 'swing');
+                console.log('動いてるで');
+                return false;
+            });
+        });
+    </script>           
     <div id="contents">
         <div class="post">
             <div class="post-main">
