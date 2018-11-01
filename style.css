@@ -1135,6 +1135,7 @@ input.wpcf7-form-control.wpcf7-submit:hover {
 
 .post-main .table-contents a {
   color: rgba(84, 84, 84, 1);
+  padding: 5px;
 }
 
 .post-main .table-contents a:visited {
@@ -1161,5 +1162,6 @@ input.wpcf7-form-control.wpcf7-submit:hover {
 
 .post-main .table-contents li {
   border: none;
+  padding: 0;
   background: rgba(255, 251, 244, 1);
 }
