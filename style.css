@@ -263,23 +263,6 @@ html, body {
   color: rgba(198, 185, 111, 1);
   margin: 10px;
 }
-.post-main h2 {
-  padding: 0.4em 0.5em;/*文字の上下 左右の余白*/
-  color: #494949;/*文字色*/
-  font-size: 1.4em;
-  background: rgba(252, 252, 252, 1);/*背景色*/
-  border-left: solid 5px rgba(220, 87, 0, 1);/*左線*/
-  border-bottom: solid 3px #d7d7d7;/*下線*/
-}
-
-.post-main h3 {
-  color: #364e96;/*文字色*/
-  font-size: 1.2em;
-  padding: 0.5em;/*上下の余白*/
-  border-top: solid 2px #364e96;/*上線*/
-  border-bottom: solid 2px #364e96;/*下線*/
-  margin-bottom: 0.5em;
-}
 
 .front-title {
   font-size: 1.3em;
@@ -665,6 +648,58 @@ a.next.page-numbers:hover{
 .content-meta .date {
   float: left;
   color: #aaa;
+}
+
+.post-main h2 {
+  padding: 0.4em 0.5em;/*文字の上下 左右の余白*/
+  color: #494949;/*文字色*/
+  font-size: 1.4em;
+  background: rgba(252, 252, 252, 1);/*背景色*/
+  border-left: solid 5px rgba(220, 87, 0, 1);/*左線*/
+  border-bottom: solid 3px #d7d7d7;/*下線*/
+}
+
+.post-main h3 {
+  color: #364e96;/*文字色*/
+  font-size: 1.2em;
+  padding: 0.5em;/*上下の余白*/
+  border-top: solid 2px #364e96;/*上線*/
+  border-bottom: solid 2px #364e96;/*下線*/
+  margin-bottom: 0.5em;
+}
+
+.post-main .table-contents {
+  width: 100%;
+  margin: 0.5em;
+  border: solid 1px rgba(220, 87, 0, 1);
+}
+
+.post-main .table-contents h2 {
+  text-align: center;
+  padding: 0.5em;
+  background: rgba(220, 87, 0, 1);
+  color: white;
+  font-size: 0.6em; 
+}
+
+.post-main .table-contents h2 i {
+  font-size: 0.4em; 
+}
+
+.post-main .table-contents a {
+  color: rgba(84, 84, 84, 1);
+}
+
+.post-main .table-contents a:visited {
+  color: rgba(84, 84, 84, 0.7);
+}
+
+.post-main .table-contents a:hover {
+  color: rgba(84, 84, 84, 0.7);
+}
+
+.post-main .table-contents li {
+  border: none;
 }
 /* .content-meta .like {
   display: inline-block;
