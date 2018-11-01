@@ -75,6 +75,7 @@
             });
         });
         $(function(){
+            console.log('きてるかいな');
             $('').click(function() {
                 var speed = 400;
                 var href= $(this).attr("href");
