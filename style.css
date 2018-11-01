@@ -1115,7 +1115,7 @@ input.wpcf7-form-control.wpcf7-submit:hover {
 }
 
 .post-main .table-contents {
-  margin: 0.5em;
+  margin: 0.5em 0.5em 1.5em 0.5em;
   border: solid 2px rgba(255, 138, 109, 1);
 }
 
@@ -1163,5 +1163,6 @@ input.wpcf7-form-control.wpcf7-submit:hover {
 .post-main .table-contents li {
   border: none;
   padding: 0;
+  margin: 0;
   background: rgba(255, 251, 244, 1);
 }
