@@ -273,11 +273,11 @@ html, body {
 }
 
 .post-main h3 {
-  color: rgba(117, 177, 234, 1);/*文字色*/
+  color: #364e96;/*文字色*/
   font-size: 1.3em;
   padding: 0.5em 0;/*上下の余白*/
-  border-top: solid 3px rgba(117, 177, 234, 1);/*上線*/
-  border-bottom: solid 3px rgba(117, 177, 234, 1);/*下線*/
+  border-top: solid 2px #364e96;/*上線*/
+  border-bottom: solid 2px #364e96;/*下線*/
 }
 
 .front-title {
