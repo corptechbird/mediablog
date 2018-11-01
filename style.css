@@ -278,6 +278,7 @@ html, body {
   padding: 0.5em 0;/*上下の余白*/
   border-top: solid 2px #364e96;/*上線*/
   border-bottom: solid 2px #364e96;/*下線*/
+  margin-bottom: 1.0em;
 }
 
 .front-title {
