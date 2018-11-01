@@ -263,7 +263,7 @@ html, body {
   color: rgba(198, 185, 111, 1);
   margin: 10px;
 }
-.postmain h2 {
+.post-main h2 {
   padding: 0.4em 0.5em;/*文字の上下 左右の余白*/
   color: #494949;/*文字色*/
   font-size: 1.4em;
@@ -272,7 +272,7 @@ html, body {
   border-bottom: solid 3px #d7d7d7;/*下線*/
 }
 
-.postmain h3 {
+.post-main h3 {
   color: #364e96;/*文字色*/
   padding: 0.5em 0;/*上下の余白*/
   border-top: solid 3px #364e96;/*上線*/
