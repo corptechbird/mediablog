@@ -58,32 +58,14 @@
 </head>
 <body>
     <script>
-        $(window).on('load',function(){
-            // fade-in
-            $(window).scroll(function (){
-                $('.fade-in').each(function(){
-                    var POS = $(this).offset().top;  //fade-inがついている要素の位置
-                    var scroll = $(window).scrollTop();  //スクロール一
-                    var windowHeight = $(window).height();  //ウィンドウの高さ
-
-                    if (scroll > POS - windowHeight + windowHeight*2/5){
-                        $(this).css("opacity","1" );
-                    } else {
-                        $(this).css("opacity","0" );
-                    }
-                });
-            });
-        });
-        
-        $(function(){
-            $('').click(function() {
-                var speed = 400;
+        $(function () {
+            var headerHight = 50; //ヘッダの高さ
+            $('a[href^=#]').click(function(){
                 var href= $(this).attr("href");
                 var target = $(href == "#" || href == "" ? 'html' : href);
-                var headerHeight = 50; //固定ヘッダーの高さ
-                var position = target.offset().top - headerHeight; //ターゲットの座標からヘッダの高さ分引く
-                $('body,html').animate({scrollTop:position}, speed, 'swing');
-                return false;
+                    var position = target.offset().top-headerHight; //ヘッダの高さ分位置をずらす
+                $("html, body").animate({scrollTop:position}, 550, "swing");
+                    return false;
             });
         });
         var addthis_config = addthis_config||{};
