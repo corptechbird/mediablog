@@ -59,7 +59,7 @@
 <body>
     <script>
         $(function(){
-            $('a[href^=#]').click(function() {
+            $('').click(function() {
                 var speed = 400;
                 var href= $(this).attr("href");
                 var target = $(href == "#" || href == "" ? 'html' : href);
@@ -69,6 +69,17 @@
                 return false;
             });
         });
+        // $(function(){
+        //     $('').click(function() {
+        //         var speed = 400;
+        //         var href= $(this).attr("href");
+        //         var target = $(href == "#" || href == "" ? 'html' : href);
+        //         var headerHeight = 50; //固定ヘッダーの高さ
+        //         var position = target.offset().top - headerHeight; //ターゲットの座標からヘッダの高さ分引く
+        //         $('body,html').animate({scrollTop:position}, speed, 'swing');
+        //         return false;
+        //     });
+        // });
         var addthis_config = addthis_config||{};
         addthis_config.data_track_addressbar = false;
         addthis_config.data_track_clickback = false;
