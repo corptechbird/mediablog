@@ -1178,6 +1178,7 @@ input.wpcf7-form-control.wpcf7-submit:hover {
 }
 .small-table {
   padding: 10px;
+  padding-left: 30px;
   margin: 10px;
 }
 .small-table ul {
