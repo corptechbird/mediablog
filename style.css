@@ -225,6 +225,9 @@ html, body {
 .post a {
   color:rgba(0, 182, 214, 1);
 }
+.post a:visited {
+  color:rgba(0, 182, 214, 0.7);
+}
 .post a:hover {
   color:rgba(0, 182, 214, 0.7);
 }
@@ -1095,7 +1098,6 @@ input.wpcf7-form-control.wpcf7-submit:hover {
 .codecaption {
   margin: 1.0em 0 0 1.0em; 
 }
-
 .post-main h1 {
   padding: 0.4em 0.5em;/*文字の上下 左右の余白*/
   color: #494949;/*文字色*/
@@ -1104,7 +1106,6 @@ input.wpcf7-form-control.wpcf7-submit:hover {
   border-left: solid 5px rgba(220, 87, 0, 1);/*左線*/
   border-bottom: solid 3px #d7d7d7;/*下線*/
 }
-
 .post-main h2 {
   color: #364e96;/*文字色*/
   font-size: 1.2em;
@@ -1113,13 +1114,11 @@ input.wpcf7-form-control.wpcf7-submit:hover {
   border-bottom: solid 2px #364e96;/*下線*/
   margin-bottom: 0.5em;
 }
-
 .post-main .table-contents {
   margin: 0.5em 0.5em 1.5em 0.5em;
   border: solid 2px rgba(101, 210, 161, 1);
   box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.1), 0 8px 20px rgba(0, 0, 0, 0.1);
 }
-
 .post-main .table-contents h2 {
   text-align: center;
   padding: 0.5em;
@@ -1129,38 +1128,31 @@ input.wpcf7-form-control.wpcf7-submit:hover {
   color: white;
   font-size: 1.0em; 
 }
-
 .post-main .table-contents h2 i {
   font-size: 0.8em; 
 }
-
 .post-main .table-contents a {
   color: rgba(84, 84, 84, 1);
   padding: 5px;
 }
-
 .post-main .table-contents a:visited {
   color: rgba(84, 84, 84, 0.7);
   text-decoration: none;
 }
-
 .post-main .table-contents a:hover {
   color: rgba(84, 84, 84, 0.7);
   text-decoration: none;
 }
-
 .post-main .table-contents div {
   padding: 1.0em;
   background: white;
 }
-
 .post-main .table-contents ul {
   border: none;
   padding: 0;
   margin: 0;
   background: white;
 }
-
 .post-main .table-contents ul li {
   border: none;
   background: white;
