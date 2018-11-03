@@ -1177,9 +1177,11 @@ input.wpcf7-form-control.wpcf7-submit:hover {
   padding-right: 5px;
 }
 .post-main ul {
+  list-style-type: circle;
   margin:1em 0;
   padding-left:40px;
 }
 .post-main ul li{
+  list-style-type: circle;
   display:list-item;
 }
