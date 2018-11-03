@@ -1158,12 +1158,12 @@ input.wpcf7-form-control.wpcf7-submit:hover {
   border: none;
   padding: 0;
   margin: 0;
-  background: rgba(255, 251, 244, 1);
+  background: white;
 }
 
 .post-main .table-contents ul li {
   border: none;
-  background: rgba(255, 251, 244, 1);
+  background: white;
   padding-bottom: 0px;
   padding-top: 0px;
   padding-left: 1.0em;
