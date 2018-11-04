@@ -52,6 +52,96 @@
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-125050500-1"></script>
 <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
 <script>
+        $(window).on('load',function(){
+            // fade-in
+            $(window).scroll(function (){
+                $('.fade-in').each(function(){
+                    var POS = $(this).offset().top;  //fade-inがついている要素の位置
+                    var scroll = $(window).scrollTop();  //スクロール一
+                    var windowHeight = $(window).height();  //ウィンドウの高さ
+
+                    if (scroll > POS - windowHeight + windowHeight*2/5){
+                        $(this).css("opacity","1" );
+                    } else {
+                        $(this).css("opacity","0" );
+                    }
+                });
+            });
+        });
+        $(function(){
+            $('a').click(function() {
+                var speed = 400;
+                var href= $(this).attr("href");
+                var target = $(href == "#" || href == "" ? 'html' : href);
+                var headerHeight = 52; //固定ヘッダーの高さ
+                var position = target.offset().top - headerHeight; //ターゲットの座標からヘッダの高さ分引く
+                $('body,html').animate({scrollTop:position}, speed, 'swing');
+                return false;
+            });
+        }); 
+        
+        var click_count = 0;    // クリック数の初期化
+        function menu_click(){
+            if( click_count % 2 == 0 ){
+                $('#menu').css({
+                    "display":"block",
+                    "background-color":"rgba(0,0,0,0.9)",
+                    "padding":"20px",
+                    "width":"100%"
+                });
+                $('#menu li').css('display','block');
+                $('#menu ul li').css('text-align','center');
+                document.getElementById("btn").innerHTML='<a href="javascript:menu_click();"><i class="fas fa-times fa-lg"></i></a>';
+            }else{
+                $('#menu').css('display','none');
+                document.getElementById("btn").innerHTML='<a href="javascript:menu_click();"><i class="fas fa-bars fa-lg"></i></a>';
+
+                var $win = $(window);
+                $win.on('load resize', function() {
+                    var windowWidth = $win.width();
+                    if (windowWidth >= 1000) {
+                        // PCの処理
+                        $('#btn').css({
+                            "display":"none",
+                            "float":"right"
+                        });
+                        $('#bbtn').css({
+                            "display":"none",
+                            "float":"right"
+                        });
+                        $('#menu').css({
+                            "display":"inline",
+                            "float":"right",
+                            "background-color":"white"
+                        });
+                        $('#menu li').css('display','inline-block');
+                    } else if (windowWidth < 1000) {
+                        $('#btn').css({
+                            "display":"block",
+                            "float":"left",
+                            "padding":"15px"
+                        });
+                        $('#bbtn').css({
+                            "display":"block",
+                            "float":"left",
+                            "padding":"15px"
+                        });
+                        $('#menu').css({
+                            "display":"none",
+                            "float":"right",
+                            "width":"auto",
+                            "padding":"0"
+                        });
+                        // TABの処理
+                    } else {
+                        // SPの処理
+                    }
+                });
+            }
+            click_count++;
+        }
+    </script>
+<script>
 (adsbygoogle = window.adsbygoogle || []).push({
     google_ad_client: "ca-pub-2330122305834701",
     enable_page_level_ads: true
