@@ -1107,12 +1107,12 @@ input.wpcf7-form-control.wpcf7-submit:hover {
   border-bottom: solid 3px #d7d7d7;/*下線*/
 }
 .post-main h2 {
-  color: #364e96;/*文字色*/
+  color: black;/*文字色*/
   font-size: 1.2em;
   padding: 0.5em;/*上下の余白*/
-  border-top: solid 2px #364e96;/*上線*/
-  border-bottom: solid 2px #364e96;/*下線*/
-  margin-bottom: 0.5em;
+  border-top: solid 2px black;/*上線*/
+  border-bottom: solid 2px black;/*下線*/
+  margin: 0.5em;
 }
 .post-main .table-contents {
   margin: 0.5em 0.5em 1.5em 0.5em;
