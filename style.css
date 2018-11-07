@@ -1191,10 +1191,11 @@ input.wpcf7-form-control.wpcf7-submit:hover {
   padding: 1em;
   background: #fff9e5;
   color: #545454;
-  border-radius: 0.5em;
+  border-radius: 5px;
 }
 .memo-title {
   color: #ffb36b;
   font-size: 1.2em;
   font-weight: 700;
+  box-shadow: 0px 0px 20px -5px rgba(0, 0, 0, 0.8);
 }
