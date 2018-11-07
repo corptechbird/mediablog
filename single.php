@@ -85,19 +85,6 @@
             <div class="afterpost">
                 <div class="cards">
                     <div class="cards-inside">
-                        <a href="http://techbird.site:8080/tools" title="Data Science Automator">  
-                            <div class="l-card">
-                                <div class="l-thumbnail">
-                                    <figure class="thumbnail-wrapper">
-                                        <img src="<?php echo get_bloginfo('template_directory'); ?>/images/automator.png" alt="Eye Catch Image" width="360" height="220" />
-                                    </figure>
-                                    <span class="more-text">Read More</span>
-                                </div>
-                                <div class="text-content">
-                                    <p class="caption">This tool realizes the basic overhead processing necessary for data science with one click. You will be able to confirm the number of CSV records for each element at a glance.</p>
-                                </div>
-                            </div>
-                        </a>
                         <?php $array = array("datascience", "datascience_cn", "python", "python_cn", "mindcontrol", "mindcontrol_cn", "swift", "android", "kotlin");
                         foreach($array as $value){
                             $value_name = ""; 
@@ -136,6 +123,19 @@
                         </a>
                         <?php
                         } ?>
+                        <a href="http://techbird.site:8080/tools" title="Data Science Automator">  
+                            <div class="l-card">
+                                <div class="l-thumbnail">
+                                    <figure class="thumbnail-wrapper">
+                                        <img src="<?php echo get_bloginfo('template_directory'); ?>/images/automator.png" alt="Eye Catch Image" width="360" height="220" />
+                                    </figure>
+                                    <span class="more-text">Read More</span>
+                                </div>
+                                <div class="text-content">
+                                    <p class="caption">This tool realizes the basic overhead processing necessary for data science with one click. You will be able to confirm the number of CSV records for each element at a glance.</p>
+                                </div>
+                            </div>
+                        </a>
                     </div>
                 </div>
                 <?php wp_reset_postdata(); ?>
