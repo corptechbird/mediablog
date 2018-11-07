@@ -1192,7 +1192,8 @@ input.wpcf7-form-control.wpcf7-submit:hover {
   list-style-type: circle;
 }
 .memo {
-  padding: 1em;
+  padding: 0.5em;
+  margin: 1.0em
   background: #fff9e5;
   color: #545454;
   border-radius: 10px;
