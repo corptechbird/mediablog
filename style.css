@@ -1129,7 +1129,10 @@ input.wpcf7-form-control.wpcf7-submit:hover {
   color: white;
   font-size: 1.0em; 
 }
-.post-main #toc_container .toc_title i {
+.post-main #toc_container .toc_title::before {
+  font-family: FontAwesome;
+	content: '\f022';
+	margin-right: .5em;
   font-size: 0.8em; 
 }
 .post-main #toc_container a {
