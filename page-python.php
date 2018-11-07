@@ -1,25 +1,12 @@
 <?php get_header(); ?>            
     <div id="contents">
         <div class="post">
-        <?php $post_name = ""; 
-            $slug_name = basename(get_permalink());
-            if ($slug_name == 'datascience') {
-                $post_name = "Data Science";
-            } elseif ($slug_name == 'python') {
-                $post_name = "Python";
-            } elseif ($slug_name == 'swift') {
-                $post_name = "Swift";
-            } elseif ($slug_name == 'android') {
-                $post_name = "Android";
-            } elseif ($slug_name == 'kotlin') {
-                $post_name = "Kotlin";
-            }
-        ?>
+
             <?php
             $wp_query = new WP_Query();
             $param = array(
                 'posts_per_page' => '-1', 
-                'post_type' => $slug_name, 
+                'post_type' => $post_type, 
                 'post_status' => 'publish', 
                 'orderby' => 'ID', 
                 'order' => 'ASC' 
@@ -33,8 +20,8 @@
                 <a href="<?php echo esc_url( home_url( '/' ) ); ?>/<?php echo $post_type ?>/">
                 <?php if (has_post_thumbnail()) {
                         the_post_thumbnail(array(360, 220));
-                    } elseif (get_post_type() == 'datascience' || get_post_type() == 'python' || get_post_type() == 'swift' || get_post_type() == 'android' || get_post_type() == 'kotlin') { ?>
-                        <img src="<?php echo get_bloginfo('template_directory'); ?>/images/<?php echo $slug_name; ?>.png" alt="<?php echo $slug_name; ?> Image" width="360" />
+                    } elseif (get_post_type() == 'datascience' || get_post_type() == 'datascience_cn' || get_post_type() == 'python' || get_post_type() == 'python_cn' || get_post_type() == 'mindcontrol' || get_post_type() == 'mindcontrol_cn' || get_post_type() == 'swift' || get_post_type() == 'android' || get_post_type() == 'kotlin') { ?>
+                        <img src="<?php echo get_bloginfo('template_directory'); ?>/images/<?php echo $post_type; ?>.png" alt="<?php echo $post_type; ?> Image" width="360" />
                     <?php } else { ?>
                         <img src="<?php echo get_bloginfo('template_directory'); ?>/images/eyecatch.png" alt="Eye Catch Image" width="360" />
                 <?php } ?>
@@ -105,13 +92,21 @@
                             </div>
                         </div>
                     </a>
-                    <?php $array = array("datascience", "python", "swift", "android", "kotlin");
-                    foreach($array as $value){
+                    <?php $array = array("datascience", "datascience_cn", "python", "python_cn", "mindcontrol", "mindcontrol_cn", "swift", "android", "kotlin");
+                        foreach($array as $value){
                         $value_name = ""; 
                         if ($value == 'datascience') {
                             $value_name = "Data Science";
+                        } elseif ($value == 'datascience_cn') {
+                            $value_name = "Data Science";
                         } elseif ($value == 'python') {
                             $value_name = "Python";
+                        } elseif ($value == 'python_cn') {
+                            $value_name = "Python";
+                        } elseif ($value == 'mindcontrol') {
+                            $value_name = "Mind Control";
+                        } elseif ($value == 'mindcontrol_cn') {
+                            $value_name = "Mind Control";
                         } elseif ($value == 'swift') {
                             $value_name = "Swift";
                         } elseif ($value == 'android') {
@@ -120,7 +115,7 @@
                             $value_name = "Kotlin";
                         }
                         ?>
-                        <a href="<?php echo esc_url( home_url( '/' ) ); ?>/<?php echo $value; ?>" title="<?php echo $value; ?> Dictionary">  
+                        <a href="<?php echo esc_url( home_url( '/' ) ); ?>/<?php echo $value; ?>" title="<?php echo $value; ?> Reference">  
                             <div class="l-card">
                                 <div class="l-thumbnail">
                                     <figure class="thumbnail-wrapper">
