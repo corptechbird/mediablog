@@ -1187,3 +1187,13 @@ input.wpcf7-form-control.wpcf7-submit:hover {
 .small-table ul li ul li{
   list-style-type: circle;
 }
+.memo {
+  padding: 1em;
+  background: #fff9e5;
+  color: #545454;
+}
+.memo-title {
+  color: #ffb36b;
+  font-size: 1.2em;
+  font-weight: 700;
+}
