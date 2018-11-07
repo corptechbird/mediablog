@@ -1191,6 +1191,7 @@ input.wpcf7-form-control.wpcf7-submit:hover {
   padding: 1em;
   background: #fff9e5;
   color: #545454;
+  border-radius: 1.0em;
 }
 .memo-title {
   color: #ffb36b;
