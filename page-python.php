@@ -1,7 +1,28 @@
 <?php get_header(); ?>            
     <div id="contents">
         <div class="post">
-
+        <?php $post_name = ""; 
+            $post_type = basename(get_permalink());
+            if ($post_type == 'python') {
+                $post_name = "Python";
+            } elseif ($post_type == 'python_cn') {
+                $post_name = "Python";
+            } elseif ($post_type == 'swift') {
+                $post_name = "Swift";
+            } elseif ($post_type == 'kotlin') {
+                $post_name = "Kotlin";
+            } elseif ($post_type == 'android') {
+                $post_name = "Android";
+            } elseif ($post_type == 'datascience') {
+                $post_name = "Data Science";
+            } elseif ($post_type == 'datascience_cn') {
+                $post_name = "Data Science";
+            } elseif ($post_type == 'mindcontrol') {
+                $post_name = "Mind Control";
+            } elseif ($post_type == 'mindcontrol_cn') {
+                $post_name = "Mind Control";
+            }
+        ?>
             <?php
             $wp_query = new WP_Query();
             $param = array(
