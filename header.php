@@ -16,20 +16,12 @@
             $post_name = "Swift";
         } elseif ($post_type == 'swift_cn') {
             $post_name = "Swift";
-        } elseif ($post_type == 'kotlin') {
-            $post_name = "Kotlin";
-        } elseif ($post_type == 'android') {
-            $post_name = "Android";
         } elseif ($post_type == 'datascience') {
             $post_name = "Data Science";
         } elseif ($post_type == 'datascience_cn') {
             $post_name = "Data Science";
-        } elseif ($post_type == 'mindcontrol') {
-            $post_name = "Mind Control";
-        } elseif ($post_type == 'mindcontrol_cn') {
-            $post_name = "Mind Control";
         }
-        if($post_type == 'python' || $post_type == 'python_cn' || $post_type == 'swift' || $post_type == 'swift_cn' || $post_type == 'kotlin' || $post_type == 'android' || $post_type == 'datascience' || $post_type == 'datascience_cn' || $post_type == 'mindcontrol' || $post_type == 'mindcontrol_cn' ){ ?>
+        if($post_type == 'python' || $post_type == 'python_cn' || $post_type == 'swift' || $post_type == 'swift_cn' || $post_type == 'datascience' || $post_type == 'datascience_cn' ){ ?>
         <meta name="keywords" content="<?php echo $post_name; ?>, Reference, Programming, Coding, Sample, Example, Tutorial, Download, Beginner, Entrance, Study">
         <?php
             } else { ?>

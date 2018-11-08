@@ -15,25 +15,17 @@
                     $post_name = "Swift";
                 } elseif ($post_type == 'swift_cn') {
                     $post_name = "Swift";
-                } elseif ($post_type == 'kotlin') {
-                    $post_name = "Kotlin";
-                } elseif ($post_type == 'android') {
-                    $post_name = "Android";
                 } elseif ($post_type == 'datascience') {
                     $post_name = "Data Science";
                 } elseif ($post_type == 'datascience_cn') {
                     $post_name = "Data Science";
-                } elseif ($post_type == 'mindcontrol') {
-                    $post_name = "Mind Control";
-                } elseif ($post_type == 'mindcontrol_cn') {
-                    $post_name = "Mind Control";
                 }
                 ?>
                 <figure class="frame">
                     <a href="<?php echo esc_url( home_url( '/' ) ); ?>/<?php echo $post_type ?>/">
                     <?php if (has_post_thumbnail()) {
                             the_post_thumbnail(array(360, 220));
-                        } elseif (get_post_type() == 'datascience' || get_post_type() == 'datascience_cn' || get_post_type() == 'python' || get_post_type() == 'python_cn' || get_post_type() == 'mindcontrol' || get_post_type() == 'mindcontrol_cn' || get_post_type() == 'swift' || get_post_type() == 'swift_cn' || get_post_type() == 'android' || get_post_type() == 'kotlin') { ?>
+                        } elseif (get_post_type() == 'datascience' || get_post_type() == 'datascience_cn' || get_post_type() == 'python' || get_post_type() == 'python_cn' || get_post_type() == 'swift' || get_post_type() == 'swift_cn') { ?>
                             <img src="<?php echo get_bloginfo('template_directory'); ?>/images/<?php echo $post_type; ?>.png" alt="<?php echo $post_name; ?> Image" width="360" />
                         <?php } else { ?>
                             <img src="<?php echo get_bloginfo('template_directory'); ?>/images/eyecatch.png" alt="Eye Catch Image" width="360" />
@@ -87,7 +79,7 @@
             <div class="afterpost">
                 <div class="cards">
                     <div class="cards-inside">
-                        <?php $array = array("datascience", "datascience_cn", "python", "python_cn", "mindcontrol", "mindcontrol_cn", "swift", "android", "kotlin");
+                        <?php $array = array("datascience", "datascience_cn", "python", "python_cn", "swift");
                         foreach($array as $value){
                             $value_name = ""; 
                             if ($value == 'datascience') {
@@ -98,18 +90,10 @@
                                 $value_name = "Python";
                             } elseif ($value == 'python_cn') {
                                 $value_name = "Python";
-                            } elseif ($value == 'mindcontrol') {
-                                $value_name = "Mind Control";
-                            } elseif ($value == 'mindcontrol_cn') {
-                                $value_name = "Mind Control";
                             } elseif ($value == 'swift') {
                                 $value_name = "Swift";
                             } elseif ($value == 'swift_cn') {
                                 $value_name = "Swift";
-                            } elseif ($value == 'android') {
-                                $value_name = "Android";
-                            } elseif ($value == 'kotlin') {
-                                $value_name = "Kotlin";
                             }
                         ?>
                         <a href="<?php echo esc_url( home_url( '/' ) ); ?>/<?php echo $value; ?>" title="<?php echo $value; ?> Reference">  

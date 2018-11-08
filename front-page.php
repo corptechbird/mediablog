@@ -14,7 +14,7 @@
             <div class="newentry"><p class="front-title">TECHBIRD Service List</p></div>
             <div class="cards">
                 <div class="cards-inside">
-                    <?php $array = array("datascience", "datascience_cn", "python", "python_cn", "mindcontrol", "mindcontrol_cn", "swift", "swift_cn", "android", "kotlin");
+                    <?php $array = array("datascience", "datascience_cn", "python", "python_cn", "swift", "swift_cn");
                     foreach($array as $value){
                         ?>
                         <a href="<?php echo esc_url( home_url( '/' ) ); ?>/<?php echo $value; ?>" title="<?php echo $value; ?> Dictionary">  
@@ -35,19 +35,11 @@
                                             $value = "Python";
                                         } elseif ($value == 'python_cn') {
                                             $value = "Python";
-                                        } elseif ($value == 'mindcontrol') {
-                                            $value = "Mind Control";
-                                        } elseif ($value == 'mindcontrol_cn') {
-                                            $value = "Mind Control";
                                         } elseif ($value == 'swift') {
                                             $value = "Swift";
                                         } elseif ($value == 'swift_cn') {
                                             $value = "Swift";
-                                        } elseif ($value == 'android') {
-                                            $value = "Android";
-                                        } elseif ($value == 'kotlin') {
-                                            $value = "Kotlin";
-                                        } 
+                                        }
                                     ?>
                                     <p class="caption">This document shows the program of <?php echo $value; ?>, images and videos of the execution results at a glance. This is suitable for beginners to use as reference.</p>
                                 </div>
