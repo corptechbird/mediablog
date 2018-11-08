@@ -2,6 +2,13 @@
     <div id="contents">
         <div class="post">        
             <?php if ( have_posts() ) : ?>
+            <ins class="adsbygoogle"
+                style="display:inline-block;width:728px;height:90px"
+                data-ad-client="ca-pub-2330122305834701"
+                data-ad-slot="3318403188"></ins>
+            <script>
+            (adsbygoogle = window.adsbygoogle || []).push({});
+            </script>
             <div class="newentry"><p class="front-title">TECHBIRD Service List</p></div>
             <div class="cards">
                 <div class="cards-inside">
