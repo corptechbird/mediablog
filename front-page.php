@@ -2,6 +2,7 @@
     <div id="contents">
         <div class="post">        
             <?php if ( have_posts() ) : ?>
+            <div class="ads" style="margin-bottom:20px;">
             <ins class="adsbygoogle"
                 style="display:inline-block;width:728px;height:90px"
                 data-ad-client="ca-pub-2330122305834701"
@@ -9,6 +10,7 @@
             <script>
             (adsbygoogle = window.adsbygoogle || []).push({});
             </script>
+            </div>
             <div class="newentry"><p class="front-title">TECHBIRD Service List</p></div>
             <div class="cards">
                 <div class="cards-inside">
