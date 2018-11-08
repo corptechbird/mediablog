@@ -5,7 +5,7 @@
             <div class="newentry"><p class="front-title">TECHBIRD Service List</p></div>
             <div class="cards">
                 <div class="cards-inside">
-                    <?php $array = array("datascience", "datascience_cn", "python", "python_cn", "mindcontrol", "mindcontrol_cn", "swift", "android", "kotlin");
+                    <?php $array = array("datascience", "datascience_cn", "python", "python_cn", "mindcontrol", "mindcontrol_cn", "swift", "swift_cn", "android", "kotlin");
                     foreach($array as $value){
                         ?>
                         <a href="<?php echo esc_url( home_url( '/' ) ); ?>/<?php echo $value; ?>" title="<?php echo $value; ?> Dictionary">  
@@ -31,6 +31,8 @@
                                         } elseif ($value == 'mindcontrol_cn') {
                                             $value = "Mind Control";
                                         } elseif ($value == 'swift') {
+                                            $value = "Swift";
+                                        } elseif ($value == 'swift_cn') {
                                             $value = "Swift";
                                         } elseif ($value == 'android') {
                                             $value = "Android";
