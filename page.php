@@ -48,6 +48,7 @@
                 <?php } ?>
                 </a>
             </figure>
+            <div class="ads" style="margin-bottom:20px;">
             <ins class="adsbygoogle"
                 style="display:inline-block;width:728px;height:90px"
                 data-ad-client="ca-pub-2330122305834701"
@@ -55,6 +56,7 @@
             <script>
             (adsbygoogle = window.adsbygoogle || []).push({});
             </script>
+            </div>
             <div class="newentry"><p class="front-title">『<?php echo $post_name; ?> Reference』Article List</p></div>
             <ul>
             <?php while ( have_posts() ) : the_post(); ?>
@@ -82,6 +84,7 @@
                 <p>Sorry. The page you were looking for could not be found.</p>
             </div>
             <?php endif; ?>
+            <div class="ads" style="margin-bottom:20px;">
             <ins class="adsbygoogle"
                 style="display:inline-block;width:728px;height:90px"
                 data-ad-client="ca-pub-2330122305834701"
@@ -89,6 +92,7 @@
             <script>
             (adsbygoogle = window.adsbygoogle || []).push({});
             </script>
+            </div>
             <div class="newentry"></div>
             <div class="ads" style="margin-bottom:20px;">
                 <div class="adleft">
