@@ -13,6 +13,8 @@
                     $post_name = "Python";
                 } elseif ($post_type == 'swift') {
                     $post_name = "Swift";
+                } elseif ($post_type == 'swift_cn') {
+                    $post_name = "Swift";
                 } elseif ($post_type == 'kotlin') {
                     $post_name = "Kotlin";
                 } elseif ($post_type == 'android') {
@@ -31,7 +33,7 @@
                     <a href="<?php echo esc_url( home_url( '/' ) ); ?>/<?php echo $post_type ?>/">
                     <?php if (has_post_thumbnail()) {
                             the_post_thumbnail(array(360, 220));
-                        } elseif (get_post_type() == 'datascience' || get_post_type() == 'datascience_cn' || get_post_type() == 'python' || get_post_type() == 'python_cn' || get_post_type() == 'mindcontrol' || get_post_type() == 'mindcontrol_cn' || get_post_type() == 'swift' || get_post_type() == 'android' || get_post_type() == 'kotlin') { ?>
+                        } elseif (get_post_type() == 'datascience' || get_post_type() == 'datascience_cn' || get_post_type() == 'python' || get_post_type() == 'python_cn' || get_post_type() == 'mindcontrol' || get_post_type() == 'mindcontrol_cn' || get_post_type() == 'swift' || get_post_type() == 'swift_cn' || get_post_type() == 'android' || get_post_type() == 'kotlin') { ?>
                             <img src="<?php echo get_bloginfo('template_directory'); ?>/images/<?php echo $post_type; ?>.png" alt="<?php echo $post_name; ?> Image" width="360" />
                         <?php } else { ?>
                             <img src="<?php echo get_bloginfo('template_directory'); ?>/images/eyecatch.png" alt="Eye Catch Image" width="360" />
@@ -101,6 +103,8 @@
                             } elseif ($value == 'mindcontrol_cn') {
                                 $value_name = "Mind Control";
                             } elseif ($value == 'swift') {
+                                $value_name = "Swift";
+                            } elseif ($value == 'swift_cn') {
                                 $value_name = "Swift";
                             } elseif ($value == 'android') {
                                 $value_name = "Android";

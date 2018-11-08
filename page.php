@@ -117,6 +117,8 @@
                             $value_name = "Mind Control";
                         } elseif ($value == 'swift') {
                             $value_name = "Swift";
+                        } elseif ($value == 'swift_cn') {
+                            $value_name = "Swift";
                         } elseif ($value == 'android') {
                             $value_name = "Android";
                         } elseif ($value == 'kotlin') {
