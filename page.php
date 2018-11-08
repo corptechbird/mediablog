@@ -48,6 +48,27 @@
                 <?php } ?>
                 </a>
             </figure>
+            <div class="ads" style="margin-bottom:20px;">
+                    <div class="adleft">
+                        <ins class="adsbygoogle"
+                            style="display:inline-block;width:336px;height:280px"
+                            data-ad-client="ca-pub-2330122305834701"
+                            data-ad-slot="4283281946"></ins>
+                        <script>
+                        (adsbygoogle = window.adsbygoogle || []).push({});
+                        </script>
+                    </div>
+                    <div class="adright">
+                        <ins class="adsbygoogle"
+                            style="display:inline-block;width:336px;height:280px"
+                            data-ad-client="ca-pub-2330122305834701"
+                            data-ad-slot="5240483851"></ins>
+                        <script>
+                        (adsbygoogle = window.adsbygoogle || []).push({});
+                        </script>
+                    </div>
+                    <hr class="clear">
+                </div>
             <div class="newentry"><p class="front-title">『<?php echo $post_name; ?> Reference』Article List</p></div>
             <ul>
             <?php while ( have_posts() ) : the_post(); ?>
@@ -97,6 +118,27 @@
                 </div>
                 <hr class="clear">
             </div>
+            <div class="ads" style="margin-bottom:20px;">
+                    <div class="adleft">
+                        <ins class="adsbygoogle"
+                            style="display:inline-block;width:336px;height:280px"
+                            data-ad-client="ca-pub-2330122305834701"
+                            data-ad-slot="4283281946"></ins>
+                        <script>
+                        (adsbygoogle = window.adsbygoogle || []).push({});
+                        </script>
+                    </div>
+                    <div class="adright">
+                        <ins class="adsbygoogle"
+                            style="display:inline-block;width:336px;height:280px"
+                            data-ad-client="ca-pub-2330122305834701"
+                            data-ad-slot="5240483851"></ins>
+                        <script>
+                        (adsbygoogle = window.adsbygoogle || []).push({});
+                        </script>
+                    </div>
+                    <hr class="clear">
+                </div>
             <div class="afterpost">
                 <div class="cards">
                     <div class="cards-inside">
