@@ -22,7 +22,7 @@
         echo '<ul style="margin-bottom:30px;">';
         while ( $the_query->have_posts() ) {
             $the_query->the_post(); ?>
-            <?php if get_post_type() != 'single': ?>
+            <?php if (get_post_type() != 'single'): ?>
             <li style="border-bottom: 1px solid #d7d7d7;">
                 <a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>"><?php echo get_the_title(); ?></a>
             </li>
