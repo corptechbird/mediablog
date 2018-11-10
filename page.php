@@ -9,6 +9,8 @@
                 $post_name = "Python";
             } elseif ($post_type == 'swift') {
                 $post_name = "Swift";
+            } elseif ($post_type == 'swift_cn') {
+                $post_name = "Swift";
             } elseif ($post_type == 'datascience') {
                 $post_name = "Data Science";
             } elseif ($post_type == 'datascience_cn') {
@@ -37,7 +39,7 @@
                 <a href="<?php echo esc_url( home_url( '/' ) ); ?>/<?php echo $post_type ?>/">
                 <?php if (has_post_thumbnail()) {
                         the_post_thumbnail(array(360, 220));
-                    } elseif (get_post_type() == 'datascience' || get_post_type() == 'datascience_cn' || get_post_type() == 'python' || get_post_type() == 'python_cn' ||  get_post_type() == 'swift' ) { ?>
+                    } elseif (get_post_type() == 'datascience' || get_post_type() == 'datascience_cn' || get_post_type() == 'python' || get_post_type() == 'python_cn' ||  get_post_type() == 'swift' ||  get_post_type() == 'swift_cn' ) { ?>
                         <img src="<?php echo get_bloginfo('template_directory'); ?>/images/<?php echo $post_type; ?>.png" alt="<?php echo $post_type; ?> Image" width="360" />
                     <?php } else { ?>
                         <img src="<?php echo get_bloginfo('template_directory'); ?>/images/eyecatch.png" alt="Eye Catch Image" width="360" />
