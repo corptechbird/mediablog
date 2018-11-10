@@ -26,7 +26,7 @@
                 'post_type' => $post_type, 
                 'post_status' => 'publish', 
                 'orderby' => 'ID', 
-                'order' => 'ASC' 
+                'order' => 'DESC' 
             );
             $wp_query->query($param);
             if($wp_query->have_posts()): while($wp_query->have_posts()) : $wp_query->the_post();
