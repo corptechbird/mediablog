@@ -152,6 +152,10 @@ html, body {
 .post ul li a:visited {
   color: gray;
 }
+.post ul li a:hover {
+  color: rgba(0, 182, 214, 1);
+  text-decoration: none;
+}
 #end {
   height: 5px;
   clear: both;
