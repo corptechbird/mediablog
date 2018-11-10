@@ -63,7 +63,8 @@
             <ul>
                 <?php $args = array(
                     'numberposts' => -1,
-                    'post_type' => $post_type
+                    'post_type' => $post_type,
+                    'order' => 'ASC' 
                 );
                 $posts = get_posts( $args );
                 if( $posts ) : foreach( $posts as $post) : setup_postdata( $post ); ?>
