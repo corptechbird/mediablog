@@ -15,7 +15,7 @@
             <?php $args = array(
         'posts_per_page' => 20,
         'post_type' => 'any',
-        'order' => 'ASC' 
+        'order' => 'DESC' 
     );
     $the_query = new WP_Query( $args );
     if ( $the_query->have_posts() ) {
