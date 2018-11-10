@@ -1144,19 +1144,11 @@ input.wpcf7-form-control.wpcf7-submit:hover {
   color: rgba(84, 84, 84, 1);
   padding: 5px;
 }
-.post-main #toc_container a:link {
-  color: rgba(0, 182, 214, 1);
-  text-decoration: none;
-}
 .post-main #toc_container a:visited {
   color: rgba(84, 84, 84, 0.7);
   text-decoration: none;
 }
 .post-main #toc_container a:hover {
-  color: rgba(0, 182, 214, 1);
-  text-decoration: none;
-}
-.post-main #toc_container a:active {
   color: rgba(0, 182, 214, 1);
   text-decoration: none;
 }
