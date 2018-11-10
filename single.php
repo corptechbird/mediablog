@@ -64,7 +64,7 @@
                 <?php $args = array(
                     'numberposts' => -1,
                     'post_type' => $post_type,
-                    'order' => 'DSC' 
+                    'order' => 'DESC' 
                 );
                 $posts = get_posts( $args );
                 if( $posts ) : foreach( $posts as $post) : setup_postdata( $post ); ?>

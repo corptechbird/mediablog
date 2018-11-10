@@ -11,6 +11,36 @@
             (adsbygoogle = window.adsbygoogle || []).push({});
             </script>
             </div>
+            <div class="newentry"><p class="front-title">Newly Arrived Articles</p></div>
+            <?php $args = array(
+        'posts_per_page' => 10,
+        'order' => 'DESC' 
+    );
+    $the_query = new WP_Query( $args );
+    if ( $the_query->have_posts() ) {
+        echo '<ul style="margin-bottom:30px;">';
+        while ( $the_query->have_posts() ) {
+            $the_query->the_post(); ?>
+            <li style="border-bottom: 1px solid #d7d7d7;">
+                <a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>"><?php echo get_the_title(); ?></a>
+            </li>
+        <?php
+        }
+        echo '</ul>';
+        wp_reset_postdata();
+    } else {
+    } ?>
+
+
+            <div class="ads" style="margin-bottom:20px;">
+            <ins class="adsbygoogle"
+                style="display:inline-block;width:728px;height:90px"
+                data-ad-client="ca-pub-2330122305834701"
+                data-ad-slot="3318403188"></ins>
+            <script>
+            (adsbygoogle = window.adsbygoogle || []).push({});
+            </script>
+            </div>
             <div class="newentry"><p class="front-title">TECHBIRD Service List</p></div>
             <div class="cards">
                 <div class="cards-inside">
