@@ -13,8 +13,8 @@
             </div>
             <div class="newentry"><p class="front-title">Newly Arrived Articles</p></div>
             <?php $args = array(
-        'posts_per_page' => 10,
-        'order' => 'DESC' 
+        'posts_per_page' => 20,
+        'order' => 'ASC' 
     );
     $the_query = new WP_Query( $args );
     if ( $the_query->have_posts() ) {
