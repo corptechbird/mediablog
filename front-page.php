@@ -14,7 +14,7 @@
             <div class="newentry"><p class="front-title">Newly Arrived Articles</p></div>
             <?php $args = array(
         'posts_per_page' => 20,
-        'post_type' => 'any',
+        'post_type' => 'datascience',
         'order' => 'DESC' 
     );
     $the_query = new WP_Query( $args );
