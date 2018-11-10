@@ -23,7 +23,7 @@
         while ( $the_query->have_posts() ) {
             $the_query->the_post(); ?>
             <li style="border-bottom: 1px solid #d7d7d7;">
-                <a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>">【<?php echo get_post_type(); ?>】<?php echo get_the_title(); ?></a>
+                <a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>"><?php echo get_the_title(); ?></a>
             </li>
         <?php
         }
