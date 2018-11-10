@@ -14,7 +14,7 @@
             <div class="newentry"><p class="front-title">Newly Arrived Articles</p></div>
             <?php $args = array(
         'posts_per_page' => 20,
-        'post_type' => 'datascience',
+        'post_type' => 'any',
         'order' => 'DESC' 
     );
     $the_query = new WP_Query( $args );
@@ -22,17 +22,17 @@
         echo '<ul style="margin-bottom:30px;">';
         while ( $the_query->have_posts() ) {
             $the_query->the_post(); ?>
+            <?php if get_post_type() != 'single': ?>
             <li style="border-bottom: 1px solid #d7d7d7;">
                 <a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>"><?php echo get_the_title(); ?></a>
             </li>
+        <?php endif; ?>
         <?php
         }
         echo '</ul>';
         wp_reset_postdata();
     } else {
     } ?>
-
-
             <div class="ads" style="margin-bottom:20px;">
             <ins class="adsbygoogle"
                 style="display:inline-block;width:728px;height:90px"
