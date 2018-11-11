@@ -118,5 +118,8 @@
         }
         echo $str;
     }
-    
+    function my_custom_rv() {
+        add_post_type_support( 'python', 'revisions' );
+    }
+    add_action('init', 'my_custom_rv');
 ?>
