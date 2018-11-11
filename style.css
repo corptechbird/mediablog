@@ -238,6 +238,7 @@ html, body {
 }
 .post-main p {
   margin: 0 30px;
+  line-height: 0.5em;
 }
 .newentry {
   border-bottom: solid 3px skyblue;
