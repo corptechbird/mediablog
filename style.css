@@ -101,6 +101,8 @@ html, body {
   margin-top: 50px;
   width: 30%;
   background-color: #f5f5f5;
+  overflow: scroll; 
+  height: 1000px;
 }
 #primary ul {
   margin: 1.2em 1.2em 1.2em 0;
