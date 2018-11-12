@@ -80,7 +80,7 @@
             <div class="afterpost">
                 <div class="cards">
                     <div class="cards-inside">
-                        <?php $array = array("datascience", "datascience_cn", "python", "python_cn", "swift");
+                        <?php $array = array("datascience", "datascience_cn", "python", "python_cn", "swift", "swift_cn");
                         foreach($array as $value){
                             $value_name = ""; 
                             if ($value == 'datascience') {
