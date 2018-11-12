@@ -120,6 +120,8 @@
     }
     function my_custom_rv() {
         add_post_type_support( 'python', 'revisions' );
+        add_post_type_support( 'swift', 'revisions' );
+        add_post_type_support( 'datascience', 'revisions' );
     }
     add_action('init', 'my_custom_rv');
 ?>
