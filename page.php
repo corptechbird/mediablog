@@ -56,7 +56,7 @@
                 </script>
             </div>
             <div class="newentry"><p class="front-title">『<?php echo $post_name; ?> Reference』Article List</p></div>
-            <ul style="list-style-type:decimal; padding-left: 20px;">
+            <ul style="list-style-type:decimal; padding-left: 40px;">
             <?php while ( have_posts() ) : the_post(); ?>
             <li>
                 <a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>"><?php the_title(); ?></a>
