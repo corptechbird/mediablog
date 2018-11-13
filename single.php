@@ -60,7 +60,7 @@
                 <?php wp_link_pages('before=<p id="postpage">&after=</p>&pagelink=<span>%</span>'); ?>
             </div>
             <div class="newentry"><p class="front-title">『<?php echo $post_name; ?> Reference』Article List</p></div>     
-            <ul>
+            <ul style="list-style-type:decimal;">
                 <?php $args = array(
                     'numberposts' => -1,
                     'post_type' => $post_type,
