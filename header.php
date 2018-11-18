@@ -36,6 +36,8 @@
     <script type="text/x-mathjax-config">
         MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});
     </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js"></script>
+    <meta http-equiv="X-UA-Compatible" CONTENT="IE=EmulateIE7" />
 <!-- External files -->
     <link rel="stylesheet" href=" <?php echo get_bloginfo('stylesheet_url') ?>">
     <!-- Latest compiled and minified CSS -->
