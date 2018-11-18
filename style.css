@@ -1208,4 +1208,6 @@ input.wpcf7-form-control.wpcf7-submit:hover {
 .post-main table {
   width: 90%;
   margin: 1.0em;
+  margin-left: auto;
+  margin-right: auto;
 }
