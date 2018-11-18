@@ -1207,7 +1207,6 @@ input.wpcf7-form-control.wpcf7-submit:hover {
 }
 .post-main table {
   display:table-cell;
-  margin-left: auto;
-  margin-right: auto;
+  width: 100%;
   margin: 1.0em;
 }
