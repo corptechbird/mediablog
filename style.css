@@ -1159,6 +1159,7 @@ input.wpcf7-form-control.wpcf7-submit:hover {
   padding: 0;
   margin: 0;
   background: white;
+  list-style-type: decimal;
 }
 .post-main #toc_container ul li {
   border: none;
