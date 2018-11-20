@@ -653,60 +653,6 @@ a.next.page-numbers:hover{
   float: left;
   color: #aaa;
 }
-
-/* .content-meta .like {
-  display: inline-block;
-  float: right;
-  color: #4cc48e;
-}
-.content-meta .like .material-icons {
-  vertical-align: middle;
-  font-size: 16px;
-} */
-@media screen and (max-width: 800px) {
-  .cards {
-    text-align: center;
-  }
-  .cards-inside{
-    width:100%;
-    text-align: center;
-  }
-  .l-card {
-    max-width:100%;
-    padding-left: 0;
-    padding-right: 0;
-    margin-left: 0;
-    margin-right: 0;
-  }
-  .frame img {
-    width: 100%;
-    max-width: 300px;
-  }
-  .title {
-    margin: 0 0 20px 0;
-    font-size: 1.3em;
-  }
-  .post {
-    font-size: 1.1em;
-  }
-  #contents {
-    padding: 5px;
-  }
-  .post-main p {
-    margin: 5px;
-  }
-  .post-main h2 {
-    margin: 0;
-  }
-  .rankingTop {
-    margin: 0;
-    width: 100%;
-  }
-  .ranking {
-    margin: 0;
-    width: 100%;
-  }
-}
 #pageTop {
   display: none;
   position: fixed;
@@ -1215,4 +1161,48 @@ input.wpcf7-form-control.wpcf7-submit:hover {
   margin: 1.0em;
   margin-left: auto;
   margin-right: auto;
+}
+@media screen and (max-width: 800px) {
+  .cards {
+    text-align: center;
+  }
+  .cards-inside{
+    width:100%;
+    text-align: center;
+  }
+  .l-card {
+    max-width:100%;
+    padding-left: 0;
+    padding-right: 0;
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .frame img {
+    width: 100%;
+    max-width: 300px;
+  }
+  .title {
+    margin: 0 0 20px 0;
+    font-size: 1.3em;
+  }
+  .post {
+    font-size: 1.1em;
+  }
+  #contents {
+    padding: 5px;
+  }
+  .post-main p {
+    margin: 5px;
+  }
+  .post-main h2 {
+    margin: 0px;
+  }
+  .rankingTop {
+    margin: 0;
+    width: 100%;
+  }
+  .ranking {
+    margin: 0;
+    width: 100%;
+  }
 }
