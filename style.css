@@ -1095,6 +1095,7 @@ input.wpcf7-form-control.wpcf7-submit:hover {
 }
 .post-main #toc_container a:hover {
   color: rgba(0, 182, 214, 1);
+  text-decoration: underline;
 }
 .post-main #toc_container .toc_list {
   padding: 1.0em;
