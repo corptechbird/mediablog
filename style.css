@@ -684,10 +684,6 @@ a.next.page-numbers:hover{
     width: 100%;
     max-width: 300px;
   }
-  .result-frame img {
-    width: 100%;
-    max-width: 300px;
-  }
   .title {
     margin: 0 0 20px 0;
     font-size: 1.3em;
