@@ -693,6 +693,9 @@ a.next.page-numbers:hover{
     padding: 5px;
   }
   .post-main p {
+    margin: 5px;
+  }
+  .post-main h2 {
     margin: 0;
   }
   .rankingTop {
