@@ -1091,12 +1091,9 @@ input.wpcf7-form-control.wpcf7-submit:hover {
 .adright {float:left; width:336px;margin: 10px;}
 .clear {clear:both;}
 .clear hr {color: transparent; display:none; height: 0px;border:none;}
-code {
-  margin: 0px;
-}
 .hljs{
   font-size:0.8em;
-  margin: 1.0em 30px 0 30px;
+  margin: 0;
   box-shadow: 0px 0px 20px -5px rgba(0, 0, 0, 0.8);
   border-radius: 5px;
   height: auto;
