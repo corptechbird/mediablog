@@ -695,6 +695,12 @@ a.next.page-numbers:hover{
   .post {
     font-size: 1.1em;
   }
+  #contents {
+    padding: 5px;
+  }
+  .hljs{
+    margin: 10px;
+  }
   .post-main p {
     margin: 0;
   }
