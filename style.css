@@ -282,6 +282,7 @@ html, body {
 }
 .result-frame img {
   display: inline-block;
+  border: solid 1px grey;
   max-width: 80%;
   height: auto;
   margin: 20px 0px 20px 0px;
