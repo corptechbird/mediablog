@@ -1048,17 +1048,42 @@ input.wpcf7-form-control.wpcf7-submit:hover {
 .codecaption {
   margin: 1.0em 0 0 1.0em; 
 }
+
 h1 {
   padding: 0.4em 0.5em;/*文字の上下 左右の余白*/
   color: #494949;/*文字色*/
-  font-size: 1.4em;
+  font-size: 1.6em;
   background: rgba(252, 252, 252, 1);/*背景色*/
   border-left: solid 5px rgba(220, 87, 0, 1);/*左線*/
   border-bottom: solid 3px #d7d7d7;/*下線*/
 }
 h2 {
   color: #494949;/*文字色*/
+  font-size: 1.4em;
+  font-weight: bold;
+  padding: 0.5em;/*上下の余白*/
+  border-bottom: solid 1px rgba(221, 221, 221, 1);/*下線*/
+  margin: 1.0em 0.5em 0.5em 0.5em;
+}
+h3 {
+  color: #494949;/*文字色*/
   font-size: 1.2em;
+  font-weight: bold;
+  padding: 0.5em;/*上下の余白*/
+  border-bottom: solid 1px rgba(221, 221, 221, 1);/*下線*/
+  margin: 1.0em 0.5em 0.5em 0.5em;
+}
+h4 {
+  color: #494949;/*文字色*/
+  font-size: 1.0em;
+  font-weight: bold;
+  padding: 0.5em;/*上下の余白*/
+  border-bottom: solid 1px rgba(221, 221, 221, 1);/*下線*/
+  margin: 1.0em 0.5em 0.5em 0.5em;
+}
+h5 {
+  color: #494949;/*文字色*/
+  font-size: 0.8em;
   font-weight: bold;
   padding: 0.5em;/*上下の余白*/
   border-bottom: solid 1px rgba(221, 221, 221, 1);/*下線*/
