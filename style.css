@@ -280,6 +280,9 @@ html, body {
 .result-frame {
   text-align: center;
 }
+.result-frame:hover {
+  opacity: 0.7;
+}
 .result-frame img {
   display: inline-block;
   max-width: 100%;
@@ -289,6 +292,9 @@ html, body {
 }
 .frame {
   text-align: center;
+}
+.frame:hover {
+  opacity: 0.7;
 }
 .frame img {
   display: inline-block;
@@ -1048,6 +1054,22 @@ input.wpcf7-form-control.wpcf7-submit:hover {
 .codecaption {
   margin: 1.0em 0 0 1.0em; 
 }
+.post h1 {
+  padding: 0.4em 0.5em;/*文字の上下 左右の余白*/
+  color: #494949;/*文字色*/
+  font-size: 1.4em;
+  background: rgba(252, 252, 252, 1);/*背景色*/
+  border-left: solid 5px rgba(220, 87, 0, 1);/*左線*/
+  border-bottom: solid 3px #d7d7d7;/*下線*/
+}
+.post h2 {
+  color: #494949;/*文字色*/
+  font-size: 1.2em;
+  font-weight: bold;
+  padding: 0.5em;/*上下の余白*/
+  border-bottom: solid 1px rgba(221, 221, 221, 1);/*下線*/
+  margin: 1.0em 0.5em 0.5em 0.5em;
+}
 .post-main h1 {
   padding: 0.4em 0.5em;/*文字の上下 左右の余白*/
   color: #494949;/*文字色*/
@@ -1127,6 +1149,12 @@ input.wpcf7-form-control.wpcf7-submit:hover {
   padding-left: 5px;
   padding-right: 5px;
 }
+.post-main table {
+  width: 90%;
+  margin: 1.0em;
+  margin-left: auto;
+  margin-right: auto;
+}
 .small-table {
   padding: 10px;
   padding-left: 30px;
@@ -1157,12 +1185,7 @@ input.wpcf7-form-control.wpcf7-submit:hover {
   font-size: 1.2em;
   font-weight: 700;
 }
-.post-main table {
-  width: 90%;
-  margin: 1.0em;
-  margin-left: auto;
-  margin-right: auto;
-}
+
 @media screen and (max-width: 800px) {
   .cards {
     text-align: center;
