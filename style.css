@@ -1163,6 +1163,30 @@ input.wpcf7-form-control.wpcf7-submit:hover {
   border-bottom: solid 1px rgba(221, 221, 221, 1);/*下線*/
   margin: 0.8em 0.5em 0.5em 0.5em;
 }
+.post-main h3 {
+  color: #494949;/*文字色*/
+  font-size: 1.2em;
+  font-weight: bold;
+  padding: 0.4em;/*上下の余白*/
+  border-bottom: solid 1px rgba(221, 221, 221, 1);/*下線*/
+  margin: 0.8em 0.5em 0.5em 0.5em;
+}
+.post-main h4 {
+  color: #494949;/*文字色*/
+  font-size: 1.0em;
+  font-weight: bold;
+  padding: 0.4em;/*上下の余白*/
+  border-bottom: solid 1px rgba(221, 221, 221, 1);/*下線*/
+  margin: 0.8em 0.5em 0.5em 0.5em;
+}
+.post-main h5 {
+  color: #494949;/*文字色*/
+  font-size: 0.8em;
+  font-weight: bold;
+  padding: 0.4em;/*上下の余白*/
+  border-bottom: solid 1px rgba(221, 221, 221, 1);/*下線*/
+  margin: 0.8em 0.5em 0.5em 0.5em;
+}
 h1 {
   color: #494949;/*文字色*/
   font-size: 1.8em;
