@@ -1059,10 +1059,10 @@ input.wpcf7-form-control.wpcf7-submit:hover {
 .post-main h2 {
   color: #494949;/*文字色*/
   font-size: 1.2em;
+  font-weight: bold;
   padding: 0.5em;/*上下の余白*/
-  border-top: solid 2px #494949;/*上線*/
-  border-bottom: solid 2px #494949;/*下線*/
-  margin: 0.5em;
+  border-bottom: solid 1px rgba(221, 221, 221, 1);/*下線*/
+  margin: 1.5em 0.5em 0.5em 0.5em;
 }
 .post-main #toc_container {
   margin: 0.5em 0.5em 1.5em 0.5em;
@@ -1196,7 +1196,7 @@ input.wpcf7-form-control.wpcf7-submit:hover {
     margin: 5px;
   }
   .post-main h2 {
-    margin: 0px;
+    margin: 1.5em 0 0 0;
   }
   .rankingTop {
     margin: 0;
