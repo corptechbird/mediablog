@@ -1147,6 +1147,14 @@ input.wpcf7-form-control.wpcf7-submit:hover {
   font-size: 1.2em;
   font-weight: 700;
 }
+.post-main h1 {
+  padding: 0.4em 0.5em;/*文字の上下 左右の余白*/
+  color: #494949;/*文字色*/
+  font-size: 1.6em;
+  background: rgba(252, 252, 252, 1);/*背景色*/
+  border-left: solid 5px rgba(220, 87, 0, 1);/*左線*/
+  border-bottom: solid 3px #d7d7d7;/*下線*/
+}
 h1 {
   padding: 0.4em 0.5em;/*文字の上下 左右の余白*/
   color: #494949;/*文字色*/
