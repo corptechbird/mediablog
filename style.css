@@ -280,21 +280,15 @@ html, body {
 .result-frame {
   text-align: center;
 }
-.result-frame:hover {
-  opacity: 0.7;
-}
 .result-frame img {
   display: inline-block;
   max-width: 100%;
   height: auto;
-  margin: 10px 0px 10px 0px;
+  margin: 1.0em 0px 1.0em 0px;
   padding: 10px;
 }
 .frame {
   text-align: center;
-}
-.frame:hover {
-  opacity: 0.7;
 }
 .frame img {
   display: inline-block;
@@ -302,7 +296,7 @@ html, body {
   border-radius: 10px;
   max-width: 320px;
   height: auto;
-  margin: 20px 0px 20px 0px;
+  margin: 1.0em 0px 1.0em 0px;
 }
 .frame a img:hover{
   opacity: 0.7;
