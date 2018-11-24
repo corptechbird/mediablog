@@ -1153,7 +1153,7 @@ input.wpcf7-form-control.wpcf7-submit:hover {
   font-weight: bold;
   padding: 0.4em;/*上下の余白*/
   border-bottom: solid 1px rgba(221, 221, 221, 1);/*下線*/
-  margin: 1.0em 0.5em 0.5em 0.5em;
+  margin: 0.8em 0.5em 0.5em 0.5em;
 }
 .post-main h2 {
   color: #494949;/*文字色*/
@@ -1161,7 +1161,7 @@ input.wpcf7-form-control.wpcf7-submit:hover {
   font-weight: bold;
   padding: 0.4em;/*上下の余白*/
   border-bottom: solid 1px rgba(221, 221, 221, 1);/*下線*/
-  margin: 1.0em 0.5em 0.5em 0.5em;
+  margin: 0.8em 0.5em 0.5em 0.5em;
 }
 h1 {
   color: #494949;/*文字色*/
@@ -1169,7 +1169,7 @@ h1 {
   font-weight: bold;
   padding: 0.4em;/*上下の余白*/
   border-bottom: solid 1px rgba(221, 221, 221, 1);/*下線*/
-  margin: 1.0em 0.5em 0.5em 0.5em;
+  margin: 0.8em 0.5em 0.5em 0.5em;
 }
 h2 {
   color: #494949;/*文字色*/
@@ -1177,7 +1177,7 @@ h2 {
   font-weight: bold;
   padding: 0.4em;/*上下の余白*/
   border-bottom: solid 1px rgba(221, 221, 221, 1);/*下線*/
-  margin: 1.0em 0.5em 0.5em 0.5em;
+  margin: 0.8em 0.5em 0.5em 0.5em;
 }
 h3 {
   color: #494949;/*文字色*/
@@ -1185,7 +1185,7 @@ h3 {
   font-weight: bold;
   padding: 0.4em;/*上下の余白*/
   border-bottom: solid 1px rgba(221, 221, 221, 1);/*下線*/
-  margin: 1.0em 0.5em 0.5em 0.5em;
+  margin: 0.8em 0.5em 0.5em 0.5em;
 }
 h4 {
   color: #494949;/*文字色*/
@@ -1193,7 +1193,7 @@ h4 {
   font-weight: bold;
   padding: 0.4em;/*上下の余白*/
   border-bottom: solid 1px rgba(221, 221, 221, 1);/*下線*/
-  margin: 1.0em 0.5em 0.5em 0.5em;
+  margin: 0.8em 0.5em 0.5em 0.5em;
 }
 h5 {
   color: #494949;/*文字色*/
@@ -1201,7 +1201,7 @@ h5 {
   font-weight: bold;
   padding: 0.4em;/*上下の余白*/
   border-bottom: solid 1px rgba(221, 221, 221, 1);/*下線*/
-  margin: 1.0em 0.5em 0.5em 0.5em;
+  margin: 0.8em 0.5em 0.5em 0.5em;
 }
 @media screen and (max-width: 800px) {
   .cards {
@@ -1236,19 +1236,19 @@ h5 {
     margin: 5px;
   }
   .h1 {
-    margin: 1.0em 0 0 0;
+    margin: 0.8em 0 0 0;
   }
   .h2 {
-    margin: 1.0em 0 0 0;
+    margin: 0.8em 0 0 0;
   }
   .h3 {
-    margin: 1.0em 0 0 0;
+    margin: 0.8em 0 0 0;
   }
   .h4 {
-    margin: 1.0em 0 0 0;
+    margin: 0.8em 0 0 0;
   }
   .h5 {
-    margin: 1.0em 0 0 0;
+    margin: 0.8em 0 0 0;
   }
   .rankingTop {
     margin: 0;
