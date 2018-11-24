@@ -277,10 +277,10 @@ html, body {
   margin: 0px;
   padding: 0px;
 }
-.result-frame {
+/* .result-frame {
   text-align: center;
-}
-.result-frame img {
+} */
+img {
   display: inline-block;
   max-width: 100%;
   height: auto;
