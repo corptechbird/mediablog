@@ -82,6 +82,8 @@
                 <div class="cards">
                     <div class="cards-inside">
                     <?php
+                    $terms = get_terms( array( 'taxonomy'=>'category', 'get'=>'all' ) );
+
                     $terms = get_terms('category', array(
                         'post_type' => array('post'),
                         'fields' => 'all'
