@@ -32,12 +32,7 @@
                 'orderby' => 'ID', 
                 'order' => 'DESC' 
             );
-            $wp_query->query($param);
-            echo $param['category_name'];
-            if($wp_query->have_posts()): while($wp_query->have_posts()) : $wp_query->the_post();
-            ?>
-            <?php endwhile; endif; ?>
-            <?php if ( have_posts() ) : ?>
+            if ( have_posts() ) : ?>
             <figure class="frame">
                 <a href="<?php echo esc_url( home_url( '/' ) ); ?>/<?php echo $post_type ?>/">
                 <?php if (get_post_type() == 'post') { ?>
@@ -66,19 +61,6 @@
             </li>
             <?php endwhile; ?>     
             </ul>
-            <p class="pagenation">
-                <?php
-                    $big = 9999999999;
-                    $arg = array(
-                        'base' => str_replace( $big, '%#%', esc_url( get_pagenum_link( $big ) ) ),
-                        'current' => max( 1, get_query_var('paged') ),
-                        'total'   => $wp_query->max_num_pages,
-                        'prev_text' => '«',
-                        'next_text' => '»'
-                    );
-                    echo paginate_links($arg);
-                ?>
-            </p>
             <?php else : ?>
             <div class="notfound">
                 <h3>Page Not Found</h3>
