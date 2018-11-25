@@ -3,7 +3,7 @@
         <div class="post">
         <?php $cat_info = get_category( $cat ); ?><?php echo esc_html( $cat_info->name ); ?><?php echo esc_html( $cat_info->slug ); ?>
         <?php $post_name = ""; 
-            $post_type = basename(get_permalink());
+            $post_type = esc_html( $cat_info->slug );
             if ($post_type == 'python') {
                 $post_name = "Python";
             } elseif ($post_type == 'python_cn') {
