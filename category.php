@@ -106,7 +106,7 @@
                 <div class="cards">
                     <div class="cards-inside">
                     <?php 
-                    $terms = get_terms( 'post' );                    
+                    $terms = get_terms( 'post', 'hide_empty=0' );                 
                     foreach($terms as $term){
                         echo $term;
                         echo $term->name;
