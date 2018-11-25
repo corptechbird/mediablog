@@ -236,10 +236,10 @@ html, body {
   color:rgba(0, 182, 214, 0.7);
 }
 .post-main p {
-  margin: 5px 30px;
+  margin: 0.5em 30px;
 }
 .post p {
-  margin: 5px 30px;
+  margin: 0.5em 30px;
 }
 .newentry {
   border-bottom: solid 3px skyblue;
