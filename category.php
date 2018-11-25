@@ -81,16 +81,11 @@
             <div class="afterpost">
                 <div class="cards">
                     <div class="cards-inside">
-                    <?php 
-                    $taxonomies = array( 
-                        'post'
-                    );
-                    $args = array(
-                        'orderby'       => 'name', 
-                        'order'         => 'ASC',
-                        'hide_empty'    => false
-                    ); 
-                    $terms = get_terms( $taxonomies, $args );             
+                    <?php
+                    $terms = get_terms('category', array(
+                        'post_type' => array('post'),
+                        'fields' => 'all'
+                        ));          
                     foreach($terms as $term){
                         echo $term;
                         echo $term->name;
