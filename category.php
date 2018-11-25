@@ -82,13 +82,11 @@
                 <div class="cards">
                     <div class="cards-inside">
                     <?php
-                    $taxonomies = array('category');
-                    //Set arguments - don't 'hide' empty terms.
-                    $args = array(
+                    $categories = get_terms( 'category', array(
+                        'orderby'    => 'count',
                         'hide_empty' => 0
-                    );
-                    $terms = get_terms( $taxonomies, $args);   
-                    foreach($terms as $term){
+                    ) );
+                    foreach($categories as $term){
                         echo $term;
                         foreach($term as $te){
                             foreach($te as $t){
