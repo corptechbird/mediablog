@@ -82,10 +82,13 @@
                 <div class="cards">
                     <div class="cards-inside">
                     <?php
-                    $categories = get_terms( "category", array( "hide_empty" => 0 ) );
-                    
-                    foreach($categories as $term){
-                        echo $term;
+                    $args = array(
+                        'orderby' => 'name'
+                    );
+                    $categories = get_categories( $args );
+                    foreach ( $categories as $term ) {
+                        $cat_link = get_category_link($term->cat_ID);
+                        echo '<li class="category-list__item"><a href="' . $cat_link . '">' . $term->name . '</a></li>';
                         ?>
                         <a href="<?php echo esc_url( home_url( '/' ) ); ?>/category/<?php echo $term->slug; ?>" title="<?php echo $term->name; ?>">  
                             <div class="l-card">
