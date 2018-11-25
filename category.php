@@ -106,13 +106,8 @@
                 <div class="cards">
                     <div class="cards-inside">
                     <?php 
-                    $args = array(
-                        'type' => 'post',
-                        'orderby' => 'name',
-                        'order' => 'ASC'
-                    );
-                    $categories = get_categories( $args );
-                    foreach($categories as $category)
+                    $terms = get_terms( 'post' );
+                    foreach($terms as $category)
                     { 
                         echo 'yahho';
                         echo $category;  
