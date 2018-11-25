@@ -1,9 +1,9 @@
 <?php get_header(); ?>            
     <div id="contents">
         <div class="post">
+        <?php $cat_info = get_category( $cat ); ?>
         <?php echo esc_html( $cat_info->name ); ?>
         <?php echo esc_html( $cat_info->slug ); ?>
-        <?php $cat_info = get_category( $cat ); ?>
         <?php $post_name = ""; 
             $post_type = esc_html( $cat_info->slug );
             if ($post_type == 'python') {
