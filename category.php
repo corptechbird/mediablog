@@ -112,10 +112,11 @@
                         'order'                    => 'ASC'
                     );
                     $categories = get_categories( $args );
-                    echo $categories;
+                    
                     
                     $array = array("datascience", "datascience_cn", "python", "python_cn", "swift", "swift_cn");
-                        foreach($array as $value){
+                        foreach($categories as $value){
+                        echo $value;
                         $value_name = ""; 
                         if ($value == 'datascience') {
                             $value_name = "Data Science";
