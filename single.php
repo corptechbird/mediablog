@@ -23,7 +23,7 @@
                 }
                 ?>
                 <figure class="frame">
-                    <a href="<?php echo esc_url( home_url( '/' ) ); ?>/<?php echo $post_type ?>/">
+                    <a href="<?php echo esc_url( home_url( '/' ) ); ?>/category/<?php echo $cat[0]->category_nicename; ?>/">
                     <?php if (has_post_thumbnail()) {
                             the_post_thumbnail(array(360, 220));
                         } elseif (get_post_type() == 'post') { ?>
