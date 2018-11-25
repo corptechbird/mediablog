@@ -27,7 +27,7 @@
                     <?php if (has_post_thumbnail()) {
                             the_post_thumbnail(array(360, 220));
                         } elseif (get_post_type() == 'post') { ?>
-                            <img src="<?php echo get_bloginfo('template_directory'); ?>/images/<?php echo $cat[0]->cat_name; ?>.png" alt="<?php echo $post_name; ?> Image" width="360" />
+                            <img src="<?php echo get_bloginfo('template_directory'); ?>/images/<?php echo $cat[0]->category_nicename; ?>.png" alt="<?php echo $post_name; ?> Image" width="360" />
                         <?php } elseif (get_post_type() == 'datascience' || get_post_type() == 'datascience_cn' || get_post_type() == 'python' || get_post_type() == 'python_cn' || get_post_type() == 'swift' || get_post_type() == 'swift_cn') { ?>
                             <img src="<?php echo get_bloginfo('template_directory'); ?>/images/<?php echo $post_type; ?>.png" alt="<?php echo $post_name; ?> Image" width="360" />
                         <?php } else { ?>
@@ -62,7 +62,7 @@
                 </div>
                 <?php wp_link_pages('before=<p id="postpage">&after=</p>&pagelink=<span>%</span>'); ?>
             </div>
-            <div class="newentry"><p class="front-title">『<?php echo $cat[0]->cat_name; ?> 』Article List</p></div>     
+            <div class="newentry"><p class="front-title">『<?php echo $cat[0]->category_nicename; ?> 』Article List</p></div>     
             <ul style="list-style-type:decimal; padding-left: 40px;">
                 <?php $args = array(
                     'numberposts' => -1,
