@@ -1,94 +1,169 @@
 <?php get_header(); ?>            
     <div id="contents">
         <div class="post">
-            <div class="newentry"><?php $cat_info = get_category( $cat ); ?><?php echo esc_html( $cat_info->name ); ?></div>
-            <?php if ( have_posts() ) : ?>
-            <div class="cards">
-                <div class="cards-inside">
-                    <?php while ( have_posts() ) : the_post(); ?>
-                    <a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>">  
-                        <div class="l-card">
-                            <div class="l-thumbnail">
-                                <figure class="thumbnail-wrapper">
-                                    <?php if (has_post_thumbnail()) {
-                                            the_post_thumbnail(array(360, 220));
-                                        } elseif (get_post_type() == 'python' || get_post_type() == 'flutter' || get_post_type() == 'go' || get_post_type() == 'swift' || get_post_type() == 'kotlin' || get_post_type() == 'android' || get_post_type() == 'scala' || get_post_type() == 'unity') { ?>
-                                            <img src="<?php echo get_bloginfo('template_directory'); ?>/images/<?php echo get_post_type(); ?>.png" alt="<?php echo get_post_type(); ?>画像" width="360" height="220" />
-                                        <?php } else { ?>
-                                            <img src="<?php echo get_bloginfo('template_directory'); ?>/images/eyecatch.png" alt="アイキャッチ画像" width="360" height="220" />
-                                    <?php } ?>
-                                </figure>
-                                <span class="more-text">Read More</span>
-                            </div>
-                            <div class="text-content">
-                                <p class="caption"><?php the_title(); ?></p>
-                            </div>
-                        </div>
-                    </a>
-                    <?php endwhile; ?>
-                </div>
-            </div>
-            <p class="pagenation">
+        <?php $post_name = ""; 
+            $post_type = basename(get_permalink());
+            if ($post_type == 'python') {
+                $post_name = "Python";
+            } elseif ($post_type == 'python_cn') {
+                $post_name = "Python";
+            } elseif ($post_type == 'swift') {
+                $post_name = "Swift";
+            } elseif ($post_type == 'swift_cn') {
+                $post_name = "Swift";
+            } elseif ($post_type == 'datascience') {
+                $post_name = "Data Science";
+            } elseif ($post_type == 'datascience_cn') {
+                $post_name = "Data Science";
+            } elseif ($post_type == 'mindcontrol') {
+                $post_name = "Mind Control";
+            } elseif ($post_type == 'mindcontrol_cn') {
+                $post_name = "Mind Control";
+            }
+        ?>
             <?php
-                $big = 9999999999;
-                $arg = array(
-                    'base' => str_replace( $big, '%#%', esc_url( get_pagenum_link( $big ) ) ),
-                    'current' => max( 1, get_query_var('paged') ),
-                    'total'   => $wp_query->max_num_pages,
-                    'prev_text' => '«',
-                    'next_text' => '»'
-                );
-                echo paginate_links($arg);
+            $wp_query = new WP_Query();
+            $param = array(
+                'posts_per_page' => '-1', 
+                'post_type' => $post_type, 
+                'post_status' => 'publish', 
+                'orderby' => 'ID', 
+                'order' => 'DESC' 
+            );
+            $wp_query->query($param);
+            if($wp_query->have_posts()): while($wp_query->have_posts()) : $wp_query->the_post();
             ?>
+            <?php endwhile; endif; ?>
+            <?php if ( have_posts() ) : ?>
+            <figure class="frame">
+                <a href="<?php echo esc_url( home_url( '/' ) ); ?>/<?php echo $post_type ?>/">
+                <?php if (has_post_thumbnail()) {
+                        the_post_thumbnail(array(360, 220));
+                    } elseif (get_post_type() == 'datascience' || get_post_type() == 'datascience_cn' || get_post_type() == 'python' || get_post_type() == 'python_cn' ||  get_post_type() == 'swift' ||  get_post_type() == 'swift_cn' ) { ?>
+                        <img src="<?php echo get_bloginfo('template_directory'); ?>/images/<?php echo $post_type; ?>.png" alt="<?php echo $post_type; ?> Image" width="360" />
+                    <?php } else { ?>
+                        <img src="<?php echo get_bloginfo('template_directory'); ?>/images/eyecatch.png" alt="Eye Catch Image" width="360" />
+                <?php } ?>
+                </a>
+            </figure>
+            <div class="ads" style="margin-bottom:20px;">
+                <ins class="adsbygoogle"
+                    style="display:inline-block;width:728px;height:90px"
+                    data-ad-client="ca-pub-2330122305834701"
+                    data-ad-slot="3318403188"></ins>
+                <script>
+                (adsbygoogle = window.adsbygoogle || []).push({});
+                </script>
+            </div>            
+            <div class="newentry"><p class="front-title">『<?php $cat_info = get_category( $cat ); ?><?php echo esc_html( $cat_info->name ); ?> ?> 』Article List</p></div>
+            <ul style="list-style-type:decimal; padding-left: 40px;">
+            <?php while ( have_posts() ) : the_post(); ?>
+            <li>
+                <a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>"><?php the_title(); ?></a>
+            </li>
+            <?php endwhile; ?>     
+            </ul>
+            <p class="pagenation">
+                <?php
+                    $big = 9999999999;
+                    $arg = array(
+                        'base' => str_replace( $big, '%#%', esc_url( get_pagenum_link( $big ) ) ),
+                        'current' => max( 1, get_query_var('paged') ),
+                        'total'   => $wp_query->max_num_pages,
+                        'prev_text' => '«',
+                        'next_text' => '»'
+                    );
+                    echo paginate_links($arg);
+                ?>
             </p>
             <?php else : ?>
             <div class="notfound">
-                <p>申し訳ありません。お探しのページは見つかりませんでした。</p>
-                <?php echo $search_query; ?> に一致する情報は見つかりませんでした。
-                <div class="notfound-navi"><a href="<?php echo esc_url( home_url( '/' ) ); ?>"><i class="fas fa-home" aria-hidden="true"></i> Home へ戻る</a></div>
+                <h3>Page Not Found</h3>
+                <p>Sorry. The page you were looking for could not be found.</p>
             </div>
             <?php endif; ?>
+            <div class="ads" style="margin-bottom:20px;">
+            <ins class="adsbygoogle"
+                style="display:inline-block;width:728px;height:90px"
+                data-ad-client="ca-pub-2330122305834701"
+                data-ad-slot="3318403188"></ins>
+            <script>
+            (adsbygoogle = window.adsbygoogle || []).push({});
+            </script>
+            </div>
             <div class="newentry"></div>
-            <div class="cards">
-                <div class="cards-inside">
-                    <?php $array = array("swift", "python", "go", "scala", "android", "kotlin", "flutter", "unity");
+            <div class="ads" style="margin-bottom:20px;">
+                <div class="adleft">
+                    <ins class="adsbygoogle"
+                        style="display:inline-block;width:336px;height:280px"
+                        data-ad-client="ca-pub-2330122305834701"
+                        data-ad-slot="4283281946"></ins>
+                    <script>
+                    (adsbygoogle = window.adsbygoogle || []).push({});
+                    </script>
+                </div>
+                <div class="adright">
+                    <ins class="adsbygoogle"
+                        style="display:inline-block;width:336px;height:280px"
+                        data-ad-client="ca-pub-2330122305834701"
+                        data-ad-slot="5240483851"></ins>
+                    <script>
+                    (adsbygoogle = window.adsbygoogle || []).push({});
+                    </script>
+                </div>
+                <hr class="clear">
+            </div>
+            <div class="afterpost">
+                <div class="cards">
+                    <div class="cards-inside">
+                    <?php $array = array("datascience", "datascience_cn", "python", "python_cn", "swift", "swift_cn");
                         foreach($array as $value){
+                        $value_name = ""; 
+                        if ($value == 'datascience') {
+                            $value_name = "Data Science";
+                        } elseif ($value == 'datascience_cn') {
+                            $value_name = "Data Science";
+                        } elseif ($value == 'python') {
+                            $value_name = "Python";
+                        } elseif ($value == 'python_cn') {
+                            $value_name = "Python";
+                        } elseif ($value == 'swift') {
+                            $value_name = "Swift";
+                        } elseif ($value == 'swift_cn') {
+                            $value_name = "Swift";
+                        }
                         ?>
-                        <a href="<?php echo esc_url( home_url( '/' ) ); ?>/<?php echo $value; ?>" title="逆引き<?php echo $value; ?>">  
+                        <a href="<?php echo esc_url( home_url( '/' ) ); ?>/<?php echo $value; ?>" title="<?php echo $value; ?> Reference">  
                             <div class="l-card">
                                 <div class="l-thumbnail">
                                     <figure class="thumbnail-wrapper">
-                                        <img src="<?php echo get_bloginfo('template_directory'); ?>/images/<?php echo $value; ?>.png" alt="アイキャッチ画像" width="360" height="220" />
+                                        <img src="<?php echo get_bloginfo('template_directory'); ?>/images/<?php echo $value; ?>.png" alt="Eye Catch Image" width="360" height="220" />
                                     </figure>
                                     <span class="more-text">Read More</span>
                                 </div>
                                 <div class="text-content">
-                                    <?php 
-                                        if ($value == 'python') {
-                                            $value = "Python";
-                                        } elseif ($value == 'flutter') {
-                                            $value = "Flutter";
-                                        } elseif ($value == 'go') {
-                                            $value = "Go";
-                                        } elseif ($value == 'swift') {
-                                            $value = "Swift";
-                                        } elseif ($value == 'kotlin') {
-                                            $value = "Kotlin";
-                                        } elseif ($value == 'android') {
-                                            $value = "Android";
-                                        } elseif ($value == 'scala') {
-                                            $value = "Scala";
-                                        } elseif ($value == 'unity') {
-                                            $value = "Unity";
-                                        }
-                                    ?>
-                                    <p class="caption"><?php echo $value; ?>でできることからプログラムを逆引きできるドキュメントです。実行結果の画像を添付していますし、プログラムは動作確認済みなのでコピペでもすぐ動きます。</p>
+                                    <p class="caption">This document shows the program of <?php echo $value_name; ?>, images and videos of the execution results at a glance. This is suitable for beginners to use as reference.</p>
                                 </div>
                             </div>
                         </a>
                         <?php
                     } ?>
+                    <a href="http://techbird.site:8080/tools" title="Data Science Automator">  
+                        <div class="l-card">
+                            <div class="l-thumbnail">
+                                <figure class="thumbnail-wrapper">
+                                    <img src="<?php echo get_bloginfo('template_directory'); ?>/images/automator.png" alt="Eye Catch Image" width="360" height="220" />
+                                </figure>
+                                <span class="more-text">Read More</span>
+                            </div>
+                            <div class="text-content">
+                                <p class="caption">This tool realizes the basic overhead processing necessary for data science with one click. You will be able to confirm the number of CSV records for each element at a glance.</p>
+                            </div>
+                        </div>
+                    </a>
+                    </div>
                 </div>
+                <?php wp_reset_postdata(); ?>
             </div>
         </div>
     </div>
