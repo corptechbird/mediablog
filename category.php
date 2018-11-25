@@ -91,8 +91,9 @@
                     foreach($terms as $term){
                         echo $term;
                         foreach($term as $te){
-                            echo $te
+                            echo $te;
                         }
+
                         ?>
                         <a href="<?php echo esc_url( home_url( '/' ) ); ?>/category/<?php echo $term->slug; ?>" title="<?php echo $term->name; ?>">  
                             <div class="l-card">
