@@ -112,23 +112,39 @@
                         'order'                    => 'ASC'
                     );
                     $categories = get_categories( $args );
+                    echo $categories;
                     
-                    foreach($categories as $value){
-                    ?>
-                    <a href="<?php echo esc_url( home_url( '/' ) ); ?>/<?php echo $value; ?>" title="<?php echo $value; ?> Reference">  
-                        <div class="l-card">
-                            <div class="l-thumbnail">
-                                <figure class="thumbnail-wrapper">
-                                    <img src="<?php echo get_bloginfo('template_directory'); ?>/images/<?php echo $value; ?>.png" alt="Eye Catch Image" width="360" height="220" />
-                                </figure>
-                                <span class="more-text">Read More</span>
+                    $array = array("datascience", "datascience_cn", "python", "python_cn", "swift", "swift_cn");
+                        foreach($array as $value){
+                        $value_name = ""; 
+                        if ($value == 'datascience') {
+                            $value_name = "Data Science";
+                        } elseif ($value == 'datascience_cn') {
+                            $value_name = "Data Science";
+                        } elseif ($value == 'python') {
+                            $value_name = "Python";
+                        } elseif ($value == 'python_cn') {
+                            $value_name = "Python";
+                        } elseif ($value == 'swift') {
+                            $value_name = "Swift";
+                        } elseif ($value == 'swift_cn') {
+                            $value_name = "Swift";
+                        }
+                        ?>
+                        <a href="<?php echo esc_url( home_url( '/' ) ); ?>/<?php echo $value; ?>" title="<?php echo $value; ?> Reference">  
+                            <div class="l-card">
+                                <div class="l-thumbnail">
+                                    <figure class="thumbnail-wrapper">
+                                        <img src="<?php echo get_bloginfo('template_directory'); ?>/images/<?php echo $value; ?>.png" alt="Eye Catch Image" width="360" height="220" />
+                                    </figure>
+                                    <span class="more-text">Read More</span>
+                                </div>
+                                <div class="text-content">
+                                    <p class="caption">This document shows the program of <?php echo $value_name; ?>, images and videos of the execution results at a glance. This is suitable for beginners to use as reference.</p>
+                                </div>
                             </div>
-                            <div class="text-content">
-                                <p class="caption">This document shows the program of <?php echo $value; ?>, images and videos of the execution results at a glance. This is suitable for beginners to use as reference.</p>
-                            </div>
-                        </div>
-                    </a>
-                    <?php
+                        </a>
+                        <?php
                     } ?>
                     <a href="http://techbird.site:8080/tools" title="Data Science Automator">  
                         <div class="l-card">
