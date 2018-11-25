@@ -18,13 +18,11 @@
             <?php endwhile; endif; ?>
             <?php if ( have_posts() ) : ?>
             <figure class="frame">
-                <a href="<?php echo esc_url( home_url( '/' ) ); ?>/<?php echo $cat_info->slug ?>/">
                 <?php if (get_post_type() == 'post') { ?>
                         <img src="<?php echo get_bloginfo('template_directory'); ?>/images/<?php echo esc_html( $cat_info->slug ); ?>.png" alt="<?php echo $cat_info->name; ?> Image" width="360" />
                     <?php } else { ?>
                         <img src="<?php echo get_bloginfo('template_directory'); ?>/images/eyecatch.png" alt="Eye Catch Image" width="360" />
                 <?php } ?>
-                </a>
             </figure>
             <div class="ads" style="margin-bottom:20px;">
                 <ins class="adsbygoogle"
@@ -35,7 +33,7 @@
                 (adsbygoogle = window.adsbygoogle || []).push({});
                 </script>
             </div>
-            <div class="newentry">『<?php echo esc_html( $cat_info->name ); ?>』Article List</div>
+            <div class="newentry"><p class="front-title">『<?php echo esc_html( $cat_info->name ); ?>』Article List</p></div>
             <ul style="list-style-type:decimal; padding-left: 40px;">
             <?php while ( have_posts() ) : the_post(); ?>
             <li>
