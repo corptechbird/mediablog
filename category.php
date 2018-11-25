@@ -107,15 +107,19 @@
                     <div class="cards-inside">
                     <?php 
                     $args = array(
-                        'type'                     => 'post',
-                        'orderby'                  => 'name',
-                        'order'                    => 'ASC'
+                        'type' => 'post',
+                        'orderby' => 'name',
+                        'order' => 'ASC'
                     );
                     $categories = get_categories( $args );
-                    
+                    foreach($categories as $category)
+                    { 
+                        echo 'yahho';
+                        echo $category;  
+                    }
                     
                     $array = array("datascience", "datascience_cn", "python", "python_cn", "swift", "swift_cn");
-                        foreach($categories as $value){
+                        foreach($array as $value){
                         echo $value;
                         $value_name = ""; 
                         if ($value == 'datascience') {
