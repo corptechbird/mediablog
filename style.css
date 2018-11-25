@@ -245,6 +245,9 @@ html, body {
   border-bottom: solid 3px skyblue;
   position: relative;
   margin: 10px;
+  font-size: 1.3em;
+  color: rgba(198, 185, 111, 1);
+  padding: 0px;
 }
 .newentry:after {
   position: absolute;
