@@ -42,7 +42,7 @@
             (adsbygoogle = window.adsbygoogle || []).push({});
             </script>
             </div>
-            <div class="newentry"><p class="front-title">Category List</p></div>
+            <div class="newentry">Category List</div>
             <div class="cards">
                 <div class="cards-inside">
                 <?php
