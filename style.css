@@ -1048,12 +1048,12 @@ input.wpcf7-form-control.wpcf7-submit:hover {
 .codecaption {
   margin: 1.0em 0 0 1.0em; 
 }
-.post-main #toc_container {
+#toc_container {
   margin: 0.5em 0.5em 1.5em 0.5em;
   border: solid 2px rgba(101, 210, 161, 1);
   box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.1), 0 8px 20px rgba(0, 0, 0, 0.1);
 }
-.post-main #toc_container .toc_title {
+#toc_container .toc_title {
   text-align: center;
   padding: 0.5em;
   margin: 0;
@@ -1062,37 +1062,37 @@ input.wpcf7-form-control.wpcf7-submit:hover {
   color: white;
   font-size: 1.0em; 
 }
-.post-main #toc_container .toc_title::before {
+#toc_container .toc_title::before {
   content: "\f03a";
 	margin-right: .5em;
   font-size: 0.8em; 
   font-family: "Font Awesome 5 Free";
   font-weight: 900;
 }
-.post-main #toc_container a {
+#toc_container a {
   color: rgba(84, 84, 84, 1);
   padding: 5px;
 }
-.post-main #toc_container a:visited {
+#toc_container a:visited {
   color: rgba(84, 84, 84, 0.7);
   text-decoration: none;
 }
-.post-main #toc_container a:hover {
+#toc_container a:hover {
   color: rgba(0, 182, 214, 1);
   text-decoration: underline;
 }
-.post-main #toc_container .toc_list {
+#toc_container .toc_list {
   padding: 1.0em;
   background: white;
 }
-.post-main #toc_container ul {
+#toc_container ul {
   border: none;
   padding: 0;
   margin: 0;
   background: white;
   list-style-type: decimal;
 }
-.post-main #toc_container ul li {
+#toc_container ul li {
   border: none;
   background: white;
   padding-bottom: 0px;
@@ -1100,10 +1100,10 @@ input.wpcf7-form-control.wpcf7-submit:hover {
   padding-left: 0.5em;
   margin-left: 1.5em;
 }
-.post-main #toc_container ul li ul{
+#toc_container ul li ul{
   list-style-type: circle;
 }
-.post-main .line {
+.line {
   background: rgba(250, 241, 244, 1);
   color: rgba(210, 0, 69, 1);
   border: solid 1px rgba(224, 224, 224, 1);
@@ -1111,6 +1111,23 @@ input.wpcf7-form-control.wpcf7-submit:hover {
   padding-left: 5px;
   padding-right: 5px;
 }
+
+
+
+.post ul {
+  list-style-type: disc;
+  margin:0;
+  padding-left:40px;
+}
+.post ul li{
+  list-style-type: disc;
+  display:list-item;
+  border: none;
+}
+.post ul li ul li{
+  list-style-type: circle;
+}
+
 .post-main table {
   width: 90%;
   margin: 1.0em;
@@ -1134,23 +1151,6 @@ input.wpcf7-form-control.wpcf7-submit:hover {
 .small-table ul li ul li{
   list-style-type: circle;
 }
-
-
-ul {
-  list-style-type: disc;
-  margin:0;
-  padding-left:40px;
-}
-ul li{
-  list-style-type: disc;
-  display:list-item;
-  border: none;
-}
-ul li ul li{
-  list-style-type: circle;
-}
-
-
 
 .memo {
   padding: 0.5em;
