@@ -1048,6 +1048,43 @@ input.wpcf7-form-control.wpcf7-submit:hover {
 .codecaption {
   margin: 1.0em 0 0 1.0em; 
 }
+.post ul {
+  list-style-type: disc;
+  margin:0;
+  padding-left:40px;
+}
+.post ul li{
+  list-style-type: disc;
+  display:list-item;
+  border: none;
+}
+.post ul li ul li{
+  list-style-type: circle;
+}
+
+.post-main table {
+  width: 90%;
+  margin: 1.0em;
+  margin-left: auto;
+  margin-right: auto;
+}
+.small-table {
+  padding: 10px;
+  padding-left: 30px;
+}
+.small-table ul {
+  list-style-type: disc;
+  margin:0;
+  padding-left:40px;
+}
+.small-table ul li{
+  list-style-type: disc;
+  display:list-item;
+  border: none;
+}
+.small-table ul li ul li{
+  list-style-type: circle;
+}
 #toc_container {
   margin: 0.5em 0.5em 1.5em 0.5em;
   border: solid 2px rgba(101, 210, 161, 1);
@@ -1114,43 +1151,7 @@ input.wpcf7-form-control.wpcf7-submit:hover {
 
 
 
-.post ul {
-  list-style-type: disc;
-  margin:0;
-  padding-left:40px;
-}
-.post ul li{
-  list-style-type: disc;
-  display:list-item;
-  border: none;
-}
-.post ul li ul li{
-  list-style-type: circle;
-}
 
-.post-main table {
-  width: 90%;
-  margin: 1.0em;
-  margin-left: auto;
-  margin-right: auto;
-}
-.small-table {
-  padding: 10px;
-  padding-left: 30px;
-}
-.small-table ul {
-  list-style-type: disc;
-  margin:0;
-  padding-left:40px;
-}
-.small-table ul li{
-  list-style-type: disc;
-  display:list-item;
-  border: none;
-}
-.small-table ul li ul li{
-  list-style-type: circle;
-}
 
 .memo {
   padding: 0.5em;
