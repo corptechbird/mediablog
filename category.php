@@ -33,6 +33,7 @@
                 'order' => 'DESC' 
             );
             $wp_query->query($param);
+            echo $param;
             if($wp_query->have_posts()): while($wp_query->have_posts()) : $wp_query->the_post();
             ?>
             <?php endwhile; endif; ?>
