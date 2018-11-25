@@ -106,7 +106,16 @@
                 <div class="cards">
                     <div class="cards-inside">
                     <?php 
-                    $terms = get_terms( 'post', 'hide_empty=0' );                 
+                    $taxonomies = array( 
+                        'post_tag',
+                        'my_tax',
+                    );
+                    $args = array(
+                        'orderby'       => 'name', 
+                        'order'         => 'ASC',
+                        'hide_empty'    => false
+                    ); 
+                    $terms = get_terms( $taxonomies, $args );             
                     foreach($terms as $term){
                         echo $term;
                         echo $term->name;
