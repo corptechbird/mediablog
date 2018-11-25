@@ -91,7 +91,9 @@
                     foreach($terms as $term){
                         echo $term;
                         foreach($term as $te){
-                            echo $te;
+                            foreach($te as $t){
+                                echo $t;
+                            }
                         }
 
                         ?>
