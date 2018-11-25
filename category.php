@@ -1,7 +1,7 @@
 <?php get_header(); ?>            
     <div id="contents">
         <div class="post">
-        <?php $cat_info = get_category( $cat ); ?><?php echo esc_html( $cat_info->name ); ?><?php echo esc_html( $cat_info->slug ); ?>
+        <?php $cat_info = get_category( $cat ); ?>
         <?php $post_name = ""; 
             $post_type = esc_html( $cat_info->slug );
             if ($post_type == 'python') {
@@ -26,7 +26,8 @@
             $wp_query = new WP_Query();
             $param = array(
                 'posts_per_page' => '-1', 
-                'post_type' => $post_type, 
+                'post_type' => 'post', 
+                'category' => esc_html( $cat_info->slug ),
                 'post_status' => 'publish', 
                 'orderby' => 'ID', 
                 'order' => 'DESC' 
@@ -56,7 +57,7 @@
                 (adsbygoogle = window.adsbygoogle || []).push({});
                 </script>
             </div>
-            <div class="newentry"><p class="front-title">『<?php echo $post_name; ?>』Article List</p></div>
+            <div class="newentry"><p class="front-title">『<?php echo esc_html( $cat_info->name ); ?>』Article List</p></div>
             <ul style="list-style-type:decimal; padding-left: 40px;">
             <?php while ( have_posts() ) : the_post(); ?>
             <li>
