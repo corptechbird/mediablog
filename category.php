@@ -106,30 +106,8 @@
                 <div class="cards">
                     <div class="cards-inside">
                     <?php 
-                    $terms = get_terms( 'post' );
-                    foreach($terms as $category)
-                    { 
-                        echo 'yahho';
-                        echo $category;  
-                    }
-                    
-                    $array = array("datascience", "datascience_cn", "python", "python_cn", "swift", "swift_cn");
-                        foreach($array as $value){
-                        echo $value;
-                        $value_name = ""; 
-                        if ($value == 'datascience') {
-                            $value_name = "Data Science";
-                        } elseif ($value == 'datascience_cn') {
-                            $value_name = "Data Science";
-                        } elseif ($value == 'python') {
-                            $value_name = "Python";
-                        } elseif ($value == 'python_cn') {
-                            $value_name = "Python";
-                        } elseif ($value == 'swift') {
-                            $value_name = "Swift";
-                        } elseif ($value == 'swift_cn') {
-                            $value_name = "Swift";
-                        }
+                    $terms = get_terms( 'post' );                    
+                    foreach($terms as $value){
                         ?>
                         <a href="<?php echo esc_url( home_url( '/' ) ); ?>/<?php echo $value; ?>" title="<?php echo $value; ?> Reference">  
                             <div class="l-card">
