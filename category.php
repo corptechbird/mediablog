@@ -27,7 +27,7 @@
             $param = array(
                 'posts_per_page' => '-1', 
                 'post_type' => 'post', 
-                'category_name' => esc_html( $cat_info->name ),
+                'category_name' => esc_html( $cat_info->slug ),
                 'post_status' => 'publish', 
                 'orderby' => 'ID', 
                 'order' => 'DESC' 
