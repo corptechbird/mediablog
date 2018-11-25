@@ -33,7 +33,7 @@
                 (adsbygoogle = window.adsbygoogle || []).push({});
                 </script>
             </div>
-            <div class="newentry"><p class="front-title">『<?php echo esc_html( $cat_info->name ); ?>』Article List</p></div>
+            <div class="newentry">『<?php echo esc_html( $cat_info->name ); ?>』Article List</div>
             <ul style="list-style-type:decimal; padding-left: 40px;">
             <?php while ( have_posts() ) : the_post(); ?>
             <li>
