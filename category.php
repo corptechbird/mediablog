@@ -82,7 +82,12 @@
                 <div class="cards">
                     <div class="cards-inside">
                     <?php
-                    $terms = get_terms( array( 'taxonomy'=>'category', 'get'=>'all' ) );        
+                    $taxonomies = array('category');
+                    //Set arguments - don't 'hide' empty terms.
+                    $args = array(
+                        'hide_empty' => 0
+                    );
+                    $terms = get_terms( $taxonomies, $args);   
                     foreach($terms as $term){
                         echo $term;
                         echo $term->name;
