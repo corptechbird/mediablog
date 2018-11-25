@@ -27,12 +27,16 @@
             $param = array(
                 'posts_per_page' => '-1', 
                 'post_type' => 'post', 
-                'category_name' => esc_html( $cat_info->slug ),
+                'category_name' => 'swift',
                 'post_status' => 'publish', 
                 'orderby' => 'ID', 
                 'order' => 'DESC' 
             );
-            if ( have_posts() ) : ?>
+            $wp_query->query($param);
+            if($wp_query->have_posts()): while($wp_query->have_posts()) : $wp_query->the_post();
+            ?>
+            <?php endwhile; endif; ?>
+            <?php if ( have_posts() ) : ?>
             <figure class="frame">
                 <a href="<?php echo esc_url( home_url( '/' ) ); ?>/<?php echo $post_type ?>/">
                 <?php if (get_post_type() == 'post') { ?>
