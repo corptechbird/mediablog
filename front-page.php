@@ -16,7 +16,7 @@
         'orderby' => 'modified',
         'post_status' => 'published',
         'posts_per_page' => 20,
-        'post_type' => array('datascience', 'python', 'swift'),
+        'post_type' => array('post', 'datascience', 'python', 'swift'),
         'order' => 'DESC' 
     );
     $the_query = new WP_Query( $args );
@@ -42,7 +42,7 @@
             (adsbygoogle = window.adsbygoogle || []).push({});
             </script>
             </div>
-            <div class="newentry"><p class="front-title">TECHBIRD Service List</p></div>
+            <div class="newentry"><p class="front-title">Category List</p></div>
             <div class="cards">
                 <div class="cards-inside">
                     <?php $array = array("datascience", "datascience_cn", "python", "python_cn", "swift", "swift_cn");

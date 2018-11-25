@@ -2,26 +2,6 @@
     <div id="contents">
         <div class="post">
         <?php $cat_info = get_category( $cat ); ?>
-        <?php $post_name = ""; 
-            $post_type = esc_html( $cat_info->slug );
-            if ($post_type == 'python') {
-                $post_name = "Python";
-            } elseif ($post_type == 'python_cn') {
-                $post_name = "Python";
-            } elseif ($post_type == 'swift') {
-                $post_name = "Swift";
-            } elseif ($post_type == 'swift_cn') {
-                $post_name = "Swift";
-            } elseif ($post_type == 'datascience') {
-                $post_name = "Data Science";
-            } elseif ($post_type == 'datascience_cn') {
-                $post_name = "Data Science";
-            } elseif ($post_type == 'mindcontrol') {
-                $post_name = "Mind Control";
-            } elseif ($post_type == 'mindcontrol_cn') {
-                $post_name = "Mind Control";
-            }
-        ?>
             <?php
             $wp_query = new WP_Query();
             $param = array(
@@ -38,11 +18,9 @@
             <?php endwhile; endif; ?>
             <?php if ( have_posts() ) : ?>
             <figure class="frame">
-                <a href="<?php echo esc_url( home_url( '/' ) ); ?>/<?php echo $post_type ?>/">
+                <a href="<?php echo esc_url( home_url( '/' ) ); ?>/<?php echo $cat_info->slug ?>/">
                 <?php if (get_post_type() == 'post') { ?>
-                        <img src="<?php echo get_bloginfo('template_directory'); ?>/images/<?php echo esc_html( $cat_info->slug ); ?>.png" alt="<?php echo $post_name; ?> Image" width="360" />
-                    <?php } elseif (get_post_type() == 'datascience' || get_post_type() == 'datascience_cn' || get_post_type() == 'python' || get_post_type() == 'python_cn' ||  get_post_type() == 'swift' ||  get_post_type() == 'swift_cn' ) { ?>
-                        <img src="<?php echo get_bloginfo('template_directory'); ?>/images/<?php echo $post_type; ?>.png" alt="<?php echo $post_type; ?> Image" width="360" />
+                        <img src="<?php echo get_bloginfo('template_directory'); ?>/images/<?php echo esc_html( $cat_info->slug ); ?>.png" alt="<?php echo $cat_info->name; ?> Image" width="360" />
                     <?php } else { ?>
                         <img src="<?php echo get_bloginfo('template_directory'); ?>/images/eyecatch.png" alt="Eye Catch Image" width="360" />
                 <?php } ?>
@@ -107,8 +85,7 @@
                     <div class="cards-inside">
                     <?php 
                     $taxonomies = array( 
-                        'post_tag',
-                        'my_tax',
+                        'post'
                     );
                     $args = array(
                         'orderby'       => 'name', 
