@@ -82,10 +82,8 @@
                 <div class="cards">
                     <div class="cards-inside">
                     <?php
-                    $categories = get_terms( array(
-                        'taxonomy' => 'category',
-                        'hide_empty' => false,
-                    ) );
+                    $categories = get_terms( "python", array( "hide_empty" => 0 ) );
+                    
                     foreach($categories as $term){
                         echo $term;
                         ?>
