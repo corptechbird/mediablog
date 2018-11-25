@@ -82,7 +82,7 @@
                 <div class="cards">
                     <div class="cards-inside">
                     <?php
-                    $taxonomies = array('category');
+                    $taxonomies = array('post');
                     //Set arguments - don't 'hide' empty terms.
                     $args = array(
                         'hide_empty' => 0
