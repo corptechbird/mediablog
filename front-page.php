@@ -11,7 +11,7 @@
             (adsbygoogle = window.adsbygoogle || []).push({});
             </script>
             </div>
-            <div class="newentry"><p class="front-title">Newly Arrived Articles</p></div>
+            <div class="newentry">Newly Arrived Articles</div>
             <?php $args = array(
         'orderby' => 'modified',
         'post_status' => 'published',
