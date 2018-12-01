@@ -46,7 +46,7 @@
                 <hr class="clear">
             </div>
             <?php wp_link_pages('before=<p id="postpage">&after=</p>&pagelink=<span>%</span>'); ?>
-        <div class="newentry">『<?php echo $cat[0]->category_nicename; ?> 』Article List</div>     
+        <div class="newentry">『<?php echo $cat[0]->cat_name; ?> 』Article List</div>     
         <ul style="list-style-type:decimal; padding-left: 40px;">
             <?php $args = array(
                 'numberposts' => -1,
