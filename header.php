@@ -36,6 +36,7 @@
     <script type="text/javascript"
         src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-AMS_CHTML">
     </script>
+    <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
 <!-- External files -->
     <link rel="stylesheet" href=" <?php echo get_bloginfo('stylesheet_url') ?>">
     <!-- Latest compiled and minified CSS -->
