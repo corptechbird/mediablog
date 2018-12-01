@@ -51,7 +51,7 @@
             <?php $args = array(
                 'numberposts' => -1,
                 'post_type' => $post_type,
-                'category' => $cat[0]->category_nicename,
+                'category_name' => $cat[0]->category_nicename,
                 'order' => 'DESC' 
             );
             $posts = get_posts( $args );
