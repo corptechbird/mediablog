@@ -235,7 +235,7 @@ html, body {
 .post a:hover {
   color:rgba(0, 182, 214, 0.7);
 }
-.post-main p {
+.post p {
   margin: 1.0em 30px;
 }
 .post p {
@@ -1074,7 +1074,7 @@ input.wpcf7-form-control.wpcf7-submit:hover {
   list-style-type: circle;
 }
 
-.post-main table {
+.post table {
   width: 90%;
   margin: 1.0em;
   margin-left: auto;
@@ -1178,7 +1178,7 @@ input.wpcf7-form-control.wpcf7-submit:hover {
   font-size: 1.2em;
   font-weight: 700;
 }
-.post-main h1 {
+.post h1 {
   color: #494949;/*文字色*/
   font-size: 1.8em;
   font-weight: bold;
@@ -1186,7 +1186,7 @@ input.wpcf7-form-control.wpcf7-submit:hover {
   border-bottom: solid 1px rgba(221, 221, 221, 1);/*下線*/
   margin: 0.8em 0.5em 0.5em 0.5em;
 }
-.post-main h2 {
+.post h2 {
   color: #494949;/*文字色*/
   font-size: 1.4em;
   font-weight: bold;
@@ -1194,7 +1194,7 @@ input.wpcf7-form-control.wpcf7-submit:hover {
   border-bottom: solid 1px rgba(221, 221, 221, 1);/*下線*/
   margin: 0.8em 0.5em 0.5em 0.5em;
 }
-.post-main h3 {
+.post h3 {
   color: #494949;/*文字色*/
   font-size: 1.2em;
   font-weight: bold;
@@ -1202,7 +1202,7 @@ input.wpcf7-form-control.wpcf7-submit:hover {
   border-bottom: solid 1px rgba(221, 221, 221, 1);/*下線*/
   margin: 0.8em 0.5em 0.5em 0.5em;
 }
-.post-main h4 {
+.post h4 {
   color: #494949;/*文字色*/
   font-size: 1.0em;
   font-weight: bold;
@@ -1210,7 +1210,7 @@ input.wpcf7-form-control.wpcf7-submit:hover {
   border-bottom: solid 1px rgba(221, 221, 221, 1);/*下線*/
   margin: 0.8em 0.5em 0.5em 0.5em;
 }
-.post-main h5 {
+.post h5 {
   color: #494949;/*文字色*/
   font-size: 0.8em;
   font-weight: bold;
@@ -1287,7 +1287,7 @@ h5 {
   #contents {
     padding: 5px;
   }
-  .post-main p {
+  .post p {
     margin: 5px;
   }
   .post p {
