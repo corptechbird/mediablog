@@ -7,29 +7,15 @@
             <?php
                 $cat = get_the_category();
                 $post_type = get_post_type();
-                $post_name = ""; 
-                if ($post_type == 'python') {
-                    $post_name = "Python";
-                } elseif ($post_type == 'python_cn') {
-                    $post_name = "Python";
-                } elseif ($post_type == 'swift') {
-                    $post_name = "Swift";
-                } elseif ($post_type == 'swift_cn') {
-                    $post_name = "Swift";
-                } elseif ($post_type == 'datascience') {
-                    $post_name = "Data Science";
-                } elseif ($post_type == 'datascience_cn') {
-                    $post_name = "Data Science";
-                }
                 ?>
                 <figure class="frame">
                     <a href="<?php echo esc_url( home_url( '/' ) ); ?>/category/<?php echo $cat[0]->category_nicename; ?>/">
                     <?php if (has_post_thumbnail()) {
                             the_post_thumbnail(array(360, 220));
                         } elseif (get_post_type() == 'post') { ?>
-                            <img src="<?php echo get_bloginfo('template_directory'); ?>/images/<?php echo $cat[0]->category_nicename; ?>.png" alt="<?php echo $post_name; ?> Image" width="360" />
+                            <img src="<?php echo get_bloginfo('template_directory'); ?>/images/<?php echo $cat[0]->category_nicename; ?>.png" alt="<?php echo $post_type; ?> Image" width="360" />
                         <?php } elseif (get_post_type() == 'datascience' || get_post_type() == 'datascience_cn' || get_post_type() == 'python' || get_post_type() == 'python_cn' || get_post_type() == 'swift' || get_post_type() == 'swift_cn') { ?>
-                            <img src="<?php echo get_bloginfo('template_directory'); ?>/images/<?php echo $post_type; ?>.png" alt="<?php echo $post_name; ?> Image" width="360" />
+                            <img src="<?php echo get_bloginfo('template_directory'); ?>/images/<?php echo $post_type; ?>.png" alt="<?php echo $post_type; ?> Image" width="360" />
                         <?php } else { ?>
                             <img src="<?php echo get_bloginfo('template_directory'); ?>/images/eyecatch.png" alt="Eye Catch Image" width="360" />
                     <?php } ?>
@@ -63,11 +49,11 @@
                 <?php wp_link_pages('before=<p id="postpage">&after=</p>&pagelink=<span>%</span>'); ?>
             </div>
             <div class="newentry">『<?php echo $cat[0]->category_nicename; ?> 』Article List</div>     
-            <!-- <ul style="list-style-type:decimal; padding-left: 40px;">
+            <ul style="list-style-type:decimal; padding-left: 40px;">
                 <?php $args = array(
                     'numberposts' => -1,
                     'post_type' => $post_type,
-                    'category' => get_the_category(),
+                    'category' => $cat[0]->category_nicename,
                     'order' => 'DESC' 
                 );
                 $posts = get_posts( $args );
@@ -80,7 +66,7 @@
                     <li><p>No Article</p></li>
                 <?php endif;
                 wp_reset_postdata(); ?>
-            </ul> -->
+            </ul>
             <div class="afterpost">
                 <div class="cards">
                     <div class="cards-inside">
