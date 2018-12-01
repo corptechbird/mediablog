@@ -63,7 +63,7 @@
                 <?php wp_link_pages('before=<p id="postpage">&after=</p>&pagelink=<span>%</span>'); ?>
             </div>
             <div class="newentry">『<?php echo $cat[0]->category_nicename; ?> 』Article List</div>     
-            <ul style="list-style-type:decimal; padding-left: 40px;">
+            <!-- <ul style="list-style-type:decimal; padding-left: 40px;">
                 <?php $args = array(
                     'numberposts' => -1,
                     'post_type' => $post_type,
@@ -80,7 +80,7 @@
                     <li><p>No Article</p></li>
                 <?php endif;
                 wp_reset_postdata(); ?>
-            </ul>
+            </ul> -->
             <div class="afterpost">
                 <div class="cards">
                     <div class="cards-inside">
