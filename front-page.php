@@ -67,19 +67,6 @@
                         </a>
                         <?php
                     } ?>
-                    <a href="http://techbird.site:8080/tools" title="Data Science Automator">  
-                        <div class="l-card">
-                            <div class="l-thumbnail">
-                                <figure class="thumbnail-wrapper">
-                                    <img src="<?php echo get_bloginfo('template_directory'); ?>/images/automator.png" alt="Eye Catch Image" width="360" height="220" />
-                                </figure>
-                                <span class="more-text">Read More</span>
-                            </div>
-                            <div class="text-content">
-                                <p class="caption">This tool realizes the basic overhead processing necessary for data science with one click. You will be able to confirm the number of CSV records for each element at a glance.</p>
-                            </div>
-                        </div>
-                    </a>
                 </div>
             </div>
             <?php else : ?>
