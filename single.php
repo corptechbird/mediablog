@@ -56,7 +56,7 @@ function googleTranslateElementInit() {
         <div class="newentry">『 <?php echo $cat[0]->cat_name; ?> 』Article List</div>     
         <ul style="list-style-type:decimal; padding-left: 40px;">
             <?php $args = array(
-                'numberposts' => -1,
+                'numberposts' => 100,
                 'post_type' => $post_type,
                 'category_name' => $cat[0]->category_nicename,
                 'order' => 'DESC' 
