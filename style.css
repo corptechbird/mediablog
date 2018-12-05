@@ -1345,6 +1345,9 @@ h5 {
   .hljs{
     margin: 10px 0 0 0;
   }
+  #toc_container {
+    margin: 1.0em 0.2em 1.0em 0.2em;
+  }
   #toc_container .toc_list {
     padding: 0.4em 0.4em 0.4em 0.8em;
   }
