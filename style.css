@@ -1295,22 +1295,27 @@ h5 {
   .post h1 {
     margin: 0.8em 0em 0.2em 0em;
     padding: 0.2em;
+    font-size: 1.4em;
   }
   .post h2 {
     margin: 0.8em 0em 0.2em 0em;
     padding: 0.2em;
+    font-size: 1.2em;
   }
   .post h3 {
     margin: 0.8em 0em 0.2em 0em;
     padding: 0.2em;
+    font-size: 1.0em;
   }
   .post h4 {
     margin: 0.8em 0em 0.2em 0em;
     padding: 0.2em;
+    font-size: 0.8em;
   }
   .post h5 {
     margin: 0.8em 0em 0.2em 0em;
     padding: 0.2em;
+    font-size: 0.8em;
   }
   h1 {
     margin: 0.8em 0 0 0;
