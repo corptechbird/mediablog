@@ -295,11 +295,6 @@ html, body {
   margin: 1.0em 0px 1.0em 0px;
   padding: 10px;
 }
-.post div img {
-  max-width: 100%;
-  text-align: center;
-  margin: 1.0em;
-}
 .post img {
   max-width: 100%;
   text-align: center;
