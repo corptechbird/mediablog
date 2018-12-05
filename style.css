@@ -1146,11 +1146,12 @@ input.wpcf7-form-control.wpcf7-submit:hover {
   background: white;
   padding-bottom: 0px;
   padding-top: 0px;
-  padding-left: 1.0em;
+  padding-left: 0em;
   margin-left: 1.0em;
 }
 #toc_container ul li ul{
   list-style-type: circle;
+  padding-left: 0em;
 }
 .line {
   background: rgba(250, 241, 244, 1);
