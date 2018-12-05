@@ -1284,12 +1284,10 @@ h5 {
   }
   .post {
     font-size: 1.1em;
+    padding: 5px;
   }
   #contents {
     padding: 5px;
-  }
-  .post p {
-    margin: 5px;
   }
   .post p {
     margin: 5px;
