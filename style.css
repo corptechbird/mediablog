@@ -1147,7 +1147,7 @@ input.wpcf7-form-control.wpcf7-submit:hover {
   padding-bottom: 0px;
   padding-top: 0px;
   padding-left: 0.5em;
-  margin-left: 1.5em;
+  margin-left: 1.0em;
 }
 #toc_container ul li ul{
   list-style-type: circle;
@@ -1349,5 +1349,9 @@ h5 {
   }
   #toc_container .toc_list {
     padding: 0.2em;
+  }
+  #toc_container ul li {
+    padding-left: 0.2em;
+    margin-left: 0.2em;
   }
 }
