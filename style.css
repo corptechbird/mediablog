@@ -1293,20 +1293,26 @@ h5 {
   .post p {
     margin: 5px;
   }
-  .h1 {
+  
+  h1 {
     margin: 0.8em 0 0 0;
+    padding: 0.2em;
   }
-  .h2 {
+  h2 {
     margin: 0.8em 0 0 0;
+    padding: 0.2em;
   }
-  .h3 {
+  h3 {
     margin: 0.8em 0 0 0;
+    padding: 0.2em;
   }
-  .h4 {
+  h4 {
     margin: 0.8em 0 0 0;
+    padding: 0.2em;
   }
-  .h5 {
+  h5 {
     margin: 0.8em 0 0 0;
+    padding: 0.2em;
   }
   .rankingTop {
     margin: 0;
