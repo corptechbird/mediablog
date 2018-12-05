@@ -299,6 +299,7 @@ html, body {
   max-width: 100%;
   text-align: center;
   margin: 1.0em;
+  padding: auto;
 }
 .frame {
   text-align: center;
