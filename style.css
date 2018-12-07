@@ -396,40 +396,6 @@ a.next.page-numbers:hover{
   text-align: center;
   font-size: 0.9em;
 }
-#postpage {
-  text-align: center;
-}
-#postpage a {
-  padding: 5px 10px;
-  margin: 5px;
-  color: rgba(0, 182, 214, 1);
-  background-color: white;
-  border: solid 1px rgba(0, 182, 214, 1);
-}
-#postpage a:hover {
-  color: white;
-  background-color: rgba(0, 182, 214, 1);
-}
-#postpage a:hover span {
-  color: white;
-  background-color: rgba(0, 182, 214, 1);
-}
-#postpage a span {
-  padding: 0;
-  color: rgba(0, 182, 214, 1);
-  background-color: white;
-}
-#postpage a span:hover {
-  color: white;
-  background-color: rgba(0, 182, 214, 1);
-}
-#postpage > span {
-  padding: 5px 10px;
-  margin: 5px;
-  color: white;
-  background-color: rgba(0, 182, 214, 1);
-  border: solid 1px rgba(0, 182, 214, 1);
-}
 .time {
   color: gray;
   font-size:0.8em;
@@ -1270,9 +1236,6 @@ h5 {
   border-bottom: solid 1px rgba(221, 221, 221, 1);/*下線*/
   margin: 0.8em 0.5em 0.5em 0.5em;
   word-break: break-all;
-}
-.goog-te-gadget-simple{
-  width: 200px;
 }
 @media screen and (max-width: 800px) {
   .cards {
