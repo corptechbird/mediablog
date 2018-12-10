@@ -1341,9 +1341,11 @@ ul.recipe {
   list-style-type: none;
 }
 ol.recipe {
-  font-weight: bold;
+  counter-reset: list-count; 
+  list-style: none; 
 }
-ol.recipe li{
-  font-weight: normal;
-  border-bottom: 1px #eee solid;
+
+ol.recipe > li::before {
+  content:counter(list-count) ".";
+  counter-increment: list-count;
 }
