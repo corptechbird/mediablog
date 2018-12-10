@@ -1236,6 +1236,9 @@ h5 {
   margin: 0.8em 0.5em 0.5em 0.5em;
   word-break: break-all;
 }
+ul.recipe {
+  list-style-type: none;
+}
 @media screen and (max-width: 800px) {
   .cards {
     text-align: center;
