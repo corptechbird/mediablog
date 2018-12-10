@@ -1353,4 +1353,5 @@ ol.recipe > li::before {
 }
 ol.recipe li{
   border-bottom: 1px #eee solid;
+  padding-right: 2.0em;
 }
