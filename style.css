@@ -1239,6 +1239,9 @@ h5 {
 ul.recipe {
   list-style-type: none;
 }
+ol.recipe {
+  font-weight: bold;
+}
 @media screen and (max-width: 800px) {
   .cards {
     text-align: center;
