@@ -1346,7 +1346,7 @@ ol.recipe {
 }
 
 ol.recipe > li::before {
-  content:counter(list-count) ".  ";
+  content:counter(list-count) ".   ";
   counter-increment: list-count;
   font-weight: bold;
 }
