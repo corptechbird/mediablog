@@ -23,11 +23,6 @@
             <div class="title"><?php the_title(); ?></div>
             <div class="tag"><?php the_tags('<ul><li>','</li><li>','</li></ul>'); ?></div>
             <?php wp_link_pages('before=<p id="postpage">&after=</p>&pagelink=<span>%</span>'); ?>
-            <div id="google_translate_element"></div><script type="text/javascript">
-function googleTranslateElementInit() {
-  new google.translate.TranslateElement({pageLanguage: 'ja', includedLanguages: 'en', layout: google.translate.TranslateElement.InlineLayout.SIMPLE, autoDisplay: false}, 'google_translate_element');
-}
-</script><script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
             <!-- コンテンツ開始 -->
             <?php the_content(); ?>
             <!-- コンテンツ終了 -->
