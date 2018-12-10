@@ -1236,12 +1236,6 @@ h5 {
   margin: 0.8em 0.5em 0.5em 0.5em;
   word-break: break-all;
 }
-ul.recipe {
-  list-style-type: none;
-}
-ol.recipe {
-  font-weight: bold;
-}
 @media screen and (max-width: 800px) {
   .cards {
     text-align: center;
@@ -1342,4 +1336,14 @@ ol.recipe {
   #toc_container .toc_list {
     padding: 0.4em 0.4em 0.4em 0.8em;
   }
+}
+ul.recipe {
+  list-style-type: none;
+}
+ol.recipe {
+  font-weight: bold;
+}
+ol.recipe li{
+  font-weight: normal;
+  border-bottom: 1px #eee solid;
 }
