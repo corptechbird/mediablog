@@ -20,6 +20,13 @@
                 <?php } ?>
                 </a>
             </figure>
+            <ins class="adsbygoogle"
+                style="display:inline-block;width:728px;height:90px"
+                data-ad-client="ca-pub-2330122305834701"
+                data-ad-slot="3318403188"></ins>
+            <script>
+            (adsbygoogle = window.adsbygoogle || []).push({});
+            </script>
             <div class="title"><?php the_title(); ?></div>
             <div class="tag"><?php the_tags('<ul><li>','</li><li>','</li></ul>'); ?></div>
             <?php wp_link_pages('before=<p id="postpage">&after=</p>&pagelink=<span>%</span>'); ?>
