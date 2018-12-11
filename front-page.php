@@ -14,7 +14,7 @@
             <div class="newentry">Newly Arrived Articles</div>
             <?php $args = array(
         'orderby' => 'modified',
-        'post_status' => 'published',
+        'post_status' => 'publish',
         'posts_per_page' => 20,
         'post_type' => array('post', 'datascience', 'python', 'swift'),
         'order' => 'DESC' 
