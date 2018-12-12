@@ -28,7 +28,7 @@
             <script>
             (adsbygoogle = window.adsbygoogle || []).push({});
             </script>
-            <>
+            </div>
             <div class="title"><?php the_title(); ?></div>
             <div class="tag"><?php the_tags('<ul><li>','</li><li>','</li></ul>'); ?></div>
             <?php wp_link_pages('before=<p id="postpage">&after=</p>&pagelink=<span>%</span>'); ?>
