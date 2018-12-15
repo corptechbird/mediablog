@@ -18,11 +18,15 @@ Template Name: Contact
 <div id="contents">
     <div class="post">
         <form action="https://docs.google.com/forms/d/e/1FAIpQLScESylDuJPQCz5-mq0dnVB7Qzkl9ttU9z7yRtRNijBCgcXSYg/formResponse">
-    <label for="email">メールアドレス</label>
+    <label for="name">Name</label>
+    <input id="name" type="text" name="entry.2005620554">
+    <label for="email">Mail</label>
     <input id="email" type="text" name="entry.1045781291" placeholder="example@mail.co.jp">
-    <label for="msg">お問い合わせ内容</label>
-    <textarea id="msg" name="entry.839337160" placeholder="お気軽にお問い合わせください。"></textarea>
-    <button type="submit" name="button" value="送信"></button>
+    <label for="title">Title</label>
+    <input id="title" type="text" name="entry.1065046570">
+    <label for="msg">Message</label>
+    <textarea id="msg" name="entry.839337160"></textarea>
+    <button type="submit" name="button" value="Submit"></button>
     </form>
         <div class="newentry">CONTACT</div>
         <div class="cards">
