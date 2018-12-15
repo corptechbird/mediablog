@@ -17,7 +17,7 @@ Template Name: Contact
 <!-- Contents -->
 <div id="contents">
     <div class="post">
-        <form action="https://docs.google.com/forms/d/e/1FAIpQLScESylDuJPQCz5-mq0dnVB7Qzkl9ttU9z7yRtRNijBCgcXSYg/viewform?usp=sf_link">
+        <form action="https://docs.google.com/forms/d/e/1FAIpQLScESylDuJPQCz5-mq0dnVB7Qzkl9ttU9z7yRtRNijBCgcXSYg/formResponse">
     <label for="email">メールアドレス</label>
     <input id="email" type="text" name="entry.1045781291" placeholder="example@mail.co.jp">
     <label for="msg">お問い合わせ内容</label>
