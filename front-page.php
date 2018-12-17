@@ -16,7 +16,8 @@
         'orderby' => 'modified',
         'post_status' => 'publish',
         'posts_per_page' => 20,
-        'post_type' => array('post', 'datascience', 'python', 'swift'),
+        'category_name' => 'python',
+        'post_type' => array('post'),
         'order' => 'DESC' 
     );
     $the_query = new WP_Query( $args );
