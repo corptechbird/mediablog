@@ -30,8 +30,6 @@
             </script>
             </div>
             <div class="title"><?php the_title(); ?></div>
-            <div class="tag"><?php the_tags('<ul><li>','</li><li>','</li></ul>'); ?></div>
-            <?php wp_link_pages('before=<p id="postpage">&after=</p>&pagelink=<span>%</span>'); ?>
             <?php the_content(); ?>
             <!-- コンテンツ終了 -->
             <div class="ads" style="margin-bottom:20px;">
@@ -55,7 +53,6 @@
                 </div>
                 <hr class="clear">
             </div>
-            <?php wp_link_pages('before=<p id="postpage">&after=</p>&pagelink=<span>%</span>'); ?>
         <div class="newentry">『 <?php echo $cat[0]->cat_name; ?> 』Article List</div>     
         <ul style="list-style-type:decimal; padding-left: 40px;">
             <?php $args = array(
@@ -72,8 +69,7 @@
             <?php endforeach; ?>
             <?php else : ?>
                 <li><p>No Article</p></li>
-            <?php endif;
-            wp_reset_postdata(); ?>
+            <?php endif; ?>
         </ul>
         <div class="afterpost">
             <div class="newentry">Category List</div>
