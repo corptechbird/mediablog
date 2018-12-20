@@ -16,7 +16,7 @@
         'orderby' => 'modified',
         'post_status' => 'publish',
         'posts_per_page' => 20,
-        'category_name' => 'unity',
+        'category_name' => 'swift',
         'post_type' => array('post'),
         'order' => 'DESC' 
     );
