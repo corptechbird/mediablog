@@ -122,7 +122,7 @@
     </script>
 <script>
 (adsbygoogle = window.adsbygoogle || []).push({
-    google_ad_client: "ca-pub-5313032237627717",
+    google_ad_client: "ca-pub-2330122305834701",
     enable_page_level_ads: true
 });
 var addthis_config = addthis_config||{};
