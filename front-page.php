@@ -15,7 +15,7 @@
             <?php $args = array(
         'orderby' => 'modified',
         'post_status' => 'publish',
-        'posts_per_page' => 20,
+        'posts_per_page' => 40,
         'category_name' => 'swift',
         'post_type' => array('post'),
         'order' => 'DESC' 
