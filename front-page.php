@@ -16,7 +16,7 @@
         'orderby' => 'modified',
         'post_status' => 'publish',
         'posts_per_page' => 40,
-        'category_name' => 'swift',
+        'category_name' => 'python',
         'post_type' => array('post'),
         'order' => 'DESC' 
     );
