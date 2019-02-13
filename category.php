@@ -5,7 +5,7 @@
             <?php
             $wp_query = new WP_Query();
             $param = array(
-                'posts_per_page' => '800', 
+                'posts_per_page' => '600', 
                 'post_type' => 'post', 
                 'category_name' => esc_html( $cat_info->slug ),
                 'post_status' => 'publish', 

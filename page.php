@@ -24,7 +24,7 @@
             <?php
             $wp_query = new WP_Query();
             $param = array(
-                'posts_per_page' => '-1', 
+                'posts_per_page' => '600', 
                 'post_type' => $post_type, 
                 'post_status' => 'publish', 
                 'orderby' => 'ID', 
@@ -58,10 +58,22 @@
             <div class="newentry">Article List</div>
             <ul style="list-style-type:decimal; padding-left: 40px;">
             <?php while ( have_posts() ) : the_post(); ?>
+            <?php if($counter>0 && $counter%20==0):?>
+            <div class="ads" style="margin-bottom:20px;">
+            <ins class="adsbygoogle"
+                style="display:inline-block;width:728px;height:90px"
+                data-ad-client="ca-pub-2330122305834701"
+                data-ad-slot="3318403188"></ins>
+            <script>
+            (adsbygoogle = window.adsbygoogle || []).push({});
+            </script>
+            </div>
+            <?php endif; ?>
             <li>
                 <a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>"><?php the_title(); ?></a>
             </li>
-            <?php endwhile; ?>     
+            <?php $counter+=1; ?>  
+            <?php endwhile; ?>  
             </ul>
             <p class="pagenation">
                 <?php
