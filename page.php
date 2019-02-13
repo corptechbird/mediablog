@@ -57,6 +57,7 @@
             </div>
             <div class="newentry">Article List</div>
             <ul style="list-style-type:decimal; padding-left: 40px;">
+            <?php $counter = 0; ?>  
             <?php while ( have_posts() ) : the_post(); ?>
             <?php if($counter>0 && $counter%20==0):?>
             <div class="ads" style="margin-bottom:20px;">
