@@ -5,7 +5,8 @@
             <div id="footer">
                 <div>
                     <a href="<?php echo esc_url( home_url( '/' ) ); ?>">
-                    <img src="<?php bloginfo('template_directory'); ?>/images/icon.png"> </a>
+                    <!-- <img src="<?php bloginfo('template_directory'); ?>/images/icon.png"> </a> -->
+                    <img src="https://github.com/theOstrichClub/MediaBlog/images/icon.png"> </a>
                 </div>
                 <div class="text">
                     <!-- <p class="category">Category</p>
