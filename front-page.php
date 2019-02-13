@@ -58,7 +58,7 @@
                                 <div class="l-thumbnail">
                                     <figure class="thumbnail-wrapper">
                                         <!-- <img src="<?php echo get_bloginfo('template_directory'); ?>/images/<?php echo $term->slug; ?>.png" alt="Eye Catch Image" width="360" height="220" /> -->
-                                        <img src="https://github.com/theOstrichClub/MediaBlog/blob/master/images/<?php echo $term->slug; ?>.png" alt="Eye Catch Image" width="360" height="220" />
+                                        <img src="https://raw.githubusercontent.com/theOstrichClub/MediaBlog/master/images/<?php echo $term->slug; ?>.png" alt="Eye Catch Image" width="360" height="220" />
                                     </figure>
                                     <span class="more-text">Read More</span>
                                 </div>
