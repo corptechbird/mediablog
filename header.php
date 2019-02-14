@@ -1421,7 +1421,7 @@ ol.recipe li{
   border-bottom: 1px #eee solid;
   margin-right: 2.0em;
 }
-    </style>
+</style>
 </head>
 <body>
     <div id="pageTop"><a href="#"><i class="fa fa-chevron-up"></i></a></div>
