@@ -48,10 +48,14 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remodal/1.1.1/remodal.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery.tocify/1.9.0/stylesheets/jquery.tocify.min.css">
     <!-- Favicon, Thumbnail image -->
-    <link rel="icon" type="image/x-icon" sizes="16x16" href="<?php bloginfo('template_directory'); ?>/images/favicon-16.ico">
+    <!-- <link rel="icon" type="image/x-icon" sizes="16x16" href="<?php bloginfo('template_directory'); ?>/images/favicon-16.ico">
     <link rel="icon" type="image/x-icon" sizes="32x32" href="<?php bloginfo('template_directory'); ?>/images/favicon-32.ico">
     <link rel="icon" type="image/x-icon" sizes="48x48" href="<?php bloginfo('template_directory'); ?>/images/favicon-48.ico">
-    <link rel="icon" type="image/x-icon" sizes="152x152" href="<?php bloginfo('template_directory'); ?>/images/favicon-152.ico">
+    <link rel="icon" type="image/x-icon" sizes="152x152" href="<?php bloginfo('template_directory'); ?>/images/favicon-152.ico"> -->
+    <link rel="icon" type="image/x-icon" sizes="16x16" href="https://raw.githubusercontent.com/theOstrichClub/MediaBlog/master/images/favicon-16.ico">
+    <link rel="icon" type="image/x-icon" sizes="32x32" href="https://raw.githubusercontent.com/theOstrichClub/MediaBlog/master/images/favicon-32.ico">
+    <link rel="icon" type="image/x-icon" sizes="48x48" href="https://raw.githubusercontent.com/theOstrichClub/MediaBlog/master/images/favicon-48.ico">
+    <link rel="icon" type="image/x-icon" sizes="152x152" href="https://raw.githubusercontent.com/theOstrichClub/MediaBlog/master/images/favicon-152.ico">
     <!-- Global site tag (gtag.js) - Google Analytics -->
     
 </head>
@@ -65,7 +69,9 @@
             <!-- Header -->       
             <div id="header">
                 <a href="<?php echo esc_url( home_url( '/' ) ); ?>">
-                <img src="<?php bloginfo('template_directory'); ?>/images/icon.png"> </a>
+                <!-- <img src="<?php bloginfo('template_directory'); ?>/images/icon.png"> </a> -->
+                <img src="https://raw.githubusercontent.com/theOstrichClub/MediaBlog/master/images/icon.png"> </a>
+
                 <span id="btn"><a data-remodal-target="modal" href="javascript:menu_click();"><i class="fas fa-bars fa-lg"></i></a></span>
                 <span id="menu">
                     <ul>
