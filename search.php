@@ -27,9 +27,11 @@
                                         <?php if (has_post_thumbnail()) {
                                                 the_post_thumbnail(array(360, 220));
                                             } elseif (get_post_type() == 'python' || get_post_type() == 'flutter' || get_post_type() == 'go' || get_post_type() == 'swift' || get_post_type() == 'kotlin' || get_post_type() == 'android' || get_post_type() == 'scala' || get_post_type() == 'unity') { ?>
-                                                <img src="<?php echo get_bloginfo('template_directory'); ?>/images/<?php echo get_post_type(); ?>.png" alt="<?php echo get_post_type(); ?>画像" width="360" height="220" />
+                                                <!-- <img src="<?php echo get_bloginfo('template_directory'); ?>/images/<?php echo get_post_type(); ?>.png" alt="<?php echo get_post_type(); ?>画像" width="360" height="220" /> -->
+                                                <img src="https://raw.githubusercontent.com/theOstrichClub/MediaBlog/master/images/<?php echo get_post_type(); ?>.png" alt="<?php echo get_post_type(); ?>画像" width="360" height="220" />
                                             <?php } else { ?>
-                                                <img src="<?php echo get_bloginfo('template_directory'); ?>/images/eyecatch.png" alt="アイキャッチ画像" width="360" height="220" />
+                                                <!-- <img src="<?php echo get_bloginfo('template_directory'); ?>/images/eyecatch.png" alt="アイキャッチ画像" width="360" height="220" /> -->
+                                                <img src="https://raw.githubusercontent.com/theOstrichClub/MediaBlog/master/images/eyecatch.png" alt="アイキャッチ画像" width="360" height="220" />
                                         <?php } ?>
                                     </figure>
                                     <span class="more-text">Read More</span>
@@ -65,39 +67,25 @@
             <?php endif; ?>
             <div class="newentry"></div>
             <div class="cards">
-                <div class="cards-inside">
-                    <?php $array = array("swift", "python", "go", "scala", "android", "kotlin", "flutter", "unity");
-                        foreach($array as $value){
+            <div class="cards-inside">
+                <?php
+                    $args = array(
+                        'orderby' => 'name'
+                    );
+                    $categories = get_categories( $args );
+                    foreach ( $categories as $term ) {
                         ?>
-                        <a href="<?php echo esc_url( home_url( '/' ) ); ?>/<?php echo $value; ?>" title="逆引き<?php echo $value; ?>">  
+                        <a href="<?php echo esc_url( home_url( '/' ) ); ?>/category/<?php echo $term->slug; ?>" title="<?php echo $term->name; ?>">  
                             <div class="l-card">
                                 <div class="l-thumbnail">
                                     <figure class="thumbnail-wrapper">
-                                        <img src="<?php echo get_bloginfo('template_directory'); ?>/images/<?php echo $value; ?>.png" alt="アイキャッチ画像" width="360" height="220" />
+                                        <!-- <img src="<?php echo get_bloginfo('template_directory'); ?>/images/<?php echo $term->slug; ?>.png" alt="Eye Catch Image" width="360" height="220" /> -->
+                                        <img src="https://raw.githubusercontent.com/theOstrichClub/MediaBlog/master/images/<?php echo $term->slug; ?>.png" alt="Eye Catch Image" width="360" height="220" />
                                     </figure>
                                     <span class="more-text">Read More</span>
                                 </div>
                                 <div class="text-content">
-                                    <?php 
-                                        if ($value == 'python') {
-                                            $value = "Python";
-                                        } elseif ($value == 'flutter') {
-                                            $value = "Flutter";
-                                        } elseif ($value == 'go') {
-                                            $value = "Go";
-                                        } elseif ($value == 'swift') {
-                                            $value = "Swift";
-                                        } elseif ($value == 'kotlin') {
-                                            $value = "Kotlin";
-                                        } elseif ($value == 'android') {
-                                            $value = "Android";
-                                        } elseif ($value == 'scala') {
-                                            $value = "Scala";
-                                        } elseif ($value == 'unity') {
-                                            $value = "Unity";
-                                        }
-                                    ?>
-                                    <p class="caption"><?php echo $value; ?>でできることからプログラムを逆引きできるドキュメントです。実行結果の画像を添付していますし、プログラムは動作確認済みなのでコピペでもすぐ動きます。</p>
+                                <p class="caption"><?php echo $term->name; ?>に関する現役のエンジニアのノウハウ・トレンドのトピックなど技術的な情報を提供しています。コード・プログラムの丁寧な解説をはじめ、初心者にもわかりやすいように写真や動画を多く使用しています。</p>
                                 </div>
                             </div>
                         </a>
