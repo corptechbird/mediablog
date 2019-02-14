@@ -11,15 +11,15 @@ Template Name: Company
     <meta name="description" content="Contribute to society by the latest IT">
     <meta name="keywords" content="Reference, Programming, Coding, Sample, Example, Tutorial, Download, Beginner, Entrance, Study">
 <!-- External files -->
-    <link rel="stylesheet" href=" <?php echo get_bloginfo('stylesheet_url') ?>">
+    <link rel="stylesheet" href="https://raw.githubusercontent.com/theOstrichClub/MediaBlog/master/style.css">
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
     <!-- Favicon, Thumbnail image -->
-    <link rel="icon" type="image/x-icon" sizes="16x16" href="<?php bloginfo('template_directory'); ?>/images/biz_fav-16.ico">
-    <link rel="icon" type="image/x-icon" sizes="32x32" href="<?php bloginfo('template_directory'); ?>/images/biz_fav-32.ico">
-    <link rel="icon" type="image/x-icon" sizes="48x48" href="<?php bloginfo('template_directory'); ?>/images/biz_fav-48.ico">
-    <link rel="icon" type="image/x-icon" sizes="152x152" href="<?php bloginfo('template_directory'); ?>/images/biz_fav-152.ico">
+    <link rel="icon" type="image/x-icon" sizes="16x16" href="https://raw.githubusercontent.com/theOstrichClub/MediaBlog/master/images/biz_fav-16.ico">
+    <link rel="icon" type="image/x-icon" sizes="32x32" href="https://raw.githubusercontent.com/theOstrichClub/MediaBlog/master/images/biz_fav-32.ico">
+    <link rel="icon" type="image/x-icon" sizes="48x48" href="https://raw.githubusercontent.com/theOstrichClub/MediaBlog/master/images/biz_fav-48.ico">
+    <link rel="icon" type="image/x-icon" sizes="152x152" href="https://raw.githubusercontent.com/theOstrichClub/MediaBlog/master/images/biz_fav-152.ico">
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
@@ -127,7 +127,7 @@ Template Name: Company
             <!-- Header -->
             <div id="header">
                 <a href="<?php echo esc_url( home_url( '/' ) ); ?>/bizmedia">
-                <img src="<?php bloginfo('template_directory'); ?>/images/company.png"> </a>
+                <img src="https://raw.githubusercontent.com/theOstrichClub/MediaBlog/master/images/company.png"> </a>
                 <span id="bbtn"><a href="javascript:menu_click();"><i class="fas fa-bars fa-lg"></i></a></span>
                 <span id="menu">
                     <ul>
@@ -176,7 +176,7 @@ and we aim to solve problems and problems of daily life and society. bizMedia's 
                         <span><h5>3 key businesses</h5>
 In bizMedia, we are working around three projects: ① mobile / Web application development, ② media management, and ③ programming education.</br>
 ① In mobile / web application development, we mainly develop business applications incorporating AI and AR / VR and 2D / 3D game applications.</br>
-② In media management, we provide effective references about programming languages on <a href="http://techbird.site" target="_blank"> TECHBIRD </a>.</br>
+② In media management, we provide effective references about programming languages on <a href="https://techbird.site" target="_blank"> TECHBIRD </a>.</br>
 ③ In programming education, we mainly teach Swift, JavaScript, PHP, Java, Python.</span>
                     </div>
                 </div>
@@ -190,7 +190,7 @@ In bizMedia, we are working around three projects: ① mobile / Web application 
             <div id="footer">
                 <div>
                     <a href="<?php echo esc_url( home_url( '/' ) ); ?>/bizmedia">
-                    <img src="<?php bloginfo('template_directory'); ?>/images/company.png"> </a>
+                    <img src="https://raw.githubusercontent.com/theOstrichClub/MediaBlog/master/images/company.png"> </a>
                 </div>
             </div><!-- /#footer -->
         </div><!-- /#wrapper -->
