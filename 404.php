@@ -13,7 +13,8 @@
                                 <?php if (has_post_thumbnail()) {
                                     the_post_thumbnail(array(360, 360));
                                     } else { ?>
-                                    <img src="<?php echo get_bloginfo('template_directory'); ?>/images/eyecatch.png" alt="アイキャッチ画像" width="360" height="240" />
+                                    <!-- <img src="<?php echo get_bloginfo('template_directory'); ?>/images/eyecatch.png" alt="アイキャッチ画像" width="360" height="240" /> -->
+                                    <img src="https://raw.githubusercontent.com/theOstrichClub/MediaBlog/master/images/eyecatch.png" alt="アイキャッチ画像" width="360" height="240" />
                                 <?php } ?>
                                 </figure>
                                 <span class="more-text">Read More</span>
@@ -41,52 +42,31 @@
             </p>
             <?php else : ?>
                 <div class="notfound">
-                    <h3>Page Not Found</h3>
-                    <p>Sorry. The page you were looking for could not be found.</p>
+                    <p>申し訳ありません。お探しのページは見つかりませんでした。</p>
                     <div class="notfound-navi"><a href="<?php echo esc_url( home_url( '/' ) ); ?>"><i class="fas fa-home" aria-hidden="true"></i> Home へ戻る</a></div>
                 </div>
             <?php endif; ?>
             <div class="newentry"></div>
             <div class="cards">
                 <div class="cards-inside">
-                    <a href="http://techbird.site:8080/tools" title="Data Science Automator">  
-                        <div class="l-card">
-                            <div class="l-thumbnail">
-                                <figure class="thumbnail-wrapper">
-                                    <img src="<?php echo get_bloginfo('template_directory'); ?>/images/automator.png" alt="Eye Catch Image" width="360" height="220" />
-                                </figure>
-                                <span class="more-text">Read More</span>
-                            </div>
-                            <div class="text-content">
-                                <p class="caption">This tool realizes the basic overhead processing necessary for data science with one click. You will be able to confirm the number of CSV records for each element at a glance.</p>
-                            </div>
-                        </div>
-                    </a>
-                    <?php $array = array("datascience", "python", "swift", "android", "kotlin");
-                    foreach($array as $value){
-                        $value_name = ""; 
-                        if ($value == 'datascience') {
-                            $value_name = "Data Science";
-                        } elseif ($value == 'python') {
-                            $value_name = "Python";
-                        } elseif ($value == 'swift') {
-                            $value_name = "Swift";
-                        } elseif ($value == 'android') {
-                            $value_name = "Android";
-                        } elseif ($value == 'kotlin') {
-                            $value_name = "Kotlin";
-                        }
+                <?php
+                    $args = array(
+                        'orderby' => 'name'
+                    );
+                    $categories = get_categories( $args );
+                    foreach ( $categories as $term ) {
                         ?>
-                        <a href="<?php echo esc_url( home_url( '/' ) ); ?>/<?php echo $value; ?>" title="<?php echo $value; ?> Dictionary">  
+                        <a href="<?php echo esc_url( home_url( '/' ) ); ?>/category/<?php echo $term->slug; ?>" title="<?php echo $term->name; ?>">  
                             <div class="l-card">
                                 <div class="l-thumbnail">
                                     <figure class="thumbnail-wrapper">
-                                        <img src="<?php echo get_bloginfo('template_directory'); ?>/images/<?php echo $value; ?>.png" alt="Eye Catch Image" width="360" height="220" />
+                                        <!-- <img src="<?php echo get_bloginfo('template_directory'); ?>/images/<?php echo $term->slug; ?>.png" alt="Eye Catch Image" width="360" height="220" /> -->
+                                        <img src="https://raw.githubusercontent.com/theOstrichClub/MediaBlog/master/images/<?php echo $term->slug; ?>.png" alt="Eye Catch Image" width="360" height="220" />
                                     </figure>
                                     <span class="more-text">Read More</span>
                                 </div>
                                 <div class="text-content">
-                                    <p class="caption">This document shows the program of <?php echo $value_name; ?>, images and videos of the execution results at a glance. This is suitable for beginners to use as reference.</p>
+                                <p class="caption"><?php echo $term->name; ?>に関する現役のエンジニアのノウハウ・トレンドのトピックなど技術的な情報を提供しています。コード・プログラムの丁寧な解説をはじめ、初心者にもわかりやすいように写真や動画を多く使用しています。</p>
                                 </div>
                             </div>
                         </a>

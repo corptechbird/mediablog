@@ -61,7 +61,7 @@
             else: ?>
             <div class="notfound">
                 <p>申し訳ありません。お探しのページは見つかりませんでした。</p>
-                <?php echo $search_query; ?> に一致する情報は見つかりませんでした。
+                <p><?php echo $search_query; ?> に一致する情報は見つかりませんでした。</p>
                 <div class="notfound-navi"><a href="<?php echo esc_url( home_url( '/' ) ); ?>"><i class="fas fa-home" aria-hidden="true"></i> Home へ戻る</a></div>
             </div>
             <?php endif; ?>
