@@ -118,6 +118,23 @@
         }
         echo $str;
     }
+    //投稿、固定ページ一覧にスラッグ表示
+    function add_columns_slug($columns) {
+        $columns['slug'] = "スラッグ";
+        echo '<style>.fixed .column-slug {width: 10%;}</style>';
+        return $columns;
+    }
+    function add_column_row_slug($column_name, $post_id) {
+        if($column_name == 'slug') {
+        $post = get_post($post_id);
+        $slug = $post->post_name;
+        echo esc_attr($slug);
+        }
+    }
+    add_filter( 'manage_pages_columns', 'add_columns_slug');
+    add_action( 'manage_pages_custom_column', 'add_column_row_slug', 10, 2);
+    add_filter( 'manage_posts_columns', 'add_columns_slug' );
+    add_action( 'manage_posts_custom_column', 'add_column_row_slug', 10, 2 );
     function my_custom_rv() {
         add_post_type_support( 'python', 'revisions' );
         add_post_type_support( 'swift', 'revisions' );
