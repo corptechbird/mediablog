@@ -56,7 +56,7 @@
                 </div>
                 <hr class="clear">
             </div>
-        <div class="newentry">『 <?php echo $cat[0]->cat_name; ?> 』Article List</div>     
+        <div class="newentry">Article List</div>     
         <ul style="list-style-type:decimal; padding-left: 40px;">
             <?php $args = array(
                 'numberposts' => 600,
