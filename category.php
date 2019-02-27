@@ -84,6 +84,14 @@
             <script>
             (adsbygoogle = window.adsbygoogle || []).push({});
             </script>
+            <div class="ads" style="margin-bottom:20px;">
+            <ins class="adsbygoogle"
+                style="display:inline-block;width:728px;height:90px"
+                data-ad-client="ca-pub-2330122305834701"
+                data-ad-slot="3318403188"></ins>
+            <script>
+            (adsbygoogle = window.adsbygoogle || []).push({});
+            </script>
             </div>
             <?php endif; ?>
             <li>
