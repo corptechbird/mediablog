@@ -51,7 +51,7 @@
             <ul style="list-style-type:decimal; padding-left: 40px;">
             <?php $counter = 0; ?>  
             <?php while ( have_posts() ) : the_post(); ?>
-            <?php if($counter>0 && $counter%100==0):?>
+            <?php if($counter>0 && $counter%20==0):?>
             <div class="ads" style="margin-bottom:20px;">
                 <div class="adleft">
                     <ins class="adsbygoogle"
@@ -72,16 +72,6 @@
                     </script>
                 </div>
                 <hr class="clear">
-            </div>
-            <?php elseif($counter>0 && $counter%20==0):?>
-            <div class="ads" style="margin-bottom:20px;">
-            <ins class="adsbygoogle"
-                style="display:inline-block;width:728px;height:90px"
-                data-ad-client="ca-pub-2330122305834701"
-                data-ad-slot="3318403188"></ins>
-            <script>
-            (adsbygoogle = window.adsbygoogle || []).push({});
-            </script>
             </div>
             <?php endif; ?>
             <li>
