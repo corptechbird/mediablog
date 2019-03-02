@@ -1421,12 +1421,13 @@ ol.recipe li{
   border-bottom: 1px #eee solid;
   margin-right: 2.0em;
 }
-ul.comments li p {
-  margin: 0px;
-}
-ul.comments {
+ol.comments {
   style="list-style-type:decimal;
 }
+ol.comments li p {
+  margin: 0px;
+}
+
 
 </style>
 </head>
