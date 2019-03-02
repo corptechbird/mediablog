@@ -1421,6 +1421,9 @@ ol.recipe li{
   border-bottom: 1px #eee solid;
   margin-right: 2.0em;
 }
+ul.comments li p {
+  margin: 0px;
+}
 </style>
 </head>
 <body>
