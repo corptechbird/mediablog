@@ -1424,6 +1424,10 @@ ol.recipe li{
 ul.comments li p {
   margin: 0px;
 }
+ul.comments {
+  style="list-style-type:decimal;
+}
+
 </style>
 </head>
 <body>
