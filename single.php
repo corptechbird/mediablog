@@ -71,25 +71,15 @@
             if( $posts ) : foreach( $posts as $post) : setup_postdata( $post ); ?>
             <?php if($counter>0 && $counter%20==0):?>
             <div class="ads" style="margin-bottom:20px;">
-                <div class="adleft">
-                    <ins class="adsbygoogle"
-                        style="display:inline-block;width:300px;height:600px"
-                        data-ad-client="ca-pub-2330122305834701"
-                        data-ad-slot="8660278409"></ins>
-                    <script>
-                    (adsbygoogle = window.adsbygoogle || []).push({});
-                    </script>
-                </div>
-                <div class="adright">
-                    <ins class="adsbygoogle"
-                        style="display:inline-block;width:300px;height:600px"
-                        data-ad-client="ca-pub-2330122305834701"
-                        data-ad-slot="8660278409"></ins>
-                    <script>
-                    (adsbygoogle = window.adsbygoogle || []).push({});
-                    </script>
-                </div>
-                <hr class="clear">
+                <ins class="adsbygoogle"
+                    style="display:block"
+                    data-ad-client="ca-pub-2330122305834701"
+                    data-ad-slot="9848871375"
+                    data-ad-format="auto"
+                    data-full-width-responsive="true"></ins>
+                <script>
+                (adsbygoogle = window.adsbygoogle || []).push({});
+                </script>
             </div>
             <?php endif; ?>
             <li>
