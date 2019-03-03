@@ -29,7 +29,7 @@
                     style="display:block"
                     data-ad-client="ca-pub-2330122305834701"
                     data-ad-slot="9848871375"
-                    data-ad-format="auto"
+                    data-ad-format="rectangle"
                     data-full-width-responsive="true"></ins>
                 <script>
                 (adsbygoogle = window.adsbygoogle || []).push({});
