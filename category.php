@@ -30,7 +30,7 @@
             <ul style="list-style-type:decimal; padding-left: 40px;">
             <?php $counter = 0; ?>  
             <?php while ( have_posts() ) : the_post(); ?>
-            <?php if($counter>0 && $counter%20==0):?>
+            <?php if($counter>0 && $counter%40==0):?>
             <div class="ads" style="margin-bottom:20px;">
                 <ins class="adsbygoogle"
                     style="display:block"
