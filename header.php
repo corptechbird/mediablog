@@ -32,7 +32,7 @@
         <?php
             }
         ?>
-    <meta name="description" content="現役のエンジニアのノウハウ・トレンドのトピックなど技術的な情報を提供しています。コード・プログラムの丁寧な解説をはじめ、初心者にもわかりやすいように写真や動画を多く使用しています。">
+    <meta name="description" content="小・中学生向けのオンラインプログラミング教室です。iOS/Androidアプリ開発やデータ分析など基礎から実践までをわかりやすく現役のエンジニアのノウハウ・トレンドのトピックなど技術的な情報を提供しています。コード・プログラムの丁寧な解説をはじめ、初心者にもわかりやすいように写真や動画を多く使用しています。">
     <script type="text/javascript"
         src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-AMS_CHTML">
     </script>

@@ -92,7 +92,7 @@
             <?php endif; ?>
         </ul>
         <div class="afterpost">
-            <div class="newentry">Category List</div>
+            <div class="newentry">カテゴリー一覧</div>
             <div class="ads" style="margin-bottom:20px;">
                 <div class="adleft">
                     <ins class="adsbygoogle"
@@ -130,10 +130,10 @@
                                         <!-- <img src="<?php echo get_bloginfo('template_directory'); ?>/images/<?php echo $term->slug; ?>.png" alt="Eye Catch Image" width="360" height="220" /> -->
                                         <img src="https://raw.githubusercontent.com/theOstrichClub/MediaBlog/master/images/<?php echo $term->slug; ?>.png" alt="Eye Catch Image" width="360" height="220" />
                                     </figure>
-                                    <span class="more-text">Read More</span>
+                                    <span class="more-text">もっと見る</span>
                                 </div>
                                 <div class="text-content">
-                                <p class="caption"><?php echo $term->name; ?>に関する現役のエンジニアのノウハウ・トレンドのトピックなど技術的な情報を提供しています。コード・プログラムの丁寧な解説をはじめ、初心者にもわかりやすいように写真や動画を多く使用しています。</p>
+                                <p class="caption"><?php echo $term->name; ?>に関する技術的な情報を提供しています。コード・プログラムの丁寧な解説をはじめ、初心者にもわかりやすいように写真や動画を多く使用しています。</p>
                                 </div>
                             </div>
                         </a>
