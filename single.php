@@ -58,7 +58,7 @@
                 </div>
                 <hr class="clear">
             </div>
-        <div class="newentry">Article List</div>     
+        <div class="newentry">記事一覧</div>     
         <ul style="list-style-type:decimal; padding-left: 40px;">
             <?php $args = array(
                 'numberposts' => 600,
@@ -88,11 +88,11 @@
             <?php $counter+=1; ?>  
             <?php endforeach; ?>
             <?php else : ?>
-                <li><p>No Article</p></li>
+                <li><p>お探しの記事は見つかりませんでした。</p></li>
             <?php endif; ?>
         </ul>
         <div class="afterpost">
-            <div class="newentry">カテゴリー一覧</div>
+            <div class="newentry">コース一覧</div>
             <div class="ads" style="margin-bottom:20px;">
                 <div class="adleft">
                     <ins class="adsbygoogle"

@@ -57,7 +57,7 @@
                 </div>
                 <hr class="clear">
             </div>
-            <div class="newentry">カテゴリー一覧</div>
+            <div class="newentry">コース一覧</div>
             <div class="cards">
                 <div class="cards-inside">
                 <?php
