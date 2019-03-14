@@ -19,44 +19,53 @@ Template Name: Privacy
         <div class="post">
             <div class="newentry">Privacy Policy</div>
             <div class="page">
-            <em><strong>About ad delivery</strong></em>
 
-This site uses a third-party advertisement service "Google Adsense Google Adsense".
+            <em><strong>個人情報の利用目的/strong></em>
 
-Advertisement distribution providers may use cookies to display advertisements that match the user's interests.
+当ブログでは、メールでのお問い合わせ、メールマガジンへの登録などの際に、名前（ハンドルネーム）、メールアドレス等の個人情報をご登録いただく場合がございます。
 
-For details on setting disabling cookie and Google adsense, please see "Advertisement - Policies & Terms - Google".
+これらの個人情報は質問に対する回答や必要な情報を電子メールなどをでご連絡する場合に利用させていただくものであり、個人情報をご提供いただく際の目的以外では利用いたしません。
 
-A third party may provide content and publicity, gather information directly from visitors, set cookies on visitor's browser, and recognize it.
+<em><strong>個人情報の第三者への開示/strong></em>
 
-&nbsp;
+当サイトでは、個人情報は適切に管理し、以下に該当する場合を除いて第三者に開示することはありません。
 
-<em><strong>About access analysis tool</strong></em>
+・本人のご了解がある場合
 
-On this site, we use "Google Analytics" access analysis tool by Google.
+・法令等への協力のため、開示が必要となる場合
 
-This Google Analytics uses cookies to collect traffic data.
+個人情報の開示、訂正、追加、削除、利用停止
 
-This traffic data is collected anonymously, it does not identify individuals.
+ご本人からの個人データの開示、訂正、追加、削除、利用停止のご希望の場合には、ご本人であることを確認させていただいた上、速やかに対応させていただきます。
 
-Since this function can refuse collecting by invalidating cookie, please confirm the setting of your browser.
+<em><strong>アクセス解析ツールについて/strong></em>
 
-&nbsp;
+当サイトでは、Googleによるアクセス解析ツール「Googleアナリティクス」を利用しています。
 
-<em><strong>Disclaimer</strong></em>
+このGoogleアナリティクスはトラフィックデータの収集のためにCookieを使用しています。このトラフィックデータは匿名で収集されており、個人を特定するものではありません。この機能はCookieを無効にすることで収集を拒否することが出来ますので、お使いのブラウザの設定をご確認ください。この規約に関して、詳しくはここをクリックしてください。
 
-Copyright rights, portrait rights, etc. of images posted on this site belong to each rights owner.
+<em><strong>広告の配信について/strong></em>
 
-It is not the purpose of violating the right. If there is a problem in the content of the article and the publication image etc., please contact each right holder directly with mail. After confirmation, we will correspond.
+[自分のサイトの名前]は、Amazon.co.jpを宣伝しリンクすることによってサイトが紹介料を獲得できる手段を提供することを目的に設定されたアフィリエイトプログラムである、Amazonアソシエイト・プログラムの参加者です。
+第三者がコンテンツおよび宣伝を提供し、訪問者から直接情報を収集し、訪問者のブラウザにクッキーを設定したりこれを認識したりする場合があります。
 
-When moved from this site to another site by link, banner, etc, we are not responsible for any information or services provided at the visited site.
+<em><strong>免責事項/strong></em>
 
-Regarding the content and information on this site, we are trying to post as accurate information as possible, but there are also cases where erroneous information has entered or information is outdated.
+当サイトからリンクやバナーなどによって他のサイトに移動された場合、移動先サイトで提供される情報、サービス等について一切の責任を負いません。
 
-Please note that we can not assume any responsibility for damages caused by contents posted on this site.
-                <?php if(have_posts()): while(have_posts()): the_post(); ?>
+当サイトのコンテンツ・情報につきまして、可能な限り正確な情報を掲載するよう努めておりますが、誤情報が入り込んだり、情報が古くなっていることもございます。
+
+当サイトに掲載された内容によって生じた損害等の一切の責任を負いかねますのでご了承ください。
+
+プライバシーポリシーの変更について
+
+当サイトは、個人情報に関して適用される日本の法令を遵守するとともに、本ポリシーの内容を適宜見直しその改善に努めます。
+
+修正された最新のプライバシーポリシーは常に本ページにて開示されます。
+
+                <!-- <?php if(have_posts()): while(have_posts()): the_post(); ?>
                     <?php the_content(); ?>
-                <?php endwhile; endif; ?>
+                <?php endwhile; endif; ?> -->
             </div>
             <div class="newentry"></div>
         </div>
