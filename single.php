@@ -21,7 +21,7 @@
                 </a>
             </figure>
             <div class="title"><?php the_title(); ?></div>
-              更新：<?php echo get_the_modified_date(); ?>
+            &nbsp; &nbsp; 更新：<?php echo get_the_modified_date(); ?>
             <?php the_content(); ?>
             <!-- コンテンツ終了 -->
             <div class="ads" style="margin-bottom:20px;">
