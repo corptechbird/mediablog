@@ -21,7 +21,7 @@
                 </a>
             </figure>
             <div class="title"><?php the_title(); ?></div>
-            最終動作確認日：<?php get_the_modified_date(); ?>
+            <p>最終動作確認日：<?php echo get_the_modified_date(); ?></p>
             <?php the_content(); ?>
             <!-- コンテンツ終了 -->
             <div class="ads" style="margin-bottom:20px;">
