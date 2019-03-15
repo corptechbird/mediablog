@@ -787,6 +787,7 @@ input.wpcf7-form-control.wpcf7-submit:hover {
   list-style-type: circle;
 }
 #toc_container {
+  max-width: 760px;
   margin: 0.5em 0.5em 1.5em 0.5em;
   border: solid 2px rgba(44, 84, 161, 1);
   box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.1), 0 8px 20px rgba(0, 0, 0, 0.1);
