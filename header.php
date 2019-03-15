@@ -1136,14 +1136,6 @@ h5 {
     margin: 0.8em 0 0 0;
     padding: 0.2em;
   }
-  .rankingTop {
-    margin: 0;
-    width: 100%;
-  }
-  .ranking {
-    margin: 0;
-    width: 100%;
-  }
   .hljs{
     margin: 10px 0 0 0;
   }
@@ -1158,24 +1150,6 @@ h5 {
   #toc_container .toc_list {
     padding: 0.4em 0.4em 0.4em 0.8em;
   }
-}
-ul.recipe {
-  list-style-type: none;
-}
-ol.recipe {
-  counter-reset: list-count; 
-  list-style: none; 
-}
-
-ol.recipe > li::before {
-  content:counter(list-count) ".";
-  counter-increment: list-count;
-  font-weight: bold;
-  margin-right: 10px; 
-}
-ol.recipe li{
-  border-bottom: 1px #eee solid;
-  margin-right: 2.0em;
 }
 </style>
 </head>
