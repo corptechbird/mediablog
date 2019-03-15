@@ -168,7 +168,7 @@ html, body {
   padding: 10px;
 }
 #primary ul h3 {
-  background-color: rgba(0, 182, 214, 1);
+  background-color: rgba(44, 84, 161, 1);
   border-radius: 5px;
   color: white;
   font-size: 1.2em;
@@ -213,7 +213,7 @@ html, body {
   color: gray;
 }
 .post ul li a:hover {
-  color: rgba(0, 182, 214, 1);
+  color: rgba(44, 84, 161, 0.7);
   text-decoration: none;
 }
 #end {
@@ -232,14 +232,14 @@ html, body {
   color:#505050;
 }
 .post a {
-  color:rgba(0, 182, 214, 1);
+  color:rgba(44, 84, 161, 1);
   word-break: break-all;
 }
 .post a:visited {
-  color:rgba(0, 182, 214, 0.7);
+  color:rgba(44, 84, 161, 0.7);
 }
 .post a:hover {
-  color:rgba(0, 182, 214, 0.7);
+  color:rgba(44, 84, 161, 1);
 }
 .post p {
   margin: 1.0em 30px;
@@ -248,7 +248,7 @@ html, body {
   margin: 1.0em 30px;
 }
 .newentry {
-  border-bottom: solid 3px skyblue;
+  border-bottom: solid 3px rgba(44, 84, 161, 1);
   position: relative;
   margin: 10px;
   font-size: 1.3em;
@@ -320,11 +320,11 @@ html, body {
   opacity: 0.7;
 }
 .frame a{
-  color:rgba(0, 182, 214, 1);
+  color:rgba(44, 84, 161, 1);
 }
 .frame a:hover{
   text-decoration: none;
-  color:rgba(0, 182, 214, 0.7);
+  color:rgba(44, 84, 161, 1);
 }
 .afterpost {
   border-top: solid 2px #f5f5f5;
@@ -336,41 +336,41 @@ html, body {
   padding: 4px 8px;
   margin: 4px;
   color: white;
-  background-color: rgba(0, 182, 214, 1);
-  border: solid 1px rgba(0, 182, 214, 1);
+  background-color: rgba(44, 84, 161, 1);
+  border: solid 1px rgba(44, 84, 161, 1);
 }
 a.page-numbers{
   padding: 4px 8px;
   margin: 4px;
-  color: rgba(0, 182, 214, 1);
+  color: rgba(44, 84, 161, 1);
   background-color: white;
-  border: solid 1px rgba(0, 182, 214, 1);
+  border: solid 1px rgba(44, 84, 161, 1);
 }
 a.page-numbers:hover {
   color: white;
-  background-color: rgba(0, 182, 214, 1);
+  background-color: rgba(44, 84, 161, 1);
 }
 a.prev.page-numbers{
   padding: 4px 8px;
   margin: 4px;
-  color: rgba(0, 182, 214, 1);
+  color: rgba(44, 84, 161, 1);
   background-color: transparent;
   box-shadow: none;
 }
 a.next.page-numbers{
   padding: 4px 8px;
   margin: 4px;
-  color: rgba(0, 182, 214, 1);
+  color: rgba(44, 84, 161, 1);
   background-color: transparent;
   box-shadow: none;
 }
 a.prev.page-numbers:hover{
   color: white;
-  background-color: rgba(0, 182, 214, 1);
+  background-color: rgba(44, 84, 161, 1);
 }
 a.next.page-numbers:hover{
   color: white;
-  background-color: rgba(0, 182, 214, 1);
+  background-color: rgba(44, 84, 161, 1);
 }
 .pagenation {
   text-align: center;
@@ -382,7 +382,7 @@ a.next.page-numbers:hover{
   top: 10px;
 }
 .navi {
-  color: #87ccc7;
+  color: rgba(44, 84, 161, 1);
   font-size: 18px;
   margin: 0 18px;
   position: relative;
@@ -397,7 +397,7 @@ a.next.page-numbers:hover{
   display: inline-block;
   width: 0;
   height: 3px;
-  background: #87ccc7;
+  background: rgba(44, 84, 161, 1);
   transition: 0.5s;
 }
 .navi:hover:before {
@@ -405,15 +405,15 @@ a.next.page-numbers:hover{
 }
 .navi a:link {
   text-decoration: none;
-  color:#87ccc7;
+  color:rgba(44, 84, 161, 1);
 }
 .navi a:visited {
   text-decoration: none;
-  color:#87ccc7;
+  color:rgba(44, 84, 161, 1);
 }
 .navi a:hover {
   text-decoration: none;
-  color:#87ccc7;
+  color:rgba(44, 84, 161, 1);
 }
 .l-card {
   transition: 0.5s;
@@ -479,7 +479,7 @@ a.next.page-numbers:hover{
   left: 0;
   top: 0;
   opacity: 0;
-  background: linear-gradient(238deg, rgba(14, 236, 179, 0.95), rgba(239, 255, 17, 0.95), rgba(17, 255, 136, 0.95), rgba(223, 116, 255, 0.95));
+  background: linear-gradient(238deg, rgba(14, 236, 179, 0.95), rgba(239, 255, 17, 0.95), rgba(44, 84, 161, 1), rgba(223, 116, 255, 0.95));
   background-size: 800% 800%;
 }
 .thumbnail-wrapper img {
@@ -493,7 +493,7 @@ a.next.page-numbers:hover{
 .text-content .title {
   margin: 0 0 12px 0;
   font-size: 20px;
-  color: #4cc48e;
+  color: rgba(44, 84, 161, 1);
 }
 .text-content .caption {
   margin: 0 0 12px 0;
@@ -601,15 +601,15 @@ a.next.page-numbers:hover{
 }
 #btn a:link {
   text-decoration:none;
-  color: #87ccc7;
+  color: rgba(44, 84, 161, 1);
 }
 #btn a:visited {
   text-decoration:none;
-  color: #87ccc7;
+  color: rgba(44, 84, 161, 1);
 }
 #btn a:hover{
   text-decoration:none;
-  color: #87ccc7;
+  color: rgba(44, 84, 161, 1);
 }
 #btn {
   display: block;
@@ -705,15 +705,15 @@ input.wpcf7-form-control.wpcf7-submit:hover {
 }
 .navir a:link {
   text-decoration: none;
-  color:#87ccc7;
+  color:rgba(44, 84, 161, 1);
 }
 .navir a:visited {
   text-decoration: none;
-  color:#87ccc7;
+  color:rgba(44, 84, 161, 1);
 }
 .navir a:hover {
   text-decoration: none;
-  color:#87ccc7;
+  color:rgba(44, 84, 161, 1);
 }
 .remodal .s {
   width: 70%;
@@ -847,14 +847,6 @@ input.wpcf7-form-control.wpcf7-submit:hover {
 #toc_container ul li ul{
   list-style-type: circle;
   padding-left: 0em;
-}
-.line {
-  background: rgba(250, 241, 244, 1);
-  color: rgba(210, 0, 69, 1);
-  border: solid 1px rgba(224, 224, 224, 1);
-  border-radius: 4px;
-  padding-left: 5px;
-  padding-right: 5px;
 }
 .post h1 {
   color: #494949;/*文字色*/
