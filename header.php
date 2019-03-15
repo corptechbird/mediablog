@@ -326,51 +326,6 @@ html, body {
   margin-right: auto;
   max-width: 100%;
 }
-.frame {
-  text-align: center;
-}
-.frame img {
-  display: inline-block;
-  box-shadow: 0px 0px 20px -5px rgba(0, 0, 0, 0.8);
-  border-radius: 10px;
-  max-width: 320px;
-  height: auto;
-  margin: 1.0em 0px 1.0em 0px;
-}
-.frame a img:hover{
-  opacity: 0.7;
-}
-.frame a{
-  color:rgba(0, 182, 214, 1);
-}
-.frame a:hover{
-  text-decoration: none;
-  color:rgba(0, 182, 214, 0.7);
-}
-.abstract-frame {
-  text-align: center;
-}
-.abstract {
-  display: inline-block;
-  background-color: rgba(240, 240, 240, 1);
-  color: rgba(102, 102, 102, 1);
-  padding: 20px;
-  max-width: 620px;
-  height: auto;
-  margin: 30px 0px 0px 0px;
-  text-align: left;
-}
-.emphasis {
-  /* background:linear-gradient(transparent 70%, #87ccc7 0%); */
-  border-bottom: solid 2px rgba(255, 114, 92, 1);
-}
-.emphasis a {
-  color: rgba(255, 114, 92, 1);
-}
-.emphasis a:hover {
-  text-decoration: none;
-  color:rgba(255, 114, 92, 0.7);
-}
 .afterpost {
   border-top: solid 2px #f5f5f5;
   border-bottom: solid 2px #f5f5f5;
