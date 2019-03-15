@@ -129,10 +129,13 @@ html, body {
   margin: 0;
 }
 #primary ul div ul li a {
-  color: rgba(44, 84, 161, 1);
+  color: #505050;
 }
 #primary ul div ul li a:visited {
-  color: rgba(44, 84, 161, 0.7);
+  color: rgba(80, 80, 80, 0.7);
+}
+#primary ul div ul li a:hover {
+  color: rgba(44, 84, 161, 1);
 }
 .post ul {
   margin: 0 5px 1.0em 5px;
