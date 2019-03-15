@@ -786,10 +786,6 @@ input.wpcf7-form-control.wpcf7-submit:hover {
 .small-table ul li ul li{
   list-style-type: circle;
 }
-.codecaption {
-  margin: 1.0em 0 0 1.0em; 
-  border-bottom: none;
-}
 #toc_container {
   max-width: 760px;
   margin: 0.5em auto 1.5em auto;
