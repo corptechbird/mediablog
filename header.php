@@ -248,7 +248,7 @@ html, body {
   margin: 1.0em 30px;
 }
 .newentry {
-  border-bottom: solid 3px rgba(198, 185, 111, 1);
+  border-bottom: solid 3px #ffc778;
   position: relative;
   margin: 10px;
   font-size: 1.3em;
