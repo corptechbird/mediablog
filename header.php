@@ -281,7 +281,7 @@ html, body {
   font-size: 1.6em;
   font-weight: bold; 
   color: rgba(198, 185, 111, 1);
-  color: black;
+  color: #505050;
   margin: 10px;
   word-break: break-all;
 }
