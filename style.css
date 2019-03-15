@@ -361,6 +361,45 @@ a.next.page-numbers:hover{
   text-align: center;
   font-size: 0.9em;
 }
+.naviv {
+  position: relative;
+  display: inline-block;
+  top: 10px;
+}
+.navi {
+  color: #87ccc7;
+  font-size: 18px;
+  margin: 0 18px;
+  position: relative;
+  display: inline-block;
+  top: 10px;
+}
+.navi:before {
+  position: absolute;
+  top: 1.3em;
+  left: 0;
+  content: "";
+  display: inline-block;
+  width: 0;
+  height: 3px;
+  background: #87ccc7;
+  transition: 0.5s;
+}
+.navi:hover:before {
+  width: 100%;
+}
+.navi a:link {
+  text-decoration: none;
+  color:#87ccc7;
+}
+.navi a:visited {
+  text-decoration: none;
+  color:#87ccc7;
+}
+.navi a:hover {
+  text-decoration: none;
+  color:#87ccc7;
+}
 .l-card {
   transition: 0.5s;
   overflow: hidden;
