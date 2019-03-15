@@ -452,57 +452,6 @@ a.next.page-numbers:hover{
   text-decoration: none;
   color:rgba(135, 204, 199, 0.7);
 }
-.ribbon_box {    
-  display: block;
-  position: relative;
-  margin: 0 auto;
-  padding: 20px 0;
-  width: 300px;
-  background: #f1f1f1;
-  z-index: 100;
-}
-.ribbon17 {
-  display: inline-block;
-  position: absolute;
-  left: 0;
-  top: 5px;
-  box-sizing: border-box;
-  padding: 0 12px;
-  margin: 0;
-  height: 30px;
-  line-height: 30px;
-  font-size: 18px;
-  letter-spacing: 0.1em;
-  color: white;
-  background: #87ccc7;
-  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.12);
-  border-radius: 0 5px 5px 0;
-  z-index: 100;
-}
-.ribbon17:before {
-  position: absolute;
-  content: '';
-  top: 0;
-  left: -7px;
-  border: none;
-  height: 38px;
-  width: 7px;
-  background: #87ccc7;
-  border-radius: 0 5px 0 5px;
-  z-index: 100;
-}
-.ribbon17:after {
-  position: absolute;
-  content: '';
-  bottom: -7px;
-  left: -5px;
-  border: none;
-  height: 7px;
-  width: 5px;
-  background: #87ccc7;
-  border-radius: 0 5px 0 5px;
-  z-index: 100;
-}
 .l-card {
   transition: 0.5s;
   overflow: hidden;
