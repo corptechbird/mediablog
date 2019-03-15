@@ -189,10 +189,10 @@ html, body {
   margin: 0;
 }
 #primary ul div ul li a {
-  color: #505050;
+  color: rgba(44, 84, 161, 1);
 }
 #primary ul div ul li a:visited {
-  color: rgba(80, 80, 80, 0.7);
+  color: rgba(44, 84, 161, 0.7);
 }
 .post ul {
   margin: 0 5px 1.0em 5px;
