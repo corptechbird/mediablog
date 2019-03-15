@@ -788,6 +788,7 @@ input.wpcf7-form-control.wpcf7-submit:hover {
 }
 .codecaption {
   margin: 1.0em 0 0 1.0em; 
+  border-bottom: none;
 }
 #toc_container {
   max-width: 760px;
