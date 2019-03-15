@@ -279,7 +279,9 @@ html, body {
 }
 .title {
   font-size: 1.6em;
+  font-weight: bold; 
   color: rgba(198, 185, 111, 1);
+  color: black;
   margin: 10px;
   word-break: break-all;
 }
