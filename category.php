@@ -26,7 +26,7 @@
                         <img src="https://raw.githubusercontent.com/theOstrichClub/MediaBlog/master/images/eyecatch.png" alt="Eye Catch Image" width="360" />
                 <?php } ?>
             </figure>
-            <div class="newentry">『<?php echo esc_html( $cat_info->name ); ?>』Article List</div>
+            <div class="newentry">『<?php echo esc_html( $cat_info->name ); ?>』記事一覧</div>
             <ul style="list-style-type:decimal; padding-left: 40px;">
             <?php $counter = 0; ?>  
             <?php while ( have_posts() ) : the_post(); ?>
