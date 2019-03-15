@@ -77,7 +77,7 @@ html, body {
 }
 #wrapper {
   background-color: #f5f5f5;
-  overflow: hidden;
+  /* overflow: hidden; */
   display: flex;
   flex-wrap: wrap;
 }
