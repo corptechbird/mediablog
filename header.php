@@ -219,27 +219,6 @@ html, body {
 #end {
   height: 5px;
 }
-@media screen and (max-width: 1100px) {
-  #contents {
-    width: 100%;
-  }
-  #primary {
-    width: 100%;
-    min-width: 320px;
-    margin-top: 0px;
-    padding: 0 1.2em 1.2em 1.2em;
-  }
-  #primary ul {
-    margin: 0;
-  }
-  #header {
-    text-align: center;
-  }
-  #header img{
-    padding-right: 20px;
-  }
-}
-
 .screen-reader-text{
   display: none;
 }
@@ -587,7 +566,6 @@ a.next.page-numbers:hover{
   color: #FFFFFF;
   font-size: 0.9em;
 }
-
 @-webkit-keyframes bg-gradient {
   0% {
     background-position: 0% 50%;
@@ -642,17 +620,6 @@ a.next.page-numbers:hover{
   display: none;
   float: left;
   margin-right: 10px;
-}
-@media screen and (min-width: 1100px) {
-  #btn {
-    display: none;
-    float: right;
-  }
-  #menu {
-      display: block;
-      top: 10px;
-      float: right;
-  }
 }
 .fade-in {
   transition: opacity 0.4s;
@@ -1073,6 +1040,37 @@ h5 {
   }
   #toc_container .toc_list {
     padding: 0.4em 0.4em 0.4em 0.8em;
+  }
+}
+@media screen and (max-width: 1100px) {
+  #contents {
+    width: 100%;
+  }
+  #primary {
+    width: 100%;
+    min-width: 320px;
+    margin-top: 0px;
+    padding: 0 1.2em 1.2em 1.2em;
+  }
+  #primary ul {
+    margin: 0;
+  }
+  #header {
+    text-align: center;
+  }
+  #header img{
+    padding-right: 20px;
+  }
+}
+@media screen and (min-width: 1100px) {
+  #btn {
+    display: none;
+    float: right;
+  }
+  #menu {
+      display: block;
+      top: 10px;
+      float: right;
   }
 }
 </style>
