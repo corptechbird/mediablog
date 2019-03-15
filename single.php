@@ -79,7 +79,6 @@
             <?php endif; ?>
         </ul>
         <div class="afterpost">
-            <div class="newentry">コース一覧</div>
             <div class="ads" style="margin-bottom:20px;">
                 <div class="adleft">
                     <ins class="adsbygoogle"
@@ -101,6 +100,7 @@
                 </div>
                 <hr class="clear">
             </div>
+            <div class="newentry">コース一覧</div>
             <div class="cards">
                 <div class="cards-inside">
                 <?php
