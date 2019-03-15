@@ -161,6 +161,9 @@ html, body {
   margin-top: 50px;
   width: 30%;
   background-color: #f5f5f5;
+  display: flex;
+  position: -webkit-sticky;
+  position: sticky;
 }
 #primary ul {
   margin: 1.2em 1.2em 1.2em 0;
@@ -262,6 +265,9 @@ html, body {
     min-width: 320px;
     margin-top: 0px;
     padding: 0 1.2em 1.2em 1.2em;
+    display: flex;
+  position: -webkit-sticky;
+  position: sticky;
   }
   #primary ul {
     margin: 0;
