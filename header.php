@@ -248,7 +248,7 @@ html, body {
   margin: 1.0em 30px;
 }
 .newentry {
-  border-bottom: solid 3px rgba(44, 84, 161, 1);
+  border-bottom: solid 3px yellow;
   position: relative;
   margin: 10px;
   font-size: 1.3em;
@@ -259,7 +259,7 @@ html, body {
   position: absolute;
   content: " ";
   display: block;
-  border-bottom: solid 3px #ffc778;
+  border-bottom: solid 3px rgba(44, 84, 161, 1);
   bottom: -3px;
   width: 30%;
 }
@@ -749,12 +749,6 @@ input.wpcf7-form-control.wpcf7-submit:hover {
   box-shadow: 0px 0px 20px -5px rgba(0, 0, 0, 0.8);
   border-radius: 5px;
   height: auto;
-}
-.code-lang {
-  margin: 0px 30px 0 30px;
-}
-.codecaption {
-  margin: 1.0em 0 0 1.0em; 
 }
 .post ul {
   list-style-type: disc;
