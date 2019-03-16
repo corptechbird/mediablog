@@ -158,9 +158,6 @@ html, body {
 .post ul li a:hover {
   color: rgba(44, 84, 161, 1);
 }
-.post div {
-  margin: 1.0em;
-}
 #end {
   height: 5px;
 }
@@ -794,14 +791,17 @@ h3 {
   margin: 0em 0.5em 0.5em 0.5em;
   word-break: break-all;
 }
-.title {
+.post div {
+  margin: 1.0em;
+}
+.post div.title {
   font-size: 1.6em;
   font-weight: bold;
   color: rgba(198, 185, 111, 1);
   margin: 1.0em;
   word-break: break-all;
 }
-.update {
+.post div.update {
   margin: 0 0 0 1.0em;
 }
 @media screen and (max-width: 800px) {
@@ -830,10 +830,10 @@ h3 {
     margin: 0 0 20px 0;
     font-size: 1.3em;
   }
-  .update {
+  .post div.update {
     margin: 0;
   }
-  .post {
+  .post div.post {
     font-size: 1.1em;
     padding: 5px;
   }

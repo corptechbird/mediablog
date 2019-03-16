@@ -20,8 +20,8 @@
                 <?php } ?>
                 </a>
             </figure>
-            <span class="title"><?php the_title(); ?></span>
-            <span class="update">更新：<?php echo get_the_modified_date(); ?></span>
+            <div class="title"><?php the_title(); ?></div>
+            <div class="update">更新：<?php echo get_the_modified_date(); ?></div>
             <?php the_content(); ?>
             <!-- コンテンツ終了 -->
             <div class="ads" style="margin-bottom:20px;">
