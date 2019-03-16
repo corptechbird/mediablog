@@ -60,6 +60,7 @@
     <!-- <style type="text/css">  
       
     </style> -->
+    <link rel="stylesheet" href="<?php echo get_stylesheet_uri(); ?>" type="text/css" />
 </head>
 <body>
     <div id="pageTop"><a href="#"><i class="fa fa-chevron-up"></i></a></div>
