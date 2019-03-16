@@ -798,7 +798,7 @@ h3 {
   font-size: 1.6em;
   font-weight: bold;
   color: rgba(198, 185, 111, 1);
-  margin: 1.0em;
+  margin: 0em;
   word-break: break-all;
 }
 .post div.update {
@@ -823,28 +823,23 @@ h3 {
     width: 100%;
     max-width: 300px;
   }
+  
+  .post {
+    font-size: 1.1em;
+    padding: 5px;
+  }
   .post div {
     margin: 0.5em;
   }
-  .title {
+  .post div.title {
     margin: 0 0 20px 0;
     font-size: 1.3em;
   }
   .post div.update {
     margin: 0;
   }
-  .post div.post {
-    font-size: 1.1em;
-    padding: 5px;
-  }
-  #contents {
-    padding: 5px;
-  }
   .post p {
     margin: 0.5em;
-  }
-  .code-lang {
-    margin: 0;
   }
   .hljs{
     margin: 0 0 0 0;
@@ -859,6 +854,12 @@ h3 {
   }
   h3 {
     margin-left: 0;
+  }
+  #contents {
+    padding: 5px;
+  }
+  .code-lang {
+    margin: 0;
   }
   #toc_container {
     margin: 1.0em 0em 1.0em 0em;
