@@ -746,7 +746,7 @@ input.wpcf7-form-control.wpcf7-submit:hover {
 .clear hr {color: transparent; display:none; height: 0px;border:none;}
 .hljs{
   font-size:0.8em;
-  margin: 10px 30px 0 30px;
+  margin: 0 30px 0 30px;
   padding: 1.0em;
   box-shadow: 0px 0px 20px -5px rgba(0, 0, 0, 0.8);
   border-radius: 5px;
@@ -1017,7 +1017,7 @@ h5 {
     padding: 0.2em 0.2em 0.2em 0.28em;
   }
   .hljs{
-    margin: 10px 0 0 0;
+    margin: 0 0 0 0;
   }
   .post ul {
     list-style-type: disc;
