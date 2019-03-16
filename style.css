@@ -792,7 +792,7 @@ h3 {
   word-break: break-all;
 }
 .post div {
-  margin: 1.0em;
+  margin: 1.0em 1.0em 2.0em 1.0em;
 }
 .post div.title {
   font-size: 1.6em;
@@ -828,7 +828,7 @@ h3 {
     padding: 5px;
   }
   .post div {
-    margin: 0.5em;
+    margin: 0.5em 0.5em 1.0em 0.5em;
   }
   .post div.title {
     margin: 0 0 20px 5px;
