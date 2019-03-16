@@ -853,7 +853,7 @@ h3 {
   color: #494949;/*文字色*/
   font-size: 1.2em;
   font-weight: bold;
-  padding: 0.4em 0.4em 0.4em 0.8em;/*上下の余白*/
+  padding: 0em 0.4em 0.4em 0.8em;/*上下の余白*/
   border-bottom: solid 1px rgba(221, 221, 221, 1);/*下線*/
   margin: 0em 0.5em 0.5em 0.5em;
   word-break: break-all;
