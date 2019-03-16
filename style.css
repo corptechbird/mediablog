@@ -158,6 +158,9 @@ html, body {
 .post ul li a:hover {
   color: rgba(44, 84, 161, 1);
 }
+.post div {
+  margin: 1.0em;
+}
 #end {
   height: 5px;
 }
