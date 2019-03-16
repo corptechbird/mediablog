@@ -213,10 +213,10 @@ html, body {
   color: rgba(44, 84, 161, 1);
 }
 .post ul li a:visited {
-  color: gray;
+  color: rgba(44, 84, 161, 1);
 }
 .post ul li a:hover {
-  color: rgba(44, 84, 161, 0.7);
+  color: rgba(44, 84, 161, 1);
 }
 #end {
   height: 5px;
@@ -723,11 +723,6 @@ input.wpcf7-form-control.wpcf7-submit:hover {
 .remodal ul {
   padding-left: 0;
 }
-#recent-posts-2 ul li a {
-  padding-top:10px;
-  padding-bottom:10px;
-  color: yellow;
-}
 .page {
   margin: 10px;
   padding: 10px;
@@ -809,6 +804,18 @@ input.wpcf7-form-control.wpcf7-submit:hover {
   font-size: 0.8em; 
   font-family: "Font Awesome 5 Free";
   font-weight: 900;
+}
+#toc_container a {
+  color: rgba(84, 84, 84, 1);
+  padding: 5px;
+}
+#toc_container a:visited {
+  color: rgba(84, 84, 84, 0.7);
+  text-decoration: none;
+}
+#toc_container a:hover {
+  color: rgba(44, 84, 161, 0.7);
+  text-decoration: underline;
 }
 #toc_container .toc_list {
   padding: 1.0em;
