@@ -226,8 +226,11 @@ html, body {
   font-size: 1.6em;
   font-weight: bold;
   color: rgba(198, 185, 111, 1);
-  margin: 10px;
+  margin: 1.0em;
   word-break: break-all;
+}
+.update {
+  margin: 0 0 0 1.0em;
 }
 .front-title {
   font-size: 1.3em;
@@ -823,6 +826,9 @@ h3 {
   .title {
     margin: 0 0 20px 0;
     font-size: 1.3em;
+  }
+  .update {
+    margin: 0;
   }
   .post {
     font-size: 1.1em;
