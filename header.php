@@ -58,7 +58,7 @@
     <link rel="icon" type="image/x-icon" sizes="152x152" href="https://raw.githubusercontent.com/corptechbird/mediablog/master/images/favicon-152.ico">
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <style type="text/css">  
-        /*
+      /*
 Theme Name: Media Blog
 Theme URI: https://bizmedia.com/
 Description: Media Blog用のデザインテーマ
@@ -858,7 +858,7 @@ input.wpcf7-form-control.wpcf7-submit:hover {
   color: #494949;/*文字色*/
   font-size: 1.4em;
   font-weight: bold;
-  padding: 0.4em;/*上下の余白*/
+  padding: 0.4em 0.4em 0.4em 0.45em;/*上下の余白*/
   border-bottom: solid 1px rgba(221, 221, 221, 1);/*下線*/
   margin: 0.8em 0.5em 0.5em 0.5em;
   word-break: break-all;
@@ -867,7 +867,7 @@ input.wpcf7-form-control.wpcf7-submit:hover {
   color: #494949;/*文字色*/
   font-size: 1.2em;
   font-weight: bold;
-  padding: 0.4em;/*上下の余白*/
+  padding: 0.4em 0.4em 0.4em 0.5em;/*上下の余白*/
   border-bottom: solid 1px rgba(221, 221, 221, 1);/*下線*/
   margin: 0.8em 0.5em 0.5em 0.5em;
   word-break: break-all;
@@ -876,7 +876,7 @@ input.wpcf7-form-control.wpcf7-submit:hover {
   color: #494949;/*文字色*/
   font-size: 1.0em;
   font-weight: bold;
-  padding: 0.4em;/*上下の余白*/
+  padding: 0.4em 0.4em 0.4em 0.55em;/*上下の余白*/
   border-bottom: solid 1px rgba(221, 221, 221, 1);/*下線*/
   margin: 0.8em 0.5em 0.5em 0.5em;
   word-break: break-all;
@@ -885,7 +885,7 @@ input.wpcf7-form-control.wpcf7-submit:hover {
   color: #494949;/*文字色*/
   font-size: 0.8em;
   font-weight: bold;
-  padding: 0.4em;/*上下の余白*/
+  padding: 0.4em 0.4em 0.4em 0.6em;/*上下の余白*/
   border-bottom: solid 1px rgba(221, 221, 221, 1);/*下線*/
   margin: 0.8em 0.5em 0.5em 0.5em;
   word-break: break-all;
@@ -903,7 +903,7 @@ h2 {
   color: #494949;/*文字色*/
   font-size: 1.4em;
   font-weight: bold;
-  padding: 0.4em;/*上下の余白*/
+  padding: 0.4em 0.4em 0.4em 0.45em;/*上下の余白*/
   border-bottom: solid 1px rgba(221, 221, 221, 1);/*下線*/
   margin: 0.8em 0.5em 0.5em 0.5em;
   word-break: break-all;
@@ -912,7 +912,7 @@ h3 {
   color: #494949;/*文字色*/
   font-size: 1.2em;
   font-weight: bold;
-  padding: 0.4em;/*上下の余白*/
+  padding: 0.4em 0.4em 0.4em 0.5em;/*上下の余白*/
   border-bottom: solid 1px rgba(221, 221, 221, 1);/*下線*/
   margin: 0.8em 0.5em 0.5em 0.5em;
   word-break: break-all;
@@ -921,7 +921,7 @@ h4 {
   color: #494949;/*文字色*/
   font-size: 1.0em;
   font-weight: bold;
-  padding: 0.4em;/*上下の余白*/
+  padding: 0.4em 0.4em 0.4em 0.55em;/*上下の余白*/
   border-bottom: solid 1px rgba(221, 221, 221, 1);/*下線*/
   margin: 0.8em 0.5em 0.5em 0.5em;
   word-break: break-all;
@@ -930,7 +930,7 @@ h5 {
   color: #494949;/*文字色*/
   font-size: 0.8em;
   font-weight: bold;
-  padding: 0.4em;/*上下の余白*/
+  padding: 0.4em 0.4em 0.4em 0.6em;/*上下の余白*/
   border-bottom: solid 1px rgba(221, 221, 221, 1);/*下線*/
   margin: 0.8em 0.5em 0.5em 0.5em;
   word-break: break-all;
@@ -978,22 +978,22 @@ h5 {
   }
   .post h2 {
     margin: 0.8em 0em 0.2em 0em;
-    padding: 0.2em;
+    padding: 0.2em 0.2em 0.2em 0.22em;
     font-size: 1.2em;
   }
   .post h3 {
     margin: 0.8em 0em 0.2em 0em;
-    padding: 0.2em;
+    padding: 0.2em 0.2em 0.2em 0.24em;
     font-size: 1.0em;
   }
   .post h4 {
     margin: 0.8em 0em 0.2em 0em;
-    padding: 0.2em;
+    padding: 0.2em 0.2em 0.2em 0.26em;
     font-size: 0.8em;
   }
   .post h5 {
     margin: 0.8em 0em 0.2em 0em;
-    padding: 0.2em;
+    padding: 0.2em 0.2em 0.2em 0.28em;
     font-size: 0.8em;
   }
   h1 {
@@ -1002,19 +1002,19 @@ h5 {
   }
   h2 {
     margin: 0.8em 0 0 0;
-    padding: 0.2em;
+    padding: 0.2em 0.2em 0.2em 0.22em;
   }
   h3 {
     margin: 0.8em 0 0 0;
-    padding: 0.2em;
+    padding: 0.2em 0.2em 0.2em 0.24em;
   }
   h4 {
     margin: 0.8em 0 0 0;
-    padding: 0.2em;
+    padding: 0.2em 0.2em 0.2em 0.26em;
   }
   h5 {
     margin: 0.8em 0 0 0;
-    padding: 0.2em;
+    padding: 0.2em 0.2em 0.2em 0.28em;
   }
   .hljs{
     margin: 10px 0 0 0;
