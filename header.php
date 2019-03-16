@@ -217,7 +217,6 @@ html, body {
 }
 .post ul li a:hover {
   color: rgba(44, 84, 161, 0.7);
-  text-decoration: none;
 }
 #end {
   height: 5px;
@@ -416,7 +415,6 @@ a.next.page-numbers:hover{
   color:rgba(44, 84, 161, 1);
 }
 .navi a:hover {
-  text-decoration: none;
   color:rgba(44, 84, 161, 1);
 }
 .l-card {
