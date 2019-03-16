@@ -864,7 +864,7 @@ h3 {
   font-weight: bold;
   padding: 0.4em 0.4em 0.4em 0.8em;/*上下の余白*/
   border-bottom: solid 1px rgba(221, 221, 221, 1);/*下線*/
-  margin: 0.5em;
+  margin: 0em 0.5em 0.5em 0.5em;
   word-break: break-all;
 }
 h4 {
@@ -873,7 +873,7 @@ h4 {
   font-weight: bold;
   padding: 0.4em 0.4em 0.4em 1.2em;/*上下の余白*/
   border-bottom: solid 1px rgba(221, 221, 221, 1);/*下線*/
-  margin: 0.5em;
+  margin: 0em 0.5em 0.5em 0.5em;
   word-break: break-all;
 }
 h5 {
@@ -882,7 +882,7 @@ h5 {
   font-weight: bold;
   padding: 0.4em 0.4em 0.4em 1.6em;/*上下の余白*/
   border-bottom: solid 1px rgba(221, 221, 221, 1);/*下線*/
-  margin: 0.5em;
+  margin: 0em 0.5em 0.5em 0.5em;
   word-break: break-all;
 }
 @media screen and (max-width: 800px) {
@@ -931,15 +931,15 @@ h5 {
   }
   h3 {
     margin: 0;
-    padding: 0.2em 0.2em 0.2em 0.4em;
+    padding: 0em 0.2em 0.2em 0.4em;
   }
   h4 {
     margin: 0;
-    padding: 0.2em 0.2em 0.2em 0.8em;
+    padding: 0em 0.2em 0.2em 0.8em;
   }
   h5 {
     margin: 0;
-    padding: 0.2em 0.2em 0.2em 1.0em;
+    padding: 0em 0.2em 0.2em 1.0em;
   }
   .hljs{
     margin: 0 0 0 0;
