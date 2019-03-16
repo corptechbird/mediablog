@@ -814,7 +814,7 @@ input.wpcf7-form-control.wpcf7-submit:hover {
   text-decoration: none;
 }
 #toc_container a:hover {
-  color: rgba(44, 84, 161, 0.7);
+  color: rgba(44, 84, 161, 1);
   text-decoration: underline;
 }
 #toc_container .toc_list {
