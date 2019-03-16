@@ -832,7 +832,10 @@ h3 {
     padding: 5px;
   }
   .post p {
-    margin: 5px;
+    margin: 0.5em;
+  }
+  .post div {
+    margin: 0.5em;
   }
   .code-lang {
     margin: 0;
@@ -844,6 +847,12 @@ h3 {
     list-style-type: disc;
     margin:0;
     padding-left:25px;
+  }
+  h2 {
+    margin-left: 0;
+  }
+  h3 {
+    margin-left: 0;
   }
   #toc_container {
     margin: 1.0em 0em 1.0em 0em;
