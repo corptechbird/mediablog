@@ -798,11 +798,11 @@ h3 {
   font-size: 1.6em;
   font-weight: bold;
   color: rgba(198, 185, 111, 1);
-  margin: 1.0em;
+  margin: 20px;
   word-break: break-all;
 }
 .post div.update {
-  margin: 0 0 0 1.0em;
+  margin: 0 0 0 20px;
 }
 @media screen and (max-width: 800px) {
   .cards {
@@ -823,7 +823,6 @@ h3 {
     width: 100%;
     max-width: 300px;
   }
-  
   .post {
     font-size: 1.1em;
     padding: 5px;
