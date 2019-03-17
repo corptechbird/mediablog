@@ -146,9 +146,6 @@ html, body {
   font-size: 1.1em;
   color:#505050;
 }
-.post div {
-  /* margin: 1.0em 1.0em 2.0em 1.0em; */
-}
 .post div.title {
   font-size: 1.6em;
   font-weight: bold;
@@ -674,100 +671,6 @@ h3 {
   margin: 0em 0.5em 0.5em 0.5em;
   word-break: break-all;
 }
-@media screen and (max-width: 800px) {
-  .cards {
-    text-align: center;
-  }
-  .cards-inside{
-    width:100%;
-    text-align: center;
-  }
-  .l-card {
-    max-width:100%;
-    padding-left: 0;
-    padding-right: 0;
-    margin-left: 0;
-    margin-right: 0;
-  }
-  .frame img {
-    width: 100%;
-    max-width: 300px;
-  }
-  .post {
-    font-size: 1.1em;
-    padding: 5px;
-  }
-  .post div {
-    /* margin: 0.5em 0.5em 1.0em 0.5em; */
-  }
-  .post div.title {
-    margin: 0 0 20px 5px;
-    font-size: 1.3em;
-  }
-  .post div.update {
-    margin: 0;
-  }
-  .post p {
-    margin: 0.5em;
-  }
-  .hljs{
-    margin: 0 0 0 0;
-  }
-  .post ul {
-    list-style-type: disc;
-    margin:0;
-    padding-left:25px;
-  }
-  h2 {
-    margin-left: 0;
-  }
-  h3 {
-    margin-left: 0;
-  }
-  #contents {
-    padding: 5px;
-  }
-  .code-lang {
-    margin: 0;
-  }
-  #toc_container {
-    margin: 1.0em 0em 1.0em 0em;
-  }
-  #toc_container .toc_list {
-    padding: 0.4em 0.4em 0.4em 0.8em;
-  }
-}
-@media screen and (max-width: 1100px) {
-  #contents {
-    width: 100%;
-  }
-  #primary {
-    width: 100%;
-    min-width: 320px;
-    margin-top: 0px;
-    padding: 0 1.2em 1.2em 1.2em;
-  }
-  #primary ul {
-    margin: 0;
-  }
-  #header {
-    text-align: center;
-  }
-  #header img{
-    padding-right: 20px;
-  }
-}
-@media screen and (min-width: 1100px) {
-  #btn {
-    display: none;
-    float: right;
-  }
-  #menu {
-      display: block;
-      top: 10px;
-      float: right;
-  }
-}
 .l-card {
   transition: 0.5s;
   overflow: hidden;
@@ -885,5 +788,96 @@ h3 {
   }
   100% {
     background-position: 0% 50%;
+  }
+}
+@media screen and (max-width: 800px) {
+  .cards {
+    text-align: center;
+  }
+  .cards-inside{
+    width:100%;
+    text-align: center;
+  }
+  .l-card {
+    max-width:100%;
+    padding-left: 0;
+    padding-right: 0;
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .frame img {
+    width: 100%;
+    max-width: 300px;
+  }
+  .post {
+    font-size: 1.1em;
+    padding: 5px;
+  }
+  .post div.title {
+    margin: 0 0 20px 5px;
+    font-size: 1.3em;
+  }
+  .post div.update {
+    margin: 0;
+  }
+  .post p {
+    margin: 0.5em;
+  }
+  .hljs{
+    margin: 0 0 0 0;
+  }
+  .post ul {
+    list-style-type: disc;
+    margin:0;
+    padding-left:25px;
+  }
+  h2 {
+    margin-left: 0;
+  }
+  h3 {
+    margin-left: 0;
+  }
+  #contents {
+    padding: 5px;
+  }
+  .code-lang {
+    margin: 0;
+  }
+  #toc_container {
+    margin: 1.0em 0em 1.0em 0em;
+  }
+  #toc_container .toc_list {
+    padding: 0.4em 0.4em 0.4em 0.8em;
+  }
+}
+@media screen and (max-width: 1100px) {
+  #contents {
+    width: 100%;
+  }
+  #primary {
+    width: 100%;
+    min-width: 320px;
+    margin-top: 0px;
+    padding: 0 1.2em 1.2em 1.2em;
+  }
+  #primary ul {
+    margin: 0;
+  }
+  #header {
+    text-align: center;
+  }
+  #header img{
+    padding-right: 20px;
+  }
+}
+@media screen and (min-width: 1100px) {
+  #btn {
+    display: none;
+    float: right;
+  }
+  #menu {
+      display: block;
+      top: 10px;
+      float: right;
   }
 }
