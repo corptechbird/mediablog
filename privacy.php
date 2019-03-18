@@ -13,11 +13,10 @@ Template Name: Privacy
     font-size: 13px;
     line-height: 1em;
     }
-</style>
-<!-- Contents -->             
+</style>           
     <div id="contents">
         <div class="post">
-            <div class="newentry">プライバシーポリシー</div>
+            <div class="newentry">Privacy Policy</div>
             <div class="page">
                 <div>
                     <em><strong>広告の配信について</strong></em>
@@ -51,5 +50,5 @@ Template Name: Privacy
             </div>
             <div class="newentry"></div>
         </div>
-    </div><!-- /#main -->
+    </div>
 <?php get_footer(); ?>

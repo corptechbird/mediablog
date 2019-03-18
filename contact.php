@@ -14,15 +14,14 @@ Template Name: Contact
     line-height: 1em;
     }
 </style>
-<!-- Contents -->
 <div id="contents">
     <div class="post">
     </form>
-        <div class="newentry">お問い合わせ</div>
+        <div class="newentry">Contact</div>
         <div class="cards">
             <?php echo do_shortcode('[contact-form-7 id="6" title="contact"]'); ?>
         </div>
         <div class="newentry"></div>
     </div>
-</div><!-- /#main -->
+</div>
 <?php get_footer(); ?>

@@ -21,9 +21,8 @@
                 </a>
             </figure>
             <div class="title"><?php the_title(); ?></div>
-            <div class="update">更新：<?php echo get_the_modified_date(); ?></div>
+            <div class="update">Updated：<?php echo get_the_modified_date(); ?></div>
             <?php the_content(); ?>
-            <!-- コンテンツ終了 -->
             <div class="ads" style="margin-bottom:20px;">
                 <div class="adleft">
                     <ins class="adsbygoogle"
@@ -45,7 +44,7 @@
                 </div>
                 <hr class="clear">
             </div>
-        <div class="newentry">こちらの記事も読まれています</div>     
+        <div class="newentry">Related Articles</div>     
         <ul style="list-style-type:decimal; padding-left: 40px;">
             <?php $args = array(
                 'numberposts' => 600,
@@ -75,7 +74,7 @@
             <?php $counter+=1; ?>  
             <?php endforeach; ?>
             <?php else : ?>
-                <li><p>お探しの記事は見つかりませんでした。</p></li>
+                <li><p>The page not found</p></li>
             <?php endif; ?>
         </ul>
         <div class="afterpost">
@@ -100,7 +99,7 @@
                 </div>
                 <hr class="clear">
             </div>
-            <div class="newentry">コース一覧</div>
+            <div class="newentry">Category List</div>
             <div class="cards">
                 <div class="cards-inside">
                 <?php
@@ -117,10 +116,10 @@
                                         <!-- <img src="<?php echo get_bloginfo('template_directory'); ?>/images/<?php echo $term->slug; ?>.png" alt="Eye Catch Image" width="360" height="220" /> -->
                                         <img src="https://raw.githubusercontent.com/theOstrichClub/MediaBlog/master/images/<?php echo $term->slug; ?>.png" alt="Eye Catch Image" width="360" height="220" />
                                     </figure>
-                                    <span class="more-text">もっと見る</span>
+                                    <span class="more-text">Read More</span>
                                 </div>
                                 <div class="text-content">
-                                <p class="caption"><?php echo $term->name; ?>に関する技術的な情報を提供しています。コード・プログラムの丁寧な解説をはじめ、初心者にもわかりやすいように写真や動画を多く使用しています。</p>
+                                <p class="caption">Technical information about <?php echo $term->name; ?> is provided. Articles include a lot of photos, videos and careful explanation of programs to make it easy for beginners to understand.</p>
                                 </div>
                             </div>
                         </a>

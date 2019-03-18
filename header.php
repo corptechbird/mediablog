@@ -14,30 +14,20 @@
         src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-AMS_CHTML">
     </script>
     <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-<!-- External files -->
-    <!-- <link rel="stylesheet" href="<?php echo get_stylesheet_uri(); ?>"> -->
-    <!-- <link rel="stylesheet" href="https://raw.githubusercontent.com/theOstrichClub/MediaBlog/master/style.css"> -->
-    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="<?php echo get_stylesheet_uri(); ?>" type="text/css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/atom-one-dark.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remodal/1.1.1/remodal-default-theme.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remodal/1.1.1/remodal.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery.tocify/1.9.0/stylesheets/jquery.tocify.min.css">
-    <!-- Favicon, Thumbnail image -->
-    <!-- <link rel="icon" type="image/x-icon" sizes="16x16" href="<?php bloginfo('template_directory'); ?>/images/favicon-16.ico">
-    <link rel="icon" type="image/x-icon" sizes="32x32" href="<?php bloginfo('template_directory'); ?>/images/favicon-32.ico">
-    <link rel="icon" type="image/x-icon" sizes="48x48" href="<?php bloginfo('template_directory'); ?>/images/favicon-48.ico">
-    <link rel="icon" type="image/x-icon" sizes="152x152" href="<?php bloginfo('template_directory'); ?>/images/favicon-152.ico"> -->
     <link rel="icon" type="image/x-icon" sizes="16x16" href="https://raw.githubusercontent.com/corptechbird/mediablog/master/images/favicon-16.ico">
     <link rel="icon" type="image/x-icon" sizes="32x32" href="https://raw.githubusercontent.com/corptechbird/mediablog/master/images/favicon-32.ico">
     <link rel="icon" type="image/x-icon" sizes="48x48" href="https://raw.githubusercontent.com/corptechbird/mediablog/master/images/favicon-48.ico">
     <link rel="icon" type="image/x-icon" sizes="152x152" href="https://raw.githubusercontent.com/corptechbird/mediablog/master/images/favicon-152.ico">
-    <!-- Global site tag (gtag.js) - Google Analytics -->
     <!-- <style type="text/css">  
       
-    </style> -->
-    <link rel="stylesheet" href="<?php echo get_stylesheet_uri(); ?>" type="text/css" />
+    </style> --> 
 </head>
 <body>
     <div id="pageTop"><a href="#"><i class="fa fa-chevron-up"></i></a></div>
