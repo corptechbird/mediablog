@@ -13,8 +13,8 @@
                                 <?php if (has_post_thumbnail()) {
                                     the_post_thumbnail(array(360, 360));
                                     } else { ?>
-                                    <!-- <img src="<?php echo get_bloginfo('template_directory'); ?>/images/eyecatch.png" alt="アイキャッチ画像" width="360" height="240" /> -->
-                                    <img src="https://raw.githubusercontent.com/theOstrichClub/MediaBlog/master/images/eyecatch.png" alt="アイキャッチ画像" width="360" height="240" />
+                                    <!-- <img src="<?php echo get_bloginfo('template_directory'); ?>/images/eyecatch.png" alt="Eye Catch Image" width="360" height="240" /> -->
+                                    <img src="https://raw.githubusercontent.com/theOstrichClub/MediaBlog/master/images/eyecatch.png" alt="Eye Catch Image" width="360" height="240" />
                                 <?php } ?>
                                 </figure>
                                 <span class="more-text">Read More</span>
@@ -42,7 +42,7 @@
             </p>
             <?php else : ?>
                 <div class="notfound">
-                    <p>申し訳ありません。お探しのページは見つかりませんでした。</p>
+                    <h3>The page not found</h3>
                     <div class="notfound-navi"><a href="<?php echo esc_url( home_url( '/' ) ); ?>"><i class="fas fa-home" aria-hidden="true"></i> Home へ戻る</a></div>
                 </div>
             <?php endif; ?>
@@ -66,7 +66,7 @@
                                     <span class="more-text">Read More</span>
                                 </div>
                                 <div class="text-content">
-                                <p class="caption"><?php echo $term->name; ?>に関する現役のエンジニアのノウハウ・トレンドのトピックなど技術的な情報を提供しています。コード・プログラムの丁寧な解説をはじめ、初心者にもわかりやすいように写真や動画を多く使用しています。</p>
+                                <p class="caption">Technical information about <?php echo $term->name; ?> is provided. Articles include a lot of photos, videos and careful explanation of programs to make it easy for beginners to understand.</p>
                                 </div>
                             </div>
                         </a>

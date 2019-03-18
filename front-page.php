@@ -13,7 +13,7 @@
                 (adsbygoogle = window.adsbygoogle || []).push({});
                 </script>
             </div>
-            <div class="newentry">新着情報</div>
+            <div class="newentry">Newly Arrived</div>
             <?php $args = array(
         'orderby' => 'modified',
         'post_status' => 'publish',
@@ -56,7 +56,7 @@
                 </div>
                 <hr class="clear">
             </div>
-            <div class="newentry">コース一覧</div>
+            <div class="newentry">Category List</div>
             <div class="cards">
                 <div class="cards-inside">
                 <?php
@@ -73,10 +73,10 @@
                                         <!-- <img src="<?php echo get_bloginfo('template_directory'); ?>/images/<?php echo $term->slug; ?>.png" alt="Eye Catch Image" width="360" height="220" /> -->
                                         <img src="https://raw.githubusercontent.com/theOstrichClub/MediaBlog/master/images/<?php echo $term->slug; ?>.png" alt="Eye Catch Image" width="360" height="220" />
                                     </figure>
-                                    <span class="more-text">もっと見る</span>
+                                    <span class="more-text">Read More</span>
                                 </div>
                                 <div class="text-content">
-                                    <p class="caption"><?php echo $term->name; ?>に関する技術的な情報を提供しています。コード・プログラムの丁寧な解説をはじめ、初心者にもわかりやすいように写真や動画を多く使用しています。</p>
+                                    <p class="caption">Technical information about <?php echo $term->name; ?> is provided. Articles include a lot of photos, videos and careful explanation of programs to make it easy for beginners to understand.</p>
                                 </div>
                             </div>
                         </a>
@@ -86,8 +86,7 @@
             </div>
             <?php else : ?>
             <div class="notfound">
-                <h3>ページは見つかりませんでした。</h3>
-                <p>申し訳ありません。お探しのページは見つかりませんでした。</p>
+                <h3>The page not found</h3>
             </div>
             <?php endif; ?>
             <div class="newentry"></div>

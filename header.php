@@ -8,31 +8,8 @@
     <link rel="dns-prefetch" href="//www.gstatic.com">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <title><?php if(is_home()): ?><?php bloginfo('name'); ?> - <?php bloginfo('description'); ?><?php elseif(is_page()): //固定ページ ?><?php wp_title(''); ?> ｜ <?php bloginfo('name'); ?> - <?php bloginfo('description'); ?><?php elseif(is_single()): //シングルページ ?><?php wp_title(''); ?> ｜ <?php bloginfo('name'); ?> - <?php bloginfo('description'); ?><?php elseif(is_category()): //カテゴリ一覧ページ ?><?php single_cat_title() ?> ｜ <?php bloginfo('name'); ?> - <?php bloginfo('description'); ?><?php elseif(is_month()): //月別ページ ?><?php the_time("Y年m月") ?> Article List ｜ <?php bloginfo('name'); ?> - <?php bloginfo('description'); ?><?php elseif(is_year()): //年別ページ ?><?php the_time("Y年") ?> ｜ <?php bloginfo('name'); ?> - <?php bloginfo('description'); ?><?php elseif(is_search())://検索結果ページ ?>Search Result ｜ <?php bloginfo('name'); ?> - <?php bloginfo('description'); ?><?php else: //それ以外のページ ?><?php bloginfo('name'); ?> - <?php bloginfo('description'); ?><?php endif; ?></title>
-    <?php
-        $post_type = get_post_type();
-        $post_name = ""; 
-        if ($post_type == 'python') {
-            $post_name = "Python";
-        } elseif ($post_type == 'python_cn') {
-            $post_name = "Python";
-        } elseif ($post_type == 'swift') {
-            $post_name = "Swift";
-        } elseif ($post_type == 'swift_cn') {
-            $post_name = "Swift";
-        } elseif ($post_type == 'datascience') {
-            $post_name = "Data Science";
-        } elseif ($post_type == 'datascience_cn') {
-            $post_name = "Data Science";
-        }
-        if($post_type == 'python' || $post_type == 'python_cn' || $post_type == 'swift' || $post_type == 'swift_cn' || $post_type == 'datascience' || $post_type == 'datascience_cn' ){ ?>
-        <meta name="keywords" content="<?php echo $post_name; ?>, Reference, Programming, Coding, Sample, Example, Tutorial, Download, Beginner, Entrance, Study">
-        <?php
-            } else { ?>
-         <meta name="keywords" content="Reference, Programming, Coding, Sample, Example, Tutorial, Download, Beginner, Entrance, Study">
-        <?php
-            }
-        ?>
-    <meta name="description" content="小・中学生向けのオンラインプログラミング教室です。iOS/Androidアプリ開発やデータ分析などのコード・プログラムに関する丁寧な解説をはじめ、初心者にもわかりやすいように写真や動画を多く使用しています。">
+    <meta name="keywords" content="Reference, Programming, Coding, Sample, Example, Tutorial, Download, Beginner, Document, Study">
+    <meta name="description" content="Technical information about programming is provided. Articles include a lot of photos, videos and careful explanation of programs to make it easy for beginners to understand.">
     <script type="text/javascript"
         src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-AMS_CHTML">
     </script>

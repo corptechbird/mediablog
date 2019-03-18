@@ -13,8 +13,8 @@
                     <ul><?php wp_list_categories('title_li=&sort_column=name&hide_empty=1&hierarchical=1&style=list'); ?></ul> -->
                     <ul>
                     <!-- <li><a href="<?php echo esc_url( home_url( '/' ) ); ?>/bizmedia" target="_blank">Company</a></li> -->
-                    <li><a href="<?php echo esc_url( home_url( '/' ) ); ?>/contact">お問い合わせ</a></li>
-                    <li><a href="<?php echo esc_url( home_url( '/' ) ); ?>/privacy">プライバシー</a></li></ul>
+                    <li><a href="<?php echo esc_url( home_url( '/' ) ); ?>/contact">Contact</a></li>
+                    <li><a href="<?php echo esc_url( home_url( '/' ) ); ?>/privacy">Privacy</a></li></ul>
                 </div>
                 <div class="copy">
                     &copy; <?php echo date('Y'); ?> <?php bloginfo('name'); ?> All rights reserved.
