@@ -21,7 +21,7 @@
                 </a>
             </figure>
             <div class="title"><?php the_title(); ?></div>
-            <div class="update">Updated：<?php echo get_the_modified_date(); ?></div>
+            <div class="update">Updated：<?php echo get_the_modified_date('d.m.Y'); ?></div>
             <?php the_content(); ?>
             <div class="ads" style="margin-bottom:20px;">
                 <div class="adleft">
