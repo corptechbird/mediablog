@@ -86,10 +86,6 @@
                             "display":"none",
                             "float":"right"
                         });
-                        $('#bbtn').css({
-                            "display":"none",
-                            "float":"right"
-                        });
                         $('#menu').css({
                             "display":"inline",
                             "float":"right",
@@ -98,11 +94,6 @@
                         $('#menu li').css('display','inline-block');
                     } else if (windowWidth < 1000) {
                         $('#btn').css({
-                            "display":"block",
-                            "float":"left",
-                            "padding":"15px"
-                        });
-                        $('#bbtn').css({
                             "display":"block",
                             "float":"left",
                             "padding":"15px"
