@@ -22,7 +22,7 @@ Template Name: Privacy
                     <em><strong>About Ads Delivery</strong></em>
                     <p>This site uses third-party advertising service "Google AdSense".</p>
                     <p>Advertisers may use cookies to display advertisements that match the user's interests.</p>
-                    <p>Please take a look at <a href="https://policies.google.com/technologies/ads?hl=en">「Advertising-Privacy&Terms–」</a>" about settings for disabling Cookie and details about Google Adsense.</p>
+                    <p>Please take a look at <a href="https://policies.google.com/technologies/ads?hl=en">「Advertising-Privacy&Terms–」</a> about settings for disabling Cookie and details about Google Adsense.</p>
                 </div>
                 <br>
                 <div>
@@ -31,7 +31,7 @@ Template Name: Privacy
                     <p>This Google Analytics uses cookies for traffic data collection. </p>
                     <p>This traffic data is collected anonymously and is not intended to identify an individual.</p>
                     <p>This feature can be denied by disabling cookies, so please check your browser settings.</p>
-                    <p>Learn more about <a href="https://www.google.com/analytics/terms/en.html">here</a> about these terms.</p>
+                    <p>Learn more about <a href="https://www.google.com/analytics/terms/us.html">here</a> about these terms.</p>
                 </div>
                 <br>
                 <div>

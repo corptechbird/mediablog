@@ -12,10 +12,8 @@
                 <?php if (has_post_thumbnail()) {
                         the_post_thumbnail(array(360, 220));
                     } elseif (get_post_type() == 'post') { ?>
-                        <!-- <img src="<?php echo get_bloginfo('template_directory'); ?>/images/<?php echo $cat[0]->category_nicename; ?>.png" alt="<?php echo $post_type; ?> Image" width="360" /> -->
                         <img src="https://raw.githubusercontent.com/corptechbird/mediablog/master/images/<?php echo $cat[0]->category_nicename; ?>.png" alt="<?php echo $post_type; ?> Image" width="360" />
                     <?php } else { ?>
-                        <!-- <img src="<?php echo get_bloginfo('template_directory'); ?>/images/eyecatch.png" alt="Eye Catch Image" width="360" /> -->
                         <img src="https://raw.githubusercontent.com/corptechbird/mediablog/master/images/eyecatch.png" alt="Eye Catch Image" width="360" />
                 <?php } ?>
                 </a>
