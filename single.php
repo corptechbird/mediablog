@@ -30,7 +30,7 @@
           </a>
         </span>
         <a href="http://twitter.com/share?text=<?php the_title() ?>&url=<?php the_permalink() ?>" target="blank" class="balloon-btn-link twitter-balloon-btn-link" rel="nofollow">
-          <i class="icon-twitter"></i>
+          <i class="fa fa-spinner fa-spin"></i>
         </a>
       </span>
     </li>
@@ -42,19 +42,7 @@
           </a>
         </span>
         <a href="https://www.facebook.com/sharer/sharer.php?u=<?php the_permalink() ?>&t=<?php the_title() ?>" target="blank" class="balloon-btn-link facebook-balloon-btn-link" rel="nofollow">
-          <i class="icon-facebook"></i>
-        </a>
-      </span>
-    </li>
-    <li class="balloon-btn googleplus-balloon-btn">
-      <span class="balloon-btn-set">
-        <span class="arrow-box">
-          <a href="https://plus.google.com/share?url=<?php echo rawurlencode(get_permalink($post->ID)) ?>" onclick="javascript:window.open(this.href, '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=600,width=600');return false;" target="blank" class="arrow-box-link googleplus-arrow-box-link" rel="nofollow">
-            <span class="googleplus-count"><i class="fa fa-spinner fa-spin"></i></span>
-          </a>
-        </span>
-        <a href="https://plus.google.com/share?url=<?php echo rawurlencode(get_permalink($post->ID)) ?>" onclick="javascript:window.open(this.href, '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=600,width=600');return false;" target="blank" class="balloon-btn-link googleplus-balloon-btn-link" rel="nofollow">
-          <i class="icon-googleplus"></i>
+          <i class="fa fa-spinner fa-spin"></i>
         </a>
       </span>
     </li>
@@ -66,7 +54,7 @@
           </a>
         </span>
         <a href="http://b.hatena.ne.jp/add?mode=confirm&url=<?php the_permalink() ?>&title=<?php echo get_encoded_title( get_the_title() ) ?>" target="blank" class="balloon-btn-link hatena-balloon-btn-link" rel="nofollow">
-          <i class="icon-hatena"></i>
+          <i class="fa fa-spinner fa-spin"></i>
         </a>
       </span>
     </li>
@@ -78,7 +66,7 @@
           </a>
         </span>
         <a href="https://getpocket.com/edit?url=<?php the_permalink() ?>" target="blank" class="balloon-btn-link pocket-balloon-btn-link" rel="nofollow">
-          <i class="icon-pocket"></i>
+          <i class="fa fa-spinner fa-spin"></i>
         </a>
       </span>
     </li>
