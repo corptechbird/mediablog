@@ -915,7 +915,7 @@ a.balloon-btn-link {
   background:-moz-linear-gradient( center top, #f9f9f9 5%, #e9e9e9 100% );
   background:-ms-linear-gradient( top, #f9f9f9 5%, #e9e9e9 100% );
   filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#f9f9f9', endColorstr='#e9e9e9');
-  background:-webkit-gradient( linear, left top, left bottom, color-stop(5%, #f9f9f9), color-stop(100%, #e9e9e9) );
+  /* background:-webkit-gradient( linear, left top, left bottom, color-stop(5%, #f9f9f9), color-stop(100%, #e9e9e9) ); */
   background-color:#f9f9f9;
   color:#666666;
   display:inline-block;
