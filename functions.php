@@ -1,7 +1,4 @@
 <?php
-    function get_encoded_title($title){
-        return urlencode(mb_convert_encoding($title, "UTF-8"));
-      }
     add_theme_support( 'post-thumbnails' );
     function arphabet_widgets_init() {
         register_sidebar(array(

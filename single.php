@@ -20,30 +20,6 @@
                 <?php } ?>
                 </a>
             </figure>
-            <script type="text/javascript">
-//Twitterのツイート数取得関数（URLのツイート数を指定したCSSセレクタに表示）
-function fetch_twitter_count(url, selector) {
-  jQuery.ajax({
-    url:'http://jsoon.digitiminimi.com/twitter/count.json',
-    dataType:'jsonp',
-    timeout: 10000, //10sec
-    data:{
-      url:url
-  },
-  success:function(res){
-    jQuery( selector ).html( res.count || 0 );
-  },
-  error:function(){
-    jQuery( selector ).html('error');
-  }
-  });
-}
- 
-jQuery(function(){
-  //ツイート数取得関数の呼び出し
-  fetch_twitter_count('<?php echo get_permalink(); ?>', '.twitter-count');
-});</script>
-<span class="twitter-count">0</span>
             <div class="title"><?php the_title(); ?></div>
             <div class="update">Updated：<?php echo get_the_modified_date('d.m.Y'); ?></div>
             <?php the_content(); ?>
