@@ -19,32 +19,32 @@ Template Name: Privacy
             <div class="newentry">Privacy Policy</div>
             <div class="page">
                 <div>
-                    <em><strong>広告の配信について</strong></em>
-                    <p>当サイトは第三者配信の広告サービス「Google AdSense グーグルアドセンス」を利用しています。</p>
-                    <p>広告配信事業者は、ユーザーの興味に応じた広告を表示するためにCookie（クッキー）を使用することがあります。</p>
-                    <p>Cookie（クッキー）を無効にする設定およびGoogleアドセンスに関する詳細は<a href="https://policies.google.com/technologies/ads?hl=ja">「広告–ポリシーと規約– Google」</a>をご覧ください。</p>
+                    <em><strong>About Ads Delivery</strong></em>
+                    <p>This site uses third-party advertising service "Google AdSense".</p>
+                    <p>Advertisers may use cookies to display advertisements that match the user's interests.</p>
+                    <p>Please take a look at <a href="https://policies.google.com/technologies/ads?hl=en">「Advertising-Privacy&Terms–」</a>" about settings for disabling Cookie and details about Google Adsense.</p>
                 </div>
                 <br>
                 <div>
-                    <em><strong>アクセス解析ツールについて</strong></em>
-                    <p>当サイトでは、Googleによるアクセス解析ツール「Googleアナリティクス」を利用しています。</p>
-                    <p>このGoogleアナリティクスはトラフィックデータの収集のためにCookieを使用しています。</p>
-                    <p>このトラフィックデータは匿名で収集されており、個人を特定するものではありません。</p>
-                    <p>この機能はCookieを無効にすることで収集を拒否することが出来ますので、お使いのブラウザの設定をご確認ください。</p>
-                    <p>この規約に関して、詳しくは<a href="https://www.google.com/analytics/terms/jp.html">こちら</a>をご覧ください。</p>
+                    <em><strong>About Access Analysis Tools</strong></em>
+                    <p>This site uses Google's access analysis tool "Google Analytics". </p>
+                    <p>This Google Analytics uses cookies for traffic data collection. </p>
+                    <p>This traffic data is collected anonymously and is not intended to identify an individual.</p>
+                    <p>This feature can be denied by disabling cookies, so please check your browser settings.</p>
+                    <p>Learn more about <a href="https://www.google.com/analytics/terms/en.html">here</a> about these terms.</p>
                 </div>
                 <br>
                 <div>
-                    <em><strong>免責事項</strong></em>
-                    <p>当サイトからリンクやバナーなどによって他のサイトに移動された場合、移動先サイトで提供される情報、サービス等について一切の責任を負いません。</p>
-                    <p>当サイトのコンテンツ・情報につきまして、可能な限り正確な情報を掲載するよう努めておりますが、誤情報が入り込んだり、情報が古くなっていることもございます。</p>
-                    <p>当サイトに掲載された内容によって生じた損害等の一切の責任を負いかねますのでご了承ください。</p>
+                    <em><strong>Disclaimer</strong></em>
+                    <p>About information and services provided at the destination site from links or banners of this site, any responsibility for the information is not on this site.</p>
+                    <p>This site posts as accurate information as possible about the content and information, but there may be cases where misinformation has been introduced or the information has become outdated. </p>
+                    <p>Please note that this site can not accept any responsibility for damages caused by the content published on this site.</p>
                 </div>
                 <br>
                 <div>
-                    <em><strong>プライバシーポリシーの変更について</strong></em>
-                    <p>当サイトは、個人情報に関して適用される日本の法令を遵守するとともに、本ポリシーの内容を適宜見直しその改善に努めます。</p>
-                    <p>修正された最新のプライバシーポリシーは常に本ページにて開示されます。</p>
+                    <em><strong>About Change of Privacy Policy</strong></em>
+                    <p>This site complies with the applicable laws and regulations regarding personal information, and will review the contents of this policy as appropriate and strive to improve it.</p>
+                    <p>An updated privacy policy will always be disclosed on this page.</p>
                 </div>
                 <br>
             </div>
