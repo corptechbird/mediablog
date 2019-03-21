@@ -26,7 +26,7 @@
                         <img src="https://raw.githubusercontent.com/theOstrichClub/MediaBlog/master/images/eyecatch.png" alt="Eye Catch Image" width="360" />
                 <?php } ?>
             </figure>
-            <div class="newentry">『<?php echo esc_html( $cat_info->name ); ?>』記事一覧</div>
+            <div class="newentry">『<?php echo esc_html( $cat_info->name ); ?>』Article List</div>
             <ul style="list-style-type:decimal; padding-left: 40px;">
             <?php $counter = 0; ?>  
             <?php while ( have_posts() ) : the_post(); ?>
@@ -53,6 +53,7 @@
             <div class="notfound">
                 <h3>Page Not Found</h3>
                 <p>Sorry. The page you were looking for could not be found.</p>
+                <div class="notfound-navi"><a href="<?php echo esc_url( home_url( '/' ) ); ?>"><i class="fas fa-home" aria-hidden="true"></i> Home</a></div>
             </div>
             <?php endif; ?>
             <div class="ads" style="margin-bottom:20px;">
@@ -106,7 +107,7 @@
                                     <span class="more-text">Read More</span>
                                 </div>
                                 <div class="text-content">
-                                <p class="caption"><?php echo $term->name; ?>に関する現役のエンジニアのノウハウ・トレンドのトピックなど技術的な情報を提供しています。コード・プログラムの丁寧な解説をはじめ、初心者にもわかりやすいように写真や動画を多く使用しています。</p>
+                                <p class="caption">Technical information about <?php echo $term->name; ?> is provided. Articles include a lot of photos, videos and careful explanation of programs to make it easy for beginners to understand.</p>
                                 </div>
                             </div>
                         </a>

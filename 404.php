@@ -41,10 +41,11 @@
             ?>
             </p>
             <?php else : ?>
-                <div class="notfound">
-                    <h3>The page not found</h3>
-                    <div class="notfound-navi"><a href="<?php echo esc_url( home_url( '/' ) ); ?>"><i class="fas fa-home" aria-hidden="true"></i> Home へ戻る</a></div>
-                </div>
+            <div class="notfound">
+                <h3>Page Not Found</h3>
+                <p>Sorry. The page you were looking for could not be found.</p>
+                <div class="notfound-navi"><a href="<?php echo esc_url( home_url( '/' ) ); ?>"><i class="fas fa-home" aria-hidden="true"></i> Home</a></div>
+            </div>
             <?php endif; ?>
             <div class="newentry"></div>
             <div class="cards">
