@@ -756,7 +756,7 @@ h3 {
   font-weight: lighter;
   columns: #505050;
 }
-.iframe {
+iframe {
   display: block;
   margin: auto;
 }
