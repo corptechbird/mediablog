@@ -757,8 +757,8 @@ h3 {
   columns: #505050;
 }
 .iframe {
-  margin-left: auto;
-  margin-right: auto;
+  display: block;
+  margin: auto;
 }
 @-webkit-keyframes bg-gradient {
   0% {
