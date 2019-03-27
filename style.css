@@ -757,7 +757,6 @@ h3 {
   columns: #505050;
 }
 iframe {
-  max-width: 80%;
   display: block;
   margin: auto;
 }
@@ -852,11 +851,6 @@ iframe {
   }
   #toc_container .toc_list {
     padding: 0.4em 0.4em 0.4em 0.8em;
-  }
-  iframe {
-    max-width: 90%;
-    display: block;
-    margin: auto;
   }
 }
 @media screen and (max-width: 1100px) {
