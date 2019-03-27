@@ -854,7 +854,7 @@ iframe {
     padding: 0.4em 0.4em 0.4em 0.8em;
   }
   iframe {
-    max-width: 100%;
+    max-width: 90%;
   }
 }
 @media screen and (max-width: 1100px) {
