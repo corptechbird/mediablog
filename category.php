@@ -20,10 +20,10 @@
             <figure class="frame">
                 <?php if (get_post_type() == 'post') { ?>
                         <!-- <img src="<?php echo get_bloginfo('template_directory'); ?>/images/<?php echo esc_html( $cat_info->slug ); ?>.png" alt="<?php echo $cat_info->name; ?> Image" width="360" /> -->
-                        <img src="https://raw.githubusercontent.com/theOstrichClub/MediaBlog/master/images/<?php echo esc_html( $cat_info->slug ); ?>.png" alt="<?php echo $cat_info->name; ?> Image" width="360" />
+                        <img src="https://raw.githubusercontent.com/corptechbird/mediablog/master/images/<?php echo esc_html( $cat_info->slug ); ?>.png" alt="<?php echo $cat_info->name; ?> Image" width="360" />
                     <?php } else { ?>
                         <!-- <img src="<?php echo get_bloginfo('template_directory'); ?>/images/eyecatch.png" alt="Eye Catch Image" width="360" /> -->
-                        <img src="https://raw.githubusercontent.com/theOstrichClub/MediaBlog/master/images/eyecatch.png" alt="Eye Catch Image" width="360" />
+                        <img src="https://raw.githubusercontent.com/corptechbird/mediablog/master/images/eyecatch.png" alt="Eye Catch Image" width="360" />
                 <?php } ?>
             </figure>
             <div class="newentry">『<?php echo esc_html( $cat_info->name ); ?>』Article List</div>
@@ -102,7 +102,7 @@
                                 <div class="l-thumbnail">
                                     <figure class="thumbnail-wrapper">
                                         <!-- <img src="<?php echo get_bloginfo('template_directory'); ?>/images/<?php echo $term->slug; ?>.png" alt="Eye Catch Image" width="360" height="220" /> -->
-                                        <img src="https://raw.githubusercontent.com/theOstrichClub/MediaBlog/master/images/<?php echo $term->slug; ?>.png" alt="Eye Catch Image" width="360" height="220" />
+                                        <img src="https://raw.githubusercontent.com/corptechbird/mediablog/master/images/<?php echo $term->slug; ?>.png" alt="Eye Catch Image" width="360" height="220" />
                                     </figure>
                                     <span class="more-text">Read More</span>
                                 </div>
