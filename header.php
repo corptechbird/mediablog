@@ -25,8 +25,7 @@
     <link rel="icon" type="image/x-icon" sizes="32x32" href="https://raw.githubusercontent.com/corptechbird/mediablog/master/images/favicon-32.ico">
     <link rel="icon" type="image/x-icon" sizes="48x48" href="https://raw.githubusercontent.com/corptechbird/mediablog/master/images/favicon-48.ico">
     <link rel="icon" type="image/x-icon" sizes="152x152" href="https://raw.githubusercontent.com/corptechbird/mediablog/master/images/favicon-152.ico">
-    <style type="text/css">  
-      /*
+    <style type="text/css">  /*
 Theme Name: Media Blog
 Theme URI: https://bizmedia.com/
 Description: Media Blog用のデザインテーマ
@@ -157,7 +156,7 @@ html, body {
   margin: 0;
 }
 #primary ul div ul li a {
-  color: #505050;
+  olor: rgba(80, 80, 80, 1);
 }
 #primary ul div ul li a:visited {
   color: rgba(80, 80, 80, 0.7);
@@ -196,11 +195,11 @@ html, body {
 .post ul li:first-child {
   padding: 0 5px 5px 5px;
 }
-.post ul li a {
-  color: rgba(44, 84, 161, 1);
+.post ul li a  {
+  color: #505050;
 }
 .post ul li a:visited {
-  color: rgba(44, 84, 161, 1);
+  color: rgba(80, 80, 80, 0.7);
 }
 .post ul li a:hover {
   color: rgba(44, 84, 161, 1);
@@ -211,13 +210,12 @@ html, body {
 .screen-reader-text{
   display: none;
 }
-
 .post a {
-  color:rgba(44, 84, 161, 1);
+  color: rgba(84, 84, 84, 1);
   word-break: break-all;
 }
 .post a:visited {
-  color:rgba(44, 84, 161, 0.7);
+  color: rgba(84, 84, 84, 0.7);
 }
 .post a:hover {
   color:rgba(44, 84, 161, 1);
@@ -785,6 +783,11 @@ h3 {
   font-weight: lighter;
   columns: #505050;
 }
+iframe {
+  max-width: 80%;
+  display: block;
+  margin: auto;
+}
 @-webkit-keyframes bg-gradient {
   0% {
     background-position: 0% 50%;
@@ -876,6 +879,11 @@ h3 {
   }
   #toc_container .toc_list {
     padding: 0.4em 0.4em 0.4em 0.8em;
+  }
+  iframe {
+    max-width: 90%;
+    display: block;
+    margin: auto;
   }
 }
 @media screen and (max-width: 1100px) {
