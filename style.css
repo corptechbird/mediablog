@@ -129,7 +129,7 @@ html, body {
   margin: 0;
 }
 #primary ul div ul li a {
-  olor: rgba(80, 80, 80, 1);
+  color: rgba(80, 80, 80, 1);
 }
 #primary ul div ul li a:visited {
   color: rgba(80, 80, 80, 0.7);
