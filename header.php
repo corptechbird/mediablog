@@ -142,7 +142,7 @@ html, body {
   font-size: 1.2em;
   padding: 10px;
   margin: 0;
-  box-shadow: 1px 1px 10px 0px rgba(0, 0, 0, 0.8);
+  box-shadow: 1px 1px 10px -10px rgba(0, 0, 0, 0.8);
 }
 #primary ul div {
   padding: 10px 0 0 0;
