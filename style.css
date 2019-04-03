@@ -766,11 +766,11 @@ iframe {
 }
 .pager-prev {
   width: 50%;
-  text-align: left;
+  text-align: right;
 }
 .pager-next {
   width: 50%;
-  text-align: right;
+  text-align: left;
 }
 @-webkit-keyframes bg-gradient {
   0% {

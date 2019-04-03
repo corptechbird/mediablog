@@ -26,15 +26,14 @@
                 if( isset($prev_post) || isset($next_post) ):
             ?>
             <div class="pager-wrapper">
+                <?php if(isset($next_post)): ?>
+                    <div class="pager-next">
+                        <?php next_post_link('%link', '<i class="icon"></i>next', true); ?>
+                    </div>
+                <?php endif; ?>
                 <?php if(isset($prev_post)): ?>
                     <div class="pager-prev">
                         <?php previous_post_link('%link', '<i class="icon"></i>prev', true); ?>
-                    </div>
-                    <?php endif; ?>
-                
-                    <?php if(isset($next_post)): ?>
-                    <div class="pager-next">
-                        <?php next_post_link('%link', '<i class="icon"></i>next', true); ?>
                     </div>
                 <?php endif; ?>
             </div>
