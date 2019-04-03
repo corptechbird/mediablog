@@ -801,7 +801,7 @@ iframe {
   text-align: left;
 }
 .side-article {
-  padding-left:5px;
+  padding-left:1.0em;
   padding-top: 0px; 
   width:200px;
 }
@@ -923,6 +923,8 @@ iframe {
     padding-right: 20px;
   }
   .side-article {
+    padding-left:1.0em;
+    padding-top: 0px; 
     width:550px;
   }
 }
