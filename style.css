@@ -788,6 +788,7 @@ iframe {
 .slider img{
   height: auto;
   width: 100%;
+  margin: auto;
 }
 /*slick setting*/
 .slick-prev:before,
