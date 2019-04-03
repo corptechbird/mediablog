@@ -777,9 +777,9 @@ iframe {
 }
 .slider{
   margin: auto;
-  width: 100%;
+  width: 90%;
   opacity: 0;
-  transition: 3s;
+  transition: 2s;
   background-color: black;
 }
 .slick-initialized{

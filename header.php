@@ -807,7 +807,7 @@ iframe {
 }
 .slider{
   margin: auto;
-  width: 100%;
+  width: 90%;
   opacity: 0;
   transition: 2s;
   background-color: black;
