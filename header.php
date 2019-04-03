@@ -8,8 +8,8 @@
     <link rel="dns-prefetch" href="//www.gstatic.com">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <title><?php if(is_home()): ?><?php bloginfo('name'); ?> - <?php bloginfo('description'); ?><?php elseif(is_page()): //固定ページ ?><?php wp_title(''); ?> ｜ <?php bloginfo('name'); ?> - <?php bloginfo('description'); ?><?php elseif(is_single()): //シングルページ ?><?php wp_title(''); ?> ｜ <?php bloginfo('name'); ?> - <?php bloginfo('description'); ?><?php elseif(is_category()): //カテゴリ一覧ページ ?><?php single_cat_title() ?> ｜ <?php bloginfo('name'); ?> - <?php bloginfo('description'); ?><?php elseif(is_month()): //月別ページ ?><?php the_time("Y年m月") ?> Article List ｜ <?php bloginfo('name'); ?> - <?php bloginfo('description'); ?><?php elseif(is_year()): //年別ページ ?><?php the_time("Y年") ?> ｜ <?php bloginfo('name'); ?> - <?php bloginfo('description'); ?><?php elseif(is_search())://検索結果ページ ?>Search Result ｜ <?php bloginfo('name'); ?> - <?php bloginfo('description'); ?><?php else: //それ以外のページ ?><?php bloginfo('name'); ?> - <?php bloginfo('description'); ?><?php endif; ?></title>
-    <meta name="keywords" content="Reference, Programming, Coding, Sample, Example, Tutorial, Download, Beginner, Document, Study">
-    <meta name="description" content="Technical information about programming is provided. Articles include a lot of photos, videos and careful explanation of programs to make it easy for beginners to understand.">
+    <meta name="keywords" content="Music, Trend, Group, Singer, Rock, Japan, Idol, Song, Live, Download">
+    <meta name="description" content="Information of music trend in Japan is provided. Articles include a lot of official youtube videos, official SNS photos and careful explanation of music group and songs.">
     <script type="text/javascript"
         src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-AMS_CHTML">
     </script>
