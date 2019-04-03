@@ -3,10 +3,27 @@
         <div class="post">        
             <?php if ( have_posts() ) : ?>
             <ul class="slider">
-                <li><a href="https://bluegatepro.com/task-have-fun-kedo-hanikami/"><img src="http://img.youtube.com/vi/PQW2EJ2Wb7M/maxresdefault.jpg" alt="image01"></a></li>
+            <li class="slide">
+                <a class="slide__link" href="#">
+                    <img src="http://img.youtube.com/vi/iltRT2WzXIE/sddefault.jpg" alt="image01">
+                    <span class="slide__content-wrap">
+                        <span class="slide__content">
+                            <h2 class="slide__title">slider1 text here!</h2>
+                            <p class="slide__text">
+                            Lorem ipsum dolor sit amet, 以下省略        
+                            </p>
+                        </span>
+                    </span>
+                </a>
+            </li>
+            <li><a href="https://bluegatepro.com/task-have-fun-kedo-hanikami/"><img src="http://img.youtube.com/vi/PQW2EJ2Wb7M/maxresdefault.jpg" alt="image01"></a></li>
                 <li><a href="https://bluegatepro.com/amiina-caravan/"><img src="http://img.youtube.com/vi/iltRT2WzXIE/sddefault.jpg" alt="image02"></a></li>
                 <li><a href="https://bluegatepro.com/wa-sutathe-world-standard-galbi-girls-be-ambitious/"><img src="http://img.youtube.com/vi/uTtlmB_hV1M/maxresdefault.jpg" alt="image03"></a></li>
-            </ul>
+            
+            <!--以下省略-->
+        </ul>
+            <ul class="slider">
+                </ul>
             <div class="ads" style="margin-bottom:20px;">
                 <ins class="adsbygoogle"
                     style="display:block"

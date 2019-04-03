@@ -34,11 +34,20 @@
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-125050500-1"></script>
 <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
 <script>
+        $('.slider').on('init',function(){
+            $('.slide__content').addClass('on');
+        });     
         $('.slider').slick({
             autoplay:true,
             autoplaySpeed:5000,
             dots:true,
         });
+        $('.slider').on('beforeChange',function(){
+            $('.slide__content').removeClass('on');
+        }); 
+        $('.slider').on('afterChange',function(){
+            $('.slide__content').addClass('on');
+        }); 
         $(window).on('load',function(){
             // fade-in
             $(window).scroll(function (){
