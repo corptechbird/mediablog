@@ -977,6 +977,16 @@ iframe {
 .slick-next:before{
   color: #000;
 }
+.slick-dots {
+  position: absolute;
+  bottom: -25px;
+  display: block;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  text-align: center;
+}
     </style> 
 </head>
 <body>
