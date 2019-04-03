@@ -28,7 +28,7 @@
             $the_query->the_post(); ?>
             <li style="border-bottom: 1px solid #d7d7d7; display: flex; flex-wrap: wrap;"> 
                 <div style="width: 100px; margin: 0;"><?php the_post_thumbnail(array(100, 65, true)); ?></div>
-                <div style="padding-left:5px;width:550px;"><a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>"><?php the_title(); ?></a></div>
+                <div style="padding-left:8px;width:550px;"><a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>"><?php the_title(); ?></a></div>
             </li> 
         <?php
         }
