@@ -7,7 +7,7 @@
             $cat = get_the_category();
             $post_type = get_post_type();
             ?>
-            <figure class="frame">
+            <!-- <figure class="frame">
                 <a href="<?php echo esc_url( home_url( '/' ) ); ?>/category/<?php echo $cat[0]->category_nicename; ?>/">
                 <?php if (has_post_thumbnail()) {
                         the_post_thumbnail(array(360, 220));
@@ -17,7 +17,28 @@
                         <img src="https://raw.githubusercontent.com/corptechbird/mediablog/master/images/eyecatch.png" alt="Eye Catch Image" width="360" />
                 <?php } ?>
                 </a>
-            </figure>
+            </figure> -->
+            <?php
+	$prev_post = get_previous_post();
+	$next_post = get_next_post();
+	if( isset($prev_post) || isset($next_post) ):
+?>
+<div class="pager-wrapper">
+ 
+	<?php if(isset($prev_post)): ?>
+  <div class="pager-prev">
+    <?php previous_post_link('%link', '<i class="icon"></i>prev', true); ?>
+  </div>
+  <?php endif; ?>
+ 
+  <?php if(isset($next_post)): ?>
+  <div class="pager-next">
+    <?php next_post_link('%link', '<i class="icon"></i>next', true); ?>
+  </div>
+  <?php endif; ?>
+ 
+</div>
+<?php endif; ?>
             <div class="title"><?php the_title(); ?></div>
             <div class="update">Updated：<?php echo get_the_modified_date('d.m.Y'); ?></div>
             <?php the_content(); ?>
