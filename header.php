@@ -182,7 +182,7 @@ html, body {
   word-break: break-all;
 }
 .post div.update {
-  margin: 0 0 0 20px;
+  margin: 0 0 10px 20px;
 }
 .post ul {
   margin: 0 5px 1.0em 5px;
@@ -861,7 +861,7 @@ iframe {
     font-size: 1.3em;
   }
   .post div.update {
-    margin: 0 0 0 5px;
+    margin: 0 0 10px 5px;
   }
   .post p {
     margin: 0.5em;
