@@ -21,14 +21,12 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remodal/1.1.1/remodal-default-theme.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remodal/1.1.1/remodal.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery.tocify/1.9.0/stylesheets/jquery.tocify.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css">
     <link rel="icon" type="image/x-icon" sizes="16x16" href="https://raw.githubusercontent.com/corptechbird/mediablog/master/images/favicon-16.ico">
     <link rel="icon" type="image/x-icon" sizes="32x32" href="https://raw.githubusercontent.com/corptechbird/mediablog/master/images/favicon-32.ico">
     <link rel="icon" type="image/x-icon" sizes="48x48" href="https://raw.githubusercontent.com/corptechbird/mediablog/master/images/favicon-48.ico">
     <link rel="icon" type="image/x-icon" sizes="152x152" href="https://raw.githubusercontent.com/corptechbird/mediablog/master/images/favicon-152.ico">
     <style type="text/css"> 
-/*
+    /*
 Theme Name: Media Blog
 Theme URI: https://bizmedia.com/
 Description: Media Blog用のデザインテーマ
@@ -938,58 +936,7 @@ iframe {
       float: right;
   }
 }
-.slider{
-  margin: 100px auto;
-  width: 80%;
-}
-.slide{
-  position: relative;
-}
-.slide__link{
-  color: #fff;
-  text-align: center;
-}
-.slide img{
-  height: auto;
-  width: 100%;
-}
-.slide__content-wrap{
-  left: 50%;
-  position: absolute;
-  top: 50%;
-}
-.slide__content{
-  display: block;
-  opacity: 0;
-  transform: translate(-50%,20%);
-  transition: 0s;
-}
-.slide__content.on{
-  opacity: 1;
-  transform: translate(-50%,-50%);
-  transition: .5s;
-}
-.slide__title{
-  font-size: 48px;
-}
-/*slick setting*/
-.slick-prev:before,
-.slick-next:before{
-  color: #000;
-}
-.slick-dots {
-  position: absolute;
-  bottom: -25px;
-  display: block;
-  width: 100%;
-  padding: 0;
-  margin: 0;
-  list-style: none;
-  text-align: center;
-}
-ul.slick-dots li{ 	
-  display: inline;
-} 
+
     </style> 
 </head>
 <body>
