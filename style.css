@@ -562,39 +562,39 @@ input.wpcf7-form-control.wpcf7-submit:hover {
 .post ul {
   /* list-style-type: disc; */
   margin:0;
-  padding-left:40px;
+  padding-left:0px;
 }
 .post ul li{
   /* list-style-type: disc; */
   display:list-item;
   border: none;
 }
-.post ul li ul li{
-  /* list-style-type: circle; */
-}
+/* .post ul li ul li{
+  list-style-type: circle;
+} */
 .post table {
   width: 90%;
   margin: 1.0em;
   margin-left: auto;
   margin-right: auto;
 }
-.small-table {
+/* .small-table {
   padding: 10px;
   padding-left: 30px;
 }
 .small-table ul {
-  /* list-style-type: disc; */
+  list-style-type: disc;
   margin:0;
   padding-left:40px;
 }
 .small-table ul li{
-  /* list-style-type: disc; */
+  list-style-type: disc;
   display:list-item;
   border: none;
 }
 .small-table ul li ul li{
-  /* list-style-type: circle; */
-}
+  list-style-type: circle;
+} */
 #toc_container {
   max-width: 760px;
   margin: 1.5em auto 1.5em auto;
