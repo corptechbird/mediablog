@@ -842,7 +842,7 @@ iframe {
     margin: 0 0 0 0;
   }
   .post ul {
-    list-style-type: disc;
+    /* list-style-type: disc; */
     margin:0;
     padding-left:25px;
   }
