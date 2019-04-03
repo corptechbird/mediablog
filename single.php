@@ -19,7 +19,7 @@
                 </a>
             </figure> -->
             <div class="title"><?php the_title(); ?></div>
-            <div class="update">Updated：<?php echo get_the_modified_date('d.m.Y'); ?></div>
+            <div class="update"><i class="far fa-clock"></i> <?php echo get_the_modified_date('d.m.Y'); ?></div>
             <?php
                 $prev_post = get_previous_post();
                 $next_post = get_next_post();
