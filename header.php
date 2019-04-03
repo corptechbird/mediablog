@@ -806,10 +806,10 @@ iframe {
   width:200px;
 }
 .slider{
-  margin: 100px auto;
-  width: 80%;
+  margin: auto;
+  width: 100%;
   opacity: 0;
-  transition: 3s;
+  transition: 2s;
   background-color: black;
 }
 .slick-initialized{
