@@ -27,7 +27,7 @@
                 <?php } ?>
             </figure>
             <div class="newentry">『Music Trend in <?php echo esc_html( $cat_info->name ); ?>』Article List</div>
-            <ul style="list-style-type:decimal; padding-left: 40px;">
+            <ul style="padding-left: 40px;">
             <?php $counter = 0; ?>  
             <?php while ( have_posts() ) : the_post(); ?>
             <?php if($counter>0 && $counter%40==0):?>
