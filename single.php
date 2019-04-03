@@ -79,7 +79,7 @@
                 <hr class="clear">
             </div>
         <div class="newentry">See also</div>     
-        <ul style="list-style-type:decimal; padding-left: 40px;">
+        <ul style="list-style-type:none;">
             <?php $args = array(
                 'numberposts' => 600,
                 'post_type' => $post_type,
