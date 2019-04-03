@@ -775,26 +775,7 @@ iframe {
 .side-article {
   width:200px;
 }
-.slider{
-  margin: 0;
-  width: 90%;
-  opacity: 0;
-  transition: 2s;
-  background-color: black;
-}
-.slick-initialized{
-  opacity: 1
-}
-.slider img{
-  height: auto;
-  width: 100%;
-  margin: auto;
-}
-/*slick setting*/
-.slick-prev:before,
-.slick-next:before {
-  color: rgba(44, 84, 161, 1);
-}
+
 @-webkit-keyframes bg-gradient {
   0% {
     background-position: 0% 50%;
@@ -926,4 +907,24 @@ iframe {
       top: 10px;
       float: right;
   }
+}
+.slider{
+  margin: 0px auto;
+  width: 90%;
+  opacity: 0;
+  transition: 1s;
+  background-color: black;
+}
+.slick-initialized{
+  opacity: 1
+}
+.slider img{
+  height: auto;
+  width: 100%;
+  margin: auto;
+}
+/*slick setting*/
+.slick-prev:before,
+.slick-next:before {
+  color: rgba(44, 84, 161, 1);
 }
