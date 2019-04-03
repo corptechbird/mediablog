@@ -103,6 +103,7 @@
             </div>
             <?php endif; ?>
             <li>
+                <?php the_post_thumbnail('medium'); ?>
                 <a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>"><?php the_title(); ?></a>
             </li>
             <?php $counter+=1; ?>  
