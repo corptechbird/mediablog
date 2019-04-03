@@ -27,7 +27,7 @@
                 <?php } ?>
             </figure>
             <div class="newentry">『Music Trend in <?php echo esc_html( $cat_info->name ); ?>』Article List</div>
-            <ul style="padding-left: 40px;">
+            <ul>
             <?php $counter = 0; ?>  
             <?php while ( have_posts() ) : the_post(); ?>
             <?php if($counter>0 && $counter%40==0):?>
@@ -43,9 +43,10 @@
                 </script>
             </div>
             <?php endif; ?>
-            <li>
-                <a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>"><?php the_title(); ?></a>
-            </li>
+            <li style="border-bottom: 1px solid #d7d7d7; display: flex; flex-wrap: wrap;"> 
+                <div style="width: 100px; margin: 0;"><?php the_post_thumbnail(array(100, 65, true)); ?></div>
+                <div style="padding-left:8px;width:550px;"><a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>"><?php the_title(); ?></a></div>
+            </li> 
             <?php $counter+=1; ?>  
             <?php endwhile; ?>     
             </ul>
