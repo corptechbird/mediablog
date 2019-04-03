@@ -26,9 +26,10 @@
         echo '<ul style="margin-bottom:30px;">';
         while ( $the_query->have_posts() ) {
             $the_query->the_post(); ?>
-            <li style="border-bottom: 1px solid #d7d7d7;">
-                <a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>"><?php echo get_the_title(); ?></a>
-            </li>
+            <li style="border-bottom: 1px solid #d7d7d7; display: flex; flex-wrap: wrap;"> 
+                <div style="width: 100px; margin: 0;"><?php the_post_thumbnail(array(100, 80, true)); ?></div>
+                <div style="padding-left:5px;width:650px;"><a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>"><?php the_title(); ?></a></div>
+            </li> 
         <?php
         }
         echo '</ul>';
