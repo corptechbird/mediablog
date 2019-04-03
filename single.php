@@ -39,6 +39,24 @@
             </div>
             <?php endif; ?>
             <?php the_content(); ?>
+            <?php
+                $prev_post = get_previous_post();
+                $next_post = get_next_post();
+                if( isset($prev_post) || isset($next_post) ):
+            ?>
+            <div class="pager-wrapper">
+                <?php if(isset($next_post)): ?>
+                    <div class="pager-next">
+                        <?php next_post_link('%link', '<i class="fas fa-caret-left"></i> next', true); ?>
+                    </div>
+                <?php endif; ?>
+                <?php if(isset($prev_post)): ?>
+                    <div class="pager-prev">
+                        <?php previous_post_link('%link', 'prev <i class="fas fa-caret-right"></i>', true); ?>
+                    </div>
+                <?php endif; ?>
+            </div>
+            <?php endif; ?>
             <div class="ads" style="margin-bottom:20px;">
                 <div class="adleft">
                     <ins class="adsbygoogle"
