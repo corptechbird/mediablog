@@ -810,6 +810,7 @@ iframe {
   width: 80%;
   opacity: 0;
   transition: 3s;
+  background-color: black;
 }
 .slick-initialized{
   opacity: 1
@@ -821,7 +822,7 @@ iframe {
 /*slick setting*/
 .slick-prev:before,
 .slick-next:before {
-  color: #000;
+  color: rgba(44, 84, 161, 1);
 }
 @-webkit-keyframes bg-gradient {
   0% {
