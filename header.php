@@ -808,6 +808,11 @@ iframe {
 .slider{
   margin: 100px auto;
   width: 80%;
+  opacity: 0;
+  transition: 3s;
+}
+.slick-initialized{
+  opacity: 1
 }
 .slider img{
   height: auto;
