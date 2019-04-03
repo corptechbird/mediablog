@@ -78,7 +78,7 @@
                 </div>
                 <hr class="clear">
             </div>
-        <div class="newentry">Related Articles</div>     
+        <div class="newentry">See also</div>     
         <ul style="list-style-type:decimal; padding-left: 40px;">
             <?php $args = array(
                 'numberposts' => 600,
