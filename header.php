@@ -806,7 +806,7 @@ iframe {
   width:200px;
 }
 .slider{
-  margin: auto;
+  margin: 0;
   width: 90%;
   opacity: 0;
   transition: 2s;
