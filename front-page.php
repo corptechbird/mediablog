@@ -2,6 +2,14 @@
     <div id="contents">
         <div class="post">        
             <?php if ( have_posts() ) : ?>
+            <ul class="slider">
+                <li><a href="/tagged/鎮守府正面海域">1-1. 鎮守府正面海域</a></li>
+                <li><a href="/tagged/南西諸島沖">1-2. 南西諸島沖</a></li>
+                <li><a href="/tagged/製油所地帯沿岸">1-3. 製油所地帯沿岸</a></li>
+                <li><a href="/tagged/南西諸島防衛線">1-4. 南西諸島防衛線</a></li>
+                <li><a href="/tagged/鎮守府近海">1-5. 鎮守府近海</a></li>
+                <li><a href="/tagged/鎮守府近海航路">1-6. 南西諸島沖</a></li>
+            </ul>
             <div class="ads" style="margin-bottom:20px;">
                 <ins class="adsbygoogle"
                     style="display:block"
