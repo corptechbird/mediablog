@@ -588,17 +588,17 @@ input.wpcf7-form-control.wpcf7-submit:hover {
   height: auto;
 }
 .post ul {
-  list-style-type: disc;
+  /* list-style-type: disc; */
   margin:0;
   padding-left:40px;
 }
 .post ul li{
-  list-style-type: disc;
+  /* list-style-type: disc; */
   display:list-item;
   border: none;
 }
 .post ul li ul li{
-  list-style-type: circle;
+  /* list-style-type: circle; */
 }
 .post table {
   width: 90%;
@@ -611,17 +611,17 @@ input.wpcf7-form-control.wpcf7-submit:hover {
   padding-left: 30px;
 }
 .small-table ul {
-  list-style-type: disc;
+  /* list-style-type: disc; */
   margin:0;
   padding-left:40px;
 }
 .small-table ul li{
-  list-style-type: disc;
+  /* list-style-type: disc; */
   display:list-item;
   border: none;
 }
 .small-table ul li ul li{
-  list-style-type: circle;
+  /* list-style-type: circle; */
 }
 #toc_container {
   max-width: 760px;
@@ -870,7 +870,7 @@ iframe {
     margin: 0 0 0 0;
   }
   .post ul {
-    list-style-type: disc;
+    /* list-style-type: disc; */
     margin:0;
     padding-left:25px;
   }
