@@ -987,7 +987,7 @@ iframe {
   list-style: none;
   text-align: center;
 }
-.slick-dots li{ 	
+ul.slick-dots li{ 	
   display: inline;
 } 
     </style> 
