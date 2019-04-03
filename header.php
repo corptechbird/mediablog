@@ -142,6 +142,7 @@ html, body {
   font-size: 1.2em;
   padding: 10px;
   margin: 0;
+  box-shadow: none;
 }
 #primary ul div {
   padding: 10px 0 0 0;
