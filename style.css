@@ -761,6 +761,17 @@ iframe {
   display: block;
   margin: auto;
 }
+.pager-wrapper {
+  display: flex;
+}
+.pager-prev {
+  width: 50%;
+  text-align: left;
+}
+.pager-next {
+  width: 50%;
+  text-align: right;
+}
 @-webkit-keyframes bg-gradient {
   0% {
     background-position: 0% 50%;

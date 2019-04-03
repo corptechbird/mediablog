@@ -18,29 +18,27 @@
                 <?php } ?>
                 </a>
             </figure> -->
-            <?php
-	$prev_post = get_previous_post();
-	$next_post = get_next_post();
-	if( isset($prev_post) || isset($next_post) ):
-?>
-<div class="pager-wrapper">
- 
-	<?php if(isset($prev_post)): ?>
-  <div class="pager-prev">
-    <?php previous_post_link('%link', '<i class="icon"></i>prev', true); ?>
-  </div>
-  <?php endif; ?>
- 
-  <?php if(isset($next_post)): ?>
-  <div class="pager-next">
-    <?php next_post_link('%link', '<i class="icon"></i>next', true); ?>
-  </div>
-  <?php endif; ?>
- 
-</div>
-<?php endif; ?>
             <div class="title"><?php the_title(); ?></div>
             <div class="update">Updated：<?php echo get_the_modified_date('d.m.Y'); ?></div>
+            <?php
+                $prev_post = get_previous_post();
+                $next_post = get_next_post();
+                if( isset($prev_post) || isset($next_post) ):
+            ?>
+            <div class="pager-wrapper">
+                <?php if(isset($prev_post)): ?>
+                    <div class="pager-prev">
+                        <?php previous_post_link('%link', '<i class="icon"></i>prev', true); ?>
+                    </div>
+                    <?php endif; ?>
+                
+                    <?php if(isset($next_post)): ?>
+                    <div class="pager-next">
+                        <?php next_post_link('%link', '<i class="icon"></i>next', true); ?>
+                    </div>
+                <?php endif; ?>
+            </div>
+            <?php endif; ?>
             <?php the_content(); ?>
             <div class="ads" style="margin-bottom:20px;">
                 <div class="adleft">

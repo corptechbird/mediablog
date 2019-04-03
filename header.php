@@ -25,7 +25,8 @@
     <link rel="icon" type="image/x-icon" sizes="32x32" href="https://raw.githubusercontent.com/corptechbird/mediablog/master/images/favicon-32.ico">
     <link rel="icon" type="image/x-icon" sizes="48x48" href="https://raw.githubusercontent.com/corptechbird/mediablog/master/images/favicon-48.ico">
     <link rel="icon" type="image/x-icon" sizes="152x152" href="https://raw.githubusercontent.com/corptechbird/mediablog/master/images/favicon-152.ico">
-    <style type="text/css">  /*
+    <style type="text/css"> 
+    /*
 Theme Name: Media Blog
 Theme URI: https://bizmedia.com/
 Description: Media Blog用のデザインテーマ
@@ -156,7 +157,7 @@ html, body {
   margin: 0;
 }
 #primary ul div ul li a {
-  olor: rgba(80, 80, 80, 1);
+  color: rgba(80, 80, 80, 1);
 }
 #primary ul div ul li a:visited {
   color: rgba(80, 80, 80, 0.7);
@@ -787,6 +788,17 @@ iframe {
   max-width: 80%;
   display: block;
   margin: auto;
+}
+.pager-wrapper {
+  display: flex;
+}
+.pager-prev {
+  width: 50%;
+  text-align: left;
+}
+.pager-next {
+  width: 50%;
+  text-align: right;
 }
 @-webkit-keyframes bg-gradient {
   0% {
