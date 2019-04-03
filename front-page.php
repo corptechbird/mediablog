@@ -3,9 +3,9 @@
         <div class="post">        
             <?php if ( have_posts() ) : ?>
             <ul class="slider">
-                <li><a href="#"><img src="http://img.youtube.com/vi/m7SFHf-32nk/mqdefault.jpg" alt="image01"></a></li>
-                <li><a href="#"><img src="http://img.youtube.com/vi/m7SFHf-32nk/mqdefault.jpg" alt="image02"></a></li>
-                <li><a href="#"><img src="http://img.youtube.com/vi/m7SFHf-32nk/mqdefault.jpg" alt="image03"></a></li>
+                <li><a href="https://bluegatepro.com/task-have-fun-kedo-hanikami/"><img src="http://img.youtube.com/vi/PQW2EJ2Wb7M/maxresdefault.jpg" alt="image01"></a></li>
+                <li><a href="https://bluegatepro.com/amiina-caravan/"><img src="http://img.youtube.com/vi/iltRT2WzXIE/sddefault.jpg" alt="image02"></a></li>
+                <li><a href="https://bluegatepro.com/wa-sutathe-world-standard-galbi-girls-be-ambitious/"><img src="http://img.youtube.com/vi/uTtlmB_hV1M/maxresdefault.jpg" alt="image03"></a></li>
             </ul>
             <div class="ads" style="margin-bottom:20px;">
                 <ins class="adsbygoogle"
