@@ -10,7 +10,7 @@
                 'category_name' => esc_html( $cat_info->slug ),
                 'post_status' => 'publish', 
                 'orderby' => 'title', 
-                'order' => 'DESC' 
+                'order' => 'ASC' 
             );
             $wp_query->query($param);
             if($wp_query->have_posts()): while($wp_query->have_posts()) : $wp_query->the_post();
