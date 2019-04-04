@@ -41,7 +41,7 @@
             <?php
             $cat = get_the_category();
             $cat = $cat[0];?>
-            <div style="text-align:center;"><a href="<?php echo esc_url( home_url( '/' ) ); ?>/category/<?php echo $cat->slug; ?>" title="<?php echo $cat->name; ?>"><i class="fas fa-newspaper"></i> All Articles of Music Trend in <?php echo $cat->name; ?></a></div>
+            <div style="text-align:center;"><a href="<?php echo esc_url( home_url( '/' ) ); ?>/category/<?php echo $cat->slug; ?>" title="<?php echo $cat->name; ?>"><i class="fas fa-newspaper"></i> 『Music Trend in <?php echo $cat->name; ?>』Article List</a></div>
             <?php the_content(); ?>
             <?php
                 $prev_post = get_previous_post();
