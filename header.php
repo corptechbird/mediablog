@@ -197,13 +197,13 @@ html, body {
   padding: 0 5px 5px 5px;
 }
 .post ul li a  {
-  color: #505050;
+  color: rgba(44, 84, 161, 1);
 }
 .post ul li a:visited {
-  color: rgba(80, 80, 80, 0.7);
+  color: rgba(44, 84, 161, 0.8);
 }
 .post ul li a:hover {
-  color: rgba(44, 84, 161, 1);
+  color: rgba(44, 84, 161, 0.7);
 }
 #end {
   height: 5px;
@@ -936,7 +936,6 @@ iframe {
       float: right;
   }
 }
-
     </style> 
 </head>
 <body>
