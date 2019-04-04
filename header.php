@@ -196,7 +196,7 @@ html, body {
 .post ul li:first-child {
   padding: 0 5px 5px 5px;
 }
-.post ul li a  {
+.post ul li a {
   color: rgba(44, 84, 161, 1);
 }
 .post ul li a:visited {
@@ -212,14 +212,14 @@ html, body {
   display: none;
 }
 .post a {
-  color: rgba(84, 84, 84, 1);
+  color: rgba(44, 84, 161, 1);
   word-break: break-all;
 }
 .post a:visited {
-  color: rgba(84, 84, 84, 0.7);
+  color: rgba(44, 84, 161, 0.8);
 }
 .post a:hover {
-  color:rgba(44, 84, 161, 1);
+  color:rgba(44, 84, 161, 0.7);
 }
 .post p {
   margin: 1.0em 30px;
@@ -936,6 +936,7 @@ iframe {
       float: right;
   }
 }
+
     </style> 
 </head>
 <body>
