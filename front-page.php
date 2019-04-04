@@ -45,6 +45,7 @@
                 <div style="padding-left:8px;width:550px;"><?php the_title(); ?></div>
             </li> 
             </a>
+            <?php $counter+=1; ?>  
         <?php
         }
         echo '</ul>';
