@@ -24,9 +24,9 @@
     $the_query = new WP_Query( $args );
     if ( $the_query->have_posts() ) {
         echo '<ul style="margin-bottom:30px;">';
+        $counter = 0;
         while ( $the_query->have_posts() ) {
             $the_query->the_post();
-            $counter = 0;
             if($counter>0 && $counter%10==0):?>
             <div class="ads" style="margin-bottom:20px;">
                 <ins class="adsbygoogle"
