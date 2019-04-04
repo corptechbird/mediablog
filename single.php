@@ -38,6 +38,7 @@
                 <?php endif; ?>
             </div>
             <?php endif; ?>
+            <div><a href="<?php echo esc_url( home_url( '/' ) ); ?>/category/<?php echo $term->slug; ?>" title="<?php echo $term->name; ?>"><i class="fas fa-newspaper"></i> All Articles of Music Trend in <?php echo $term->name; ?></div>
             <?php the_content(); ?>
             <?php
                 $prev_post = get_previous_post();
