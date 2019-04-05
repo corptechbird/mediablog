@@ -82,11 +82,12 @@
                 </div>
                 <hr class="clear">
             </div>
-        <div class="newentry">See also</div>     
+        <div class="newentry">See also</div>   
+        <?php echo $cat[0]->category_nicename; ?>  
         <ul>
             <?php $args = array(
                 'numberposts' => 100,
-                'category_name' => $cat[0]->category_nicename,
+                'category_name' => 'japan',
                 'order' => 'DESC' 
             );
             $counter = 0;
