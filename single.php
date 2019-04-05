@@ -83,7 +83,26 @@
                 <hr class="clear">
             </div>
         <div class="newentry">See also</div>     
-        
+        <ul>
+            <?php $args = array(
+                'numberposts' => 100,
+                'post_type' => $post_type,
+                'category_name' => $cat[0]->category_nicename,
+                'order' => 'DESC' 
+            );
+            $counter = 0;
+            $posts = get_posts( $args );
+            if( $posts ) : foreach( $posts as $post) : setup_postdata( $post ); ?>
+            
+            <?php endforeach; ?>
+            <?php else : ?>
+            <div class="notfound">
+                <h3>Page Not Found</h3>
+                <p>Sorry. The page you were looking for could not be found.</p>
+                <div class="notfound-navi"><a href="<?php echo esc_url( home_url( '/' ) ); ?>"><i class="fas fa-home" aria-hidden="true"></i> Home</a></div>
+            </div>
+            <?php endif; ?>
+        </ul>
         <div class="afterpost">
             <div class="ads" style="margin-bottom:20px;">
                 <div class="adleft">
