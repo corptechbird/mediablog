@@ -86,8 +86,7 @@
         <ul>
             <?php $args = array(
                 'numberposts' => 100,
-                'post_type' => 'post',
-                'category_name' => 'japan',
+                'category_name' => $cat[0]->category_nicename,
                 'order' => 'DESC' 
             );
             $counter = 0;
