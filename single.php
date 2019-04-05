@@ -4,20 +4,7 @@
         <?php if ( have_posts() ) : ?>
         <?php while ( have_posts() ) : the_post(); ?>
         <?php
-            $cat = get_the_category();
-            $post_type = get_post_type();
             ?>
-            <!-- <figure class="frame">
-                <a href="<?php echo esc_url( home_url( '/' ) ); ?>/category/<?php echo $cat[0]->category_nicename; ?>/">
-                <?php if (has_post_thumbnail()) {
-                        the_post_thumbnail(array(360, 220));
-                    } elseif (get_post_type() == 'post') { ?>
-                        <img src="https://raw.githubusercontent.com/corptechbird/mediablog/master/images/<?php echo $cat[0]->category_nicename; ?>.png" alt="<?php echo $post_type; ?> Image" width="360" />
-                    <?php } else { ?>
-                        <img src="https://raw.githubusercontent.com/corptechbird/mediablog/master/images/eyecatch.png" alt="Eye Catch Image" width="360" />
-                <?php } ?>
-                </a>
-            </figure> -->
             <div class="title"><?php the_title(); ?></div>
             <div class="update"><i class="far fa-clock"></i> <?php echo get_the_modified_date('d.m.Y'); ?></div>
             <?php
@@ -86,7 +73,7 @@
         <ul>
             <?php $args = array(
                 'numberposts' => 100,
-                'category_name' => $cat[0]->slug,
+                'category_name' => $cat->slug,
                 'order' => 'DESC' 
             );
             $counter = 0;
