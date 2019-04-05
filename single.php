@@ -86,8 +86,8 @@
         <ul>
             <?php $args = array(
                 'numberposts' => 100,
-                'post_type' => $post_type,
-                'category_name' => $cat[0]->category_nicename,
+                'post_type' => 'post',
+                'category_name' => 'japan',
                 'order' => 'DESC' 
             );
             $posts = get_posts( $args );
