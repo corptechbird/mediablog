@@ -83,7 +83,7 @@
                 <hr class="clear">
             </div>
         <div class="newentry">See also</div>   
-        <?php echo $cat[0]->category_nicename; ?>  
+        
         <ul>
             <?php $args = array(
                 'numberposts' => 100,
