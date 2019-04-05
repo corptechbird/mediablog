@@ -90,8 +90,35 @@
                 'category_name' => 'japan',
                 'order' => 'DESC' 
             );
+            $counter = 0;
             $posts = get_posts( $args );
-            ?>
+            if( $posts ) : foreach( $posts as $post) : setup_postdata( $post ); ?>
+            <?php if($counter>0 && $counter%30==0):?>
+            <div class="ads" style="margin-bottom:20px;">
+                <ins class="adsbygoogle"
+                    style="display:block"
+                    data-ad-client="ca-pub-2330122305834701"
+                    data-ad-slot="9848871375"
+                    data-ad-format="rectangle"
+                    data-full-width-responsive="true"></ins>
+                <script>
+                (adsbygoogle = window.adsbygoogle || []).push({});
+                </script>
+            </div>
+            <?php endif; ?>
+            <li style="padding-left:10px; border-bottom: 1px solid #d7d7d7; display: flex; flex-wrap: wrap;"> 
+                <div style="width: 100px; margin: 0;"><?php the_post_thumbnail(array(100, 80, true)); ?></div>
+                <div style="padding-left:8px;width:650px;"><a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>"><?php the_title(); ?></a></div>
+            </li> 
+            <?php $counter+=1; ?>  
+            <?php endforeach; ?>
+            <?php else : ?>
+            <div class="notfound">
+                <h3>Page Not Found</h3>
+                <p>Sorry. The page you were looking for could not be found.</p>
+                <div class="notfound-navi"><a href="<?php echo esc_url( home_url( '/' ) ); ?>"><i class="fas fa-home" aria-hidden="true"></i> Home</a></div>
+            </div>
+            <?php endif; ?>
         </ul>
         <div class="afterpost">
             <div class="ads" style="margin-bottom:20px;">
