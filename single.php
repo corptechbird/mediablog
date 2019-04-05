@@ -83,11 +83,10 @@
                 <hr class="clear">
             </div>
         <div class="newentry">See also</div>   
-        
         <ul>
             <?php $args = array(
                 'numberposts' => 100,
-                'category_name' => 'japan',
+                'category_name' => $cat[0]->slug,
                 'order' => 'DESC' 
             );
             $counter = 0;
