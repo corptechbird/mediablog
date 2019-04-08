@@ -26,7 +26,7 @@
                         <img src="https://raw.githubusercontent.com/corptechbird/mediablog/master/images/eyecatch.png" alt="Eye Catch Image" width="360" />
                 <?php } ?>
             </figure>
-            <div class="newentry">『Music Trend in <?php echo esc_html( $cat_info->name ); ?>』Article List</div>
+            <div class="newentry">『<?php echo esc_html( $cat_info->name ); ?>』Article List</div>
             <ul>
             <?php $counter = 0; ?>  
             <?php while ( have_posts() ) : the_post(); ?>
