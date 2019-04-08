@@ -177,7 +177,7 @@ html, body {
 .post div.title {
   font-size: 1.6em;
   font-weight: bold;
-  color: rgba(198, 185, 111, 1);
+  color: rgba(44, 84, 161, 1);
   margin: 20px;
   word-break: break-all;
 }
@@ -256,7 +256,7 @@ html, body {
 }
 .front-title {
   font-size: 1.3em;
-  color: rgba(198, 185, 111, 1);
+  color: rgba(44, 84, 161, 1);
   margin: 0px;
   padding: 0px;
 }
@@ -936,7 +936,6 @@ iframe {
       float: right;
   }
 }
-
     </style> 
 </head>
 <body>
