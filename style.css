@@ -379,7 +379,7 @@ a.next.page-numbers:hover{
   font-weight: bold;
   text-decoration: none;
   text-align: center;
-  box-shadow: 3px 3px 20px -5px rgba(0, 0, 0, 0.8);
+  /* box-shadow: 3px 3px 20px -5px rgba(0, 0, 0, 0.8); */
 }
 #pageTop a:hover {
   text-decoration: none;
