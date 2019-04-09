@@ -816,6 +816,48 @@ iframe {
     background-position: 0% 50%;
   }
 }
+@media screen and (max-width: 1100px) {
+  #contents {
+    width: 100%;
+  }
+  #primary {
+    width: 100%;
+    min-width: 320px;
+    margin-top: 0px;
+    padding: 0 1.2em 1.2em 1.2em;
+  }
+  #primary ul {
+    margin: 0;
+  }
+  #header {
+    text-align: center;
+  }
+  #header img{
+    padding-right: 20px;
+  }
+  .side-article {
+    width:550px;
+  }
+  .left-pannel{
+    width: 100px; 
+    margin: 0;
+  }
+  .right-pannel{
+    padding-left:8px;
+    width:550px;
+  }
+}
+@media screen and (min-width: 1100px) {
+  #btn {
+    display: none;
+    float: right;
+  }
+  #menu {
+      display: block;
+      top: 10px;
+      float: right;
+  }
+}
 @media screen and (max-width: 800px) {
   .cards {
     text-align: center;
@@ -887,47 +929,5 @@ iframe {
   .right-pannel{
     padding-left:8px;
     width:240px;
-  }
-}
-@media screen and (max-width: 1100px) {
-  #contents {
-    width: 100%;
-  }
-  #primary {
-    width: 100%;
-    min-width: 320px;
-    margin-top: 0px;
-    padding: 0 1.2em 1.2em 1.2em;
-  }
-  #primary ul {
-    margin: 0;
-  }
-  #header {
-    text-align: center;
-  }
-  #header img{
-    padding-right: 20px;
-  }
-  .side-article {
-    width:550px;
-  }
-  .left-pannel{
-    width: 100px; 
-    margin: 0;
-  }
-  .right-pannel{
-    padding-left:8px;
-    width:550px;
-  }
-}
-@media screen and (min-width: 1100px) {
-  #btn {
-    display: none;
-    float: right;
-  }
-  #menu {
-      display: block;
-      top: 10px;
-      float: right;
   }
 }
