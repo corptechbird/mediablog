@@ -775,7 +775,14 @@ iframe {
 .side-article {
   width:200px;
 }
-
+.left-pannel{
+  width: 100px; 
+  margin: 0;
+}
+.right-pannel{
+  padding-left:8px;
+  width:550px;
+}
 @-webkit-keyframes bg-gradient {
   0% {
     background-position: 0% 50%;
@@ -872,6 +879,14 @@ iframe {
     max-width: 90%;
     display: block;
     margin: auto;
+  }
+  .left-pannel{
+    width: 80px; 
+    margin: 0;
+  }
+  .right-pannel{
+    padding-left:8px;
+    width:240px;
   }
 }
 @media screen and (max-width: 1100px) {
