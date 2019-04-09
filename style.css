@@ -848,7 +848,7 @@ iframe {
   .post ul {
     /* list-style-type: disc; */
     margin:0;
-    padding-left:25px;
+    padding-left:0px;
   }
   h2 {
     margin-left: 0;
