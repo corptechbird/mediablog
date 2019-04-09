@@ -940,12 +940,12 @@ iframe {
     width:550px;
   }
   .left-pannel{
-    width: 80px; 
+    width: 100px; 
     margin: 0;
   }
   .right-pannel{
     padding-left:8px;
-    width:240px;
+    width:550px;
   }
 }
 @media screen and (min-width: 1100px) {
