@@ -908,14 +908,6 @@ iframe {
     display: block;
     margin: auto;
   }
-  .left-pannel{
-    width: 80px; 
-    margin: 0;
-  }
-  .right-pannel{
-    padding-left:8px;
-    width:240px;
-  }
 }
 @media screen and (max-width: 1100px) {
   #contents {
@@ -938,6 +930,14 @@ iframe {
   }
   .side-article {
     width:550px;
+  }
+  .left-pannel{
+    width: 80px; 
+    margin: 0;
+  }
+  .right-pannel{
+    padding-left:8px;
+    width:240px;
   }
 }
 @media screen and (min-width: 1100px) {
