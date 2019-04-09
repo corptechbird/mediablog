@@ -71,7 +71,7 @@
                                     <span class="more-text">Read More</span>
                                 </div>
                                 <div class="text-content">
-                                    <p class="caption">Information of music trend in <?php echo $term->name; ?> is provided. Articles include a lot of official youtube videos, official SNS photos and careful explanation of music group and songs.</p>
+                                    <p class="caption">Information of <?php echo $term->name; ?> is provided. Articles include a lot of official youtube videos, official SNS photos and careful explanation of music group and songs.</p>
                                 </div>
                             </div>
                         </a>

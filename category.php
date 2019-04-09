@@ -99,7 +99,7 @@
                                     <span class="more-text">Read More</span>
                                 </div>
                                 <div class="text-content">
-                                <p class="caption">Technical information about <?php echo $term->name; ?> is provided. Articles include a lot of photos, videos and careful explanation of programs to make it easy for beginners to understand.</p>
+                                <p class="caption">Information of <?php echo $term->name; ?> is provided. Articles include a lot of photos, videos and careful explanation of programs to make it easy for beginners to understand.</p>
                                 </div>
                             </div>
                         </a>
