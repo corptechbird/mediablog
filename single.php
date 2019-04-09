@@ -79,7 +79,7 @@
             $counter = 0;
             $posts = get_posts( $args );
             if( $posts ) : foreach( $posts as $post) : setup_postdata( $post ); ?>
-            <?php if($counter>0 && $counter%30==0):?>
+            <?php if($counter>0 && $counter%10==0):?>
             <div class="ads" style="margin-bottom:20px;">
                 <ins class="adsbygoogle"
                     style="display:block"

@@ -30,17 +30,15 @@
             <ul>
             <?php $counter = 0; ?>  
             <?php while ( have_posts() ) : the_post(); ?>
-            <?php if($counter>0 && $counter%30==0):?>
+            <?php if($counter>0 && $counter%10==0):?>
             <div class="ads" style="margin-bottom:20px;">
-                <ins class="adsbygoogle"
-                    style="display:block"
-                    data-ad-client="ca-pub-2330122305834701"
-                    data-ad-slot="9848871375"
-                    data-ad-format="rectangle"
-                    data-full-width-responsive="true"></ins>
-                <script>
-                (adsbygoogle = window.adsbygoogle || []).push({});
-                </script>
+            <ins class="adsbygoogle"
+                style="display:inline-block;width:728px;height:90px"
+                data-ad-client="ca-pub-2330122305834701"
+                data-ad-slot="3318403188"></ins>
+            <script>
+            (adsbygoogle = window.adsbygoogle || []).push({});
+            </script>
             </div>
             <?php endif; ?>
             <li style="padding-left:10px; border-bottom: 1px solid #d7d7d7; display: flex; flex-wrap: wrap;"> 
@@ -57,15 +55,6 @@
                 <div class="notfound-navi"><a href="<?php echo esc_url( home_url( '/' ) ); ?>"><i class="fas fa-home" aria-hidden="true"></i> Home</a></div>
             </div>
             <?php endif; ?>
-            <div class="ads" style="margin-bottom:20px;">
-            <ins class="adsbygoogle"
-                style="display:inline-block;width:728px;height:90px"
-                data-ad-client="ca-pub-2330122305834701"
-                data-ad-slot="3318403188"></ins>
-            <script>
-            (adsbygoogle = window.adsbygoogle || []).push({});
-            </script>
-            </div>
             <div class="newentry"></div>
             <div class="ads" style="margin-bottom:20px;">
                 <div class="adleft">
