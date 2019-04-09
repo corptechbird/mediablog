@@ -41,8 +41,8 @@
             </div>
             <?php endif; ?>
             <a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>"><li style="padding-left:10px; border-bottom: 1px solid #d7d7d7; display: flex; flex-wrap: wrap;"> 
-                <div style="width: 100px; margin: 0;"><?php the_post_thumbnail(array(100, 65, true)); ?></div>
-                <div style="padding-left:8px;width:550px;"><?php the_title(); ?></div>
+                <div class="left-pannel"><?php the_post_thumbnail(array(100, 65, true)); ?></div>
+                <div class="right-pannel"><?php the_title(); ?></div>
             </li> 
             </a>
             <?php $counter+=1; ?>  

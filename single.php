@@ -93,8 +93,8 @@
             </div>
             <?php endif; ?>
             <li style="padding-left:10px; border-bottom: 1px solid #d7d7d7; display: flex; flex-wrap: wrap;"> 
-                <div style="width: 100px; margin: 0;"><?php the_post_thumbnail(array(100, 80, true)); ?></div>
-                <div style="padding-left:8px;width:650px;"><a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>"><?php the_title(); ?></a></div>
+                <div class="left-pannel"><?php the_post_thumbnail(array(100, 80, true)); ?></div>
+                <div class="right-pannel"><a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>"><?php the_title(); ?></a></div>
             </li> 
             <?php $counter+=1; ?>  
             <?php endforeach; ?>
