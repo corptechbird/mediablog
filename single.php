@@ -92,9 +92,9 @@
                 </script>
             </div>
             <?php endif; ?>
-            <li style="border-bottom: 1px solid #d7d7d7; display: flex; flex-wrap: wrap;"> 
-                <div class="left-pannel"><?php the_post_thumbnail(array(100, 80, true)); ?></div>
-                <div class="right-pannel"><a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>"><?php the_title(); ?></a></div>
+            <a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>"><li style="border-bottom: 1px solid #d7d7d7; display: flex; flex-wrap: wrap;"> 
+                <div class="left-pannel"><?php the_post_thumbnail(array(100, 65, true)); ?></div>
+                <div class="right-pannel"><?php the_title(); ?></div>
             </li> 
             <?php $counter+=1; ?>  
             <?php endforeach; ?>
@@ -107,27 +107,6 @@
             <?php endif; ?>
         </ul>
         <div class="afterpost">
-            <div class="ads" style="margin-bottom:20px;">
-                <div class="adleft">
-                    <ins class="adsbygoogle"
-                        style="display:inline-block;width:300px;height:600px"
-                        data-ad-client="ca-pub-2330122305834701"
-                        data-ad-slot="8660278409"></ins>
-                    <script>
-                    (adsbygoogle = window.adsbygoogle || []).push({});
-                    </script>
-                </div>
-                <div class="adright">
-                    <ins class="adsbygoogle"
-                        style="display:inline-block;width:300px;height:600px"
-                        data-ad-client="ca-pub-2330122305834701"
-                        data-ad-slot="8660278409"></ins>
-                    <script>
-                    (adsbygoogle = window.adsbygoogle || []).push({});
-                    </script>
-                </div>
-                <hr class="clear">
-            </div>
             <div class="newentry">Category List</div>
             <div class="cards">
                 <div class="cards-inside">
