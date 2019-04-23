@@ -6,7 +6,6 @@
         <?php
             ?>
             <div class="title"><?php the_title(); ?></div>
-            <?php the_post_thumbnail('thumbnail'); ?>
             <?php
             $cat = get_the_category();
             $cat = $cat[0];?>
@@ -30,6 +29,7 @@
                 <?php endif; ?>
             </div>
             <?php endif; ?>
+            <?php the_post_thumbnail(array(400,240)); ?>
             <?php the_content(); ?>
             <?php
                 $prev_post = get_previous_post();
