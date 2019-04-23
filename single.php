@@ -19,12 +19,12 @@
             <div class="pager-wrapper">
                 <?php if(isset($next_post)): ?>
                     <div class="pager-next">
-                        <?php next_post_link('%link', '<i class="fas fa-caret-left"></i> next', true); ?>
+                        <?php next_post_link('%link', '<i class="fas fa-caret-left"></i> 次の記事', true); ?>
                     </div>
                 <?php endif; ?>
                 <?php if(isset($prev_post)): ?>
                     <div class="pager-prev">
-                        <?php previous_post_link('%link', 'prev <i class="fas fa-caret-right"></i>', true); ?>
+                        <?php previous_post_link('%link', '前の記事 <i class="fas fa-caret-right"></i>', true); ?>
                     </div>
                 <?php endif; ?>
             </div>
