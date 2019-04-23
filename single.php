@@ -29,7 +29,7 @@
                 <?php endif; ?>
             </div>
             <?php endif; ?>
-            <div style="width:100%; height: 200px;"><?php the_post_thumbnail(array(600,360)); ?></div>
+            <div class="result-frame"><?php the_post_thumbnail(array(600,360)); ?></div>
             <?php the_content(); ?>
             <?php
                 $prev_post = get_previous_post();
