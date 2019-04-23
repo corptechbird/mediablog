@@ -6,11 +6,12 @@
         <?php
             ?>
             <div class="title"><?php the_title(); ?></div>
+            <?php the_post_thumbnail('thumbnail'); ?>
             <?php
             $cat = get_the_category();
             $cat = $cat[0];?>
             <div class="update"><a href="<?php echo esc_url( home_url( '/' ) ); ?>/category/<?php echo $cat->slug; ?>" title="<?php echo $cat->name; ?>"><?php echo $cat->name; ?></a></div>
-            <div class="update"><i class="far fa-clock"></i> <?php echo get_the_modified_date('d.m.Y'); ?></div>
+            <div class="update"><i class="far fa-clock"></i> <?php echo get_the_modified_date('Y.m.d'); ?></div>
             <?php
                 $prev_post = get_previous_post();
                 $next_post = get_next_post();
