@@ -9,7 +9,7 @@
             <?php
             $cat = get_the_category();
             $cat = $cat[0];?>
-            <div class="update"><a href="<?php echo esc_url( home_url( '/' ) ); ?>/category/<?php echo $cat->slug; ?>" title="<?php echo $cat->name; ?>"><?php echo $cat->name; ?></a></div>
+            <div class="update">Top > <a href="<?php echo esc_url( home_url( '/' ) ); ?>/category/<?php echo $cat->slug; ?>" title="<?php echo $cat->name; ?>"><?php echo $cat->name; ?></a></div>
             <div class="update"><i class="far fa-clock"></i> <?php echo get_the_modified_date('Y.m.d'); ?></div>
             <?php
                 $prev_post = get_previous_post();
@@ -29,7 +29,7 @@
                 <?php endif; ?>
             </div>
             <?php endif; ?>
-            <?php the_post_thumbnail(array(400,240)); ?>
+            <?php the_post_thumbnail(array(600,360)); ?>
             <?php the_content(); ?>
             <?php
                 $prev_post = get_previous_post();
